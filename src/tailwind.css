@@ -1,0 +1,51 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+img {
+  max-width: 100%;
+  width: auto;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  /* Safari seems to support, but seems deprecated and does the same thing as the others. */
+  image-rendering: -webkit-optimize-contrast;
+}
+
+@tailwind base;
+@tailwind components;
+
+/* Custom */
+html,body {@apply scroll-smooth overflow-x-hidden;}
+
+body {@apply font-primary text-base tracking-wider overflow-x-hidden transition-all duration-300;}
+
+/* ANim */
+.anim {@apply transition-all duration-300;}
+
+/* scroll  */
+::-webkit-scrollbar-track {border-radius: 0px;background:transparent;}
+::-webkit-scrollbar {width:4px;height:4px;background:transparent;}
+::-webkit-scrollbar-thumb {border-radius: 0px;-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);background-color: #555;}
+
+/* Titles */
+h1,.h1 {@apply text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl;}
+h2,.h2 {@apply text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl;}
+h3,.h3 {@apply text-2xl lg:text-3xl;}
+h4,.h4 {@apply text-xl lg:text-26;}
+h5,.h5 {@apply text-base md:text-lg lg:text-22;}
+h6,.h6 {@apply text-sm md:text-lg lg:text-xl;}
+
+h1,h2,h3,h4,h5,h6 {@apply font-primary font-semibold text-primary dark:text-white leading-tight;}
+
+p {@apply text-sm lg:text-base 2xl:text-lg md:leading-6 lg:leading-6 2xl:leading-8;}
+
+input:disabled,
+select:disabled,
+textarea:disabled
+{@apply bg-gray-300 text-gray-500 opacity-40;}
+
+/* button */
+button.primary,.primary{@apply bg-primary rounded-md font-bold text-white text-base border border-primary hover:bg-white hover:text-primary transition-all duration-300;}
+button.secondary,.secondary{@apply bg-secondary rounded-md font-bold text-white text-base border border-secondary hover:bg-white hover:text-secondary transition-all duration-300;}
+
+@tailwind utilities;
