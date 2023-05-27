@@ -16,7 +16,7 @@ const exampleRoutes: Route[] = [
     ],
     imports     : [
         RouterModule.forChild(exampleRoutes),
-        MatIconModule,
+        MatIconModule
     ]
 })
 export class ExampleModule
