@@ -1,10 +1,343 @@
-<div class="flex flex-col flex-auto min-w-0">
+<div class="flex flex-col w-full sm:absolute sm:inset-0 sm:overflow-hidden">
 
-    <!-- Main -->
-    <div class="flex-auto p-6 sm:p-10">
+    <div class="flex w-full sm:h-full">
 
-        <!-- CONTENT GOES HERE -->
-        <div class="h-400 min-h-400 max-h-400 border-2 border-dashed border-gray-300 rounded-2xl"></div>
+        <!-- Drawer -->
+        <div class="sm:w-96 dark:bg-gray-900 overflow-auto" #drawer>
+            <!-- Header -->
+            <div class="flex items-center justify-between m-8 mr-6 sm:my-10">
+                <!-- Title -->
+                <div class="text-4xl font-extrabold tracking-tight leading-none">Settings</div>
+                <!-- Close button -->
+                <div class="lg:hidden">
+                    <button>
+                        Svg Icon
+                    </button>
+                </div>
+            </div>
+            <!-- Panel links -->
+            <div class="flex flex-col divide-y border-t border-b overflow-y-auto">
+                <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
+                    <div class="ml-3">
+                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
+                            General
+                        </div>
+                    </div>
+                </div>
+                <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
+                    <div class="ml-3">
+                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
+                            Company Information
+                        </div>
+                    </div>
+                </div>
+                <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
+                    <div class="ml-3">
+                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
+                            Localization
+                        </div>
+                    </div>
+                </div>
+                <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
+                    <div class="ml-3">
+                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
+                            Email
+                        </div>
+                    </div>
+                </div>
+                <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
+                    <div class="ml-3">
+                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
+                            Finance
+                        </div>
+                    </div>
+                </div>
+                <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
+                    <div class="ml-3">
+                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
+                            Subscription
+                        </div>
+                    </div>
+                </div>
+                <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
+                    <div class="ml-3">
+                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
+                            Payment Gateways
+                        </div>
+                    </div>
+                </div>
+                <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
+                    <div class="ml-3">
+                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
+                            Customers
+                        </div>
+                    </div>
+                </div>
+                <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
+                    <div class="ml-3">
+                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
+                            Task
+                        </div>
+                    </div>
+                </div>
+                <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
+                    <div class="ml-3">
+                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
+                            Support
+                        </div>
+                    </div>
+                </div>
+                <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
+                    <div class="ml-3">
+                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
+                            Leads
+                        </div>
+                    </div>
+                </div>
+                <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
+                    <div class="ml-3">
+                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
+                            Calender
+                        </div>
+                    </div>
+                </div>
+                <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
+                    <div class="ml-3">
+                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
+                            SMS
+                        </div>
+                    </div>
+                </div>
+                <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
+                    <div class="ml-3">
+                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
+                            PDF
+                        </div>
+                    </div>
+                </div>
+                <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
+                    <div class="ml-3">
+                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
+                            E-Sign
+                        </div>
+                    </div>
+                </div>
+                <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
+                    <div class="ml-3">
+                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
+                            Cron Job
+                        </div>
+                    </div>
+                </div>
+                <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
+                    <div class="ml-3">
+                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
+                            Tags
+                        </div>
+                    </div>
+                </div>
+                <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
+                    <div class="ml-3">
+                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
+                            Pusher.com
+                        </div>
+                    </div>
+                </div>
+                <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
+                    <div class="ml-3">
+                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
+                            Google
+                        </div>
+                    </div>
+                </div>
+                <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
+                    <div class="ml-3">
+                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
+                            Misc
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Drawer content -->
+        <div class="flex flex-col">
+
+            <!-- Main -->
+            <div class="flex-auto px-6 pt-9 pb-12 md:p-8 md:pb-12 lg:p-12">
+
+                <!-- Panel header -->
+                <div class="flex items-center">
+
+                    <!-- Drawer toggle -->
+                    <button class="lg:hidden -ml-2">
+                        SvgIcon2
+                    </button>
+
+                    <!-- Panel title -->
+                    <div class="ml-2 lg:ml-0 text-3xl font-bold tracking-tight leading-none">
+                        Settings
+                    </div>
+                </div>
+
+                <!-- Load settings panel -->
+                <div class="mt-8">
+                    <div class="selectedPanel">
+                        <!-- Account -->
+                        <div class="account">
+                            <div class="w-full max-w-3xl">
+
+                                <!-- Form -->
+                                <form>
+                            
+                                    <!-- Section -->
+                                    <div class="w-full">
+                                        <div class="text-xl">Profile</div>
+                                        <div class="text-secondary">Following information is publicly displayed, be careful!</div>
+                                    </div>
+                                    <div class="grid sm:grid-cols-4 gap-6 w-full mt-8">
+                                        <!-- Name -->
+                                        <div class="sm:col-span-4">
+                                            <div class="fuse-mat-no-subscript w-full">
+                                                <label>Name</label>
+                                                <mat-icon
+                                                    class="icon-size-5"
+                                                    [svgIcon]="'heroicons_solid:user'"
+                                                    matPrefix></mat-icon>
+                                                <!-- <span class="icon-size-5">labelIcon</span> -->
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <!-- Username -->
+                                        <div class="sm:col-span-4">
+                                            <div class="fuse-mat-no-subscript fuse-mat-emphasized-affix w-full">
+                                                <label>Username</label>
+                                                <div
+                                                    class="text-secondary"
+                                                    matPrefix>
+                                                    fusetheme.com/
+                                                </div>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <!-- Title -->
+                                        <div class="sm:col-span-2">
+                                            <div class="fuse-mat-no-subscript w-full">
+                                                <label>Title</label>
+                                                <span class="icon-size-5">labelIcon</span>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <!-- Company -->
+                                        <div class="sm:col-span-2">
+                                            <div class="fuse-mat-no-subscript w-full">
+                                                <label>Company</label>
+                                                <span class="icon-size-5">labelIcon</span>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <!-- About -->
+                                        <div class="sm:col-span-4">
+                                            <div class="fuse-mat-textarea fuse-mat-no-subscript w-full">
+                                                <label>About</label>
+                                                <textarea name="about" id="about" cols="30" rows="10"></textarea>
+                                            </div>
+                                            <div class="mt-1 text-md text-hint">Brief description for your profile. Basic HTML and Emoji are allowed.</div>
+                                        </div>
+                                    </div>
+                            
+                                    <!-- Divider -->
+                                    <div class="my-10 border-t"></div>
+                            
+                                    <!-- Section -->
+                                    <div class="w-full">
+                                        <div class="text-xl">Personal Information</div>
+                                        <div class="text-secondary">Communication details in case we want to connect with you. These will be kept private.</div>
+                                    </div>
+                                    <div class="grid sm:grid-cols-4 gap-6 w-full mt-8">
+                                        <!-- Email -->
+                                        <div class="sm:col-span-2">
+                                            <div class="fuse-mat-no-subscript w-full">
+                                                <label>Email</label>
+                                                <span class="icon-size-5">labelIcon</span>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <!-- Phone -->
+                                        <div class="sm:col-span-2">
+                                            <div class="fuse-mat-no-subscript w-full">
+                                                <label>Phone</label>
+                                                <span class="icon-size-5">labelIcon</span>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <!-- Country -->
+                                        <div class="sm:col-span-2">
+                                            <div class="fuse-mat-no-subscript w-full">
+                                                <label>Country</label>
+                                                <span class="" type="text">labelIcon</span>
+                                                <select>
+                                                    <option [value]="'usa'">United States</option>
+                                                    <option [value]="'canada'">Canada</option>
+                                                    <option [value]="'mexico'">Mexico</option>
+                                                    <option [value]="'france'">France</option>
+                                                    <option [value]="'germany'">Germany</option>
+                                                    <option [value]="'italy'">Italy</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!-- Language -->
+                                        <div class="sm:col-span-2">
+                                            <div class="fuse-mat-no-subscript w-full">
+                                                <label>Language</label>
+                                                <span class="" type="text">labelIcon</span>
+                                                <select>
+                                                    <option [value]="'english'">English</option>
+                                                    <option [value]="'french'">French</option>
+                                                    <option [value]="'spanish'">Spanish</option>
+                                                    <option [value]="'german'">German</option>
+                                                    <option [value]="'italian'">Italian</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                                    <!-- Divider -->
+                                    <div class="mt-11 mb-10 border-t"></div>
+                            
+                                    <!-- Actions -->
+                                    <div class="flex items-center justify-end">
+                                        <button type="button">Cancel</button>
+                                        <button class="bg-primary ml-4" type="button">Save</button>
+                                    </div>
+                                </form>
+                            
+                            </div>
+                            
+                            <!-- <settings-account></settings-account> -->
+                        </div>
+                        <!-- Security -->
+                        <div class="security">
+                            <!-- <settings-security></settings-security> -->
+                        </div>
+                        <!-- Plan & Billing -->
+                        <div class="plan-billing">
+                            <!-- <settings-plan-billing></settings-plan-billing> -->
+                        </div>
+                        <!-- Notifications -->
+                        <div class="notifications">
+                            <!-- <settings-notifications></settings-notifications> -->
+                        </div>
+                        <!-- Team -->
+                        <div class="team">
+                            <!-- <settings-team></settings-team> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
 
