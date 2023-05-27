@@ -4,25 +4,7 @@ import { FuseNavigationItem } from '@fuse/components/navigation';
 export const defaultNavigation: FuseNavigationItem[] = [
     {
         id   : 'example',
-        title: 'Example',
-        type : 'basic',
-        icon : 'heroicons_outline:chart-pie',
-        link : '/example'
-    }
-];
-export const compactNavigation: FuseNavigationItem[] = [
-    {
-        id   : 'example',
-        title: 'Example',
-        type : 'basic',
-        icon : 'heroicons_outline:chart-pie',
-        link : '/example'
-    }
-];
-export const futuristicNavigation: FuseNavigationItem[] = [
-    {
-        id   : 'example',
-        title: 'Example',
+        title: 'Example4',
         type : 'basic',
         icon : 'heroicons_outline:chart-pie',
         link : '/example'
@@ -31,7 +13,28 @@ export const futuristicNavigation: FuseNavigationItem[] = [
 export const horizontalNavigation: FuseNavigationItem[] = [
     {
         id   : 'example',
-        title: 'Example',
+        title: 'Example2',
+        type : 'basic',
+        icon : 'heroicons_outline:chart-pie',
+        link : '/example'
+    }
+];
+
+
+// sdfsdf sdf
+export const compactNavigation: FuseNavigationItem[] = [
+    {
+        id   : 'example',
+        title: 'Example3',
+        type : 'basic',
+        icon : 'heroicons_outline:chart-pie',
+        link : '/example'
+    }
+];
+export const futuristicNavigation: FuseNavigationItem[] = [
+    {
+        id   : 'example',
+        title: 'Example5',
         type : 'basic',
         icon : 'heroicons_outline:chart-pie',
         link : '/example'
