@@ -491,7 +491,7 @@
 
 
     <!-- Customer -->
-    <div class="bg-card w-full">
+    <div class="bg-card w-full" *ngIf="false">
         <div class="w-full flex items-center p-5 border-b border-gray-200">
             <div class="flex flex-wrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
                 <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">New Customer</a>
@@ -556,11 +556,172 @@
                     </a>
                 </li>
             </ul>
-            <div class="p-6"></div>
+            <div class="p-6">
+                <!-- Customer Details -->
+                <div class="customer-details flex flex-wrap -mx-4">
+                    <!-- laft-details -->
+                    <div class="w-full sm:w-1/2 px-4">
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="flex items-center text-sm">
+                                <span class="text-red-600 inline-block mr-0.5">*</span>
+                                Company
+                            </mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="text-sm">VAT Number</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="text-sm">Phone</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="text-sm">Website</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="text-sm">Groups</mat-label>
+                            <mat-select multiple>
+                                <mat-option [value]="1">topping</mat-option>
+                                <mat-option [value]="1">topping</mat-option>
+                                <mat-option [value]="1">topping</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="flex items-center text-sm">
+                                <mat-icon class="icon-size-4 mr-1" [svgIcon]="'heroicons_solid:question-mark-circle'"></mat-icon>
+                                Currency
+                            </mat-label>
+                            <mat-select multiple>
+                                <mat-option [value]="1">topping</mat-option>
+                                <mat-option [value]="1">topping</mat-option>
+                                <mat-option [value]="1">topping</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="text-sm">Default Language</mat-label>
+                            <mat-select [placeholder]="'Language'">
+                                <mat-option value="language-1">System default</mat-option>
+                                <mat-option value="language-2">Language 2</mat-option>
+                                <mat-option value="language-2">Language 3</mat-option>
+                                <mat-option value="language-3">Language 4</mat-option>
+                                <mat-option value="language-3">Language 5</mat-option>
+                                <mat-option value="language-3">Language 6</mat-option>
+                                <mat-option value="language-3">Language 7</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <!-- right-details -->
+                    <div class="w-full sm:w-1/2 px-4">
+                        <mat-form-field class="fuse-mat-textarea w-full">
+                            <mat-label class="text-sm">Address</mat-label>
+                            <textarea matInput [rows]="3" matTextareaAutosize></textarea>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="text-sm">City</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="text-sm">State</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="text-sm">Zip Code</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="text-sm">Country</mat-label>
+                            <mat-select [placeholder]="'Country'">
+                                <mat-option value="Country-1">System default</mat-option>
+                                <mat-option value="Country-2">Country 2</mat-option>
+                                <mat-option value="Country-2">Country 3</mat-option>
+                                <mat-option value="Country-3">Country 4</mat-option>
+                                <mat-option value="Country-3">Country 5</mat-option>
+                                <mat-option value="Country-3">Country 6</mat-option>
+                                <mat-option value="Country-3">Country 7</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <!-- Billing & Shipping -->
+                <div class="bs-details flex flex-wrap -mx-4">
+                    <!-- Billing site details -->
+                    <div class="w-full sm:w-1/2 p-4">
+                        <div class="w-full flex items-center border-b border-gray-300 mb-5">
+                            <p class="py-3 text-lg md:text-xl pr-3">Billing Address</p>
+                            <a href="#" class="inline-block text-sm text-black/80 dark:text-white/80 ml-auto">Same as Customer Info</a>
+                        </div>
+                        <mat-form-field class="fuse-mat-textarea w-full">
+                            <mat-label class="text-sm">Street</mat-label>
+                            <textarea matInput [rows]="3" matTextareaAutosize></textarea>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="text-sm">City</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="text-sm">State</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="text-sm">Zip Code</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="text-sm">Country</mat-label>
+                            <mat-select [placeholder]="'Country'">
+                                <mat-option value="Country-1">System default</mat-option>
+                                <mat-option value="Country-2">Country 2</mat-option>
+                                <mat-option value="Country-2">Country 3</mat-option>
+                                <mat-option value="Country-3">Country 4</mat-option>
+                                <mat-option value="Country-3">Country 5</mat-option>
+                                <mat-option value="Country-3">Country 6</mat-option>
+                                <mat-option value="Country-3">Country 7</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                     <!-- Shipping site details -->
+                     <div class="w-full sm:w-1/2 p-4">
+                        <div class="w-full flex items-center border-b border-gray-300 mb-5">
+                            <p class="py-3 text-lg md:text-xl pr-3">Shipping Address</p>
+                            <a href="#" class="inline-block text-sm text-black/80 dark:text-white/80 ml-auto">Same as Customer Info</a>
+                        </div>
+                        <mat-form-field class="fuse-mat-textarea w-full">
+                            <mat-label class="text-sm">Street</mat-label>
+                            <textarea matInput [rows]="3" matTextareaAutosize></textarea>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="text-sm">City</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="text-sm">State</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="text-sm">Zip Code</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="text-sm">Country</mat-label>
+                            <mat-select [placeholder]="'Country'">
+                                <mat-option value="Country-1">System default</mat-option>
+                                <mat-option value="Country-2">Country 2</mat-option>
+                                <mat-option value="Country-2">Country 3</mat-option>
+                                <mat-option value="Country-3">Country 4</mat-option>
+                                <mat-option value="Country-3">Country 5</mat-option>
+                                <mat-option value="Country-3">Country 6</mat-option>
+                                <mat-option value="Country-3">Country 7</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Import Customer -->
-    <div class="bg-card p-6">
+    <div class="bg-card p-6" *ngIf="false">
         <div class="pb-6">
             <a href="#" class="p-3 py-2.5 bg-green-500 text-white rounded">Download Sample</a>
         </div>
@@ -740,7 +901,27 @@
                 </tr>
             </table>
         </div>
-        <div class="flex flex-wrap items-center space-y-2 sm:space-y-0 sm:space-x-2 pt-5">
+        <div class="w-full max-w-2xl pt-7">
+            <div class="w-full pb-3">
+                <label class="pb-1 block">Choose CSV File</label>
+                <div class="w-full border border-gray-300 rounded-md">
+                    <input id="avatar-file-input" class="absolute w-0 h-0 opacity-0 invisible pointer-events-none"
+                    type="file" [multiple]="false" [accept]="'image/jpeg, image/png'"
+                    #avatarFileInput>
+                    <div class="flex items-center">
+                        <label class="flex items-center justify-center w-10 h-10 rounded-full cursor-pointer hover:bg-hover" for="avatar-file-input" matRipple>
+                            <mat-icon class="text-gray-400" [svgIcon]="'heroicons_outline:camera'"></mat-icon>
+                        </label>
+                        <span class="inline-block text-base text-black/80">Upload File</span>
+                    </div>
+                </div>
+            </div>
+            <mat-form-field class="fuse-mat-dense w-full">
+                <mat-label class="text-sm">Default password for all contacts</mat-label>
+                <input matInput>
+            </mat-form-field>
+        </div>
+        <div class="flex flex-wrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
             <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">IMport</a>
             <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">Simulate import</a>
         </div>
@@ -749,6 +930,297 @@
     <!-- Sales -->
     <!-- PROPOSAL -->
     <div class="bg-card w-full">
-
+        <!-- switch to pipeline -->
+        <div class="w-full flex items-center p-5 border-b border-gray-200" *ngIf="false">
+            <div class="flex flex-wrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
+                <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">New Proposal</a>
+                <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-black bg-gray-200 rounded uppercase hover:opacity-90">Switch to Pipeline</a>
+            </div>
+            <div class="sm:ml-auto ml-4 flex space-x-2">
+                <a href="#" class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                    <mat-icon class="icon-size-4" svgIcon="heroicons_outline:chevron-double-left"></mat-icon>
+                    <mat-icon class="icon-size-4 hidden" svgIcon="heroicons_outline:chevron-double-right"></mat-icon>
+                </a>
+                <a href="#" class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                    <mat-icon class="icon-size-4" svgIcon="heroicons_solid:filter"></mat-icon>
+                </a>
+            </div>
+        </div>
+        <!-- Switch to list  -->
+        <div class="w-full flex flex-col sm:flex-row items-center justify-between p-5 border-b border-gray-200" *ngIf="false">
+            <div class="flex flex-wrap sm:flex-nowrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
+                <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase whitespace-nowrap hover:opacity-90">New Proposal</a>
+                <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-black bg-gray-200 rounded uppercase whitespace-nowrap hover:opacity-90">Switch to List</a>
+            </div>
+            <div class="sm:ml-4 w-full max-w-lg pt-2 sm:p-0">
+                <input type="text" class="p-3 py-2 focus:border-blue-600 w-full border border-gray-300 rounded-md">
+            </div>
+        </div>
+        <!-- Switch to list details -->
+        <div class="p-5 w-full block" *ngIf="false">
+            <div class="flex items-center flex-wrap -mx-2">
+                <span class="inline-block p-2 font-bold text-black/80">Sort By:</span>
+                <a href="#" class="flex items-center px-2 text-xs sm:text-sm text-blue-600 hover:opacity-80 border-r-2 border-gray-300">
+                    <mat-icon class="icon-size-4 mr-1 text-blue-600" svgIcon="heroicons_solid:sort-descending"></mat-icon>
+                    Date Created
+                </a>
+                <a href="#" class="flex items-center px-2 text-xs sm:text-sm text-blue-600 hover:opacity-80 border-r-2 border-gray-300">
+                    <mat-icon class="icon-size-4 mr-1 text-blue-600" svgIcon="heroicons_solid:sort-descending"></mat-icon>
+                    Proposal Date
+                </a>
+                <a href="#" class="flex items-center px-2 text-xs sm:text-sm text-blue-600 hover:opacity-80 border-r-2 border-gray-300">
+                    <mat-icon class="icon-size-4 mr-1 text-blue-600" svgIcon="heroicons_solid:sort-descending"></mat-icon>
+                    Pipeline Order
+                </a>
+                <a href="#" class="flex items-center px-2 text-xs sm:text-sm text-blue-600 hover:opacity-80">
+                    <mat-icon class="icon-size-4 mr-1 text-blue-600" svgIcon="heroicons_solid:sort-descending"></mat-icon>
+                    Open Till
+                </a>
+            </div>
+            <div class="w-full overflow-x-auto overflow-hidden mt-6">
+                <div class="space-x-2 inline-flex pb-3">
+                    <div class="w-64 h-100 md:w-80 md:h-[calc(100vh-400px)] bg-gray-200 rounded-md border border-gray-200 overflow-hidden">
+                        <div class="sticky z-20 top-0 w-full p-2.5 bg-white overflow-hidden">
+                            <span class="block w-11/12 text-sm">Draft - 0 Proposals</span>
+                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 top-0 rotate-45 bg-slate-800"></span>
+                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 bottom-0 -rotate-45 bg-slate-800"></span>
+                        </div>
+                        <div class="h-full">
+    
+                        </div>
+                    </div>
+                    <div class="w-64 h-100 md:w-80 md:h-[calc(100vh-400px)] bg-gray-200 rounded-md border border-gray-200 overflow-hidden">
+                        <div class="sticky z-20 top-0 w-full p-2.5 bg-blue-600 overflow-hidden">
+                            <span class="block w-11/12 text-sm text-white">Sent - 0 Proposals</span>
+                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 top-0 rotate-45 bg-slate-800"></span>
+                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 bottom-0 -rotate-45 bg-slate-800"></span>
+                        </div>
+                        <div class="h-full">
+    
+                        </div>
+                    </div>
+                    <div class="w-64 h-100 md:w-80 md:h-[calc(100vh-400px)] bg-gray-200 rounded-md border border-gray-200 overflow-hidden">
+                        <div class="sticky z-20 top-0 w-full p-2.5 bg-white overflow-hidden">
+                            <span class="block w-11/12 text-sm">Open - 0 Proposals</span>
+                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 top-0 rotate-45 bg-slate-800"></span>
+                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 bottom-0 -rotate-45 bg-slate-800"></span>
+                        </div>
+                        <div class="h-full">
+    
+                        </div>
+                    </div>
+                    <div class="w-64 h-100 md:w-80 md:h-[calc(100vh-400px)] bg-gray-200 rounded-md border border-gray-200 overflow-hidden">
+                        <div class="sticky z-20 top-0 w-full p-2.5 bg-blue-600 overflow-hidden">
+                            <span class="block w-11/12 text-sm text-white">Revised - 0 Proposals</span>
+                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 top-0 rotate-45 bg-slate-800"></span>
+                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 bottom-0 -rotate-45 bg-slate-800"></span>
+                        </div>
+                        <div class="h-full">
+    
+                        </div>
+                    </div>
+                    <div class="w-64 h-100 md:w-80 md:h-[calc(100vh-400px)] bg-gray-200 rounded-md border border-gray-200 overflow-hidden">
+                        <div class="sticky z-20 top-0 w-full p-2.5 bg-red-600 overflow-hidden">
+                            <span class="block w-11/12 text-sm text-white">Declined - 0 Proposals</span>
+                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 top-0 rotate-45 bg-slate-800"></span>
+                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 bottom-0 -rotate-45 bg-slate-800"></span>
+                        </div>
+                        <div class="h-full">
+    
+                        </div>
+                    </div>
+                    <div class="w-64 h-100 md:w-80 md:h-[calc(100vh-400px)] bg-gray-200 rounded-md border border-gray-200 overflow-hidden">
+                        <div class="sticky z-20 top-0 w-full p-2.5 bg-green-600 overflow-hidden">
+                            <span class="block w-11/12 text-sm text-white">Accepted - 0 Proposals</span>
+                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 top-0 rotate-45 bg-slate-800"></span>
+                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 bottom-0 -rotate-45 bg-slate-800"></span>
+                        </div>
+                        <div class="h-full">
+    
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <!-- New Proposal details -->
+        <div class="w-full space-y-6">
+            <div class="flex items-start flex-wrap p-6">
+                <div class="md:pr-5 w-full flex items-baseline flex-wrap md:w-1/2 md:border-r border-gray-300">
+                    <mat-form-field class="fuse-mat-dense w-full">
+                        <mat-label class="flex items-center text-sm">
+                            <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                            Subject
+                        </mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full">
+                        <mat-label class="flex items-center text-sm">
+                            <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                            Related
+                        </mat-label>
+                        <mat-select [placeholder]="'Language'">
+                            <mat-option value="language-1">System default</mat-option>
+                            <mat-option value="language-2">Language 2</mat-option>
+                            <mat-option value="language-2">Language 3</mat-option>
+                            <mat-option value="language-3">Language 4</mat-option>
+                            <mat-option value="language-3">Language 5</mat-option>
+                            <mat-option value="language-3">Language 6</mat-option>
+                            <mat-option value="language-3">Language 7</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
+                        <mat-label class="flex items-center text-sm">
+                            <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                            Date
+                        </mat-label>
+                        <input matInput [matDatepicker]="picker1">
+                        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                        <mat-datepicker #picker1></mat-datepicker>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
+                        <mat-label class="text-sm">Open Till</mat-label>
+                        <input matInput [matDatepicker]="picker2">
+                        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                        <mat-datepicker #picker2></mat-datepicker>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
+                        <mat-label class="flex items-center text-sm">
+                            <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                            Currency
+                        </mat-label>
+                        <mat-select [placeholder]="'Currency'">
+                            <mat-option value="Currency-1">System default</mat-option>
+                            <mat-option value="Currency-2">Currency 2</mat-option>
+                            <mat-option value="Currency-2">Currency 3</mat-option>
+                            <mat-option value="Currency-3">Currency 4</mat-option>
+                            <mat-option value="Currency-3">Currency 5</mat-option>
+                            <mat-option value="Currency-3">Currency 6</mat-option>
+                            <mat-option value="Currency-3">Currency 7</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
+                        <mat-label class="text-sm">Discount Type</mat-label>
+                        <mat-select [placeholder]="'discount'">
+                            <mat-option value="discount-1">Discount Type</mat-option>
+                            <mat-option value="discount-2">discount 2</mat-option>
+                            <mat-option value="discount-2">discount 3</mat-option>
+                            <mat-option value="discount-3">discount 4</mat-option>
+                            <mat-option value="discount-3">discount 5</mat-option>
+                            <mat-option value="discount-3">discount 6</mat-option>
+                            <mat-option value="discount-3">discount 7</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full">
+                        <mat-label class="text-sm">Tag</mat-label>
+                        <mat-chip-list #chipList02>
+                            <mat-chip
+                                [removable]="true"
+                                [selectable]="true">
+                                Lemon
+                                <mat-icon
+                                    class="icon-size-5"
+                                    matChipRemove
+                                    [svgIcon]="'heroicons_solid:minus-circle'"></mat-icon>
+                            </mat-chip>
+                            <mat-chip
+                                [removable]="true"
+                                [selectable]="true">
+                                Lime
+                                <mat-icon
+                                    class="icon-size-5"
+                                    matChipRemove
+                                    [svgIcon]="'heroicons_solid:minus-circle'"></mat-icon>
+                            </mat-chip>
+                            <mat-chip
+                                [removable]="true"
+                                [selectable]="true">
+                                Apple
+                                <mat-icon
+                                    class="icon-size-5"
+                                    matChipRemove
+                                    [svgIcon]="'heroicons_solid:minus-circle'"></mat-icon>
+                            </mat-chip>
+                            <input [placeholder]="'New fruit...'" [matChipInputFor]="chipList02">
+                        </mat-chip-list>
+                    </mat-form-field>
+                    <div class="pb-4">
+                        <span class="block text-sm mb-1">Allow Comments</span>
+                        <mat-slide-toggle class="text-green-600"></mat-slide-toggle>
+                    </div>
+                </div>
+                <div class="md:pl-5 w-full flex items-baseline flex-wrap md:w-1/2">
+                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
+                        <mat-label class="text-sm">Status</mat-label>
+                        <mat-select [placeholder]="'Draft'">
+                            <mat-option value="Draft-1">Draft</mat-option>
+                            <mat-option value="Draft-2">Draft 2</mat-option>
+                            <mat-option value="Draft-2">Draft 3</mat-option>
+                            <mat-option value="Draft-3">Draft 4</mat-option>
+                            <mat-option value="Draft-3">Draft 5</mat-option>
+                            <mat-option value="Draft-3">Draft 6</mat-option>
+                            <mat-option value="Draft-3">Draft 7</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
+                        <mat-label class="text-sm">Assigned</mat-label>
+                        <mat-select [placeholder]="'Assigned'">
+                            <mat-option value="Assigned-1">Assigned Type</mat-option>
+                            <mat-option value="Assigned-2">Assigned 2</mat-option>
+                            <mat-option value="Assigned-2">Assigned 3</mat-option>
+                            <mat-option value="Assigned-3">Assigned 4</mat-option>
+                            <mat-option value="Assigned-3">Assigned 5</mat-option>
+                            <mat-option value="Assigned-3">Assigned 6</mat-option>
+                            <mat-option value="Assigned-3">Assigned 7</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full">
+                        <mat-label class="flex items-center text-sm">
+                            <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                            To
+                        </mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-textarea w-full">
+                        <mat-label class="text-sm">Address</mat-label>
+                        <textarea matInput [rows]="3" matTextareaAutosize></textarea>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
+                        <mat-label class="text-sm">City</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
+                        <mat-label class="text-sm">State</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
+                        <mat-label class="text-sm">Country</mat-label>
+                        <mat-select [placeholder]="'Country'">
+                            <mat-option value="Country-1">Country</mat-option>
+                            <mat-option value="Country-2">Country 2</mat-option>
+                            <mat-option value="Country-2">Country 3</mat-option>
+                            <mat-option value="Country-3">Country 4</mat-option>
+                            <mat-option value="Country-3">Country 5</mat-option>
+                            <mat-option value="Country-3">Country 6</mat-option>
+                            <mat-option value="Country-3">Country 7</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
+                        <mat-label class="text-sm">Zip Code</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
+                        <mat-label class="flex items-center text-sm">
+                            <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                            Email
+                        </mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
+                        <mat-label class="text-sm">Phone</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
