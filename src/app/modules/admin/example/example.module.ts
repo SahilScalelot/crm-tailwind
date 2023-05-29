@@ -11,10 +11,17 @@ import { Route, RouterModule } from '@angular/router';
 import { ExampleComponent } from './example.component';
 import { MatMomentDateModule } from '@angular/material-moment-adapter';
 import { CommonModule } from '@angular/common';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatMenuModule } from '@angular/material/menu';
+import { FuseHighlightModule } from '@fuse/components/highlight';
+import { SharedModule } from 'app/shared/shared.module';
 
 const exampleRoutes: Route[] = [
     {
-        path     : '',
+        path: '',
         component: ExampleComponent
     }
 ];
@@ -23,18 +30,25 @@ const exampleRoutes: Route[] = [
     declarations: [
         ExampleComponent
     ],
-    imports     : [
+    imports: [
         RouterModule.forChild(exampleRoutes),
         CommonModule,
         MatIconModule,
+        MatDatepickerModule,
+        MatRadioModule,
         MatInputModule,
         MatFormFieldModule,
-        MatRadioModule,
-        MatChipsModule,
-        MatDatepickerModule,
-        MatMomentDateModule,
         MatSelectModule,
+        MatButtonModule,
+        MatButtonToggleModule,
+        MatSlideToggleModule,
+        MatChipsModule,
+        MatDividerModule,
+        MatMenuModule,
+        MatMomentDateModule,
+        FuseHighlightModule,
+        SharedModule,
         MatTabsModule,
     ]
 })
-export class ExampleModule{}
+export class ExampleModule { }
