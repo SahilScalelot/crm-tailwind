@@ -19,6 +19,4 @@ const exampleRoutes: Route[] = [
         MatIconModule
     ]
 })
-export class ExampleModule
-{
-}
+export class ExampleModule{}

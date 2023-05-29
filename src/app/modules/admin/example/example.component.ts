@@ -5,12 +5,15 @@ import { Component, ViewEncapsulation } from '@angular/core';
     templateUrl  : './example.component.html',
     encapsulation: ViewEncapsulation.None
 })
-export class ExampleComponent
-{
-    /**
-     * Constructor
-     */
-    constructor()
-    {
+export class ExampleComponent{
+
+    
+
+    constructor(){}
+    closeButton(){
+        
+    }
+    toggleButton(){
+        // this.toggle=true;
     }
 }
