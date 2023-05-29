@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-    --fuse-vertical-navigation-width: 280px;
+    --fuse-vertical-navigation-width: 235px;
     --fuse-vertical-navigation-dense-width: 80px;
 }
 
@@ -144,7 +144,8 @@ fuse-vertical-navigation {
 
         /* Aside wrapper */
         .fuse-vertical-navigation-aside-wrapper {
-            left: var(--fuse-vertical-navigation-dense-width);
+            // left: var(--fuse-vertical-navigation-dense-width);
+            left: 0;
         }
 
         /* Hover */
@@ -175,7 +176,8 @@ fuse-vertical-navigation {
             }
 
             .fuse-vertical-navigation-aside-wrapper {
-                left: var(--fuse-vertical-navigation-width);
+                // left: var(--fuse-vertical-navigation-width);
+                left: 0;
             }
         }
     }
