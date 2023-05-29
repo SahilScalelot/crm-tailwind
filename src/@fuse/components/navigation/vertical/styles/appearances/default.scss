@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-    --fuse-vertical-navigation-width: 280px;
+    --fuse-vertical-navigation-width: 235px;
 }
 
 fuse-vertical-navigation {
@@ -172,10 +172,11 @@ fuse-vertical-navigation {
         flex-direction: column;
         top: 0;
         bottom: 0;
-        left: var(--fuse-vertical-navigation-width);
+        // left: var(--fuse-vertical-navigation-width);
+        left: 0;
         width: var(--fuse-vertical-navigation-width);
         height: 100%;
-        z-index: 5;
+        z-index: 15;
         overflow-x: hidden;
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
@@ -457,12 +458,30 @@ fuse-vertical-navigation {
 .fuse-vertical-navigation-aside-overlay {
     position: absolute;
     top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 169;
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    left: var(--fuse-vertical-navigation-width);
+    // bottom: 0;
+    // right: 0;
+    // opacity: 0;
+    transform: translateX(-100%);
+    cursor: pointer;
+    z-index: 369;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    &::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-size: 20px;
+        content: "\00d7";
+    }
+    &:hover {
+        &::before {
+            color: #f00;
+        }
+    }
 }
 
 /* ----------------------------------------------------------------------------------------------------- */

@@ -1,26 +1,27 @@
 import { NgModule } from '@angular/core';
-import { Route, RouterModule } from '@angular/router';
-import { ExampleComponent } from 'app/modules/admin/example/example.component';
-import { MatIconModule } from '@angular/material/icon';
-import { MatDatepickerModule } from '@angular/material/datepicker';
-import { MatButtonModule } from '@angular/material/button';
-import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
-import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
-import { CommonModule } from '@angular/common';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatSelectModule } from '@angular/material/select';
 import { MatChipsModule } from '@angular/material/chips';
-import { MatDividerModule } from '@angular/material/divider';
+import { MatTabsModule } from '@angular/material/tabs';
+import { Route, RouterModule } from '@angular/router';
+import { ExampleComponent } from './example.component';
 import { MatMomentDateModule } from '@angular/material-moment-adapter';
+import { CommonModule } from '@angular/common';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatMenuModule } from '@angular/material/menu';
 import { FuseHighlightModule } from '@fuse/components/highlight';
 import { SharedModule } from 'app/shared/shared.module';
-import { MatMenuModule } from '@angular/material/menu';
-import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 
 const exampleRoutes: Route[] = [
     {
-        path     : '',
+        path: '',
         component: ExampleComponent
     }
 ];
@@ -29,7 +30,7 @@ const exampleRoutes: Route[] = [
     declarations: [
         ExampleComponent
     ],
-    imports     : [
+    imports: [
         RouterModule.forChild(exampleRoutes),
         CommonModule,
         MatIconModule,
@@ -46,9 +47,8 @@ const exampleRoutes: Route[] = [
         MatMenuModule,
         MatMomentDateModule,
         FuseHighlightModule,
-        SharedModule
+        SharedModule,
+        MatTabsModule,
     ]
 })
-export class ExampleModule
-{
-}
+export class ExampleModule { }
