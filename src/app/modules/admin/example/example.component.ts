@@ -1,16 +1,20 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 
 @Component({
     selector     : 'example',
     templateUrl  : './example.component.html',
     encapsulation: ViewEncapsulation.None
 })
-export class ExampleComponent
-{
-    /**
-     * Constructor
-     */
-    constructor()
-    {
+export class ExampleComponent implements OnInit{
+    
+    constructor(){}
+
+    ngOnInit(): void {}
+
+    closeButton(){
+
+    }
+    toggleButton(){
+        // this.toggle=true;
     }
 }
