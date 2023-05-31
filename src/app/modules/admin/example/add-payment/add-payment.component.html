@@ -1,0 +1,102 @@
+<div class="flex flex-col max-w-7xl max-h-screen -m-6">
+
+    <!-- Header -->
+    <div class="flex flex-0 items-center justify-between h-16 pr-3 sm:pr-5 pl-6 sm:pl-8 bg-primary text-on-primary">
+        <div class="text-lg font-medium">Add Payment</div>
+        <button
+            mat-icon-button
+            [tabIndex]="-1"
+            (click)="close()"
+            >
+            <mat-icon
+                class="text-current"
+                [svgIcon]="'heroicons_outline:x'"></mat-icon>
+        </button>
+    </div>
+
+    <!-- Compose form -->
+    <form class="flex flex-col flex-auto p-6 sm:p-8 overflow-y-auto">
+        <div class="flex flex-wrap pb-4 border-b border-gray-200">
+            <mat-form-field class="fuse-mat-dense w-full md:w-1/2">
+                <mat-label class="text-sm">Filter invoice by customer</mat-label>
+                <mat-select [placeholder]="'Item-1'">
+                    <mat-option value="Item-1">Nothing Selected</mat-option>
+                    <mat-option value="Item-2">Item2</mat-option>
+                    <mat-option value="Item-2">Item3</mat-option>
+                    <mat-option value="Item-3">Item4</mat-option>
+                    <mat-option value="Item-3">Item5</mat-option>
+                    <mat-option value="Item-3">Item6</mat-option>
+                    <mat-option value="Item-3">Item7</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <div class="w-full overflow-x-auto my-5 pb-1">
+                <table class="w-full text-sm text-left whitespace-nowrap">
+                    <thead>
+                        <tr>
+                            <th class="p-2 border border-gray-200">Invoice Number #</th>
+                            <th class="p-2 border border-gray-200">Payment Date</th>
+                            <th class="p-2 border border-gray-200">Payment Mode</th>
+                            <th class="p-2 border border-gray-200">Transaction Id</th>
+                            <th class="p-2 border border-gray-200">Amount received</th>
+                            <th class="p-2 border border-gray-200">Invoice Balance Due</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="p-2 border border-gray-200">
+                                <a href="#" class="text-blue-600">INV-000001</a>
+                                <span class="block">Scale Brothers Group Pvt Ltd</span>
+                            </td>
+                            <td class="p-2 border border-gray-200">
+                                <mat-form-field class="fuse-mat-dense w-full -mb-4">
+                                    <input matInput [matDatepicker]="picker2">
+                                    <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                                    <mat-datepicker #picker2></mat-datepicker>
+                                </mat-form-field>
+                            </td>
+                            <td class="p-2 border border-gray-200">
+                                <mat-form-field class="fuse-mat-dense w-full -mb-4">
+                                    <mat-select class="text-sm">
+                                        <mat-option value="no-dis">NO Discount</mat-option>
+                                        <mat-option value="dis1">Discount 50%</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </td>
+                            <td class="p-2 border border-gray-200">
+                                <mat-form-field class="fuse-mat-dense w-full -mb-4">
+                                    <input matInput>
+                                </mat-form-field>
+                            </td>
+                            <td class="p-2 border border-gray-200">
+                                <mat-form-field class="fuse-mat-dense w-full -mb-4">
+                                    <input matInput>
+                                </mat-form-field>
+                            </td>
+                            <td class="p-2 border border-gray-200">
+                                <span>18,000.00</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>     
+            <mat-checkbox [color]="'primary'">Do not send invoice payment recorded email to customer contacts</mat-checkbox>         
+        </div>        
+        <div class="flex items-center justify-end mt-4 space-x-4">
+            <!-- Discard -->
+            <button
+                class="ml-auto sm:ml-0"
+                mat-stroked-button 
+                (click)="close()"
+                >
+                Close
+            </button>
+            <!-- Send -->
+            <button
+                class="order-first sm:order-last"
+                mat-flat-button
+                [color]="'primary'">
+                Save
+            </button>
+        </div>
+    </form>
+</div>

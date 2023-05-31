@@ -18,6 +18,13 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatMenuModule } from '@angular/material/menu';
 import { FuseHighlightModule } from '@fuse/components/highlight';
 import { SharedModule } from 'app/shared/shared.module';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { ProposalAddItemsComponent } from './proposal-add-items/proposal-add-items.component';
+import { BillAddComponent } from './bill-add/bill-add.component';
+import { AddPaymentComponent } from './add-payment/add-payment.component';
+import { FuseScrollbarModule } from '@fuse/directives/scrollbar';
+import { FuseScrollResetModule } from '@fuse/directives/scroll-reset';
+import { MatDialogModule } from '@angular/material/dialog';
 
 const exampleRoutes: Route[] = [
     {
@@ -28,7 +35,11 @@ const exampleRoutes: Route[] = [
 
 @NgModule({
     declarations: [
-        ExampleComponent
+        ExampleComponent,
+        ProposalAddItemsComponent,
+        BillAddComponent, 
+        AddPaymentComponent,               
+        // BillAddComponent,
     ],
     imports: [
         RouterModule.forChild(exampleRoutes),
@@ -49,6 +60,10 @@ const exampleRoutes: Route[] = [
         FuseHighlightModule,
         SharedModule,
         MatTabsModule,
+        MatCheckboxModule,
+        MatDialogModule,
+        FuseScrollbarModule,
+        FuseScrollResetModule,
     ]
 })
 export class ExampleModule { }

@@ -1,0 +1,88 @@
+<div class="flex flex-col max-w-xl md:min-w-160 max-h-screen -m-6">
+
+    <!-- Compose form -->
+    <form class="flex flex-col flex-auto p-6 sm:p-8 overflow-y-auto">
+        <div class="flex flex-wrap pb-2 mb-4 border-b border-gray-200">
+            <mat-form-field class="fuse-mat-dense w-full">
+                <mat-label class="flex items-center text-sm">
+                    <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                    Street
+                </mat-label>
+                <textarea matInput [rows]="2" matTextareaAutosize></textarea>
+            </mat-form-field>
+            <mat-form-field class="fuse-mat-textarea w-full">
+                <mat-label class="text-sm">City</mat-label>
+                <input matInput>
+            </mat-form-field>
+            <mat-form-field class="fuse-mat-textarea w-full">
+                <mat-label class="text-sm">State</mat-label>
+                <input matInput>
+            </mat-form-field>
+            <mat-form-field class="fuse-mat-textarea w-full">
+                <mat-label class="text-sm">Zip Code</mat-label>
+                <input matInput>
+            </mat-form-field>
+            <mat-form-field class="fuse-mat-dense w-full">
+                <mat-label class="text-sm">Country</mat-label>
+                <mat-select [placeholder]="'Country'" [value]="'Country-1'">
+                    <mat-option value="Country-1">No Country</mat-option>
+                    <mat-option value="Country-2">INDIA</mat-option>
+                    <mat-option value="Country-2">UK</mat-option>
+                    <mat-option value="Country-2">USA</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="flex items-center mb-4">
+            <div class="w-8/12 pr-2 space-y-2">
+                <mat-checkbox [color]="'primary'" class="example-margin text-sm block">Shipping Address</mat-checkbox>
+                <mat-checkbox [color]="'primary'" class="example-margin text-sm block">Show shipping details in estimate</mat-checkbox>
+            </div>
+            <div class="w-4/12 pl-2 text-right">
+                <span class="flex items-center justify-center w-8 h-8 border border-gray-300 rounded-md ml-auto">
+                    <mat-icon class="icon-size-6" [color]="'primary'" svgIcon="heroicons_outline:user-circle"></mat-icon>
+                </span>
+            </div>
+        </div>
+        <!-- shipping & usericon click and show shipping details 2 start-->
+        <div class="flex flex-wrap pb-2">
+            <mat-form-field class="fuse-mat-dense w-full">
+                <mat-label class="flex items-center text-sm">
+                    <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                    Street
+                </mat-label>
+                <textarea matInput [rows]="2" matTextareaAutosize></textarea>
+            </mat-form-field>
+            <mat-form-field class="fuse-mat-textarea w-full">
+                <mat-label class="text-sm">City</mat-label>
+                <input matInput>
+            </mat-form-field>
+            <mat-form-field class="fuse-mat-textarea w-full">
+                <mat-label class="text-sm">State</mat-label>
+                <input matInput>
+            </mat-form-field>
+            <mat-form-field class="fuse-mat-textarea w-full">
+                <mat-label class="text-sm">Zip Code</mat-label>
+                <input matInput>
+            </mat-form-field>
+            <mat-form-field class="fuse-mat-dense w-full">
+                <mat-label class="text-sm">Country</mat-label>
+                <mat-select [placeholder]="'Country'" [value]="'Country-1'">
+                    <mat-option value="Country-1">No Country</mat-option>
+                    <mat-option value="Country-2">INDIA</mat-option>
+                    <mat-option value="Country-2">UK</mat-option>
+                    <mat-option value="Country-2">USA</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <!-- shipping details 2 end  -->
+        <div class="flex items-center justify-end mt-4 sm:mt-0 space-x-4">
+            <!-- Apply -->
+            <button
+                class="order-first sm:order-last"
+                mat-flat-button
+                [color]="'primary'">
+                Apply
+            </button>
+        </div>
+    </form>
+</div>

@@ -488,7 +488,6 @@
             </div>
         </div>
     </div>
-<<<<<<< HEAD
 
 
     <!-- Customer -->
@@ -540,7 +539,7 @@
     </div>
     <!-- Customer 2.1-->
     <!-- Leads Overview -->
-    <div class="bg-card shadow overflow-hidden">
+    <div class="bg-card shadow overflow-hidden" *ngIf="false">
         <div class="p-4 py-3 border-b border-black/400">
             <p class="text-lg md:text-xl">Profile</p>
         </div>
@@ -929,301 +928,1924 @@
     </div>
 
     <!-- Sales -->
-    <!-- PROPOSAL -->
-    <div class="bg-card w-full">
-        <!-- switch to pipeline -->
-        <div class="w-full flex items-center p-5 border-b border-gray-200" *ngIf="false">
-            <div class="flex flex-wrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
-                <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">New Proposal</a>
-                <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-black bg-gray-200 rounded uppercase hover:opacity-90">Switch to Pipeline</a>
+        <!-- PROPOSAL -->
+        <div class="w-full" *ngIf="false">
+            <!-- switch to pipeline -->
+            <div class="w-full flex items-center p-5 border-b border-gray-200 bg-card">
+                <div class="flex flex-wrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
+                    <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">New Proposal</a>
+                    <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-black bg-gray-200 rounded uppercase hover:opacity-90">Switch to Pipeline</a>
+                </div>
+                <div class="sm:ml-auto ml-4 flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
+                    <a href="#" class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                        <mat-icon class="icon-size-4" svgIcon="heroicons_outline:chevron-double-left"></mat-icon>
+                        <mat-icon class="icon-size-4 hidden" svgIcon="heroicons_outline:chevron-double-right"></mat-icon>
+                    </a>
+                    <a href="#" class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                        <mat-icon class="icon-size-4" svgIcon="heroicons_solid:filter"></mat-icon>
+                    </a>
+                </div>
             </div>
-            <div class="sm:ml-auto ml-4 flex space-x-2">
-                <a href="#" class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
-                    <mat-icon class="icon-size-4" svgIcon="heroicons_outline:chevron-double-left"></mat-icon>
-                    <mat-icon class="icon-size-4 hidden" svgIcon="heroicons_outline:chevron-double-right"></mat-icon>
-                </a>
-                <a href="#" class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
-                    <mat-icon class="icon-size-4" svgIcon="heroicons_solid:filter"></mat-icon>
-                </a>
+            <!-- Switch to list  -->
+            <div class="w-full flex flex-col sm:flex-row items-center justify-between p-5 border-b border-gray-200 bg-card">
+                <div class="flex flex-wrap sm:flex-nowrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
+                    <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase whitespace-nowrap hover:opacity-90">New Proposal</a>
+                    <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-black bg-gray-200 rounded uppercase whitespace-nowrap hover:opacity-90">Switch to List</a>
+                </div>
+                <div class="sm:ml-4 w-full max-w-lg pt-2 sm:p-0">
+                    <input type="text" class="p-3 py-2 focus:border-blue-600 w-full border border-gray-300 rounded-md">
+                </div>
             </div>
-        </div>
-        <!-- Switch to list  -->
-        <div class="w-full flex flex-col sm:flex-row items-center justify-between p-5 border-b border-gray-200" *ngIf="false">
-            <div class="flex flex-wrap sm:flex-nowrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
-                <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase whitespace-nowrap hover:opacity-90">New Proposal</a>
-                <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-black bg-gray-200 rounded uppercase whitespace-nowrap hover:opacity-90">Switch to List</a>
-            </div>
-            <div class="sm:ml-4 w-full max-w-lg pt-2 sm:p-0">
-                <input type="text" class="p-3 py-2 focus:border-blue-600 w-full border border-gray-300 rounded-md">
-            </div>
-        </div>
-        <!-- Switch to list details -->
-        <div class="p-5 w-full block" *ngIf="false">
-            <div class="flex items-center flex-wrap -mx-2">
-                <span class="inline-block p-2 font-bold text-black/80">Sort By:</span>
-                <a href="#" class="flex items-center px-2 text-xs sm:text-sm text-blue-600 hover:opacity-80 border-r-2 border-gray-300">
-                    <mat-icon class="icon-size-4 mr-1 text-blue-600" svgIcon="heroicons_solid:sort-descending"></mat-icon>
-                    Date Created
-                </a>
-                <a href="#" class="flex items-center px-2 text-xs sm:text-sm text-blue-600 hover:opacity-80 border-r-2 border-gray-300">
-                    <mat-icon class="icon-size-4 mr-1 text-blue-600" svgIcon="heroicons_solid:sort-descending"></mat-icon>
-                    Proposal Date
-                </a>
-                <a href="#" class="flex items-center px-2 text-xs sm:text-sm text-blue-600 hover:opacity-80 border-r-2 border-gray-300">
-                    <mat-icon class="icon-size-4 mr-1 text-blue-600" svgIcon="heroicons_solid:sort-descending"></mat-icon>
-                    Pipeline Order
-                </a>
-                <a href="#" class="flex items-center px-2 text-xs sm:text-sm text-blue-600 hover:opacity-80">
-                    <mat-icon class="icon-size-4 mr-1 text-blue-600" svgIcon="heroicons_solid:sort-descending"></mat-icon>
-                    Open Till
-                </a>
-            </div>
-            <div class="w-full overflow-x-auto overflow-hidden mt-6">
-                <div class="space-x-2 inline-flex pb-3">
-                    <div class="w-64 h-100 md:w-80 md:h-[calc(100vh-400px)] bg-gray-200 rounded-md border border-gray-200 overflow-hidden">
-                        <div class="sticky z-20 top-0 w-full p-2.5 bg-white overflow-hidden">
-                            <span class="block w-11/12 text-sm">Draft - 0 Proposals</span>
-                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 top-0 rotate-45 bg-slate-800"></span>
-                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 bottom-0 -rotate-45 bg-slate-800"></span>
+            <!-- Switch to list details -->
+            <div class="p-5 w-full block bg-card">
+                <div class="flex items-center flex-wrap -mx-2">
+                    <span class="inline-block p-2 font-bold text-black/80 dark:text-white">Sort By:</span>
+                    <a href="#" class="flex items-center px-2 text-xs sm:text-sm text-blue-600 hover:opacity-80 border-r-2 border-gray-300">
+                        <mat-icon class="icon-size-4 mr-1 text-blue-600" svgIcon="heroicons_solid:sort-descending"></mat-icon>
+                        Date Created
+                    </a>
+                    <a href="#" class="flex items-center px-2 text-xs sm:text-sm text-blue-600 hover:opacity-80 border-r-2 border-gray-300">
+                        <mat-icon class="icon-size-4 mr-1 text-blue-600" svgIcon="heroicons_solid:sort-descending"></mat-icon>
+                        Proposal Date
+                    </a>
+                    <a href="#" class="flex items-center px-2 text-xs sm:text-sm text-blue-600 hover:opacity-80 border-r-2 border-gray-300">
+                        <mat-icon class="icon-size-4 mr-1 text-blue-600" svgIcon="heroicons_solid:sort-descending"></mat-icon>
+                        Pipeline Order
+                    </a>
+                    <a href="#" class="flex items-center px-2 text-xs sm:text-sm text-blue-600 hover:opacity-80">
+                        <mat-icon class="icon-size-4 mr-1 text-blue-600" svgIcon="heroicons_solid:sort-descending"></mat-icon>
+                        Open Till
+                    </a>
+                </div>
+                <div class="w-full overflow-x-auto overflow-hidden mt-6">
+                    <div class="space-x-2 inline-flex pb-3">
+                        <div class="w-64 h-100 md:w-80 md:h-[calc(100vh-400px)] bg-gray-200 rounded-md border border-gray-200 overflow-hidden">
+                            <div class="sticky z-20 top-0 w-full p-2.5 bg-white overflow-hidden">
+                                <span class="block w-11/12 text-sm dark:text-black">Draft - 0 Proposals</span>
+                                <span class="absolute w-10 h-15 right-0 translate-x-1/2 top-0 rotate-45 bg-slate-800"></span>
+                                <span class="absolute w-10 h-15 right-0 translate-x-1/2 bottom-0 -rotate-45 bg-slate-800"></span>
+                            </div>
+                            <div class="h-full">
+        
+                            </div>
                         </div>
-                        <div class="h-full">
-    
+                        <div class="w-64 h-100 md:w-80 md:h-[calc(100vh-400px)] bg-gray-200 rounded-md border border-gray-200 overflow-hidden">
+                            <div class="sticky z-20 top-0 w-full p-2.5 bg-blue-600 overflow-hidden">
+                                <span class="block w-11/12 text-sm text-white">Sent - 0 Proposals</span>
+                                <span class="absolute w-10 h-15 right-0 translate-x-1/2 top-0 rotate-45 bg-slate-800"></span>
+                                <span class="absolute w-10 h-15 right-0 translate-x-1/2 bottom-0 -rotate-45 bg-slate-800"></span>
+                            </div>
+                            <div class="h-full">
+        
+                            </div>
+                        </div>
+                        <div class="w-64 h-100 md:w-80 md:h-[calc(100vh-400px)] bg-gray-200 rounded-md border border-gray-200 overflow-hidden">
+                            <div class="sticky z-20 top-0 w-full p-2.5 bg-white overflow-hidden">
+                                <span class="block w-11/12 text-sm dark:text-black">Open - 0 Proposals</span>
+                                <span class="absolute w-10 h-15 right-0 translate-x-1/2 top-0 rotate-45 bg-slate-800"></span>
+                                <span class="absolute w-10 h-15 right-0 translate-x-1/2 bottom-0 -rotate-45 bg-slate-800"></span>
+                            </div>
+                            <div class="h-full">
+        
+                            </div>
+                        </div>
+                        <div class="w-64 h-100 md:w-80 md:h-[calc(100vh-400px)] bg-gray-200 rounded-md border border-gray-200 overflow-hidden">
+                            <div class="sticky z-20 top-0 w-full p-2.5 bg-blue-600 overflow-hidden">
+                                <span class="block w-11/12 text-sm text-white">Revised - 0 Proposals</span>
+                                <span class="absolute w-10 h-15 right-0 translate-x-1/2 top-0 rotate-45 bg-slate-800"></span>
+                                <span class="absolute w-10 h-15 right-0 translate-x-1/2 bottom-0 -rotate-45 bg-slate-800"></span>
+                            </div>
+                            <div class="h-full">
+        
+                            </div>
+                        </div>
+                        <div class="w-64 h-100 md:w-80 md:h-[calc(100vh-400px)] bg-gray-200 rounded-md border border-gray-200 overflow-hidden">
+                            <div class="sticky z-20 top-0 w-full p-2.5 bg-red-600 overflow-hidden">
+                                <span class="block w-11/12 text-sm text-white">Declined - 0 Proposals</span>
+                                <span class="absolute w-10 h-15 right-0 translate-x-1/2 top-0 rotate-45 bg-slate-800"></span>
+                                <span class="absolute w-10 h-15 right-0 translate-x-1/2 bottom-0 -rotate-45 bg-slate-800"></span>
+                            </div>
+                            <div class="h-full">
+        
+                            </div>
+                        </div>
+                        <div class="w-64 h-100 md:w-80 md:h-[calc(100vh-400px)] bg-gray-200 rounded-md border border-gray-200 overflow-hidden">
+                            <div class="sticky z-20 top-0 w-full p-2.5 bg-green-600 overflow-hidden">
+                                <span class="block w-11/12 text-sm text-white">Accepted - 0 Proposals</span>
+                                <span class="absolute w-10 h-15 right-0 translate-x-1/2 top-0 rotate-45 bg-slate-800"></span>
+                                <span class="absolute w-10 h-15 right-0 translate-x-1/2 bottom-0 -rotate-45 bg-slate-800"></span>
+                            </div>
+                            <div class="h-full">
+        
+                            </div>
                         </div>
                     </div>
-                    <div class="w-64 h-100 md:w-80 md:h-[calc(100vh-400px)] bg-gray-200 rounded-md border border-gray-200 overflow-hidden">
-                        <div class="sticky z-20 top-0 w-full p-2.5 bg-blue-600 overflow-hidden">
-                            <span class="block w-11/12 text-sm text-white">Sent - 0 Proposals</span>
-                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 top-0 rotate-45 bg-slate-800"></span>
-                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 bottom-0 -rotate-45 bg-slate-800"></span>
-                        </div>
-                        <div class="h-full">
-    
+                </div>  
+            </div>
+            <!-- New Proposal details -->
+            <div class="w-full space-y-6">
+                <div class="flex items-start flex-wrap p-6 bg-card">
+                    <div class="md:pr-5 w-full flex items-baseline flex-wrap md:w-1/2 md:border-r border-gray-300">
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="flex items-center text-sm">
+                                <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                                Subject
+                            </mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="flex items-center text-sm">
+                                <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                                Related
+                            </mat-label>
+                            <mat-select [placeholder]="'Language'">
+                                <mat-option value="language-1">System default</mat-option>
+                                <mat-option value="language-2">Language 2</mat-option>
+                                <mat-option value="language-2">Language 3</mat-option>
+                                <mat-option value="language-3">Language 4</mat-option>
+                                <mat-option value="language-3">Language 5</mat-option>
+                                <mat-option value="language-3">Language 6</mat-option>
+                                <mat-option value="language-3">Language 7</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
+                            <mat-label class="flex items-center text-sm">
+                                <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                                Date
+                            </mat-label>
+                            <input matInput [matDatepicker]="picker1">
+                            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                            <mat-datepicker #picker1></mat-datepicker>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
+                            <mat-label class="text-sm">Open Till</mat-label>
+                            <input matInput [matDatepicker]="picker2">
+                            <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                            <mat-datepicker #picker2></mat-datepicker>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
+                            <mat-label class="flex items-center text-sm">
+                                <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                                Currency
+                            </mat-label>
+                            <mat-select [placeholder]="'Currency'">
+                                <mat-option value="Currency-1">System default</mat-option>
+                                <mat-option value="Currency-2">Currency 2</mat-option>
+                                <mat-option value="Currency-2">Currency 3</mat-option>
+                                <mat-option value="Currency-3">Currency 4</mat-option>
+                                <mat-option value="Currency-3">Currency 5</mat-option>
+                                <mat-option value="Currency-3">Currency 6</mat-option>
+                                <mat-option value="Currency-3">Currency 7</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
+                            <mat-label class="text-sm">Discount Type</mat-label>
+                            <mat-select [placeholder]="'discount'">
+                                <mat-option value="discount-1">Discount Type</mat-option>
+                                <mat-option value="discount-2">discount 2</mat-option>
+                                <mat-option value="discount-2">discount 3</mat-option>
+                                <mat-option value="discount-3">discount 4</mat-option>
+                                <mat-option value="discount-3">discount 5</mat-option>
+                                <mat-option value="discount-3">discount 6</mat-option>
+                                <mat-option value="discount-3">discount 7</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="text-sm">Tag</mat-label>
+                            <mat-chip-list #chipList02>
+                                <mat-chip
+                                    [removable]="true"
+                                    [selectable]="true">
+                                    Lemon
+                                    <mat-icon
+                                        class="icon-size-5"
+                                        matChipRemove
+                                        [svgIcon]="'heroicons_solid:minus-circle'"></mat-icon>
+                                </mat-chip>
+                                <mat-chip
+                                    [removable]="true"
+                                    [selectable]="true">
+                                    Lime
+                                    <mat-icon
+                                        class="icon-size-5"
+                                        matChipRemove
+                                        [svgIcon]="'heroicons_solid:minus-circle'"></mat-icon>
+                                </mat-chip>
+                                <mat-chip
+                                    [removable]="true"
+                                    [selectable]="true">
+                                    Apple
+                                    <mat-icon
+                                        class="icon-size-5"
+                                        matChipRemove
+                                        [svgIcon]="'heroicons_solid:minus-circle'"></mat-icon>
+                                </mat-chip>
+                                <input [placeholder]="'New fruit...'" [matChipInputFor]="chipList02">
+                            </mat-chip-list>
+                        </mat-form-field>
+                        <div class="pb-4">
+                            <span class="block text-sm mb-1">Allow Comments</span>
+                            <mat-slide-toggle class="text-green-600" [color]="'primary'"></mat-slide-toggle>
                         </div>
                     </div>
-                    <div class="w-64 h-100 md:w-80 md:h-[calc(100vh-400px)] bg-gray-200 rounded-md border border-gray-200 overflow-hidden">
-                        <div class="sticky z-20 top-0 w-full p-2.5 bg-white overflow-hidden">
-                            <span class="block w-11/12 text-sm">Open - 0 Proposals</span>
-                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 top-0 rotate-45 bg-slate-800"></span>
-                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 bottom-0 -rotate-45 bg-slate-800"></span>
-                        </div>
-                        <div class="h-full">
-    
-                        </div>
+                    <div class="md:pl-5 w-full flex items-baseline flex-wrap md:w-1/2">
+                        <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
+                            <mat-label class="text-sm">Status</mat-label>
+                            <mat-select [placeholder]="'Draft'">
+                                <mat-option value="Draft-1">Draft</mat-option>
+                                <mat-option value="Draft-2">Draft 2</mat-option>
+                                <mat-option value="Draft-2">Draft 3</mat-option>
+                                <mat-option value="Draft-3">Draft 4</mat-option>
+                                <mat-option value="Draft-3">Draft 5</mat-option>
+                                <mat-option value="Draft-3">Draft 6</mat-option>
+                                <mat-option value="Draft-3">Draft 7</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
+                            <mat-label class="text-sm">Assigned</mat-label>
+                            <mat-select [placeholder]="'Assigned'">
+                                <mat-option value="Assigned-1">Assigned Type</mat-option>
+                                <mat-option value="Assigned-2">Assigned 2</mat-option>
+                                <mat-option value="Assigned-2">Assigned 3</mat-option>
+                                <mat-option value="Assigned-3">Assigned 4</mat-option>
+                                <mat-option value="Assigned-3">Assigned 5</mat-option>
+                                <mat-option value="Assigned-3">Assigned 6</mat-option>
+                                <mat-option value="Assigned-3">Assigned 7</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="flex items-center text-sm">
+                                <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                                To
+                            </mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-textarea w-full">
+                            <mat-label class="text-sm">Address</mat-label>
+                            <textarea matInput [rows]="3" matTextareaAutosize></textarea>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
+                            <mat-label class="text-sm">City</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
+                            <mat-label class="text-sm">State</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
+                            <mat-label class="text-sm">Country</mat-label>
+                            <mat-select [placeholder]="'Country'">
+                                <mat-option value="Country-1">Country</mat-option>
+                                <mat-option value="Country-2">Country 2</mat-option>
+                                <mat-option value="Country-2">Country 3</mat-option>
+                                <mat-option value="Country-3">Country 4</mat-option>
+                                <mat-option value="Country-3">Country 5</mat-option>
+                                <mat-option value="Country-3">Country 6</mat-option>
+                                <mat-option value="Country-3">Country 7</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
+                            <mat-label class="text-sm">Zip Code</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
+                            <mat-label class="flex items-center text-sm">
+                                <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                                Email
+                            </mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
+                            <mat-label class="text-sm">Phone</mat-label>
+                            <input matInput>
+                        </mat-form-field>
                     </div>
-                    <div class="w-64 h-100 md:w-80 md:h-[calc(100vh-400px)] bg-gray-200 rounded-md border border-gray-200 overflow-hidden">
-                        <div class="sticky z-20 top-0 w-full p-2.5 bg-blue-600 overflow-hidden">
-                            <span class="block w-11/12 text-sm text-white">Revised - 0 Proposals</span>
-                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 top-0 rotate-45 bg-slate-800"></span>
-                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 bottom-0 -rotate-45 bg-slate-800"></span>
+                </div>
+                <div class="p-6 bg-card">
+                    <div class="flex flex-wrap items-start -mx-2">
+                        <div class="w-full sm:w-1/2 px-2">
+                            <div class="flex items-center">
+                                <mat-form-field class="fuse-mat-dense w-full max-w-lg pr-2">
+                                    <mat-label class="text-sm">Status</mat-label>
+                                    <mat-select [placeholder]="'Draft'">
+                                        <mat-option value="Draft-1">Draft</mat-option>
+                                        <mat-option value="Draft-2">Draft 2</mat-option>
+                                        <mat-option value="Draft-2">Draft 3</mat-option>
+                                        <mat-option value="Draft-3">Draft 4</mat-option>
+                                        <mat-option value="Draft-3">Draft 5</mat-option>
+                                        <mat-option value="Draft-3">Draft 6</mat-option>
+                                        <mat-option value="Draft-3">Draft 7</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                                <span (click)="proposalAddItemsPop()" class="cursor-pointer mt-2 w-10 h-10 border border-gray-200 rounded-md flex items-center justify-center">
+                                    <mat-icon class="icon-size-6" svgIcon="heroicons_outline:plus-sm"></mat-icon>
+                                </span>
+                            </div>
                         </div>
-                        <div class="h-full">
-    
+                        <div class="w-full sm:w-1/2 px-2 flex flex-col lg:flex-row items-baseline space-x-1 justify-end pt-0 pb-3 sm:pb-0 sm:pt-6">
+                            <span class="text-sm font-semibold inline-block">Show quantity as:</span>
+                            <mat-radio-group aria-label="Select an option" class="space-x-3">
+                                <mat-radio-button [color]="'primary'" value="Qty" class="text-sm">Qty</mat-radio-button>
+                                <mat-radio-button [color]="'primary'" value="Hours" class="text-sm">Hours</mat-radio-button>
+                                <mat-radio-button [color]="'primary'" value="Qty/Hours" class="text-sm">Qty/Hours</mat-radio-button>
+                            </mat-radio-group>
                         </div>
-                    </div>
-                    <div class="w-64 h-100 md:w-80 md:h-[calc(100vh-400px)] bg-gray-200 rounded-md border border-gray-200 overflow-hidden">
-                        <div class="sticky z-20 top-0 w-full p-2.5 bg-red-600 overflow-hidden">
-                            <span class="block w-11/12 text-sm text-white">Declined - 0 Proposals</span>
-                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 top-0 rotate-45 bg-slate-800"></span>
-                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 bottom-0 -rotate-45 bg-slate-800"></span>
+                        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-2/12 px-2">
+                            <mat-form-field class="fuse-mat-textarea w-full">
+                                <mat-label class="text-sm flex items-center">
+                                    <mat-icon class="icon-size-4 mr-1" svgIcon="heroicons_solid:exclamation-circle"></mat-icon>
+                                    Item
+                                </mat-label>
+                                <textarea matInput [rows]="3" matTextareaAutosize></textarea>
+                            </mat-form-field>
                         </div>
-                        <div class="h-full">
-    
+                        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-3/12 px-2">
+                            <mat-form-field class="fuse-mat-textarea w-full">
+                                <mat-label class="text-sm">Description</mat-label>
+                                <textarea matInput [rows]="3" matTextareaAutosize></textarea>
+                            </mat-form-field>
                         </div>
-                    </div>
-                    <div class="w-64 h-100 md:w-80 md:h-[calc(100vh-400px)] bg-gray-200 rounded-md border border-gray-200 overflow-hidden">
-                        <div class="sticky z-20 top-0 w-full p-2.5 bg-green-600 overflow-hidden">
-                            <span class="block w-11/12 text-sm text-white">Accepted - 0 Proposals</span>
-                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 top-0 rotate-45 bg-slate-800"></span>
-                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 bottom-0 -rotate-45 bg-slate-800"></span>
+                        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/12 px-2">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">Qty</mat-label>
+                                <input matInput>
+                            </mat-form-field>
                         </div>
-                        <div class="h-full">
-    
+                        <div class="w-full sm:w-1/2 md:w-4/12 lg:w-1/4 xl:w-2/12 px-2">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">Rate</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                        </div>
+                        <div class="w-full sm:w-6/12 md:w-4/12 lg:w-1/4 xl:w-2/12 px-2">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">Tax</mat-label>
+                                <mat-select [placeholder]="'Tax'">
+                                    <mat-option value="Tax-1">System default</mat-option>
+                                    <mat-option value="Tax-2">Tax 2</mat-option>
+                                    <mat-option value="Tax-2">Tax 3</mat-option>
+                                    <mat-option value="Tax-3">Tax 4</mat-option>
+                                    <mat-option value="Tax-3">Tax 5</mat-option>
+                                    <mat-option value="Tax-3">Tax 6</mat-option>
+                                    <mat-option value="Tax-3">Tax 7</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                        <div class="w-10/12 sm:w-5/12 md:w-3/12 lg:w-1/4 xl:w-1/12 px-2">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">Amount</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                        </div>
+                        <div class="w-2/12 sm:w-1/12 md:w-1/12 lg:w-1/12 xl:w-1/12 p-2">
+                            <div class="w-full flex flex-col items-end space-y-3">
+                                <mat-label class="text-sm block mr-2">
+                                    <mat-icon svgIcon="mat_outline:settings" class="icon-size-5"></mat-icon>
+                                </mat-label>
+                                <mat-checkbox [color]="'primary'" class="example-margin"></mat-checkbox>
+                            </div>
+                        </div>
+                        <div class="w-full max-w-4xl flex flex-wrap p-2 pt-10 text-right ml-auto">
+                            <div class="w-9/12 sm:w-8/12 border-t border-blue-400 pl-0 p-4 sm:p-3">
+                                <p class="font-semibold text-sm">Sub Total :</p>
+                            </div>
+                            <div class="w-3/12 sm:w-4/12 border-t border-blue-400  pr-0 p-4 sm:p-3">
+                                <p class="text-sm">$0.00</p>
+                            </div>
+                            <div class="w-9/12 sm:w-8/12 border-t border-blue-400 pl-0 p-4 sm:p-3">
+                                <div class="flex flex-col sm:flex-row items-baseline justify-end sm:space-x-4">
+                                    <p class="text-sm font-semibold inline-block pb-1 sm:pb-0">Discount</p>
+                                    <mat-form-field class="fuse-mat-dense w-full max-w-xs -mb-4">
+                                        <input atInput [value]="'0'">
+                                        <mat-select [value]="'%'" matSuffix>
+                                            <mat-option [value]="'%'">%</mat-option>
+                                            <mat-option [value]="'Fixed Amount'">Fixed Amount</mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="w-3/12 sm:w-4/12 border-t border-blue-400  pr-0 p-4 sm:p-3">
+                                <p class="text-sm">-$0.00</p>
+                            </div>
+                            <div class="w-9/12 sm:w-8/12 border-t border-blue-400 pl-0 p-4 sm:p-3 -mb-4">
+                                <div class="flex flex-col sm:flex-row items-baseline justify-end sm:space-x-4">
+                                    <p class="text-sm font-semibold inline-block pb-1 sm:pb-0">Adjustment</p>
+                                    <mat-form-field class="fuse-mat-dense w-full max-w-xs">
+                                        <input matInput [value]="'0'">
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="w-3/12 sm:w-4/12 border-t border-blue-400  pr-0 p-4 sm:p-3">
+                                <p class="text-sm">-$0.00</p>
+                            </div>
+                            <div class="w-9/12 sm:w-8/12 border-t border-blue-400 pl-0 p-4 sm:p-3">
+                                <p class="font-semibold text-sm">Total :</p>
+                            </div>
+                            <div class="w-3/12 sm:w-4/12 border-t border-blue-400  pr-0 p-4 sm:p-3">
+                                <p class="text-sm">$0.00</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>  
+            </div>
         </div>
-        <!-- New Proposal details -->
-        <div class="w-full space-y-6">
-            <div class="flex items-start flex-wrap p-6">
-                <div class="md:pr-5 w-full flex items-baseline flex-wrap md:w-1/2 md:border-r border-gray-300">
-                    <mat-form-field class="fuse-mat-dense w-full">
-                        <mat-label class="flex items-center text-sm">
-                            <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
-                            Subject
-                        </mat-label>
-                        <input matInput>
-                    </mat-form-field>
-                    <mat-form-field class="fuse-mat-dense w-full">
-                        <mat-label class="flex items-center text-sm">
-                            <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
-                            Related
-                        </mat-label>
-                        <mat-select [placeholder]="'Language'">
-                            <mat-option value="language-1">System default</mat-option>
-                            <mat-option value="language-2">Language 2</mat-option>
-                            <mat-option value="language-2">Language 3</mat-option>
-                            <mat-option value="language-3">Language 4</mat-option>
-                            <mat-option value="language-3">Language 5</mat-option>
-                            <mat-option value="language-3">Language 6</mat-option>
-                            <mat-option value="language-3">Language 7</mat-option>
-                        </mat-select>
-                    </mat-form-field>
-                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
-                        <mat-label class="flex items-center text-sm">
-                            <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
-                            Date
-                        </mat-label>
-                        <input matInput [matDatepicker]="picker1">
-                        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
-                        <mat-datepicker #picker1></mat-datepicker>
-                    </mat-form-field>
-                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
-                        <mat-label class="text-sm">Open Till</mat-label>
-                        <input matInput [matDatepicker]="picker2">
-                        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
-                        <mat-datepicker #picker2></mat-datepicker>
-                    </mat-form-field>
-                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
-                        <mat-label class="flex items-center text-sm">
-                            <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
-                            Currency
-                        </mat-label>
-                        <mat-select [placeholder]="'Currency'">
-                            <mat-option value="Currency-1">System default</mat-option>
-                            <mat-option value="Currency-2">Currency 2</mat-option>
-                            <mat-option value="Currency-2">Currency 3</mat-option>
-                            <mat-option value="Currency-3">Currency 4</mat-option>
-                            <mat-option value="Currency-3">Currency 5</mat-option>
-                            <mat-option value="Currency-3">Currency 6</mat-option>
-                            <mat-option value="Currency-3">Currency 7</mat-option>
-                        </mat-select>
-                    </mat-form-field>
-                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
-                        <mat-label class="text-sm">Discount Type</mat-label>
-                        <mat-select [placeholder]="'discount'">
-                            <mat-option value="discount-1">Discount Type</mat-option>
-                            <mat-option value="discount-2">discount 2</mat-option>
-                            <mat-option value="discount-2">discount 3</mat-option>
-                            <mat-option value="discount-3">discount 4</mat-option>
-                            <mat-option value="discount-3">discount 5</mat-option>
-                            <mat-option value="discount-3">discount 6</mat-option>
-                            <mat-option value="discount-3">discount 7</mat-option>
-                        </mat-select>
-                    </mat-form-field>
-                    <mat-form-field class="fuse-mat-dense w-full">
-                        <mat-label class="text-sm">Tag</mat-label>
-                        <mat-chip-list #chipList02>
-                            <mat-chip
-                                [removable]="true"
-                                [selectable]="true">
-                                Lemon
-                                <mat-icon
-                                    class="icon-size-5"
-                                    matChipRemove
-                                    [svgIcon]="'heroicons_solid:minus-circle'"></mat-icon>
-                            </mat-chip>
-                            <mat-chip
-                                [removable]="true"
-                                [selectable]="true">
-                                Lime
-                                <mat-icon
-                                    class="icon-size-5"
-                                    matChipRemove
-                                    [svgIcon]="'heroicons_solid:minus-circle'"></mat-icon>
-                            </mat-chip>
-                            <mat-chip
-                                [removable]="true"
-                                [selectable]="true">
-                                Apple
-                                <mat-icon
-                                    class="icon-size-5"
-                                    matChipRemove
-                                    [svgIcon]="'heroicons_solid:minus-circle'"></mat-icon>
-                            </mat-chip>
-                            <input [placeholder]="'New fruit...'" [matChipInputFor]="chipList02">
-                        </mat-chip-list>
-                    </mat-form-field>
-                    <div class="pb-4">
-                        <span class="block text-sm mb-1">Allow Comments</span>
-                        <mat-slide-toggle class="text-green-600"></mat-slide-toggle>
+        <!-- PROPOSAL end -->
+
+        <!-- ESTIMATES -->
+        <div class="w-full" *ngIf="false">
+            <!-- View Quick Status start-->
+            <div class="p-5 bg-card border-b border-gray-200" [@expandCollapse]="show" *ngIf="show">
+                <div class="flex flex-wrap -mx-2">
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-[20%] p-2">
+                        <div class="p-3 w-full border border-gray-200 rounded-md text-center space-y-2">
+                            <p class="text-sm font-medium leading-none text-secondary">Draft</p>
+                            <span class="mt-2 font-medium text-2xl lg:text-3xl leading-none block">$0.00</span>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-[20%] p-2">
+                        <div class="p-3 w-full border border-gray-200 rounded-md text-center space-y-2">
+                            <p class="text-sm font-medium leading-none text-blue-500">Sent</p>
+                            <span class="mt-2 font-medium text-2xl lg:text-3xl leading-none block">$40,265.20</span>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-[20%] p-2">
+                        <div class="p-3 w-full border border-gray-200 rounded-md text-center space-y-2">
+                            <p class="text-sm font-medium leading-none text-orange-500">Expired</p>
+                            <span class="mt-2 font-medium text-2xl lg:text-3xl leading-none block">$0.00</span>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-[20%] p-2">
+                        <div class="p-3 w-full border border-gray-200 rounded-md text-center space-y-2">
+                            <p class="text-sm font-medium leading-none text-red-500">Declined</p>
+                            <span class="mt-2 font-medium text-2xl lg:text-3xl leading-none block">$6,655.00</span>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 xl:w-[20%] p-2">
+                        <div class="p-3 w-full border border-gray-200 rounded-md text-center space-y-2">
+                            <p class="text-sm font-medium leading-none text-green-500">Accepted</p>
+                            <span class="mt-2 font-medium text-2xl lg:text-3xl leading-none block">$181,570.69</span>
+                        </div>
+                    </div>
+                    <div class="w-full p-2">
+                        <div class="p-3 w-full border border-gray-200 rounded-md">
+                            <div class="flex flex-wrap -mx-1">
+                                <div class="w-full sm:w-1/2 md:w-1/3 xl:w-[20%] p-2">
+                                    <div class="p-3 w-full border border-gray-200 rounded-md">
+                                        <div class="flex items-start justify-between">
+                                            <span class="inline-block text-sm whitespace-nowrap overflow-hidden text-ellipsis w-full">Draft</span>
+                                            <span class="inline-block text-sm text-black">0/12</span>
+                                        </div>
+                                        <div class="flex flex-col items-center mt-2">
+                                            <div class="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+                                                <div class="bg-blue-600 h-4 rounded-full dark:bg-blue-500 text-xs text-center text-white" style="width: 45%">45%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full sm:w-1/2 md:w-1/3 xl:w-[20%] p-2">
+                                    <div class="p-3 w-full border border-gray-200 rounded-md">
+                                        <div class="flex items-start justify-between">
+                                            <span class="inline-block text-sm whitespace-nowrap overflow-hidden text-ellipsis w-full">Send</span>
+                                            <span class="inline-block text-sm text-black">0/12</span>
+                                        </div>
+                                        <div class="flex flex-col items-center mt-2">
+                                            <div class="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+                                                <div class="bg-blue-600 h-4 rounded-full dark:bg-blue-500 text-xs text-center text-white" style="width: 45%">45%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full sm:w-1/2 md:w-1/3 xl:w-[20%] p-2">
+                                    <div class="p-3 w-full border border-gray-200 rounded-md">
+                                        <div class="flex items-start justify-between">
+                                            <span class="inline-block text-sm whitespace-nowrap overflow-hidden text-ellipsis w-full">Expired</span>
+                                            <span class="inline-block text-sm text-black">0/12</span>
+                                        </div>
+                                        <div class="flex flex-col items-center mt-2">
+                                            <div class="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+                                                <div class="bg-orange-500 h-4 rounded-full dark:bg-orange-500 text-xs text-center text-white" style="width: 45%">45%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full sm:w-1/2 md:w-1/3 xl:w-[20%] p-2">
+                                    <div class="p-3 w-full border border-gray-200 rounded-md">
+                                        <div class="flex items-start justify-between">
+                                            <span class="inline-block text-sm whitespace-nowrap overflow-hidden text-ellipsis w-full">Declined</span>
+                                            <span class="inline-block text-sm text-black">0/12</span>
+                                        </div>
+                                        <div class="flex flex-col items-center mt-2">
+                                            <div class="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+                                                <div class="bg-red-500 h-4 rounded-full dark:bg-red-500 text-xs text-center text-white" style="width: 45%">45%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full sm:w-1/2 md:w-1/3 xl:w-[20%] p-2">  
+                                    <div class="p-3 w-full border border-gray-200 rounded-md">
+                                        <div class="flex items-start justify-between">
+                                            <span class="inline-block text-sm whitespace-nowrap overflow-hidden text-ellipsis w-full">Accepted</span>
+                                            <span class="inline-block text-sm text-black">0/12</span>
+                                        </div>
+                                        <div class="flex flex-col items-center mt-2">
+                                            <div class="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+                                                <div class="bg-green-500 h-4 rounded-full dark:bg-green-500 text-xs text-center text-white" style="width: 45%">45%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="md:pl-5 w-full flex items-baseline flex-wrap md:w-1/2">
-                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
-                        <mat-label class="text-sm">Status</mat-label>
-                        <mat-select [placeholder]="'Draft'">
-                            <mat-option value="Draft-1">Draft</mat-option>
-                            <mat-option value="Draft-2">Draft 2</mat-option>
-                            <mat-option value="Draft-2">Draft 3</mat-option>
-                            <mat-option value="Draft-3">Draft 4</mat-option>
-                            <mat-option value="Draft-3">Draft 5</mat-option>
-                            <mat-option value="Draft-3">Draft 6</mat-option>
-                            <mat-option value="Draft-3">Draft 7</mat-option>
-                        </mat-select>
-                    </mat-form-field>
-                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
-                        <mat-label class="text-sm">Assigned</mat-label>
-                        <mat-select [placeholder]="'Assigned'">
-                            <mat-option value="Assigned-1">Assigned Type</mat-option>
-                            <mat-option value="Assigned-2">Assigned 2</mat-option>
-                            <mat-option value="Assigned-2">Assigned 3</mat-option>
-                            <mat-option value="Assigned-3">Assigned 4</mat-option>
-                            <mat-option value="Assigned-3">Assigned 5</mat-option>
-                            <mat-option value="Assigned-3">Assigned 6</mat-option>
-                            <mat-option value="Assigned-3">Assigned 7</mat-option>
-                        </mat-select>
-                    </mat-form-field>
-                    <mat-form-field class="fuse-mat-dense w-full">
-                        <mat-label class="flex items-center text-sm">
-                            <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
-                            To
-                        </mat-label>
-                        <input matInput>
-                    </mat-form-field>
+            </div>
+            <!-- View Quick Status end -->
+
+            <!-- ESTIMATES to pipeline -->            
+            <div class="w-full flex items-center p-5 border-b border-gray-200 bg-card" >
+                <div class="flex flex-wrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
+                    <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">Create New Estimates</a>
+                    <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-black bg-gray-200 rounded uppercase hover:opacity-90">Switch to Pipeline</a>
+                </div>
+                <div class="sm:ml-auto ml-4 flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
+                    <button class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                        <mat-icon class="icon-size-4" svgIcon="heroicons_outline:chevron-double-left"></mat-icon>
+                        <mat-icon class="icon-size-4 hidden" svgIcon="heroicons_outline:chevron-double-right"></mat-icon>
+                    </button>
+                    <button (click)="togglequickview()" class="cursor-pointer flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                        <mat-icon class="icon-size-4" svgIcon="insert_chart_outlined"></mat-icon>
+                    </button>
+                    <button class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                        <mat-icon class="icon-size-4" svgIcon="heroicons_solid:filter"></mat-icon>
+                    </button>
+                </div>
+            </div>
+
+            <!-- ESTIMATES to list  -->
+            <div class="w-full flex flex-col sm:flex-row items-center justify-between p-5 border-b border-gray-200 bg-card">
+                <div class="flex flex-wrap sm:flex-nowrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
+                    <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase whitespace-nowrap hover:opacity-90">Create New Estimates</a>
+                    <a href="#" class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                        <mat-icon class="icon-size-4" svgIcon="insert_chart_outlined"></mat-icon>
+                    </a>
+                    <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-black bg-gray-200 rounded uppercase whitespace-nowrap hover:opacity-90">Switch to List</a>
+                </div>
+                <div class="sm:ml-4 w-full max-w-lg pt-2 sm:p-0">
+                    <input type="text" class="p-3 py-2 focus:border-blue-600 w-full border border-gray-300 rounded-md">
+                </div>
+            </div>
+
+            <!-- ESTIMATES to list details -->
+            <div class="p-5 w-full block bg-card">
+                <div class="flex items-center flex-wrap -mx-2">
+                    <span class="inline-block p-2 font-bold text-black/80 dark:text-white">Sort By:</span>
+                    <a href="#" class="flex items-center px-2 text-xs sm:text-sm text-blue-600 hover:opacity-80 border-r-2 border-gray-300">
+                        <mat-icon class="icon-size-4 mr-1 text-blue-600" svgIcon="heroicons_solid:sort-descending"></mat-icon>
+                        Date Created
+                    </a>
+                    <a href="#" class="flex items-center px-2 text-xs sm:text-sm text-blue-600 hover:opacity-80 border-r-2 border-gray-300">
+                        <mat-icon class="icon-size-4 mr-1 text-blue-600" svgIcon="heroicons_solid:sort-descending"></mat-icon>
+                        Proposal Date
+                    </a>
+                    <a href="#" class="flex items-center px-2 text-xs sm:text-sm text-blue-600 hover:opacity-80 border-r-2 border-gray-300">
+                        <mat-icon class="icon-size-4 mr-1 text-blue-600" svgIcon="heroicons_solid:sort-descending"></mat-icon>
+                        Pipeline Order
+                    </a>
+                    <a href="#" class="flex items-center px-2 text-xs sm:text-sm text-blue-600 hover:opacity-80">
+                        <mat-icon class="icon-size-4 mr-1 text-blue-600" svgIcon="heroicons_solid:sort-descending"></mat-icon>
+                        Open Till
+                    </a>
+                </div>
+                <div class="w-full overflow-x-auto overflow-hidden mt-6">
+                    <div class="space-x-2 inline-flex pb-3">
+                        <div class="w-64 h-100 sm:w-80 md:h-[calc(100vh-400px)] bg-gray-200 rounded-md border border-gray-200 overflow-hidden">
+                            <div class="sticky z-20 top-0 w-full p-2.5 bg-white overflow-hidden">
+                                <span class="block w-11/12 text-sm dark:text-black">Draft - 1 Estimates</span>
+                                <span class="absolute w-10 h-15 right-0 translate-x-1/2 top-0 rotate-45 bg-slate-800"></span>
+                                <span class="absolute w-10 h-15 right-0 translate-x-1/2 bottom-0 -rotate-45 bg-slate-800"></span>
+                            </div>
+                            <div class="h-[calc(100%-38px)] overflow-y-auto space-y-2 p-3">
+                                <div class="bg-card p-4">
+                                    <div class="flex justify-between">
+                                        <span class="font-semibold inline-block">EST-000002</span>
+                                        <mat-icon class="icon-size-5" svgIcon="heroicons_outline:pencil-alt"></mat-icon>
+                                    </div>
+                                    <a href="#" class="text-sm block py-3">Durga Mata Syntex Pvt Ltd.</a>
+                                    <div class="flex justify-between flex-col sm:flex-row space-y-1 sm:space-y-0">
+                                        <div class="text-sm">
+                                            <span class="block font-bold">Total:$2,419.20</span>
+                                            <span class="block">Estimate Date: 2023-05-24</span>
+                                            <span class="block">Expiry Date: 2023-05-31</span>
+                                        </div>
+                                        <span class="flex items-center">
+                                            <mat-icon class="icon-size-3 mr-1" svgIcon="heroicons_outline:link"></mat-icon>
+                                            <span class="text-xs">Notes:0</span>
+                                        </span>
+                                    </div>
+                                    <ul class="flex flex-wrap -mx-1 mt-3">
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Thread</li>
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Earthenware</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-card p-4">
+                                    <div class="flex justify-between">
+                                        <span class="font-semibold inline-block">EST-000002</span>
+                                        <mat-icon class="icon-size-5" svgIcon="heroicons_outline:pencil-alt"></mat-icon>
+                                    </div>
+                                    <a href="#" class="text-sm block py-3">Durga Mata Syntex Pvt Ltd.</a>
+                                    <div class="flex justify-between flex-col sm:flex-row space-y-1 sm:space-y-0">
+                                        <div class="text-sm">
+                                            <span class="block font-bold">Total:$2,419.20</span>
+                                            <span class="block">Estimate Date: 2023-05-24</span>
+                                            <span class="block">Expiry Date: 2023-05-31</span>
+                                        </div>
+                                        <span class="flex items-center">
+                                            <mat-icon class="icon-size-3 mr-1" svgIcon="heroicons_outline:link"></mat-icon>
+                                            <span class="text-xs">Notes:0</span>
+                                        </span>
+                                    </div>
+                                    <ul class="flex flex-wrap -mx-1 mt-3">
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Thread</li>
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Earthenware</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-card p-4">
+                                    <div class="flex justify-between">
+                                        <span class="font-semibold inline-block">EST-000002</span>
+                                        <mat-icon class="icon-size-5" svgIcon="heroicons_outline:pencil-alt"></mat-icon>
+                                    </div>
+                                    <a href="#" class="text-sm block py-3">Durga Mata Syntex Pvt Ltd.</a>
+                                    <div class="flex justify-between flex-col sm:flex-row space-y-1 sm:space-y-0">
+                                        <div class="text-sm">
+                                            <span class="block font-bold">Total:$2,419.20</span>
+                                            <span class="block">Estimate Date: 2023-05-24</span>
+                                            <span class="block">Expiry Date: 2023-05-31</span>
+                                        </div>
+                                        <span class="flex items-center">
+                                            <mat-icon class="icon-size-3 mr-1" svgIcon="heroicons_outline:link"></mat-icon>
+                                            <span class="text-xs">Notes:0</span>
+                                        </span>
+                                    </div>
+                                    <ul class="flex flex-wrap -mx-1 mt-3">
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Thread</li>
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Earthenware</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-card p-4">
+                                    <div class="flex justify-between">
+                                        <span class="font-semibold inline-block">EST-000002</span>
+                                        <mat-icon class="icon-size-5" svgIcon="heroicons_outline:pencil-alt"></mat-icon>
+                                    </div>
+                                    <a href="#" class="text-sm block py-3">Durga Mata Syntex Pvt Ltd.</a>
+                                    <div class="flex justify-between flex-col sm:flex-row space-y-1 sm:space-y-0">
+                                        <div class="text-sm">
+                                            <span class="block font-bold">Total:$2,419.20</span>
+                                            <span class="block">Estimate Date: 2023-05-24</span>
+                                            <span class="block">Expiry Date: 2023-05-31</span>
+                                        </div>
+                                        <span class="flex items-center">
+                                            <mat-icon class="icon-size-3 mr-1" svgIcon="heroicons_outline:link"></mat-icon>
+                                            <span class="text-xs">Notes:0</span>
+                                        </span>
+                                    </div>
+                                    <ul class="flex flex-wrap -mx-1 mt-3">
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Thread</li>
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Earthenware</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-card p-4">
+                                    <div class="flex justify-between">
+                                        <span class="font-semibold inline-block">EST-000002</span>
+                                        <mat-icon class="icon-size-5" svgIcon="heroicons_outline:pencil-alt"></mat-icon>
+                                    </div>
+                                    <a href="#" class="text-sm block py-3">Durga Mata Syntex Pvt Ltd.</a>
+                                    <div class="flex justify-between flex-col sm:flex-row space-y-1 sm:space-y-0">
+                                        <div class="text-sm">
+                                            <span class="block font-bold">Total:$2,419.20</span>
+                                            <span class="block">Estimate Date: 2023-05-24</span>
+                                            <span class="block">Expiry Date: 2023-05-31</span>
+                                        </div>
+                                        <span class="flex items-center">
+                                            <mat-icon class="icon-size-3 mr-1" svgIcon="heroicons_outline:link"></mat-icon>
+                                            <span class="text-xs">Notes:0</span>
+                                        </span>
+                                    </div>
+                                    <ul class="flex flex-wrap -mx-1 mt-3">
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Thread</li>
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Earthenware</li>
+                                    </ul>
+                                </div>
+                                <!-- load more button  -->
+                                <button class="w-full rounded bg-gray-300 uppercase text-slate-500 p-2">Load More</button>
+                            </div>
+                        </div>
+                        <div class="w-64 h-100 sm:w-80 md:h-[calc(100vh-400px)] bg-gray-200 rounded-md border border-gray-200 overflow-hidden">
+                            <div class="sticky z-20 top-0 w-full p-2.5 bg-blue-600 overflow-hidden">
+                                <span class="block w-11/12 text-sm text-white">Sent - 3 Estimates</span>
+                                <span class="absolute w-10 h-15 right-0 translate-x-1/2 top-0 rotate-45 bg-slate-800"></span>
+                                <span class="absolute w-10 h-15 right-0 translate-x-1/2 bottom-0 -rotate-45 bg-slate-800"></span>
+                            </div>
+                            <div class="h-[calc(100%-38px)] overflow-y-auto space-y-2 p-3">
+                                <div class="bg-card p-4">
+                                    <div class="flex justify-between">
+                                        <span class="font-semibold inline-block">EST-000002</span>
+                                        <mat-icon class="icon-size-5" svgIcon="heroicons_outline:pencil-alt"></mat-icon>
+                                    </div>
+                                    <a href="#" class="text-sm block py-3">Durga Mata Syntex Pvt Ltd.</a>
+                                    <div class="flex justify-between flex-col sm:flex-row space-y-1 sm:space-y-0">
+                                        <div class="text-sm">
+                                            <span class="block font-bold">Total:$2,419.20</span>
+                                            <span class="block">Estimate Date: 2023-05-24</span>
+                                            <span class="block">Expiry Date: 2023-05-31</span>
+                                        </div>
+                                        <span class="flex items-center">
+                                            <mat-icon class="icon-size-3 mr-1" svgIcon="heroicons_outline:link"></mat-icon>
+                                            <span class="text-xs">Notes:0</span>
+                                        </span>
+                                    </div>
+                                    <ul class="flex flex-wrap -mx-1 mt-3">
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Thread</li>
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Earthenware</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-card p-4">
+                                    <div class="flex justify-between">
+                                        <span class="font-semibold inline-block">EST-000002</span>
+                                        <mat-icon class="icon-size-5" svgIcon="heroicons_outline:pencil-alt"></mat-icon>
+                                    </div>
+                                    <a href="#" class="text-sm block py-3">Durga Mata Syntex Pvt Ltd.</a>
+                                    <div class="flex justify-between flex-col sm:flex-row space-y-1 sm:space-y-0">
+                                        <div class="text-sm">
+                                            <span class="block font-bold">Total:$2,419.20</span>
+                                            <span class="block">Estimate Date: 2023-05-24</span>
+                                            <span class="block">Expiry Date: 2023-05-31</span>
+                                        </div>
+                                        <span class="flex items-center">
+                                            <mat-icon class="icon-size-3 mr-1" svgIcon="heroicons_outline:link"></mat-icon>
+                                            <span class="text-xs">Notes:0</span>
+                                        </span>
+                                    </div>
+                                    <ul class="flex flex-wrap -mx-1 mt-3">
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Thread</li>
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Earthenware</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-card p-4">
+                                    <div class="flex justify-between">
+                                        <span class="font-semibold inline-block">EST-000002</span>
+                                        <mat-icon class="icon-size-5" svgIcon="heroicons_outline:pencil-alt"></mat-icon>
+                                    </div>
+                                    <a href="#" class="text-sm block py-3">Durga Mata Syntex Pvt Ltd.</a>
+                                    <div class="flex justify-between flex-col sm:flex-row space-y-1 sm:space-y-0">
+                                        <div class="text-sm">
+                                            <span class="block font-bold">Total:$2,419.20</span>
+                                            <span class="block">Estimate Date: 2023-05-24</span>
+                                            <span class="block">Expiry Date: 2023-05-31</span>
+                                        </div>
+                                        <span class="flex items-center">
+                                            <mat-icon class="icon-size-3 mr-1" svgIcon="heroicons_outline:link"></mat-icon>
+                                            <span class="text-xs">Notes:0</span>
+                                        </span>
+                                    </div>
+                                    <ul class="flex flex-wrap -mx-1 mt-3">
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Thread</li>
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Earthenware</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-card p-4">
+                                    <div class="flex justify-between">
+                                        <span class="font-semibold inline-block">EST-000002</span>
+                                        <mat-icon class="icon-size-5" svgIcon="heroicons_outline:pencil-alt"></mat-icon>
+                                    </div>
+                                    <a href="#" class="text-sm block py-3">Durga Mata Syntex Pvt Ltd.</a>
+                                    <div class="flex justify-between flex-col sm:flex-row space-y-1 sm:space-y-0">
+                                        <div class="text-sm">
+                                            <span class="block font-bold">Total:$2,419.20</span>
+                                            <span class="block">Estimate Date: 2023-05-24</span>
+                                            <span class="block">Expiry Date: 2023-05-31</span>
+                                        </div>
+                                        <span class="flex items-center">
+                                            <mat-icon class="icon-size-3 mr-1" svgIcon="heroicons_outline:link"></mat-icon>
+                                            <span class="text-xs">Notes:0</span>
+                                        </span>
+                                    </div>
+                                    <ul class="flex flex-wrap -mx-1 mt-3">
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Thread</li>
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Earthenware</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-card p-4">
+                                    <div class="flex justify-between">
+                                        <span class="font-semibold inline-block">EST-000002</span>
+                                        <mat-icon class="icon-size-5" svgIcon="heroicons_outline:pencil-alt"></mat-icon>
+                                    </div>
+                                    <a href="#" class="text-sm block py-3">Durga Mata Syntex Pvt Ltd.</a>
+                                    <div class="flex justify-between flex-col sm:flex-row space-y-1 sm:space-y-0">
+                                        <div class="text-sm">
+                                            <span class="block font-bold">Total:$2,419.20</span>
+                                            <span class="block">Estimate Date: 2023-05-24</span>
+                                            <span class="block">Expiry Date: 2023-05-31</span>
+                                        </div>
+                                        <span class="flex items-center">
+                                            <mat-icon class="icon-size-3 mr-1" svgIcon="heroicons_outline:link"></mat-icon>
+                                            <span class="text-xs">Notes:0</span>
+                                        </span>
+                                    </div>
+                                    <ul class="flex flex-wrap -mx-1 mt-3">
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Thread</li>
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Earthenware</li>
+                                    </ul>
+                                </div>
+                                <!-- load more button  -->
+                                <button class="w-full rounded bg-gray-300 uppercase text-slate-500 p-2">Load More</button>
+                            </div>
+                        </div>
+                        <div class="w-64 h-100 sm:w-80 md:h-[calc(100vh-400px)] bg-gray-200 rounded-md border border-gray-200 overflow-hidden">
+                            <div class="sticky z-20 top-0 w-full p-2.5 bg-orange-600 overflow-hidden">
+                                <span class="block w-11/12 text-sm text-white">Expired - 2 Estimates</span>
+                                <span class="absolute w-10 h-15 right-0 translate-x-1/2 top-0 rotate-45 bg-slate-800"></span>
+                                <span class="absolute w-10 h-15 right-0 translate-x-1/2 bottom-0 -rotate-45 bg-slate-800"></span>
+                            </div>
+                            <div class="h-[calc(100%-38px)] overflow-y-auto space-y-2 p-3">
+                                <div class="bg-card p-4">
+                                    <div class="flex justify-between">
+                                        <span class="font-semibold inline-block">EST-000002</span>
+                                        <mat-icon class="icon-size-5" svgIcon="heroicons_outline:pencil-alt"></mat-icon>
+                                    </div>
+                                    <a href="#" class="text-sm block py-3">Durga Mata Syntex Pvt Ltd.</a>
+                                    <div class="flex justify-between flex-col sm:flex-row space-y-1 sm:space-y-0">
+                                        <div class="text-sm">
+                                            <span class="block font-bold">Total:$2,419.20</span>
+                                            <span class="block">Estimate Date: 2023-05-24</span>
+                                            <span class="block">Expiry Date: 2023-05-31</span>
+                                        </div>
+                                        <span class="flex items-center">
+                                            <mat-icon class="icon-size-3 mr-1" svgIcon="heroicons_outline:link"></mat-icon>
+                                            <span class="text-xs">Notes:0</span>
+                                        </span>
+                                    </div>
+                                    <ul class="flex flex-wrap -mx-1 mt-3">
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Thread</li>
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Earthenware</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-card p-4">
+                                    <div class="flex justify-between">
+                                        <span class="font-semibold inline-block">EST-000002</span>
+                                        <mat-icon class="icon-size-5" svgIcon="heroicons_outline:pencil-alt"></mat-icon>
+                                    </div>
+                                    <a href="#" class="text-sm block py-3">Durga Mata Syntex Pvt Ltd.</a>
+                                    <div class="flex justify-between flex-col sm:flex-row space-y-1 sm:space-y-0">
+                                        <div class="text-sm">
+                                            <span class="block font-bold">Total:$2,419.20</span>
+                                            <span class="block">Estimate Date: 2023-05-24</span>
+                                            <span class="block">Expiry Date: 2023-05-31</span>
+                                        </div>
+                                        <span class="flex items-center">
+                                            <mat-icon class="icon-size-3 mr-1" svgIcon="heroicons_outline:link"></mat-icon>
+                                            <span class="text-xs">Notes:0</span>
+                                        </span>
+                                    </div>
+                                    <ul class="flex flex-wrap -mx-1 mt-3">
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Thread</li>
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Earthenware</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-card p-4">
+                                    <div class="flex justify-between">
+                                        <span class="font-semibold inline-block">EST-000002</span>
+                                        <mat-icon class="icon-size-5" svgIcon="heroicons_outline:pencil-alt"></mat-icon>
+                                    </div>
+                                    <a href="#" class="text-sm block py-3">Durga Mata Syntex Pvt Ltd.</a>
+                                    <div class="flex justify-between flex-col sm:flex-row space-y-1 sm:space-y-0">
+                                        <div class="text-sm">
+                                            <span class="block font-bold">Total:$2,419.20</span>
+                                            <span class="block">Estimate Date: 2023-05-24</span>
+                                            <span class="block">Expiry Date: 2023-05-31</span>
+                                        </div>
+                                        <span class="flex items-center">
+                                            <mat-icon class="icon-size-3 mr-1" svgIcon="heroicons_outline:link"></mat-icon>
+                                            <span class="text-xs">Notes:0</span>
+                                        </span>
+                                    </div>
+                                    <ul class="flex flex-wrap -mx-1 mt-3">
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Thread</li>
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Earthenware</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-card p-4">
+                                    <div class="flex justify-between">
+                                        <span class="font-semibold inline-block">EST-000002</span>
+                                        <mat-icon class="icon-size-5" svgIcon="heroicons_outline:pencil-alt"></mat-icon>
+                                    </div>
+                                    <a href="#" class="text-sm block py-3">Durga Mata Syntex Pvt Ltd.</a>
+                                    <div class="flex justify-between flex-col sm:flex-row space-y-1 sm:space-y-0">
+                                        <div class="text-sm">
+                                            <span class="block font-bold">Total:$2,419.20</span>
+                                            <span class="block">Estimate Date: 2023-05-24</span>
+                                            <span class="block">Expiry Date: 2023-05-31</span>
+                                        </div>
+                                        <span class="flex items-center">
+                                            <mat-icon class="icon-size-3 mr-1" svgIcon="heroicons_outline:link"></mat-icon>
+                                            <span class="text-xs">Notes:0</span>
+                                        </span>
+                                    </div>
+                                    <ul class="flex flex-wrap -mx-1 mt-3">
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Thread</li>
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Earthenware</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-card p-4">
+                                    <div class="flex justify-between">
+                                        <span class="font-semibold inline-block">EST-000002</span>
+                                        <mat-icon class="icon-size-5" svgIcon="heroicons_outline:pencil-alt"></mat-icon>
+                                    </div>
+                                    <a href="#" class="text-sm block py-3">Durga Mata Syntex Pvt Ltd.</a>
+                                    <div class="flex justify-between flex-col sm:flex-row space-y-1 sm:space-y-0">
+                                        <div class="text-sm">
+                                            <span class="block font-bold">Total:$2,419.20</span>
+                                            <span class="block">Estimate Date: 2023-05-24</span>
+                                            <span class="block">Expiry Date: 2023-05-31</span>
+                                        </div>
+                                        <span class="flex items-center">
+                                            <mat-icon class="icon-size-3 mr-1" svgIcon="heroicons_outline:link"></mat-icon>
+                                            <span class="text-xs">Notes:0</span>
+                                        </span>
+                                    </div>
+                                    <ul class="flex flex-wrap -mx-1 mt-3">
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Thread</li>
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Earthenware</li>
+                                    </ul>
+                                </div>
+                                <!-- load more button  -->
+                                <button class="w-full rounded bg-gray-300 uppercase text-slate-500 p-2">Load More</button>
+                            </div>
+                        </div>
+                        <div class="w-64 h-100 sm:w-80 md:h-[calc(100vh-400px)] bg-gray-200 rounded-md border border-gray-200 overflow-hidden">
+                            <div class="sticky z-20 top-0 w-full p-2.5 bg-red-600 overflow-hidden">
+                                <span class="block w-11/12 text-sm text-white">Declined - 1 Estimates</span>
+                                <span class="absolute w-10 h-15 right-0 translate-x-1/2 top-0 rotate-45 bg-slate-800"></span>
+                                <span class="absolute w-10 h-15 right-0 translate-x-1/2 bottom-0 -rotate-45 bg-slate-800"></span>
+                            </div>
+                            <div class="h-[calc(100%-38px)] overflow-y-auto space-y-2 p-3">
+                                <div class="bg-card p-4">
+                                    <div class="flex justify-between">
+                                        <span class="font-semibold inline-block">EST-000002</span>
+                                        <mat-icon class="icon-size-5" svgIcon="heroicons_outline:pencil-alt"></mat-icon>
+                                    </div>
+                                    <a href="#" class="text-sm block py-3">Durga Mata Syntex Pvt Ltd.</a>
+                                    <div class="flex justify-between flex-col sm:flex-row space-y-1 sm:space-y-0">
+                                        <div class="text-sm">
+                                            <span class="block font-bold">Total:$2,419.20</span>
+                                            <span class="block">Estimate Date: 2023-05-24</span>
+                                            <span class="block">Expiry Date: 2023-05-31</span>
+                                        </div>
+                                        <span class="flex items-center">
+                                            <mat-icon class="icon-size-3 mr-1" svgIcon="heroicons_outline:link"></mat-icon>
+                                            <span class="text-xs">Notes:0</span>
+                                        </span>
+                                    </div>
+                                    <ul class="flex flex-wrap -mx-1 mt-3">
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Thread</li>
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Earthenware</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-card p-4">
+                                    <div class="flex justify-between">
+                                        <span class="font-semibold inline-block">EST-000002</span>
+                                        <mat-icon class="icon-size-5" svgIcon="heroicons_outline:pencil-alt"></mat-icon>
+                                    </div>
+                                    <a href="#" class="text-sm block py-3">Durga Mata Syntex Pvt Ltd.</a>
+                                    <div class="flex justify-between flex-col sm:flex-row space-y-1 sm:space-y-0">
+                                        <div class="text-sm">
+                                            <span class="block font-bold">Total:$2,419.20</span>
+                                            <span class="block">Estimate Date: 2023-05-24</span>
+                                            <span class="block">Expiry Date: 2023-05-31</span>
+                                        </div>
+                                        <span class="flex items-center">
+                                            <mat-icon class="icon-size-3 mr-1" svgIcon="heroicons_outline:link"></mat-icon>
+                                            <span class="text-xs">Notes:0</span>
+                                        </span>
+                                    </div>
+                                    <ul class="flex flex-wrap -mx-1 mt-3">
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Thread</li>
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Earthenware</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-card p-4">
+                                    <div class="flex justify-between">
+                                        <span class="font-semibold inline-block">EST-000002</span>
+                                        <mat-icon class="icon-size-5" svgIcon="heroicons_outline:pencil-alt"></mat-icon>
+                                    </div>
+                                    <a href="#" class="text-sm block py-3">Durga Mata Syntex Pvt Ltd.</a>
+                                    <div class="flex justify-between flex-col sm:flex-row space-y-1 sm:space-y-0">
+                                        <div class="text-sm">
+                                            <span class="block font-bold">Total:$2,419.20</span>
+                                            <span class="block">Estimate Date: 2023-05-24</span>
+                                            <span class="block">Expiry Date: 2023-05-31</span>
+                                        </div>
+                                        <span class="flex items-center">
+                                            <mat-icon class="icon-size-3 mr-1" svgIcon="heroicons_outline:link"></mat-icon>
+                                            <span class="text-xs">Notes:0</span>
+                                        </span>
+                                    </div>
+                                    <ul class="flex flex-wrap -mx-1 mt-3">
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Thread</li>
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Earthenware</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-card p-4">
+                                    <div class="flex justify-between">
+                                        <span class="font-semibold inline-block">EST-000002</span>
+                                        <mat-icon class="icon-size-5" svgIcon="heroicons_outline:pencil-alt"></mat-icon>
+                                    </div>
+                                    <a href="#" class="text-sm block py-3">Durga Mata Syntex Pvt Ltd.</a>
+                                    <div class="flex justify-between flex-col sm:flex-row space-y-1 sm:space-y-0">
+                                        <div class="text-sm">
+                                            <span class="block font-bold">Total:$2,419.20</span>
+                                            <span class="block">Estimate Date: 2023-05-24</span>
+                                            <span class="block">Expiry Date: 2023-05-31</span>
+                                        </div>
+                                        <span class="flex items-center">
+                                            <mat-icon class="icon-size-3 mr-1" svgIcon="heroicons_outline:link"></mat-icon>
+                                            <span class="text-xs">Notes:0</span>
+                                        </span>
+                                    </div>
+                                    <ul class="flex flex-wrap -mx-1 mt-3">
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Thread</li>
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Earthenware</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-card p-4">
+                                    <div class="flex justify-between">
+                                        <span class="font-semibold inline-block">EST-000002</span>
+                                        <mat-icon class="icon-size-5" svgIcon="heroicons_outline:pencil-alt"></mat-icon>
+                                    </div>
+                                    <a href="#" class="text-sm block py-3">Durga Mata Syntex Pvt Ltd.</a>
+                                    <div class="flex justify-between flex-col sm:flex-row space-y-1 sm:space-y-0">
+                                        <div class="text-sm">
+                                            <span class="block font-bold">Total:$2,419.20</span>
+                                            <span class="block">Estimate Date: 2023-05-24</span>
+                                            <span class="block">Expiry Date: 2023-05-31</span>
+                                        </div>
+                                        <span class="flex items-center">
+                                            <mat-icon class="icon-size-3 mr-1" svgIcon="heroicons_outline:link"></mat-icon>
+                                            <span class="text-xs">Notes:0</span>
+                                        </span>
+                                    </div>
+                                    <ul class="flex flex-wrap -mx-1 mt-3">
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Thread</li>
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Earthenware</li>
+                                    </ul>
+                                </div>
+                                <!-- load more button  -->
+                                <button class="w-full rounded bg-gray-300 uppercase text-slate-500 p-2">Load More</button>
+                            </div>
+                        </div>
+                        <div class="w-64 h-100 sm:w-80 md:h-[calc(100vh-400px)] bg-gray-200 rounded-md border border-gray-200 overflow-hidden">
+                            <div class="sticky z-20 top-0 w-full p-2.5 bg-green-600 overflow-hidden">
+                                <span class="block w-11/12 text-sm text-white">Accepted - 1 Estimates</span>
+                                <span class="absolute w-10 h-15 right-0 translate-x-1/2 top-0 rotate-45 bg-slate-800"></span>
+                                <span class="absolute w-10 h-15 right-0 translate-x-1/2 bottom-0 -rotate-45 bg-slate-800"></span>
+                            </div>
+                            <div class="h-[calc(100%-38px)] overflow-y-auto space-y-2 p-3">
+                                <div class="bg-card p-4">
+                                    <div class="flex justify-between">
+                                        <span class="font-semibold inline-block">EST-000002</span>
+                                        <mat-icon class="icon-size-5" svgIcon="heroicons_outline:pencil-alt"></mat-icon>
+                                    </div>
+                                    <a href="#" class="text-sm block py-3">Durga Mata Syntex Pvt Ltd.</a>
+                                    <div class="flex justify-between flex-col sm:flex-row space-y-1 sm:space-y-0">
+                                        <div class="text-sm">
+                                            <span class="block font-bold">Total:$2,419.20</span>
+                                            <span class="block">Estimate Date: 2023-05-24</span>
+                                            <span class="block">Expiry Date: 2023-05-31</span>
+                                        </div>
+                                        <span class="flex items-center">
+                                            <mat-icon class="icon-size-3 mr-1" svgIcon="heroicons_outline:link"></mat-icon>
+                                            <span class="text-xs">Notes:0</span>
+                                        </span>
+                                    </div>
+                                    <ul class="flex flex-wrap -mx-1 mt-3">
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Thread</li>
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Earthenware</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-card p-4">
+                                    <div class="flex justify-between">
+                                        <span class="font-semibold inline-block">EST-000002</span>
+                                        <mat-icon class="icon-size-5" svgIcon="heroicons_outline:pencil-alt"></mat-icon>
+                                    </div>
+                                    <a href="#" class="text-sm block py-3">Durga Mata Syntex Pvt Ltd.</a>
+                                    <div class="flex justify-between flex-col sm:flex-row space-y-1 sm:space-y-0">
+                                        <div class="text-sm">
+                                            <span class="block font-bold">Total:$2,419.20</span>
+                                            <span class="block">Estimate Date: 2023-05-24</span>
+                                            <span class="block">Expiry Date: 2023-05-31</span>
+                                        </div>
+                                        <span class="flex items-center">
+                                            <mat-icon class="icon-size-3 mr-1" svgIcon="heroicons_outline:link"></mat-icon>
+                                            <span class="text-xs">Notes:0</span>
+                                        </span>
+                                    </div>
+                                    <ul class="flex flex-wrap -mx-1 mt-3">
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Thread</li>
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Earthenware</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-card p-4">
+                                    <div class="flex justify-between">
+                                        <span class="font-semibold inline-block">EST-000002</span>
+                                        <mat-icon class="icon-size-5" svgIcon="heroicons_outline:pencil-alt"></mat-icon>
+                                    </div>
+                                    <a href="#" class="text-sm block py-3">Durga Mata Syntex Pvt Ltd.</a>
+                                    <div class="flex justify-between flex-col sm:flex-row space-y-1 sm:space-y-0">
+                                        <div class="text-sm">
+                                            <span class="block font-bold">Total:$2,419.20</span>
+                                            <span class="block">Estimate Date: 2023-05-24</span>
+                                            <span class="block">Expiry Date: 2023-05-31</span>
+                                        </div>
+                                        <span class="flex items-center">
+                                            <mat-icon class="icon-size-3 mr-1" svgIcon="heroicons_outline:link"></mat-icon>
+                                            <span class="text-xs">Notes:0</span>
+                                        </span>
+                                    </div>
+                                    <ul class="flex flex-wrap -mx-1 mt-3">
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Thread</li>
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Earthenware</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-card p-4">
+                                    <div class="flex justify-between">
+                                        <span class="font-semibold inline-block">EST-000002</span>
+                                        <mat-icon class="icon-size-5" svgIcon="heroicons_outline:pencil-alt"></mat-icon>
+                                    </div>
+                                    <a href="#" class="text-sm block py-3">Durga Mata Syntex Pvt Ltd.</a>
+                                    <div class="flex justify-between flex-col sm:flex-row space-y-1 sm:space-y-0">
+                                        <div class="text-sm">
+                                            <span class="block font-bold">Total:$2,419.20</span>
+                                            <span class="block">Estimate Date: 2023-05-24</span>
+                                            <span class="block">Expiry Date: 2023-05-31</span>
+                                        </div>
+                                        <span class="flex items-center">
+                                            <mat-icon class="icon-size-3 mr-1" svgIcon="heroicons_outline:link"></mat-icon>
+                                            <span class="text-xs">Notes:0</span>
+                                        </span>
+                                    </div>
+                                    <ul class="flex flex-wrap -mx-1 mt-3">
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Thread</li>
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Earthenware</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-card p-4">
+                                    <div class="flex justify-between">
+                                        <span class="font-semibold inline-block">EST-000002</span>
+                                        <mat-icon class="icon-size-5" svgIcon="heroicons_outline:pencil-alt"></mat-icon>
+                                    </div>
+                                    <a href="#" class="text-sm block py-3">Durga Mata Syntex Pvt Ltd.</a>
+                                    <div class="flex justify-between flex-col sm:flex-row space-y-1 sm:space-y-0">
+                                        <div class="text-sm">
+                                            <span class="block font-bold">Total:$2,419.20</span>
+                                            <span class="block">Estimate Date: 2023-05-24</span>
+                                            <span class="block">Expiry Date: 2023-05-31</span>
+                                        </div>
+                                        <span class="flex items-center">
+                                            <mat-icon class="icon-size-3 mr-1" svgIcon="heroicons_outline:link"></mat-icon>
+                                            <span class="text-xs">Notes:0</span>
+                                        </span>
+                                    </div>
+                                    <ul class="flex flex-wrap -mx-1 mt-3">
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Thread</li>
+                                        <li class="m-1 text-xs px-1 py-0.5 border border-gray-200 rounded">Earthenware</li>
+                                    </ul>
+                                </div>
+                                <!-- load more button  -->
+                                <button class="w-full rounded bg-gray-300 uppercase text-slate-500 p-2">Load More</button>
+                            </div>
+                        </div>
+                    </div>                   
+                </div>  
+            </div>
+
+            <!-- CREATE NEW ESTIMATES -->
+            <div class="w-full space-y-6">
+                <div class="flex items-start flex-wrap p-6 bg-card">
+                    <div class="md:pr-5 w-full flex items-baseline flex-wrap md:w-1/2 md:border-r border-gray-300">
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="flex items-center text-sm">
+                                <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                                Customer
+                            </mat-label>
+                            <input matInput>
+                        </mat-form-field>                        
+                        <div class="flex flex-wrap w-full mb-4">
+                            <div class="w-full">                                
+                                <mat-icon (click)="billAddPop()" class="cursor-pointer icon-size-5 opacity-80" [color]="'primary'" svgIcon="heroicons_outline:pencil-alt"></mat-icon>
+                            </div>
+                            <div class="w-1/2 pr-2 space-y-4">
+                                <span class="text-sm font-bold block">Bill To</span>
+                                <div class="w-full flex flex-col">
+                                    <span class="text-sm">--</span>
+                                    <span class="text-sm">-- , --</span>
+                                    <span class="text-sm">-- , --</span>
+                                </div>
+                            </div>
+                            <div class="w-1/2 pl-2 space-y-4">
+                                <span class="text-sm font-bold block">Ship to</span>
+                                <div class="w-full flex flex-col">
+                                    <span class="text-sm">--</span>
+                                    <span class="text-sm">-- , --</span>
+                                    <span class="text-sm">-- , --</span>
+                                </div>
+                            </div>
+                        </div>
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="flex items-center text-sm">
+                                <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                                Estimate Number
+                            </mat-label>
+                            <input matInput>
+                            <span matPrefix class="h-full border-r border-gray-200 flex items-center justify-center pr-3">EST-</span>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
+                            <mat-label class="flex items-center text-sm">
+                                <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                                Estimate Date
+                            </mat-label>
+                            <input matInput [matDatepicker]="picker1">
+                            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                            <mat-datepicker #picker1></mat-datepicker>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
+                            <mat-label class="text-sm">Expiry Date</mat-label>
+                            <input matInput [matDatepicker]="picker2">
+                            <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                            <mat-datepicker #picker2></mat-datepicker>
+                        </mat-form-field>
+                    </div>
+                    <div class="md:pl-5 w-full flex items-baseline flex-wrap md:w-1/2">
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="text-sm">Tag</mat-label>
+                            <mat-chip-list #chipList02>
+                                <mat-chip
+                                    [removable]="true"
+                                    [selectable]="true">
+                                    Lemon
+                                    <mat-icon
+                                        class="icon-size-5"
+                                        matChipRemove
+                                        [svgIcon]="'heroicons_solid:minus-circle'"></mat-icon>
+                                </mat-chip>
+                                <mat-chip
+                                    [removable]="true"
+                                    [selectable]="true">
+                                    Lime
+                                    <mat-icon
+                                        class="icon-size-5"
+                                        matChipRemove
+                                        [svgIcon]="'heroicons_solid:minus-circle'"></mat-icon>
+                                </mat-chip>
+                                <mat-chip
+                                    [removable]="true"
+                                    [selectable]="true">
+                                    Apple
+                                    <mat-icon
+                                        class="icon-size-5"
+                                        matChipRemove
+                                        [svgIcon]="'heroicons_solid:minus-circle'"></mat-icon>
+                                </mat-chip>
+                                <input [placeholder]="'New fruit...'" [matChipInputFor]="chipList02">
+                            </mat-chip-list>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
+                            <mat-label class="flex items-center text-sm">
+                                <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                                Currency
+                            </mat-label>
+                            <mat-select [placeholder]="'usd'" disabled="">
+                                <mat-option value="usd">USD</mat-option>
+                                <mat-option value="INR">INR</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
+                            <mat-label class="text-sm">Status</mat-label>
+                            <mat-select [placeholder]="'Assigned'">
+                                <mat-option value="Assigned-1">Assigned Type</mat-option>
+                                <mat-option value="Assigned-2">Assigned 2</mat-option>
+                                <mat-option value="Assigned-2">Assigned 3</mat-option>
+                                <mat-option value="Assigned-3">Assigned 4</mat-option>
+                                <mat-option value="Assigned-3">Assigned 5</mat-option>
+                                <mat-option value="Assigned-3">Assigned 6</mat-option>
+                                <mat-option value="Assigned-3">Assigned 7</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="text-sm">
+                                Reference #
+                            </mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                       
+                        <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
+                            <mat-label class="text-sm">Sale Agent</mat-label>
+                            <mat-select [placeholder]="'Sale1'">
+                                <mat-option value="Sale1">Sale</mat-option>
+                                <mat-option value="Sale2">Sale2</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
+                            <mat-label class="text-sm">Discount Type</mat-label>
+                            <mat-select [placeholder]="'no-dis'">
+                                <mat-option value="no-dis">NO Discount</mat-option>
+                                <mat-option value="dis1">Discount 50%</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+
+                        <mat-form-field class="fuse-mat-textarea w-full">
+                            <mat-label class="text-sm">Admin Note</mat-label>
+                            <textarea matInput [rows]="3" matTextareaAutosize></textarea>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="p-6 bg-card">
+                    <div class="flex flex-wrap items-start -mx-2">
+                        <div class="w-full sm:w-1/2 px-2">
+                            <div class="flex items-center">
+                                <mat-form-field class="fuse-mat-dense w-full max-w-lg pr-2">
+                                    <mat-label class="text-sm">Status</mat-label>
+                                    <mat-select class="overflow-hidden" matNativeControl [placeholder]="'Draft'">
+                                        <mat-option value="Draft-1">Draft</mat-option>
+                                        <mat-option value="Draft-2">Draft 2</mat-option>
+                                        <mat-option value="Draft-2">Draft 3</mat-option>
+                                        <mat-option value="Draft-3">Draft 4</mat-option>
+                                        <mat-option value="Draft-3">Draft 5</mat-option>
+                                        <mat-option value="Draft-3">Draft 6</mat-option>
+                                        <mat-option value="Draft-3">Draft 7</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                                <span (click)="proposalAddItemsPop()" class="cursor-pointer mt-2 w-10 h-10 border border-gray-200 rounded-md flex items-center justify-center">
+                                    <mat-icon class="icon-size-6" svgIcon="heroicons_outline:plus-sm"></mat-icon>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-1/2 px-2 flex flex-col lg:flex-row items-baseline space-x-1 justify-end pt-0 pb-3 sm:pb-0 sm:pt-6">
+                            <span class="text-sm font-semibold inline-block">Show quantity as:</span>
+                            <mat-radio-group aria-label="Select an option" class="space-x-3">
+                                <mat-radio-button [color]="'primary'" value="Qty" class="text-sm">Qty</mat-radio-button>
+                                <mat-radio-button [color]="'primary'" value="Hours" class="text-sm">Hours</mat-radio-button>
+                                <mat-radio-button [color]="'primary'" value="Qty/Hours" class="text-sm">Qty/Hours</mat-radio-button>
+                            </mat-radio-group>
+                        </div>
+                        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-2/12 px-2">
+                            <mat-form-field class="fuse-mat-textarea w-full">
+                                <mat-label class="text-sm flex items-center">
+                                    <mat-icon class="icon-size-4 mr-1" svgIcon="heroicons_solid:exclamation-circle"></mat-icon>
+                                    Item
+                                </mat-label>
+                                <textarea matInput [rows]="3" matTextareaAutosize></textarea>
+                            </mat-form-field>
+                        </div>
+                        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-3/12 px-2">
+                            <mat-form-field class="fuse-mat-textarea w-full">
+                                <mat-label class="text-sm">Description</mat-label>
+                                <textarea matInput [rows]="3" matTextareaAutosize></textarea>
+                            </mat-form-field>
+                        </div>
+                        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/12 px-2">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">Qty</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                        </div>
+                        <div class="w-full sm:w-1/2 md:w-4/12 lg:w-1/4 xl:w-2/12 px-2">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">Rate</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                        </div>
+                        <div class="w-full sm:w-6/12 md:w-4/12 lg:w-1/4 xl:w-2/12 px-2">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">Tax</mat-label>
+                                <mat-select [placeholder]="'Tax'">
+                                    <mat-option value="Tax-1">System default</mat-option>
+                                    <mat-option value="Tax-2">Tax 2</mat-option>
+                                    <mat-option value="Tax-2">Tax 3</mat-option>
+                                    <mat-option value="Tax-3">Tax 4</mat-option>
+                                    <mat-option value="Tax-3">Tax 5</mat-option>
+                                    <mat-option value="Tax-3">Tax 6</mat-option>
+                                    <mat-option value="Tax-3">Tax 7</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                        <div class="w-10/12 sm:w-5/12 md:w-3/12 lg:w-1/4 xl:w-1/12 px-2">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">Amount</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                        </div>
+                        <div class="w-2/12 sm:w-1/12 md:w-1/12 lg:w-1/12 xl:w-1/12 p-2">
+                            <div class="w-full flex flex-col items-end space-y-3">
+                                <mat-label class="text-sm block mr-2">
+                                    <mat-icon svgIcon="mat_outline:settings" class="icon-size-5"></mat-icon>
+                                </mat-label>
+                                <mat-checkbox [color]="'primary'" class="example-margin"></mat-checkbox>
+                            </div>
+                        </div>
+                        <div class="w-full max-w-4xl flex flex-wrap p-2 pt-10 text-right ml-auto">
+                            <div class="w-9/12 sm:w-8/12 border-t border-blue-400 pl-0 p-4 sm:p-3">
+                                <p class="font-semibold text-sm">Sub Total :</p>
+                            </div>
+                            <div class="w-3/12 sm:w-4/12 border-t border-blue-400  pr-0 p-4 sm:p-3">
+                                <p class="text-sm">$0.00</p>
+                            </div>
+                            <div class="w-9/12 sm:w-8/12 border-t border-blue-400 pl-0 p-4 sm:p-3">
+                                <div class="flex flex-col sm:flex-row items-baseline justify-end sm:space-x-4">
+                                    <p class="text-sm font-semibold inline-block pb-1 sm:pb-0">Discount</p>
+                                    <mat-form-field class="fuse-mat-dense w-full max-w-xs -mb-4">
+                                        <input atInput [value]="'0'">
+                                        <mat-select [value]="'%'" matSuffix>
+                                            <mat-option [value]="'%'">%</mat-option>
+                                            <mat-option [value]="'Fixed Amount'">Fixed Amount</mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="w-3/12 sm:w-4/12 border-t border-blue-400  pr-0 p-4 sm:p-3">
+                                <p class="text-sm">-$0.00</p>
+                            </div>
+                            <div class="w-9/12 sm:w-8/12 border-t border-blue-400 pl-0 p-4 sm:p-3 -mb-4">
+                                <div class="flex flex-col sm:flex-row items-baseline justify-end sm:space-x-4">
+                                    <p class="text-sm font-semibold inline-block pb-1 sm:pb-0">Adjustment</p>
+                                    <mat-form-field class="fuse-mat-dense w-full max-w-xs">
+                                        <input matInput [value]="'0'">
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="w-3/12 sm:w-4/12 border-t border-blue-400  pr-0 p-4 sm:p-3">
+                                <p class="text-sm">-$0.00</p>
+                            </div>
+                            <div class="w-9/12 sm:w-8/12 border-t border-blue-400 pl-0 p-4 sm:p-3">
+                                <p class="font-semibold text-sm">Total :</p>
+                            </div>
+                            <div class="w-3/12 sm:w-4/12 border-t border-blue-400  pr-0 p-4 sm:p-3">
+                                <p class="text-sm">$0.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 bg-card">
                     <mat-form-field class="fuse-mat-textarea w-full">
-                        <mat-label class="text-sm">Address</mat-label>
+                        <mat-label class="text-sm">Client Note</mat-label>
                         <textarea matInput [rows]="3" matTextareaAutosize></textarea>
                     </mat-form-field>
-                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
-                        <mat-label class="text-sm">City</mat-label>
-                        <input matInput>
-                    </mat-form-field>
-                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
-                        <mat-label class="text-sm">State</mat-label>
-                        <input matInput>
-                    </mat-form-field>
-                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
-                        <mat-label class="text-sm">Country</mat-label>
-                        <mat-select [placeholder]="'Country'">
-                            <mat-option value="Country-1">Country</mat-option>
-                            <mat-option value="Country-2">Country 2</mat-option>
-                            <mat-option value="Country-2">Country 3</mat-option>
-                            <mat-option value="Country-3">Country 4</mat-option>
-                            <mat-option value="Country-3">Country 5</mat-option>
-                            <mat-option value="Country-3">Country 6</mat-option>
-                            <mat-option value="Country-3">Country 7</mat-option>
-                        </mat-select>
-                    </mat-form-field>
-                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
-                        <mat-label class="text-sm">Zip Code</mat-label>
-                        <input matInput>
-                    </mat-form-field>
-                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
-                        <mat-label class="flex items-center text-sm">
-                            <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
-                            Email
-                        </mat-label>
-                        <input matInput>
-                    </mat-form-field>
-                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
-                        <mat-label class="text-sm">Phone</mat-label>
-                        <input matInput>
+                    <mat-form-field class="fuse-mat-textarea w-full">
+                        <mat-label class="text-sm">Terms & Conditions</mat-label>
+                        <textarea matInput [rows]="3" matTextareaAutosize></textarea>
                     </mat-form-field>
                 </div>
             </div>
         </div>
-    </div>
-=======
->>>>>>> 1f6f09905c239dc779dc1ebdf2347799ae183b1d
+        <!-- ESTIMATES END-->
+        
+        <!-- INVOICES START -->
+        <div class="w-full" *ngIf="false">
+            <!-- View Quick Status start-->
+            <div class="p-5 bg-card border-b border-gray-200">
+                <div class="flex flex-wrap -mx-2">
+                    <div class="w-full sm:w-1/2 md:w-1/3 p-2">
+                        <div class="p-3 w-full border border-gray-200 rounded-md text-center space-y-2">
+                            <p class="text-sm font-medium leading-none text-secondary">Draft</p>
+                            <span class="mt-2 font-medium text-2xl lg:text-3xl leading-none block">$0.00</span>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 p-2">
+                        <div class="p-3 w-full border border-gray-200 rounded-md text-center space-y-2">
+                            <p class="text-sm font-medium leading-none text-blue-500">Sent</p>
+                            <span class="mt-2 font-medium text-2xl lg:text-3xl leading-none block">$40,265.20</span>
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 md:w-1/3 p-2">
+                        <div class="p-3 w-full border border-gray-200 rounded-md text-center space-y-2">
+                            <p class="text-sm font-medium leading-none text-orange-500">Expired</p>
+                            <span class="mt-2 font-medium text-2xl lg:text-3xl leading-none block">$0.00</span>
+                        </div>
+                    </div>
+                    <div class="w-full p-2">
+                        <div class="p-3 w-full border border-gray-200 rounded-md">
+                            <div class="flex flex-wrap -mx-1">
+                                <div class="w-full sm:w-1/2 md:w-1/3 xl:w-[20%] p-2">
+                                    <div class="p-3 w-full border border-gray-200 rounded-md">
+                                        <div class="flex items-start justify-between">
+                                            <span class="inline-block text-sm whitespace-nowrap overflow-hidden text-ellipsis w-full">Unpaid</span>
+                                            <span class="inline-block text-sm text-black dark:text-white">1/1</span>
+                                        </div>
+                                        <div class="flex flex-col items-center mt-2">
+                                            <div class="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+                                                <div class="bg-blue-600 h-4 rounded-full dark:bg-red-500 text-xs text-center text-white" style="width: 45%">45%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full sm:w-1/2 md:w-1/3 xl:w-[20%] p-2">
+                                    <div class="p-3 w-full border border-gray-200 rounded-md">
+                                        <div class="flex items-start justify-between">
+                                            <span class="inline-block text-sm whitespace-nowrap overflow-hidden text-ellipsis w-full">Paid</span>
+                                            <span class="inline-block text-sm text-black dark:text-white">0/1</span>
+                                        </div>
+                                        <div class="flex flex-col items-center mt-2">
+                                            <div class="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+                                                <div class="bg-blue-600 h-4 rounded-full dark:bg-green-500 text-xs text-center text-gray-400" style="width: 0%">
+                                                   <span class="px-1">0.00%</span> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full sm:w-1/2 md:w-1/3 xl:w-[20%] p-2">
+                                    <div class="p-3 w-full border border-gray-200 rounded-md">
+                                        <div class="flex items-start justify-between">
+                                            <span class="inline-block text-sm whitespace-nowrap overflow-hidden text-ellipsis w-full">Partially Paid</span>
+                                            <span class="inline-block text-sm text-black dark:text-white">0/1</span>
+                                        </div>
+                                        <div class="flex flex-col items-center mt-2">
+                                            <div class="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+                                                <div class="bg-orange-500 h-4 rounded-full dark:bg-orange-500 text-xs text-center text-white" style="width: 45%">45%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full sm:w-1/2 md:w-1/3 xl:w-[20%] p-2">
+                                    <div class="p-3 w-full border border-gray-200 rounded-md">
+                                        <div class="flex items-start justify-between">
+                                            <span class="inline-block text-sm whitespace-nowrap overflow-hidden text-ellipsis w-full">Overdue</span>
+                                            <span class="inline-block text-sm text-black dark:text-white">0/1</span>
+                                        </div>
+                                        <div class="flex flex-col items-center mt-2">
+                                            <div class="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+                                                <div class="bg-red-500 h-4 rounded-full dark:bg-blue-500 text-xs text-center text-white" style="width: 45%">45%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full sm:w-1/2 md:w-1/3 xl:w-[20%] p-2">  
+                                    <div class="p-3 w-full border border-gray-200 rounded-md">
+                                        <div class="flex items-start justify-between">
+                                            <span class="inline-block text-sm whitespace-nowrap overflow-hidden text-ellipsis w-full">Draft</span>
+                                            <span class="inline-block text-sm text-black dark:text-white">0/1</span>
+                                        </div>
+                                        <div class="flex flex-col items-center mt-2">
+                                            <div class="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+                                                <div class="bg-green-500 h-4 rounded-full dark:bg-blue-500 text-xs text-center text-white" style="width: 45%">45%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- View Quick Status end -->
+            <!-- head1  -->
+            <div class="w-full flex items-center p-5 border-b border-gray-200 bg-card" >
+                <div class="flex flex-wrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
+                    <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">Create New Ivoice</button>
+                    <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">Recurring Invoices</button>
+                    <button (click)="addPaymentPop()" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">Batch Payments</button>
+                </div>
+                <div class="sm:ml-auto ml-4 flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
+                    <button class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                        <mat-icon class="icon-size-4" svgIcon="heroicons_outline:chevron-double-left"></mat-icon>
+                        <mat-icon class="icon-size-4 hidden" svgIcon="heroicons_outline:chevron-double-right"></mat-icon>
+                    </button>
+                    <button class="cursor-pointer flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                        <mat-icon class="icon-size-4" svgIcon="insert_chart_outlined"></mat-icon>
+                    </button>
+                    <button class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                        <mat-icon class="icon-size-4" svgIcon="heroicons_solid:filter"></mat-icon>
+                    </button>
+                </div>
+            </div>
+            <!-- head2  -->
+            <div class="w-full flex items-center p-5 border-b border-gray-200 bg-card" >
+                <div class="flex flex-wrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
+                    <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">Create New Ivoice</a>
+                    <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-black bg-gray-200 rounded uppercase hover:opacity-90">Go Back</a>
+                </div>
+                <div class="sm:ml-auto ml-4 flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
+                    <button class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                        <mat-icon class="icon-size-4" svgIcon="heroicons_outline:chevron-double-left"></mat-icon>
+                        <mat-icon class="icon-size-4 hidden" svgIcon="heroicons_outline:chevron-double-right"></mat-icon>
+                    </button>
+                    <button class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                        <mat-icon class="icon-size-4" svgIcon="heroicons_solid:filter"></mat-icon>
+                    </button>
+                </div>
+            </div>
+            <!-- CREATE NEW INVOICE -->
+            <div class="w-full space-y-6">
+                <div class="flex items-start flex-wrap p-6 bg-card">
+                    <div class="md:pr-5 w-full flex items-baseline flex-wrap md:w-1/2 md:border-r border-gray-300">
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="flex items-center text-sm">
+                                <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                                Customer
+                            </mat-label>
+                            <input matInput>
+                        </mat-form-field>                        
+                        <div class="flex flex-wrap w-full mb-4">
+                            <div class="w-full">                                
+                                <mat-icon (click)="billAddPop()" class="cursor-pointer icon-size-5 opacity-80" [color]="'primary'" svgIcon="heroicons_outline:pencil-alt"></mat-icon>
+                            </div>
+                            <div class="w-1/2 pr-2 space-y-4">
+                                <span class="text-sm font-bold block">Bill To</span>
+                                <div class="w-full flex flex-col">
+                                    <span class="text-sm">--</span>
+                                    <span class="text-sm">-- , --</span>
+                                    <span class="text-sm">-- , --</span>
+                                </div>
+                            </div>
+                            <div class="w-1/2 pl-2 space-y-4">
+                                <span class="text-sm font-bold block">Ship to</span>
+                                <div class="w-full flex flex-col">
+                                    <span class="text-sm">--</span>
+                                    <span class="text-sm">-- , --</span>
+                                    <span class="text-sm">-- , --</span>
+                                </div>
+                            </div>
+                        </div>
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="flex items-center text-sm">
+                                <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                                Invoice Number 
+                            </mat-label>
+                            <input matInput>
+                            <span matPrefix class="h-full border-r border-gray-200 flex items-center justify-center pr-3">EST-</span>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
+                            <mat-label class="flex items-center text-sm">
+                                <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                                Estimate Date
+                            </mat-label>
+                            <input matInput [matDatepicker]="picker1">
+                            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                            <mat-datepicker #picker1></mat-datepicker>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
+                            <mat-label class="text-sm">Expiry Date</mat-label>
+                            <input matInput [matDatepicker]="picker2">
+                            <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                            <mat-datepicker #picker2></mat-datepicker>
+                        </mat-form-field>
+                        <mat-checkbox [color]="'primary'">Prevent sending overdue reminders for this invoice</mat-checkbox>
+                    </div>
+                    <div class="pt-4 md:pt-0 md:pl-5 w-full flex items-baseline flex-wrap md:w-1/2">
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="text-sm">Tag</mat-label>
+                            <mat-chip-list #chipList02>
+                                <mat-chip
+                                    [removable]="true"
+                                    [selectable]="true">
+                                    Lemon
+                                    <mat-icon
+                                        class="icon-size-5"
+                                        matChipRemove
+                                        [svgIcon]="'heroicons_solid:minus-circle'"></mat-icon>
+                                </mat-chip>
+                                <mat-chip
+                                    [removable]="true"
+                                    [selectable]="true">
+                                    Lime
+                                    <mat-icon
+                                        class="icon-size-5"
+                                        matChipRemove
+                                        [svgIcon]="'heroicons_solid:minus-circle'"></mat-icon>
+                                </mat-chip>
+                                <mat-chip
+                                    [removable]="true"
+                                    [selectable]="true">
+                                    Apple
+                                    <mat-icon
+                                        class="icon-size-5"
+                                        matChipRemove
+                                        [svgIcon]="'heroicons_solid:minus-circle'"></mat-icon>
+                                </mat-chip>
+                                <input [placeholder]="'New fruit...'" [matChipInputFor]="chipList02">
+                            </mat-chip-list>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="text-sm">Allowed payment modes for this invoice</mat-label>
+                            <mat-select [placeholder]="'Assigned'">
+                                <mat-option value="Assigned-1">Back</mat-option>
+                                <mat-option value="Assigned-2">Assigned 2</mat-option>                                
+                            </mat-select>
+                        </mat-form-field> 
+                        <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
+                            <mat-label class="flex items-center text-sm">
+                                <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                                Currency
+                            </mat-label>
+                            <mat-select [placeholder]="'usd'" disabled="">
+                                <mat-option value="usd">USD</mat-option>
+                                <mat-option value="INR">INR</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
+                            <mat-label class="text-sm">Sale Agent</mat-label>
+                            <mat-select [placeholder]="'Assigned'">
+                                <mat-option value="Assigned-1">Assigned Type</mat-option>
+                                <mat-option value="Assigned-2">Assigned 2</mat-option>
+                                <mat-option value="Assigned-2">Assigned 3</mat-option>
+                                <mat-option value="Assigned-3">Assigned 4</mat-option>
+                                <mat-option value="Assigned-3">Assigned 5</mat-option>
+                                <mat-option value="Assigned-3">Assigned 6</mat-option>
+                                <mat-option value="Assigned-3">Assigned 7</mat-option>
+                            </mat-select>
+                        </mat-form-field>                       
+                        <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
+                            <mat-label class="text-sm">Recurring Invoice?</mat-label>
+                            <mat-select [placeholder]="'Sale1'">
+                                <mat-option value="Sale1">Sale</mat-option>
+                                <mat-option value="Sale2">Sale2</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
+                            <mat-label class="text-sm">Discount Type</mat-label>
+                            <mat-select [placeholder]="'no-dis'">
+                                <mat-option value="no-dis">NO Discount</mat-option>
+                                <mat-option value="dis1">Discount 50%</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-textarea w-full">
+                            <mat-label class="text-sm">Admin Note</mat-label>
+                            <textarea matInput [rows]="3" matTextareaAutosize></textarea>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="p-6 bg-card">
+                    <div class="flex flex-wrap items-start -mx-2">
+                        <div class="w-full sm:w-1/2 md:w-4/12 px-2">
+                            <div class="flex items-center">
+                                <mat-form-field class="fuse-mat-dense w-full max-w-lg pr-2">
+                                    <mat-select class="overflow-hidden" matNativeControl [placeholder]="'Draft-1'">
+                                        <mat-option value="Draft-1">Add Item</mat-option>
+                                        <mat-option value="Draft-2">Draft 2</mat-option>
+                                        <mat-option value="Draft-2">Draft 3</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                                <span (click)="proposalAddItemsPop()" class="cursor-pointerw-10 -mt-4 w-10 h-10 border border-gray-200 rounded-md flex items-center justify-center">
+                                    <mat-icon class="icon-size-6" svgIcon="heroicons_outline:plus-sm"></mat-icon>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-1/2 md:w-3/12 px-2">
+                            <div class="flex items-center">
+                                <mat-form-field class="fuse-mat-dense w-full max-w-lg">
+                                    <mat-select class="overflow-hidden" matNativeControl [placeholder]="'Draft-1'">
+                                        <mat-option value="Draft-1">Bill Tasks</mat-option>
+                                        <mat-option value="Draft-2">Draft 2</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-5/12 px-2 flex flex-col sm:flex-row md:flex-col lg:flex-row items-baseline space-x-1 md:justify-end pb-3 md:pb-0 lg:pt-2">
+                            <span class="text-sm font-semibold inline-block">Show quantity as:</span>
+                            <mat-radio-group aria-label="Select an option" class="space-x-3">
+                                <mat-radio-button [color]="'primary'" value="Qty" class="text-sm">Qty</mat-radio-button>
+                                <mat-radio-button [color]="'primary'" value="Hours" class="text-sm">Hours</mat-radio-button>
+                                <mat-radio-button [color]="'primary'" value="Qty/Hours" class="text-sm">Qty/Hours</mat-radio-button>
+                            </mat-radio-group>
+                        </div>
+                        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-2/12 px-2">
+                            <mat-form-field class="fuse-mat-textarea w-full">
+                                <mat-label class="text-sm flex items-center">
+                                    <mat-icon class="icon-size-4 mr-1" svgIcon="heroicons_solid:exclamation-circle"></mat-icon>
+                                    Item
+                                </mat-label>
+                                <textarea matInput [rows]="3" matTextareaAutosize></textarea>
+                            </mat-form-field>
+                        </div>
+                        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-3/12 px-2">
+                            <mat-form-field class="fuse-mat-textarea w-full">
+                                <mat-label class="text-sm">Description</mat-label>
+                                <textarea matInput [rows]="3" matTextareaAutosize></textarea>
+                            </mat-form-field>
+                        </div>
+                        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/12 px-2">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">Qty</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                        </div>
+                        <div class="w-full sm:w-1/2 md:w-4/12 lg:w-1/4 xl:w-2/12 px-2">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">Rate</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                        </div>
+                        <div class="w-full sm:w-6/12 md:w-4/12 lg:w-1/4 xl:w-2/12 px-2">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">Tax</mat-label>
+                                <mat-select [placeholder]="'Tax'">
+                                    <mat-option value="Tax-1">System default</mat-option>
+                                    <mat-option value="Tax-2">Tax 2</mat-option>
+                                    <mat-option value="Tax-2">Tax 3</mat-option>
+                                    <mat-option value="Tax-3">Tax 4</mat-option>
+                                    <mat-option value="Tax-3">Tax 5</mat-option>
+                                    <mat-option value="Tax-3">Tax 6</mat-option>
+                                    <mat-option value="Tax-3">Tax 7</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                        <div class="w-10/12 sm:w-5/12 md:w-3/12 lg:w-1/4 xl:w-1/12 px-2">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">Amount</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                        </div>
+                        <div class="w-2/12 sm:w-1/12 md:w-1/12 lg:w-1/12 xl:w-1/12 p-2">
+                            <div class="w-full flex flex-col items-end space-y-3">
+                                <mat-label class="text-sm block mr-2">
+                                    <mat-icon svgIcon="mat_outline:settings" class="icon-size-5"></mat-icon>
+                                </mat-label>
+                                <mat-checkbox [color]="'primary'" class="example-margin"></mat-checkbox>
+                            </div>
+                        </div>
+                        <div class="w-full max-w-4xl flex flex-wrap p-2 pt-10 text-right ml-auto">
+                            <div class="w-9/12 sm:w-8/12 border-t border-blue-400 pl-0 p-4 sm:p-3">
+                                <p class="font-semibold text-sm">Sub Total :</p>
+                            </div>
+                            <div class="w-3/12 sm:w-4/12 border-t border-blue-400  pr-0 p-4 sm:p-3">
+                                <p class="text-sm">$0.00</p>
+                            </div>
+                            <div class="w-9/12 sm:w-8/12 border-t border-blue-400 pl-0 p-4 sm:p-3">
+                                <div class="flex flex-col sm:flex-row items-baseline justify-end sm:space-x-4">
+                                    <p class="text-sm font-semibold inline-block pb-1 sm:pb-0">Discount</p>
+                                    <mat-form-field class="fuse-mat-dense w-full max-w-xs -mb-4">
+                                        <input atInput [value]="'0'">
+                                        <mat-select [value]="'%'" matSuffix>
+                                            <mat-option [value]="'%'">%</mat-option>
+                                            <mat-option [value]="'Fixed Amount'">Fixed Amount</mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="w-3/12 sm:w-4/12 border-t border-blue-400  pr-0 p-4 sm:p-3">
+                                <p class="text-sm">-$0.00</p>
+                            </div>
+                            <div class="w-9/12 sm:w-8/12 border-t border-blue-400 pl-0 p-4 sm:p-3 -mb-4">
+                                <div class="flex flex-col sm:flex-row items-baseline justify-end sm:space-x-4">
+                                    <p class="text-sm font-semibold inline-block pb-1 sm:pb-0">Adjustment</p>
+                                    <mat-form-field class="fuse-mat-dense w-full max-w-xs">
+                                        <input matInput [value]="'0'">
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="w-3/12 sm:w-4/12 border-t border-blue-400  pr-0 p-4 sm:p-3">
+                                <p class="text-sm">-$0.00</p>
+                            </div>
+                            <div class="w-9/12 sm:w-8/12 border-t border-blue-400 pl-0 p-4 sm:p-3">
+                                <p class="font-semibold text-sm">Total :</p>
+                            </div>
+                            <div class="w-3/12 sm:w-4/12 border-t border-blue-400  pr-0 p-4 sm:p-3">
+                                <p class="text-sm">$0.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 bg-card">
+                    <mat-form-field class="fuse-mat-textarea w-full">
+                        <mat-label class="text-sm">Client Note</mat-label>
+                        <textarea matInput [rows]="3" matTextareaAutosize></textarea>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-textarea w-full">
+                        <mat-label class="text-sm">Terms & Conditions</mat-label>
+                        <textarea matInput [rows]="3" matTextareaAutosize></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+        <!-- INVOICES END -->
+
+        <!-- CREDIT NOTES -->
+        <div class="w-full">
+             <!-- head -->
+             <div class="w-full flex items-center p-5 border-b border-gray-200 bg-card" >
+                <div class="flex flex-wrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
+                    <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">New Credit Note<ng-content select="selector"></ng-content></a>
+                </div>
+                <div class="sm:ml-auto ml-4 flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
+                    <button class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                        <mat-icon class="icon-size-4" svgIcon="heroicons_outline:chevron-double-left"></mat-icon>
+                        <mat-icon class="icon-size-4 hidden" svgIcon="heroicons_outline:chevron-double-right"></mat-icon>
+                    </button>
+                    <button class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                        <mat-icon class="icon-size-4" svgIcon="heroicons_solid:filter"></mat-icon>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <!-- CREDIT NOTES END -->
+
 </div>
