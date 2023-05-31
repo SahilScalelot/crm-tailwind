@@ -2,3 +2,21 @@
 /*  @ Main Tailwind file for injecting utilities.
 /* ----------------------------------------------------------------------------------------------------- */
 @tailwind utilities;
+.mat-form-field.mat-form-field-appearance-fill .mat-form-field-wrapper{
+  margin-bottom: 0 !important;
+}
+.mat-tab-group .mat-tab-header .mat-tab-label-container {
+  padding: 0 !important;
+}
+body.light .mat-elevation-z4, body .light .mat-elevation-z4{
+  box-shadow: none;
+}
+.mat-tab-header-pagination{
+  min-width: 15px !important;
+}
+.mat-radio-container,.mat-radio-outer-circle,.mat-radio-inner-circle{
+  width: 15px !important;
+  height: 15px !important;
+}
+.mat-radio-label-content{padding-left: 4px !important;}
+.mat-tab-group .mat-tab-body-content{padding: 24px 0 0 !important;}

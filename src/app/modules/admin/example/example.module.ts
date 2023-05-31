@@ -7,6 +7,8 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatSelectModule } from '@angular/material/select';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import {MatButtonModule} from '@angular/material/button';
 import { Route, RouterModule } from '@angular/router';
 import { ExampleComponent } from './example.component';
 import { MatMomentDateModule } from '@angular/material-moment-adapter';
@@ -35,6 +37,8 @@ const exampleRoutes: Route[] = [
         MatMomentDateModule,
         MatSelectModule,
         MatTabsModule,
+        MatCheckboxModule,
+        MatButtonModule,
     ]
 })
 export class ExampleModule{}
