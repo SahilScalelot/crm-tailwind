@@ -10,11 +10,4 @@ export class ExampleComponent implements OnInit{
     constructor(){}
 
     ngOnInit(): void {}
-
-    closeButton(){
-
-    }
-    toggleButton(){
-        // this.toggle=true;
-    }
 }

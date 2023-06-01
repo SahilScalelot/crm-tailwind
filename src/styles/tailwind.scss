@@ -2,6 +2,8 @@
 /*  @ Main Tailwind file for injecting utilities.
 /* ----------------------------------------------------------------------------------------------------- */
 @tailwind utilities;
+h2{@apply text-xl sm:text-[20px] md:text-3xl font-semibold mb-3}
+h3{@apply text-lg sm:text-xl md:text-[20px] font-semibold mb-3}
 .mat-form-field.mat-form-field-appearance-fill .mat-form-field-wrapper{
   margin-bottom: 0 !important;
 }
