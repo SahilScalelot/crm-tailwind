@@ -4,6 +4,11 @@ import { ProposalAddItemsComponent } from './proposal-add-items/proposal-add-ite
 import { BillAddComponent } from './bill-add/bill-add.component';
 import { fuseAnimations } from '@fuse/animations';
 import { AddPaymentComponent } from './add-payment/add-payment.component';
+import { ItemGroupComponent } from './item-group/item-group.component';
+import { NewcontractComponent } from './new-contract/new-contract.component';
+import { AddNewTaskComponent } from './add-new-task/add-new-task.component';
+import { NewServiceComponent } from './new-service/new-service.component';
+import { AddNewLeadComponent } from './add-new-lead/add-new-lead.component';
 
 @Component({
     selector     : 'example',
@@ -58,8 +63,43 @@ export class ExampleComponent implements OnInit{
         });
     }
 
-    public show:boolean = false;
-    togglequickview() {
-        this.show = !this.show;
-    } 
+    itemGroupPop(): void {
+        const dialogRef = this._matDialog.open(ItemGroupComponent);
+
+        dialogRef.afterClosed().subscribe((result) => {
+            console.log('Compose dialog was closed!');
+        });
+    }
+
+    newContractPop(): void {
+        const dialogRef = this._matDialog.open(NewcontractComponent);
+
+        dialogRef.afterClosed().subscribe((result) => {
+            console.log('Compose dialog was closed!');
+        });
+    }
+
+    addTaskPop(): void {
+        const dialogRef = this._matDialog.open(AddNewTaskComponent);
+
+        dialogRef.afterClosed().subscribe((result) => {
+            console.log('Compose dialog was closed!');
+        });
+    }
+
+    newservicePop(): void {
+        const dialogRef = this._matDialog.open(NewServiceComponent);
+
+        dialogRef.afterClosed().subscribe((result) => {
+            console.log('Compose dialog was closed!');
+        });
+    }
+
+    aadNewLeadPop(): void {
+        const dialogRef = this._matDialog.open(AddNewLeadComponent);
+
+        dialogRef.afterClosed().subscribe((result) => {
+            console.log('Compose dialog was closed!');
+        });
+    }
 }

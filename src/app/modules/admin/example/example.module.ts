@@ -22,9 +22,14 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { ProposalAddItemsComponent } from './proposal-add-items/proposal-add-items.component';
 import { BillAddComponent } from './bill-add/bill-add.component';
 import { AddPaymentComponent } from './add-payment/add-payment.component';
+import { ItemGroupComponent } from './item-group/item-group.component';
+import { AddNewTaskComponent } from './add-new-task/add-new-task.component';
+import { NewServiceComponent } from './new-service/new-service.component';
+import { AddNewLeadComponent } from './add-new-lead/add-new-lead.component';
 import { FuseScrollbarModule } from '@fuse/directives/scrollbar';
 import { FuseScrollResetModule } from '@fuse/directives/scroll-reset';
 import { MatDialogModule } from '@angular/material/dialog';
+import { NewcontractComponent } from './new-contract/new-contract.component';
 
 const exampleRoutes: Route[] = [
     {
@@ -38,7 +43,13 @@ const exampleRoutes: Route[] = [
         ExampleComponent,
         ProposalAddItemsComponent,
         BillAddComponent, 
-        AddPaymentComponent,               
+        AddPaymentComponent,  
+        ItemGroupComponent,  
+        NewcontractComponent,
+        AddNewTaskComponent,
+        NewServiceComponent,
+        AddNewLeadComponent,
+                   
         // BillAddComponent,
     ],
     imports: [

@@ -1,0 +1,211 @@
+<div class="flex flex-col max-w-4xl md:min-w-160 max-h-screen -m-6">
+
+    <!-- Header -->
+    <div class="flex flex-0 items-center justify-between h-16 pr-3 sm:pr-5 pl-6 sm:pl-8 bg-primary text-on-primary">
+        <div class="text-lg font-medium">Add new lead</div>
+        <button
+            mat-icon-button
+            [tabIndex]="-1"
+            (click)="close()"
+            >
+            <mat-icon
+                class="text-current"
+                [svgIcon]="'heroicons_outline:x'"></mat-icon>
+        </button>
+    </div>
+    <!-- Compose form -->
+    <form class="flex flex-col flex-auto overflow-y-auto">        
+        <!-- tabs  -->
+        <div class="w-full border-b border-gray-300">
+            <span class="p-3 px-5 inline-block h-full translate-y-[1px] border-b border-blue-600 text-blue-600">Profile</span>
+        </div>
+        <!-- STATUS  -->
+        <div class="w-full border-b border-gray-300 p-3 pb-3">
+            <div class="flex flex-wrap">
+                <div class="w-full sm:w-1/2 md:w-1/3 px-2">
+                    <div class="flex items-center">
+                        <mat-form-field class="fuse-mat-dense w-full pr-2">
+                            <mat-label class="text-sm">
+                                <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                                Status
+                            </mat-label>
+                            <mat-select class="overflow-hidden" matNativeControl [placeholder]="'Draft'">
+                                <mat-option value="Draft-1">Draft</mat-option>
+                                <mat-option value="Draft-2">Draft 2</mat-option>
+                                <mat-option value="Draft-2">Draft 3</mat-option>
+                                <mat-option value="Draft-3">Draft 4</mat-option>
+                                <mat-option value="Draft-3">Draft 5</mat-option>
+                                <mat-option value="Draft-3">Draft 6</mat-option>
+                                <mat-option value="Draft-3">Draft 7</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <span class="cursor-pointer mt-2 w-10 h-10 border border-gray-200 rounded-md flex items-center justify-center">
+                            <mat-icon class="icon-size-6" svgIcon="heroicons_outline:plus-sm"></mat-icon>
+                        </span>
+                    </div>
+                </div>
+                <div class="w-full sm:w-1/2 md:w-1/3 px-2">
+                    <div class="flex items-center">
+                        <mat-form-field class="fuse-mat-dense w-full pr-2">
+                            <mat-label class="text-sm">
+                                <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                                Source
+                            </mat-label>
+                            <mat-select class="overflow-hidden" matNativeControl [placeholder]="'Nothing-Select'">
+                                <mat-option value="Draft-1">Draft</mat-option>
+                                <mat-option value="Draft-2">Draft 2</mat-option>
+                                <mat-option value="Draft-2">Draft 3</mat-option>
+                                <mat-option value="Draft-3">Draft 4</mat-option>
+                                <mat-option value="Draft-3">Draft 5</mat-option>
+                                <mat-option value="Draft-3">Draft 6</mat-option>
+                                <mat-option value="Draft-3">Draft 7</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <span class="cursor-pointer mt-2 w-10 h-10 border border-gray-200 rounded-md flex items-center justify-center">
+                            <mat-icon class="icon-size-6" svgIcon="heroicons_outline:plus-sm"></mat-icon>
+                        </span>
+                    </div>
+                </div>
+                <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-1/3 px-2">
+                    <mat-label class="text-sm">Assigned</mat-label>
+                    <mat-select class="overflow-hidden" matNativeControl [placeholder]="'Super Admin'">
+                        <mat-option value="Draft-1">Draft</mat-option>
+                        <mat-option value="Draft-2">Draft 2</mat-option>
+                        <mat-option value="Draft-2">Draft 3</mat-option>
+                        <mat-option value="Draft-3">Draft 4</mat-option>
+                        <mat-option value="Draft-3">Draft 5</mat-option>
+                        <mat-option value="Draft-3">Draft 6</mat-option>
+                        <mat-option value="Draft-3">Draft 7</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+        <!-- TAG  -->
+        <div class="w-full border-b border-gray-300 p-5 pt-3 pb-0">
+            <mat-form-field class="fuse-mat-dense w-full">
+                <mat-label class="text-sm">Tag</mat-label>
+                <mat-chip-list #chipList02>
+                    <mat-chip
+                        [removable]="true"
+                        [selectable]="true">
+                        Lemon
+                        <mat-icon
+                            class="icon-size-5"
+                            matChipRemove
+                            [svgIcon]="'heroicons_solid:minus-circle'"></mat-icon>
+                    </mat-chip>
+                    <mat-chip
+                        [removable]="true"
+                        [selectable]="true">
+                        Lime
+                        <mat-icon
+                            class="icon-size-5"
+                            matChipRemove
+                            [svgIcon]="'heroicons_solid:minus-circle'"></mat-icon>
+                    </mat-chip>
+                    <mat-chip
+                        [removable]="true"
+                        [selectable]="true">
+                        Apple
+                        <mat-icon
+                            class="icon-size-5"
+                            matChipRemove
+                            [svgIcon]="'heroicons_solid:minus-circle'"></mat-icon>
+                    </mat-chip>
+                    <input [placeholder]="'New fruit...'" [matChipInputFor]="chipList02">
+                </mat-chip-list>
+            </mat-form-field>
+        </div>
+        <!-- mordetails  -->
+        <div class="p-5">
+            <div class="flex flex-wrap pb-5">
+                <mat-form-field class="fuse-mat-dense w-full md:w-1/2 sm:pr-2">
+                    <mat-label class="flex items-center text-sm">
+                        <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                        Name
+                    </mat-label>
+                    <input matInput>
+                </mat-form-field>
+                <mat-form-field class="fuse-mat-dense w-full md:w-1/2 sm:pl-2">
+                    <mat-label class="flex items-center text-sm">Address</mat-label>
+                    <input matInput>
+                </mat-form-field>
+                <mat-form-field class="fuse-mat-dense w-full md:w-1/2 sm:pr-2">
+                    <mat-label class="flex items-center text-sm">Position</mat-label>
+                    <input matInput>
+                </mat-form-field>
+                <mat-form-field class="fuse-mat-dense w-full md:w-1/2 sm:pl-2">
+                    <mat-label class="flex items-center text-sm">City</mat-label>
+                    <input matInput>
+                </mat-form-field>
+                <mat-form-field class="fuse-mat-dense w-full md:w-1/2 sm:pr-2">
+                    <mat-label class="flex items-center text-sm">Email Address</mat-label>
+                    <input matInput>
+                </mat-form-field>
+                <mat-form-field class="fuse-mat-dense w-full md:w-1/2 sm:pl-2">
+                    <mat-label class="flex items-center text-sm">State</mat-label>
+                    <input matInput>
+                </mat-form-field>
+                <mat-form-field class="fuse-mat-dense w-full md:w-1/2 sm:pr-2">
+                    <mat-label class="flex items-center text-sm">Website</mat-label>
+                    <input matInput>
+                </mat-form-field>
+                <mat-form-field class="fuse-mat-dense w-full md:w-1/2 sm:pl-2">
+                    <mat-label class="flex items-center text-sm">Country</mat-label>
+                    <mat-select [placeholder]="'medium'">
+                        <mat-option value="medium">Medium</mat-option>
+                        <mat-option value="high">high</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field class="fuse-mat-dense w-full md:w-1/2 sm:pr-2">
+                    <mat-label class="flex items-center text-sm">Phone</mat-label>
+                    <input matInput>
+                </mat-form-field>
+                <mat-form-field class="fuse-mat-dense w-full md:w-1/2 sm:pl-2">
+                    <mat-label class="flex items-center text-sm">Zip Code</mat-label>
+                    <input matInput>
+                </mat-form-field>
+                <mat-form-field class="fuse-mat-dense w-full md:w-1/2 sm:pr-2">
+                    <mat-label class="flex items-center text-sm">Lead value</mat-label>
+                    <input matInput>
+                </mat-form-field>
+                <mat-form-field class="fuse-mat-dense w-full md:w-1/2 sm:pl-2">
+                    <mat-label class="flex items-center text-sm">Default Language</mat-label>
+                    <mat-select [placeholder]="'System Default'">
+                        <mat-option value="medium">Medium</mat-option>
+                        <mat-option value="high">high</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field class="fuse-mat-dense w-full md:w-1/2 sm:pr-2">
+                    <mat-label class="flex items-center text-sm">Company</mat-label>
+                    <input matInput>
+                </mat-form-field>
+                <mat-form-field class="fuse-mat-textarea w-full">
+                    <mat-label class="text-sm">Description</mat-label>
+                    <textarea matInput [rows]="3" matTextareaAutosize></textarea>
+                </mat-form-field>  
+                <div class="space-x-5">
+                    <mat-checkbox [color]="'primary'" class="example-margin">Public</mat-checkbox>
+                    <mat-checkbox [color]="'primary'" class="example-margin">Contacted Today</mat-checkbox>
+                </div>
+            </div>        
+            <div class="flex items-center justify-end mt-4 sm:mt-0 space-x-4">
+                <!-- Discard -->
+                <button
+                    class="ml-auto sm:ml-0"
+                    mat-stroked-button 
+                    (click)="close()"
+                    >
+                    Close
+                </button>
+                <!-- Send -->
+                <button
+                    class="order-first sm:order-last"
+                    mat-flat-button
+                    [color]="'primary'">
+                    Save
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

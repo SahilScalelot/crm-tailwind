@@ -1,0 +1,167 @@
+<div class="flex flex-col max-w-xl md:min-w-160 max-h-screen -m-6">
+
+    <!-- Header -->
+    <div class="flex flex-0 items-center justify-between h-16 pr-3 sm:pr-5 pl-6 sm:pl-8 bg-primary text-on-primary">
+        <div class="text-lg font-medium">New Message</div>
+        <button
+            mat-icon-button
+            [tabIndex]="-1"
+            (click)="close()"
+            >
+            <mat-icon
+                class="text-current"
+                [svgIcon]="'heroicons_outline:x'"></mat-icon>
+        </button>
+    </div>
+
+    <!-- Compose form -->
+    <form class="flex flex-col flex-auto p-6 sm:p-8 overflow-y-auto">
+        <div class="pb-5 border-b border-gray-300 flex">
+            <mat-checkbox [color]="'primary'" class="mr-3">Public</mat-checkbox>
+            <mat-checkbox [color]="'primary'">Billable</mat-checkbox>
+            <span class="ml-auto inline-block text-sm text-blue-600">Attach Files</span>
+        </div>
+        <div class="w-full max-w-2xl py-5 border-b border-gray-300">
+            <div class="w-full">
+                <label class="pb-1 block">Choose CSV File</label>
+                <div class="flex space-x-2">
+                    <div class="w-full border border-gray-300 rounded-md">
+                        <input id="avatar-file-input" class="absolute w-0 h-0 opacity-0 invisible pointer-events-none"
+                        type="file" [multiple]="false" [accept]="'image/jpeg, image/png'"
+                        #avatarFileInput>
+                        <div class="flex items-center">
+                            <label class="flex items-center justify-center w-10 h-10 rounded-full cursor-pointer hover:bg-hover" for="avatar-file-input" matRipple>
+                                <mat-icon class="text-gray-400" [svgIcon]="'heroicons_outline:camera'"></mat-icon>
+                            </label>
+                            <span class="inline-block text-base text-black/80">Upload File</span>
+                        </div>
+                    </div>
+                    <span class="text-3xl leading-10 px-3 bg-green-600 text-white font-semibold rounded-md">+</span>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-wrap py-5">
+            <mat-form-field class="fuse-mat-dense w-full">
+                <mat-label class="flex items-center text-sm">
+                    <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                    Subject
+                </mat-label>
+                <input matInput>
+            </mat-form-field>
+            <mat-form-field class="fuse-mat-dense w-full">
+                <mat-label class="flex items-center text-sm">Hourly Rate</mat-label>
+                <input matInput>
+            </mat-form-field>
+            <!-- date -->
+            <mat-form-field class="fuse-mat-dense w-full md:w-1/2 sm:pr-2">
+                <mat-label class="flex items-center text-sm"> 
+                    <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                    Start Date
+                </mat-label>
+                <input matInput [matDatepicker]="picker2">
+                <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                <mat-datepicker #picker2></mat-datepicker>
+            </mat-form-field>
+            <mat-form-field class="fuse-mat-dense w-full md:w-1/2 sm:pl-2">
+                <mat-label class="text-sm">Due Date</mat-label>
+                <input matInput [matDatepicker]="picker2">
+                <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                <mat-datepicker #picker2></mat-datepicker>
+            </mat-form-field>
+            <!-- date end-->
+            <mat-form-field class="fuse-mat-dense w-full md:w-1/2 sm:pr-2">
+                <mat-label class="text-sm">Priority</mat-label>
+                <mat-select [placeholder]="'medium'">
+                    <mat-option value="medium">Medium</mat-option>
+                    <mat-option value="high">high</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field class="fuse-mat-dense w-full md:w-1/2 sm:pl-2">
+                <mat-label class="text-sm">Repeat every</mat-label>
+                <mat-select [placeholder]="'nothing'">
+                    <mat-option value="nothing">Nothing Selected</mat-option>
+                    <mat-option value="Tax-2">Tax2</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field class="fuse-mat-dense w-full md:w-1/2 sm:pr-2">
+                <mat-label class="text-sm">Related To</mat-label>
+                <mat-select [placeholder]="'nothing'">
+                    <mat-option value="nothing">Nothing Selected</mat-option>
+                    <mat-option value="Tax-2">Tax2</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <div class="w-full md:w-1/2 sm:pl-2">                
+            </div>
+            <mat-form-field class="fuse-mat-dense w-full md:w-1/2 sm:pr-2">
+                <mat-label class="text-sm">Assignees</mat-label>
+                <mat-select [placeholder]="'superadmin'">
+                    <mat-option value="superadmin">Super Admin</mat-option>
+                    <mat-option value="Item-2">Item3</mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field class="fuse-mat-dense w-full md:w-1/2 sm:pl-2">
+                <mat-label class="text-sm">Followers</mat-label>
+                <mat-select [placeholder]="'superadmin'">
+                    <mat-option value="superadmin">Nothing Selected</mat-option>
+                    <mat-option value="Item-2">Item3</mat-option>
+                </mat-select>
+            </mat-form-field>
+            
+            <mat-form-field class="fuse-mat-dense w-full">
+                <mat-label class="text-sm">Tag</mat-label>
+                <mat-chip-list #chipList02>
+                    <mat-chip
+                        [removable]="true"
+                        [selectable]="true">
+                        Lemon
+                        <mat-icon
+                            class="icon-size-5"
+                            matChipRemove
+                            [svgIcon]="'heroicons_solid:minus-circle'"></mat-icon>
+                    </mat-chip>
+                    <mat-chip
+                        [removable]="true"
+                        [selectable]="true">
+                        Lime
+                        <mat-icon
+                            class="icon-size-5"
+                            matChipRemove
+                            [svgIcon]="'heroicons_solid:minus-circle'"></mat-icon>
+                    </mat-chip>
+                    <mat-chip
+                        [removable]="true"
+                        [selectable]="true">
+                        Apple
+                        <mat-icon
+                            class="icon-size-5"
+                            matChipRemove
+                            [svgIcon]="'heroicons_solid:minus-circle'"></mat-icon>
+                    </mat-chip>
+                    <input [placeholder]="'New fruit...'" [matChipInputFor]="chipList02">
+                </mat-chip-list>
+            </mat-form-field>
+
+            <mat-form-field class="fuse-mat-textarea w-full">
+                <mat-label class="text-sm">Task Description</mat-label>
+                <textarea matInput [rows]="3" matTextareaAutosize></textarea>
+            </mat-form-field>
+        </div>        
+        <div class="flex items-center justify-end mt-4 sm:mt-0 space-x-4">
+            <!-- Discard -->
+            <button
+                class="ml-auto sm:ml-0"
+                mat-stroked-button 
+                (click)="close()"
+                >
+                Close
+            </button>
+            <!-- Send -->
+            <button
+                class="order-first sm:order-last"
+                mat-flat-button
+                [color]="'primary'">
+                Save
+            </button>
+        </div>
+    </form>
+</div>

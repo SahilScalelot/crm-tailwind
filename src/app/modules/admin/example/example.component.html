@@ -489,14 +489,13 @@
         </div>
     </div>
 
-
     <!-- Customer -->
     <div class="bg-card w-full" *ngIf="false">
         <div class="w-full flex items-center p-5 border-b border-gray-200">
             <div class="flex flex-wrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
-                <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">New Customer</a>
-                <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">Import Customer</a>
-                <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">Contacts</a>
+                <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">New Customer</button>
+                <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">Import Customer</button>
+                <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">Contacts</button>
             </div>
             <div class="sm:ml-auto ml-4">
                 <a href="#" class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
@@ -508,27 +507,27 @@
             <span class="inline-block text-lg md:text-xl">Customers Summary</span>
             <div class="flex flex-wrap pt-3">
                 <div class="w-1/2 md:w-1/3 mb-3 xl:w-1/6 px-3 pl-0 border-r border-gray-200">
-                    <span class="text-lg lg:text-2xl block">11</span>
+                    <span class="text-2xl font-semibold block">11</span>
                     <p class="text-sm mt-1">Total Customers</p>
                 </div>
                 <div class="w-1/2 md:w-1/3 mb-3 xl:w-1/6 px-3 md:border-r border-gray-200">
-                    <span class="text-lg lg:text-2xl block">11</span>
+                    <span class="text-2xl font-semibold block">11</span>
                     <p class="text-sm mt-1 text-green-600">Active Customers</p>
                 </div>
                 <div class="w-1/2 md:w-1/3 mb-3 xl:w-1/6 px-3 pl-0 md:pl-3 border-r md:border-r-0 xl:border-r border-gray-200">
-                    <span class="text-lg lg:text-2xl block">0</span>
+                    <span class="text-2xl font-semibold block">0</span>
                     <p class="text-sm mt-1 text-red-600">Inactive Customers</p>
                 </div>
                 <div class="w-1/2 md:w-1/3 mb-3 xl:w-1/6 px-3 md:pl-0 xl:pl-3 md:border-r border-gray-200">
-                    <span class="text-lg lg:text-2xl block">2</span>
+                    <span class="text-2xl font-semibold block">2</span>
                     <p class="text-sm mt-1 text-blue-600">Active Contacts</p>
                 </div>
                 <div class="w-1/2 md:w-1/3 mb-3 xl:w-1/6 px-3 pl-0 md:pl-3 border-r border-gray-200">
-                    <span class="text-lg lg:text-2xl block">0</span>
+                    <span class="text-2xl font-semibold block">0</span>
                     <p class="text-sm mt-1 text-red-600">Inactive Contacts</p>
                 </div>
                 <div class="w-1/2 md:w-1/3 mb-3 xl:w-1/6 px-3">
-                    <span class="text-lg lg:text-2xl block">1</span>
+                    <span class="text-2xl font-semibold block">1</span>
                     <p class="text-sm mt-1 inline-block border-b border-dashed pb-1 border-gray-400">Contacts Logged In Today</p>
                 </div>
             </div>
@@ -538,6 +537,7 @@
         </div>
     </div>
     <!-- Customer 2.1-->
+
     <!-- Leads Overview -->
     <div class="bg-card shadow overflow-hidden" *ngIf="false">
         <div class="p-4 py-3 border-b border-black/400">
@@ -720,6 +720,7 @@
             </div>
         </div>
     </div>
+
     <!-- Import Customer -->
     <div class="bg-card p-6" *ngIf="false">
         <div class="pb-6">
@@ -933,8 +934,8 @@
             <!-- switch to pipeline -->
             <div class="w-full flex items-center p-5 border-b border-gray-200 bg-card">
                 <div class="flex flex-wrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
-                    <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">New Proposal</a>
-                    <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-black bg-gray-200 rounded uppercase hover:opacity-90">Switch to Pipeline</a>
+                    <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">New Proposal</button>
+                    <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-black bg-gray-200 rounded uppercase hover:opacity-90">Switch to Pipeline</button>
                 </div>
                 <div class="sm:ml-auto ml-4 flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
                     <a href="#" class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
@@ -949,11 +950,13 @@
             <!-- Switch to list  -->
             <div class="w-full flex flex-col sm:flex-row items-center justify-between p-5 border-b border-gray-200 bg-card">
                 <div class="flex flex-wrap sm:flex-nowrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
-                    <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase whitespace-nowrap hover:opacity-90">New Proposal</a>
-                    <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-black bg-gray-200 rounded uppercase whitespace-nowrap hover:opacity-90">Switch to List</a>
+                    <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase whitespace-nowrap hover:opacity-90">New Proposal</button>
+                    <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-black bg-gray-200 rounded uppercase whitespace-nowrap hover:opacity-90">Switch to List</button>
                 </div>
                 <div class="sm:ml-4 w-full max-w-lg pt-2 sm:p-0">
-                    <input type="text" class="p-3 py-2 focus:border-blue-600 w-full border border-gray-300 rounded-md">
+                    <mat-form-field class="fuse-mat-dense w-full">
+                        <input matInput type="text">
+                    </mat-form-field>
                 </div>
             </div>
             <!-- Switch to list details -->
@@ -1164,7 +1167,7 @@
                         <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
                             <mat-label class="text-sm">Assigned</mat-label>
                             <mat-select [placeholder]="'Assigned'">
-                                <mat-option value="Assigned-1">Assigned Type</mat-option>
+                                <mat-option value="assigned">Assigned Type</mat-option>
                                 <mat-option value="Assigned-2">Assigned 2</mat-option>
                                 <mat-option value="Assigned-2">Assigned 3</mat-option>
                                 <mat-option value="Assigned-3">Assigned 4</mat-option>
@@ -1354,7 +1357,7 @@
         <!-- ESTIMATES -->
         <div class="w-full" *ngIf="false">
             <!-- View Quick Status start-->
-            <div class="p-5 bg-card border-b border-gray-200" [@expandCollapse]="show" *ngIf="show">
+            <div class="p-5 bg-card border-b border-gray-200">
                 <div class="flex flex-wrap -mx-2">
                     <div class="w-full sm:w-1/2 md:w-1/3 xl:w-[20%] p-2">
                         <div class="p-3 w-full border border-gray-200 rounded-md text-center space-y-2">
@@ -1464,15 +1467,15 @@
             <!-- ESTIMATES to pipeline -->            
             <div class="w-full flex items-center p-5 border-b border-gray-200 bg-card" >
                 <div class="flex flex-wrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
-                    <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">Create New Estimates</a>
-                    <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-black bg-gray-200 rounded uppercase hover:opacity-90">Switch to Pipeline</a>
+                    <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">Create New Estimates</button>
+                    <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-black bg-gray-200 rounded uppercase hover:opacity-90">Switch to Pipeline</button>
                 </div>
                 <div class="sm:ml-auto ml-4 flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
                     <button class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
                         <mat-icon class="icon-size-4" svgIcon="heroicons_outline:chevron-double-left"></mat-icon>
                         <mat-icon class="icon-size-4 hidden" svgIcon="heroicons_outline:chevron-double-right"></mat-icon>
                     </button>
-                    <button (click)="togglequickview()" class="cursor-pointer flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                    <button class="cursor-pointer flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
                         <mat-icon class="icon-size-4" svgIcon="insert_chart_outlined"></mat-icon>
                     </button>
                     <button class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
@@ -1484,11 +1487,11 @@
             <!-- ESTIMATES to list  -->
             <div class="w-full flex flex-col sm:flex-row items-center justify-between p-5 border-b border-gray-200 bg-card">
                 <div class="flex flex-wrap sm:flex-nowrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
-                    <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase whitespace-nowrap hover:opacity-90">Create New Estimates</a>
-                    <a href="#" class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                    <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase whitespace-nowrap hover:opacity-90">Create New Estimates</button>
+                    <button class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
                         <mat-icon class="icon-size-4" svgIcon="insert_chart_outlined"></mat-icon>
-                    </a>
-                    <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-black bg-gray-200 rounded uppercase whitespace-nowrap hover:opacity-90">Switch to List</a>
+                    </button>
+                    <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-black bg-gray-200 rounded uppercase whitespace-nowrap hover:opacity-90">Switch to List</button>
                 </div>
                 <div class="sm:ml-4 w-full max-w-lg pt-2 sm:p-0">
                     <input type="text" class="p-3 py-2 focus:border-blue-600 w-full border border-gray-300 rounded-md">
@@ -2230,7 +2233,7 @@
                         <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
                             <mat-label class="text-sm">Status</mat-label>
                             <mat-select [placeholder]="'Assigned'">
-                                <mat-option value="Assigned-1">Assigned Type</mat-option>
+                                <mat-option value="assigned">Assigned Type</mat-option>
                                 <mat-option value="Assigned-2">Assigned 2</mat-option>
                                 <mat-option value="Assigned-2">Assigned 3</mat-option>
                                 <mat-option value="Assigned-3">Assigned 4</mat-option>
@@ -2529,8 +2532,8 @@
             <!-- head2  -->
             <div class="w-full flex items-center p-5 border-b border-gray-200 bg-card" >
                 <div class="flex flex-wrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
-                    <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">Create New Ivoice</a>
-                    <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-black bg-gray-200 rounded uppercase hover:opacity-90">Go Back</a>
+                    <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">Create New Ivoice</button>
+                    <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-black bg-gray-200 rounded uppercase hover:opacity-90">Go Back</button>
                 </div>
                 <div class="sm:ml-auto ml-4 flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
                     <button class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
@@ -2636,7 +2639,7 @@
                         <mat-form-field class="fuse-mat-dense w-full">
                             <mat-label class="text-sm">Allowed payment modes for this invoice</mat-label>
                             <mat-select [placeholder]="'Assigned'">
-                                <mat-option value="Assigned-1">Back</mat-option>
+                                <mat-option value="assigned">Back</mat-option>
                                 <mat-option value="Assigned-2">Assigned 2</mat-option>                                
                             </mat-select>
                         </mat-form-field> 
@@ -2653,7 +2656,7 @@
                         <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
                             <mat-label class="text-sm">Sale Agent</mat-label>
                             <mat-select [placeholder]="'Assigned'">
-                                <mat-option value="Assigned-1">Assigned Type</mat-option>
+                                <mat-option value="assigned">Assigned Type</mat-option>
                                 <mat-option value="Assigned-2">Assigned 2</mat-option>
                                 <mat-option value="Assigned-2">Assigned 3</mat-option>
                                 <mat-option value="Assigned-3">Assigned 4</mat-option>
@@ -2828,11 +2831,11 @@
         <!-- INVOICES END -->
 
         <!-- CREDIT NOTES -->
-        <div class="w-full">
+        <div class="w-full" *ngIf="false">
              <!-- head -->
              <div class="w-full flex items-center p-5 border-b border-gray-200 bg-card" >
                 <div class="flex flex-wrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
-                    <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">New Credit Note<ng-content select="selector"></ng-content></a>
+                    <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">New Credit Note<ng-content select="selector"></ng-content></button>
                 </div>
                 <div class="sm:ml-auto ml-4 flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
                     <button class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
@@ -2844,8 +2847,1766 @@
                     </button>
                 </div>
             </div>
-
+            <!-- CREATE NEW CREDIT NOTES -->
+            <div class="w-full space-y-6">
+                <div class="flex items-start flex-wrap p-6 bg-card">
+                    <div class="md:pr-5 w-full flex items-baseline flex-wrap md:w-1/2 md:border-r border-gray-300">
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="flex items-center text-sm">
+                                <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                                Customer
+                            </mat-label>
+                            <input matInput>
+                        </mat-form-field>                        
+                        <div class="flex flex-wrap w-full mb-4">
+                            <div class="w-full">                                
+                                <mat-icon (click)="billAddPop()" class="cursor-pointer icon-size-5 opacity-80" [color]="'primary'" svgIcon="heroicons_outline:pencil-alt"></mat-icon>
+                            </div>
+                            <div class="w-1/2 pr-2 space-y-4">
+                                <span class="text-sm font-bold block">Bill To</span>
+                                <div class="w-full flex flex-col">
+                                    <span class="text-sm">--</span>
+                                    <span class="text-sm">-- , --</span>
+                                    <span class="text-sm">-- , --</span>
+                                </div>
+                            </div>
+                            <div class="w-1/2 pl-2 space-y-4">
+                                <span class="text-sm font-bold block">Ship to</span>
+                                <div class="w-full flex flex-col">
+                                    <span class="text-sm">--</span>
+                                    <span class="text-sm">-- , --</span>
+                                    <span class="text-sm">-- , --</span>
+                                </div>
+                            </div>
+                        </div>
+                        <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
+                            <mat-label class="flex items-center text-sm">
+                                <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                                Credit Note Date
+                            </mat-label>
+                            <input matInput [matDatepicker]="picker1">
+                            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                            <mat-datepicker #picker1></mat-datepicker>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
+                            <mat-label class="flex items-center text-sm">
+                                <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                                Credit Note # 
+                            </mat-label>
+                            <input matInput>
+                            <span matPrefix class="h-full border-r border-gray-200 flex items-center justify-center pr-3">CN-</span>
+                        </mat-form-field>
+                        <mat-checkbox [color]="'primary'">Prevent sending overdue reminders for this invoice</mat-checkbox>
+                    </div>
+                    <div class="pt-4 md:pt-0 md:pl-5 w-full flex items-baseline flex-wrap md:w-1/2">
+                        <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
+                            <mat-label class="flex items-center text-sm">
+                                <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                                Currency
+                            </mat-label>
+                            <mat-select [placeholder]="'usd'" disabled="">
+                                <mat-option value="usd">USD</mat-option>
+                                <mat-option value="INR">INR</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
+                            <mat-label class="text-sm">Discount Type</mat-label>
+                            <mat-select [placeholder]="'Assigned'">
+                                <mat-option value="assigned">Assigned Type</mat-option>
+                                <mat-option value="Assigned-2">Assigned 2</mat-option>
+                                <mat-option value="Assigned-2">Assigned 3</mat-option>
+                                <mat-option value="Assigned-3">Assigned 4</mat-option>
+                                <mat-option value="Assigned-3">Assigned 5</mat-option>
+                                <mat-option value="Assigned-3">Assigned 6</mat-option>
+                                <mat-option value="Assigned-3">Assigned 7</mat-option>
+                            </mat-select>
+                        </mat-form-field>     
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="text-sm">Reference #</mat-label>
+                            <input matInput>
+                        </mat-form-field>        
+                        <mat-form-field class="fuse-mat-textarea w-full">
+                            <mat-label class="text-sm">Admin Note</mat-label>
+                            <textarea matInput [rows]="3" matTextareaAutosize></textarea>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="p-6 bg-card">
+                    <div class="flex flex-wrap items-start -mx-2">
+                        <div class="w-full sm:w-1/2 px-2">
+                            <div class="flex items-center">
+                                <mat-form-field class="fuse-mat-dense w-full max-w-lg pr-2">
+                                    <mat-select class="overflow-hidden" matNativeControl [placeholder]="'Draft-1'">
+                                        <mat-option value="Draft-1">Add Item</mat-option>
+                                        <mat-option value="Draft-2">Draft 2</mat-option>
+                                        <mat-option value="Draft-2">Draft 3</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                                <span (click)="proposalAddItemsPop()" class="cursor-pointerw-10 -mt-4 w-10 h-10 border border-gray-200 rounded-md flex items-center justify-center">
+                                    <mat-icon class="icon-size-6" svgIcon="heroicons_outline:plus-sm"></mat-icon>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="w-full sm:w-1/2 px-2 flex flex-col lg:flex-row items-baseline space-x-1 md:justify-end pb-3 md:pb-0 lg:pt-2">
+                            <span class="text-sm font-semibold inline-block">Show quantity as:</span>
+                            <mat-radio-group aria-label="Select an option" class="space-x-3">
+                                <mat-radio-button [color]="'primary'" value="Qty" class="text-sm">Qty</mat-radio-button>
+                                <mat-radio-button [color]="'primary'" value="Hours" class="text-sm">Hours</mat-radio-button>
+                                <mat-radio-button [color]="'primary'" value="Qty/Hours" class="text-sm">Qty/Hours</mat-radio-button>
+                            </mat-radio-group>
+                        </div>
+                        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-2/12 px-2">
+                            <mat-form-field class="fuse-mat-textarea w-full">
+                                <mat-label class="text-sm flex items-center">
+                                    <mat-icon class="icon-size-4 mr-1" svgIcon="heroicons_solid:exclamation-circle"></mat-icon>
+                                    Item
+                                </mat-label>
+                                <textarea matInput [rows]="3" matTextareaAutosize></textarea>
+                            </mat-form-field>
+                        </div>
+                        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-3/12 px-2">
+                            <mat-form-field class="fuse-mat-textarea w-full">
+                                <mat-label class="text-sm">Description</mat-label>
+                                <textarea matInput [rows]="3" matTextareaAutosize></textarea>
+                            </mat-form-field>
+                        </div>
+                        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/12 px-2">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">Qty</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                        </div>
+                        <div class="w-full sm:w-1/2 md:w-4/12 lg:w-1/4 xl:w-2/12 px-2">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">Rate</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                        </div>
+                        <div class="w-full sm:w-6/12 md:w-4/12 lg:w-1/4 xl:w-2/12 px-2">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">Tax</mat-label>
+                                <mat-select [placeholder]="'Tax'">
+                                    <mat-option value="Tax-1">System default</mat-option>
+                                    <mat-option value="Tax-2">Tax 2</mat-option>
+                                    <mat-option value="Tax-2">Tax 3</mat-option>
+                                    <mat-option value="Tax-3">Tax 4</mat-option>
+                                    <mat-option value="Tax-3">Tax 5</mat-option>
+                                    <mat-option value="Tax-3">Tax 6</mat-option>
+                                    <mat-option value="Tax-3">Tax 7</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                        <div class="w-10/12 sm:w-5/12 md:w-3/12 lg:w-1/4 xl:w-1/12 px-2">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">Amount</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                        </div>
+                        <div class="w-2/12 sm:w-1/12 md:w-1/12 lg:w-1/12 xl:w-1/12 p-2">
+                            <div class="w-full flex flex-col items-end space-y-3">
+                                <mat-label class="text-sm block mr-2">
+                                    <mat-icon svgIcon="mat_outline:settings" class="icon-size-5"></mat-icon>
+                                </mat-label>
+                                <mat-checkbox [color]="'primary'" class="example-margin"></mat-checkbox>
+                            </div>
+                        </div>
+                        <div class="w-full max-w-4xl flex flex-wrap p-2 pt-10 text-right ml-auto">
+                            <div class="w-9/12 sm:w-8/12 border-t border-blue-400 pl-0 p-4 sm:p-3">
+                                <p class="font-semibold text-sm">Sub Total :</p>
+                            </div>
+                            <div class="w-3/12 sm:w-4/12 border-t border-blue-400  pr-0 p-4 sm:p-3">
+                                <p class="text-sm">$0.00</p>
+                            </div>
+                            <div class="w-9/12 sm:w-8/12 border-t border-blue-400 pl-0 p-4 sm:p-3">
+                                <div class="flex flex-col sm:flex-row items-baseline justify-end sm:space-x-4">
+                                    <p class="text-sm font-semibold inline-block pb-1 sm:pb-0">Discount</p>
+                                    <mat-form-field class="fuse-mat-dense w-full max-w-xs -mb-4">
+                                        <input atInput [value]="'0'">
+                                        <mat-select [value]="'%'" matSuffix>
+                                            <mat-option [value]="'%'">%</mat-option>
+                                            <mat-option [value]="'Fixed Amount'">Fixed Amount</mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="w-3/12 sm:w-4/12 border-t border-blue-400  pr-0 p-4 sm:p-3">
+                                <p class="text-sm">-$0.00</p>
+                            </div>
+                            <div class="w-9/12 sm:w-8/12 border-t border-blue-400 pl-0 p-4 sm:p-3 -mb-4">
+                                <div class="flex flex-col sm:flex-row items-baseline justify-end sm:space-x-4">
+                                    <p class="text-sm font-semibold inline-block pb-1 sm:pb-0">Adjustment</p>
+                                    <mat-form-field class="fuse-mat-dense w-full max-w-xs">
+                                        <input matInput [value]="'0'">
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="w-3/12 sm:w-4/12 border-t border-blue-400  pr-0 p-4 sm:p-3">
+                                <p class="text-sm">-$0.00</p>
+                            </div>
+                            <div class="w-9/12 sm:w-8/12 border-t border-blue-400 pl-0 p-4 sm:p-3">
+                                <p class="font-semibold text-sm">Total :</p>
+                            </div>
+                            <div class="w-3/12 sm:w-4/12 border-t border-blue-400  pr-0 p-4 sm:p-3">
+                                <p class="text-sm">$0.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 bg-card">
+                    <mat-form-field class="fuse-mat-textarea w-full">
+                        <mat-label class="text-sm">Client Note</mat-label>
+                        <textarea matInput [rows]="3" matTextareaAutosize></textarea>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-textarea w-full">
+                        <mat-label class="text-sm">Terms & Conditions</mat-label>
+                        <textarea matInput [rows]="3" matTextareaAutosize></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
         </div>
         <!-- CREDIT NOTES END -->
 
+        <!-- ITEMS START -->
+        <div class="w-full" *ngIf="false">
+             <!-- head -->
+            <div class="w-full p-5 border-b border-gray-200 bg-card" >
+                <div class="flex flex-wrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
+                    <button (click)="proposalAddItemsPop()" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">New Item<ng-content select="selector"></ng-content></button>
+                    <button (click)="itemGroupPop()" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">New Groups<ng-content select="selector"></ng-content></button>
+                    <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">New Import Items<ng-content select="selector"></ng-content></button>
+                </div>
+            </div>
+            <!-- New Import Items Start-->
+            <div class="bg-card p-6">
+                <div class="pb-6">
+                    <a href="#" class="p-3 py-2.5 bg-green-500 text-white rounded">Download Sample</a>
+                </div>
+                <ul class="py-6 text-sm border-t border-gray-300">
+                    <ol>1. Your CSV data should be in the format below. The first line of your CSV file should be the column headers as in the table example. Also make sure that your file is UTF-8 to avoid unnecessary <b>encoding problems.</b></ol>
+                    <ol>2. If the column <b>you are trying to import is date make sure that is formatted in format Y-m-d (2023-06-01).</b></ol>
+                    <ol>3. In the column <b>Group,</b> you <b>must</b> add either the <b>GROUP NAME or the GROUP ID,</b> which you can get them by clicking<a href="" class="text-blue-600">here.</a></ol>
+                    <ol>4. In the column <b>Tax</b> and <b>Tax2,</b> you <b>must</b> add either the <b>TAX NAME or the TAX ID,</b> which you can get them by navigating to <a href="" class="text-blue-600">Setup->Finance->Taxes</a></ol>
+                </ul>
+                <div class="w-full overflow-x-auto pb-2">
+                    <table class="w-full">
+                        <tr>
+                            <td class="p-2 leading-4 border border-gray-300">
+                                <span class="text-block text-sm"><span class="text-red-600 text-sm inline-block mr-0.5">*</span>Description</span>                            
+                            </td>
+                            <td class="p-2 leading-4 border border-gray-300">
+                                <span class="text-block text-sm">Long description</span>                            
+                            </td>
+                            <td class="p-2 leading-4 border border-gray-300">
+                                <span class="text-block text-sm"><span class="text-red-600 text-sm inline-block mr-0.5">*</span>Rate - USD</span>
+                            </td>
+                            <td class="p-2 leading-4 border border-gray-300">
+                                <span class="text-block text-sm">Tax</span>                            
+                            </td>
+                            <td class="p-2 leading-4 border border-gray-300">
+                                <span class="text-block text-sm">Tax2</span>                            
+                            </td>
+                            <td class="p-2 leading-4 border border-gray-300">
+                                <span class="text-block text-sm">Unit</span>                            
+                            </td>
+                            <td class="p-2 leading-4 border border-gray-300">
+                                <span class="text-block text-sm">Group</span>                            
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-2 leading-4 border border-gray-300">
+                                <span class="text-block text-sm">Sample Data</span>                            
+                            </td>
+                            <td class="p-2 leading-4 border border-gray-300">
+                                <span class="text-block text-sm">Sample Data</span>                            
+                            </td>
+                            <td class="p-2 leading-4 border border-gray-300">
+                                <span class="text-block text-sm">Sample Data</span>                            
+                            </td>
+                            <td class="p-2 leading-4 border border-gray-300">
+                                <span class="text-block text-sm">Sample Data</span>                            
+                            </td>
+                            <td class="p-2 leading-4 border border-gray-300">
+                                <span class="text-block text-sm">Sample Data</span>                            
+                            </td>
+                            <td class="p-2 leading-4 border border-gray-300">
+                                <span class="text-block text-sm">Sample Data</span>                            
+                            </td>
+                            <td class="p-2 leading-4 border border-gray-300">
+                                <span class="text-block text-sm">Sample Data</span>                            
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="w-full max-w-2xl pt-7">
+                    <div class="w-full pb-5">
+                        <label class="pb-1 block">Choose CSV File</label>
+                        <div class="w-full border border-gray-300 rounded-md">
+                            <input id="avatar-file-input" class="absolute w-0 h-0 opacity-0 invisible pointer-events-none"
+                            type="file" [multiple]="false" [accept]="'image/jpeg, image/png'"
+                            #avatarFileInput>
+                            <div class="flex items-center">
+                                <label class="flex items-center justify-center w-10 h-10 rounded-full cursor-pointer hover:bg-hover" for="avatar-file-input" matRipple>
+                                    <mat-icon class="text-gray-400" [svgIcon]="'heroicons_outline:camera'"></mat-icon>
+                                </label>
+                                <span class="inline-block text-base text-black/80">Upload File</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-wrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
+                    <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">IMport</a>
+                    <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">Simulate import</a>
+                </div>
+            </div>
+            <!-- New Import Items End-->
+        </div>
+        <!-- ITEMS END -->
+
+    <!-- SUBSCRIPATION  START-->
+    <div class="bg-card w-full" *ngIf="false">
+        <!-- head  -->
+        <div class="w-full flex items-center justify-between p-5 border-b border-gray-200">
+            <div class="flex flex-wrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
+                <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">New Subscriptions</button>
+            </div>
+            <div class="ml-4">
+                <a href="#" class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                    <mat-icon class="scale-75" svgIcon="heroicons_solid:filter"></mat-icon>
+                </a>
+            </div>
+        </div>
+        <!-- summary details  -->
+        <div class="p-5 w-full block border-b border-gray-200">
+            <span class="inline-block text-lg md:text-xl font-semibold">Subscriptions Summary</span>
+            <div class="flex flex-wrap pt-3">
+                <div class="w-1/2 md:w-1/3 mb-3 xl:w-1/6 px-3 pl-0 border-r border-gray-200">
+                    <span class="text-2xl font-semibold block">0</span>
+                    <p class="text-sm mt-1 text-blue-600">Not Subscribed</p>
+                </div>
+                <div class="w-1/2 md:w-1/3 mb-3 xl:w-1/6 px-3 md:border-r border-gray-200">
+                    <span class="text-2xl font-semibold block">0</span>
+                    <p class="text-sm mt-1 text-green-600">Active</p>
+                </div>
+                <div class="w-1/2 md:w-1/3 mb-3 xl:w-1/6 px-3 pl-0 md:pl-3 border-r md:border-r-0 xl:border-r border-gray-200">
+                    <span class="text-2xl font-semibold block">0</span>
+                    <p class="text-sm mt-1 text-green-600">Future</p>
+                </div>
+                <div class="w-1/2 md:w-1/3 mb-3 xl:w-1/6 px-3 md:pl-0 xl:pl-3 md:border-r border-gray-200">
+                    <span class="text-2xl font-semibold block">0</span>
+                    <p class="text-sm mt-1 text-orange-600">Past Due</p>
+                </div>
+                <div class="w-1/2 md:w-1/3 mb-3 xl:w-1/6 px-3 pl-0 md:pl-3 border-r border-gray-200">
+                    <span class="text-2xl font-semibold block">0</span>
+                    <p class="text-sm mt-1 text-red-600">Unpaid</p>
+                </div>
+                <div class="w-1/2 md:w-1/3 mb-3 xl:w-1/6 px-3">
+                    <span class="text-2xl font-semibold block">0</span>
+                    <p class="text-sm mt-1 text-orange-600">Incomplete</p>
+                </div>
+                <div class="w-1/2 md:w-1/3 mb-3 xl:w-1/6 px-3 pl-0 border-r border-gray-200">
+                    <span class="text-2xl font-semibold block">0</span>
+                    <p class="text-sm mt-1 text-gray-600">Canceled</p>
+                </div>
+                <div class="w-1/2 md:w-1/3 mb-3 xl:w-1/6 px-3 md:border-r border-gray-200">
+                    <span class="text-2xl font-semibold block">1</span>
+                    <p class="text-sm mt-1 text-gray-600">Incomplete Expired</p>
+                </div>
+            </div>
+        </div>
+        <!-- New Subscriptions start -->
+        <div class="p-5 w-full block">
+            <div class="flex items-start flex-wrap py-6 bg-card">
+                <div class="md:pr-5 w-full flex items-baseline flex-wrap md:w-1/2 md:border-r border-gray-300">
+                    <mat-form-field class="fuse-mat-dense w-full">
+                        <mat-label class="text-sm">
+                            <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                            Billing Plan
+                        </mat-label>
+                        <mat-select [placeholder]="'Assigned'">
+                            <mat-option value="assigned">Back</mat-option>
+                            <mat-option value="Assigned-2">Assigned 2</mat-option>                                
+                        </mat-select>
+                    </mat-form-field> 
+                    <mat-form-field class="fuse-mat-dense w-full">
+                        <mat-label class="flex items-center text-sm">
+                            <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                            Quantity
+                        </mat-label>
+                        <input matInput>
+                    </mat-form-field> 
+                    <mat-form-field class="fuse-mat-dense w-full">
+                        <mat-label class="flex items-center text-sm">
+                            <mat-icon class="icon-size-4 mr-1" [color]="'primary'" svgIcon="heroicons_solid:question-mark-circle"></mat-icon>
+                            First Billing Date
+                        </mat-label>
+                        <input matInput [matDatepicker]="picker1">
+                        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                        <mat-datepicker #picker1></mat-datepicker>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full">
+                        <mat-label class="flex items-center text-sm">
+                            <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                            Subscription Name
+                        </mat-label>
+                        <input matInput>
+                    </mat-form-field> 
+                    <mat-form-field class="fuse-mat-textarea w-full">
+                        <mat-label class="text-sm">Description</mat-label>
+                        <textarea matInput [rows]="3" matTextareaAutosize></textarea>
+                    </mat-form-field>
+                    <mat-checkbox [color]="'primary'"><mat-icon class="icon-size-4 mr-1" [color]="'primary'" svgIcon="heroicons_solid:question-mark-circle"></mat-icon>Prevent sending overdue reminders for this invoice</mat-checkbox>
+                </div>
+                <div class="pt-4 md:pt-0 md:pl-5 w-full flex items-baseline flex-wrap md:w-1/2">
+                    <mat-form-field class="fuse-mat-dense w-full">
+                        <mat-label class="text-sm">
+                            <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                            Customer
+                        </mat-label>
+                        <mat-select [placeholder]="'Select and begin typing'">
+                            <mat-option value="select">Select and begin typing</mat-option>
+                            <mat-option value="customer">Customer</mat-option>                                
+                        </mat-select>
+                    </mat-form-field> 
+                    <mat-form-field class="fuse-mat-dense w-full">
+                        <mat-label class="flex items-center text-sm">
+                            <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                            Currency
+                        </mat-label>
+                        <mat-select [placeholder]="'usd'" disabled="">
+                            <mat-option value="usd">USD</mat-option>
+                            <mat-option value="INR">INR</mat-option>
+                        </mat-select>
+                    </mat-form-field>                      
+                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
+                        <mat-label class="text-sm">Tax 1 (Stripe)</mat-label>
+                        <mat-select [placeholder]="'Sale1'">
+                            <mat-option value="Sale1">Sale</mat-option>
+                            <mat-option value="Sale2">Sale2</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
+                        <mat-label class="text-sm">Tax 2 (Stripe)</mat-label>
+                        <mat-select [placeholder]="'no-dis'">
+                            <mat-option value="no-dis">NO Discount</mat-option>
+                            <mat-option value="dis1">Discount 50%</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-textarea w-full">
+                        <mat-label class="text-sm">Terms & Conditions</mat-label>
+                        <textarea matInput [rows]="3" matTextareaAutosize [placeholder]="'Enter customer terms & conditions to be displayed to the customer before subscribe to the subscription.'"></textarea>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+        <!-- New Subscriptions end -->
+    </div>    
+    <!-- SUBSCRIPATION END-->
+
+    <!-- EXPENSES START  -->
+    <div class="bg-card w-full" *ngIf="false">
+        <!-- head -->
+        <div class="w-full flex items-center p-5 border-b border-gray-200 bg-card" >
+            <div class="flex flex-wrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
+                <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">Record Expense</button>
+                <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">Import Expense</button>
+            </div>
+            <div class="sm:ml-auto ml-4 flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
+                <button class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                    <mat-icon class="icon-size-4" svgIcon="heroicons_outline:chevron-double-left"></mat-icon>
+                    <mat-icon class="icon-size-4 hidden" svgIcon="heroicons_outline:chevron-double-right"></mat-icon>
+                </button>
+                <button class="cursor-pointer flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                    <mat-icon class="icon-size-4" svgIcon="insert_chart_outlined"></mat-icon>
+                </button>
+                <button class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                    <mat-icon class="icon-size-4" svgIcon="heroicons_solid:filter"></mat-icon>
+                </button>
+            </div>
+        </div>
+
+        <!-- New Import Items Start-->
+        <div class="bg-card p-6">
+            <div class="pb-6">
+                <a href="#" class="p-3 py-2.5 bg-green-500 text-white rounded">Download Sample</a>
+            </div>
+            <ul class="py-6 text-sm border-t border-gray-300">
+                <ol>1. Your CSV data should be in the format below. The first line of your CSV file should be the column headers as in the table example. Also make sure that your file is <b>UTF-8</b> to avoid unnecessary <b>encoding problems.</b></ol>
+                <ol>2. If the column <b>you are trying to import is date make sure that is formatted in format Y-m-d (2023-06-01).</b></ol>
+                <ol>3. In the column <b>Category,</b> you <b>must</b> add either the <b>Expense Category NAME or the Expense Category ID,</b> which you can get them by navigating to<a href="" class="text-blue-600">Setup->Finance->Expense Category.</a></ol>
+                <ol>4. In the column <b>Tax</b> and <b>Tax2,</b> you <b>must</b> add either the <b>TAX NAME or the TAX ID,</b> which you can get them by navigating to <a href="" class="text-blue-600">Setup->Finance->Taxes</a></ol>
+                <ol>5. In the column <b>Payment Mode,</b> and <b>Tax2,</b> you <b>must</b> add either the <b>Payment NAME or the Payment ID,</b> which you can get them by navigating to <a href="" class="text-blue-600">Setup->Finance->Payment Modes.</a></ol>
+            </ul>
+            <div class="w-full overflow-x-auto pb-2">
+                <table class="w-full">
+                    <tr>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm"><span class="text-red-600 text-sm inline-block mr-0.5">*</span>Description</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm"><span class="text-red-600 text-sm inline-block mr-0.5">*</span>Amount</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Tax</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Tax2</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Reference no</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Note</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Expense name</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Customer</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Billable</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Payment Mode</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm"><span class="text-red-600 text-sm inline-block mr-0.5">*</span>Date</span>                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="w-full max-w-2xl pt-5">
+                <div class="w-full pb-5">
+                    <label class="pb-1 block">Choose CSV File</label>
+                    <div class="w-full border border-gray-300 rounded-md">
+                        <input id="avatar-file-input" class="absolute w-0 h-0 opacity-0 invisible pointer-events-none"
+                        type="file" [multiple]="false" [accept]="'image/jpeg, image/png'"
+                        #avatarFileInput>
+                        <div class="flex items-center">
+                            <label class="flex items-center justify-center w-10 h-10 rounded-full cursor-pointer hover:bg-hover" for="avatar-file-input" matRipple>
+                                <mat-icon class="text-gray-400" [svgIcon]="'heroicons_outline:camera'"></mat-icon>
+                            </label>
+                            <span class="inline-block text-base text-black/80">Upload File</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
+                <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">IMport</a>
+                <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">Simulate import</a>
+            </div>
+        </div>
+        <!-- New Import Items End-->
+
+        <!-- Record expense start -->
+        <div class="p-5 w-full block">
+            <div class="flex items-start flex-wrap bg-card -mx-5">
+                <div class="w-full md:w-1/2 p-5 md:border-r border-gray-300">
+                    <div class="pb-5 mb-5 border-b border-gray-300">
+                        <span class="text-2xl font-semibold">Add new expense</span>
+                    </div>
+                    <div class="flex flex-wrap">
+                        <div class="mb-4 cursor-pointer flex items-center justify-center relative p-5 h-20 md:h-26 w-full border border-dashed border-gray-300 rounded-md">
+                            <input matinput type="file" class="absolute inset-0 w-full h-full opacity-0"/>
+                            <span class="text-sm text-blue-600 inline-block">Attach Receipt</span>
+                        </div>
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="flex items-center text-sm"><mat-icon class="icon-size-4 mr-1" [color]="'primary'" svgIcon="heroicons_solid:question-mark-circle"></mat-icon>Name</mat-label>
+                            <input matInput>
+                        </mat-form-field> 
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="flex items-center text-sm"><mat-icon class="icon-size-4 mr-1" [color]="'primary'" svgIcon="heroicons_solid:question-mark-circle"></mat-icon>Note</mat-label>
+                            <textarea matInput [rows]="3" matTextareaAutosize></textarea>
+                        </mat-form-field> 
+                        <div class="w-full">
+                            <div class="flex items-center">
+                                <mat-form-field class="fuse-mat-dense w-full pr-2">
+                                    <mat-label class="text-sm">
+                                        <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                                        Expense Category
+                                    </mat-label>
+                                    <mat-select class="overflow-hidden" matNativeControl [placeholder]="'Draft'">
+                                        <mat-option value="Draft-1">Draft</mat-option>
+                                        <mat-option value="Draft-2">Draft 2</mat-option>
+                                        <mat-option value="Draft-2">Draft 3</mat-option>
+                                        <mat-option value="Draft-3">Draft 4</mat-option>
+                                        <mat-option value="Draft-3">Draft 5</mat-option>
+                                        <mat-option value="Draft-3">Draft 6</mat-option>
+                                        <mat-option value="Draft-3">Draft 7</mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                                <span (click)="proposalAddItemsPop()" class="cursor-pointer mt-2 w-10 h-10 border border-gray-200 rounded-md flex items-center justify-center">
+                                    <mat-icon class="icon-size-6" svgIcon="heroicons_outline:plus-sm"></mat-icon>
+                                </span>
+                            </div>
+                        </div>
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="flex items-center text-sm">
+                                <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                                Expense Date
+                            </mat-label>
+                            <input matInput [matDatepicker]="picker1">
+                            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                            <mat-datepicker #picker1></mat-datepicker>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="flex items-center text-sm">
+                                <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                                Amount
+                            </mat-label>
+                            <input matInput>
+                        </mat-form-field>  
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="text-sm">Customer</mat-label>
+                            <mat-select [placeholder]="'Assigned'">
+                                <mat-option value="Assigned">Back</mat-option>
+                                <mat-option value="Assigned-2">Assigned 2</mat-option>                                
+                            </mat-select>
+                        </mat-form-field>                    
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 p-5">
+                    <div class="pb-5 mb-5 border-b border-gray-300">
+                        <span class="text-2xl font-semibold">Advanced Options</span>
+                    </div>
+                    <div class="flex flex-wrap">
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="flex items-center text-sm">
+                                <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                                Currency
+                            </mat-label>
+                            <mat-select [placeholder]="'usd'" disabled="">
+                                <mat-option value="usd">USD</mat-option>
+                                <mat-option value="INR">INR</mat-option>
+                            </mat-select>
+                        </mat-form-field>                      
+                        <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
+                            <mat-label class="text-sm">Tax 1 (Stripe)</mat-label>
+                            <mat-select [placeholder]="'Sale1'">
+                                <mat-option value="Sale1">Sale</mat-option>
+                                <mat-option value="Sale2">Sale2</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
+                            <mat-label class="text-sm">Tax 2 (Stripe)</mat-label>
+                            <mat-select [placeholder]="'no-dis'">
+                                <mat-option value="no-dis">NO Discount</mat-option>
+                                <mat-option value="dis1">Discount 50%</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
+                            <mat-label class="text-sm">Payment Mode</mat-label>
+                            <mat-select [placeholder]="'Sale1'">
+                                <mat-option value="Sale1">Sale</mat-option>
+                                <mat-option value="Sale2">Sale2</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
+                            <mat-label class="text-sm">Reference #</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="text-sm">Repeat every</mat-label>
+                            <mat-select [placeholder]="'Nothing Select'">
+                                <mat-option value="Sale1">Sale</mat-option>
+                                <mat-option value="Sale2">Sale2</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Record expense end -->
+    </div>
+    <!-- EXPENSES END  -->
+
+    <!-- CONTRACTS START -->
+    <div class="bg-card w-full" *ngIf="false">
+        <!-- head -->
+        <div class="w-full flex items-center justify-between p-5 border-b border-gray-200">
+            <div class="flex flex-wrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
+                <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">New Contract</button>
+            </div>
+            <div class="ml-4">
+                <a href="#" class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                    <mat-icon class="scale-75" svgIcon="heroicons_solid:filter"></mat-icon>
+                </a>
+            </div>
+        </div>
+        <!-- summary details  -->
+        <div class="p-5 w-full block border-b border-gray-200">
+            <span class="inline-block text-lg md:text-xl font-semibold">Contract Summary</span>
+            <div class="flex flex-wrap pt-3">
+                <div class="w-1/2 md:w-1/3 mb-3 lg:w-[20%] px-3 pl-0 border-r border-gray-200">
+                    <span class="text-2xl font-semibold block">0</span>
+                    <p class="text-sm mt-1 text-blue-600">Active</p>
+                </div>
+                <div class="w-1/2 md:w-1/3 mb-3 lg:w-[20%] px-3 md:border-r border-gray-200">
+                    <span class="text-2xl font-semibold block">0</span>
+                    <p class="text-sm mt-1 text-red-600">Expired</p>
+                </div>
+                <div class="w-1/2 md:w-1/3 mb-3 lg:w-[20%] px-3 pl-0 md:pl-3 border-r md:border-r-0 xl:border-r border-gray-200">
+                    <span class="text-2xl font-semibold block">0</span>
+                    <p class="text-sm mt-1 text-orange-600">About to Expire</p>
+                </div>
+                <div class="w-1/2 md:w-1/3 mb-3 lg:w-[20%] px-3 md:pl-0 xl:pl-3 md:border-r border-gray-200">
+                    <span class="text-2xl font-semibold block">0</span>
+                    <p class="text-sm mt-1 text-green-600">Recently Added</p>
+                </div>
+                <div class="w-1/2 md:w-1/3 mb-3 lg:w-[20%] px-3 pl-0 md:pl-3">
+                    <span class="text-2xl font-semibold block">0</span>
+                    <p class="text-sm mt-1 text-gray-600">Trash</p>
+                </div>
+            </div>
+        </div>
+        <!-- contracts details  -->
+        <div class="flex flex-wrap -mx-5 p-6 md:p-8">
+            <div class="w-full sm:w-1/2 p-5 space-y-4 md:border-r border-gray-300">
+                <h2 class="text-lg md:text-xl font-semibold">Contracts by Type</h2>
+                <div class="min-h-80 rounded-lg border border-gray-300">
+
+                </div>
+            </div>
+            <div class="w-full sm:w-1/2 p-5 space-y-4">
+                <h2 class="text-lg md:text-xl font-semibold">Contracts Value by Type ( USD)</h2>
+                <div class="min-h-80 rounded-lg border border-gray-300">
+
+                </div>
+            </div>
+        </div>
+        <!-- new contracts -->
+        <div class="flex items-start flex-wrap p-6 md:p-8 bg-card">
+            <div class="md:pr-5 w-full flex items-baseline flex-wrap md:w-1/2">
+                <mat-checkbox [color]="'primary'" class="flex items-center p-2">
+                    <mat-icon class="icon-size-4 mr-1" [color]="'primary'" svgIcon="heroicons_solid:question-mark-circle"></mat-icon>
+                    Trash
+                </mat-checkbox>
+                <mat-checkbox [color]="'primary'" class="p-2">Hide from customer</mat-checkbox>
+                <mat-form-field class="fuse-mat-dense w-full">
+                    <mat-label class="text-sm">
+                        <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                        Billing Plan
+                    </mat-label>
+                    <mat-select [placeholder]="'Assigned'">
+                        <mat-option value="assigned">Back</mat-option>
+                        <mat-option value="Assigned-2">Assigned 2</mat-option>                                
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field class="fuse-mat-dense w-full">
+                    <mat-label class="flex items-center text-sm">
+                        <mat-icon class="icon-size-4 mr-1" [color]="'primary'" svgIcon="heroicons_solid:question-mark-circle"></mat-icon>
+                        <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                        Subject
+                    </mat-label>
+                    <input matInput>
+                </mat-form-field>
+                <mat-form-field class="fuse-mat-dense w-full">
+                    <mat-label class="flex items-center text-sm">
+                        <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                        Estimate Number
+                    </mat-label>
+                    <input matInput>
+                    <span matSuffix class="h-full border-l border-gray-200 flex items-center justify-center pl-3">$</span>
+                </mat-form-field>
+                <div class="w-full">
+                    <div class="flex items-center">
+                        <mat-form-field class="fuse-mat-dense w-full pr-2">
+                            <mat-label class="text-sm">Status</mat-label>
+                            <mat-select [placeholder]="'Draft'">
+                                <mat-option value="Draft-1">Draft</mat-option>
+                                <mat-option value="Draft-2">Draft 2</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <span (click)="newContractPop()" class="cursor-pointer mt-2 w-10 h-10 border border-gray-200 rounded-md flex items-center justify-center">
+                            <mat-icon class="icon-size-6" svgIcon="heroicons_outline:plus-sm"></mat-icon>
+                        </span>
+                    </div>
+                </div>
+                <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
+                    <mat-label class="flex items-center text-sm">
+                        <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                        Estimate Date
+                    </mat-label>
+                    <input matInput [matDatepicker]="picker1">
+                    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                    <mat-datepicker #picker1></mat-datepicker>
+                </mat-form-field>
+                <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
+                    <mat-label class="text-sm">Expiry Date</mat-label>
+                    <input matInput [matDatepicker]="picker2">
+                    <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                    <mat-datepicker #picker2></mat-datepicker>
+                </mat-form-field>
+                <mat-form-field class="fuse-mat-textarea w-full">   
+                    <mat-label class="text-sm">Description</mat-label>
+                    <textarea matInput [rows]="4" matTextareaAutosize></textarea>
+                </mat-form-field>
+            </div>
+            <div class="w-full md:w-1/2">
+            </div>
+        </div>
+    </div>
+    <!-- CONTRACTS END -->
+
+    <!-- dicription and text editor baki che desifn karvana -->
+    <!-- PROJECTS START-->
+    <div class="bg-card w-full" *ngIf="false">
+         <!-- head -->
+         <div class="w-full flex items-center justify-between p-5 border-b border-gray-200">
+            <div class="flex flex-wrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
+                <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">New Projects</button>
+                <button class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                    <mat-icon class="icon-size-5" svgIcon="heroicons_outline:menu"></mat-icon>
+                </button>
+            </div>
+            <div class="ml-4">
+                <a href="#" class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                    <mat-icon class="scale-75" svgIcon="heroicons_solid:filter"></mat-icon>
+                </a>
+            </div>
+        </div>
+        <!-- summary details  -->
+        <div class="p-5 w-full block border-b border-gray-200">
+            <span class="inline-block text-lg md:text-xl font-semibold">Projects Summary</span>
+            <div class="flex flex-wrap pt-3">
+                <div class="w-1/2 md:w-1/3 mb-3 lg:w-[20%] px-3 pl-0 border-r border-gray-200">
+                    <span class="text-2xl font-semibold block">0</span>
+                    <p class="text-sm mt-1 text-gray-600">Not Started</p>
+                </div>
+                <div class="w-1/2 md:w-1/3 mb-3 lg:w-[20%] px-3 md:border-r border-gray-200">
+                    <span class="text-2xl font-semibold block">0</span>
+                    <p class="text-sm mt-1 text-blue-600">In Progress</p>
+                </div>
+                <div class="w-1/2 md:w-1/3 mb-3 lg:w-[20%] px-3 pl-0 md:pl-3 border-r md:border-r-0 xl:border-r border-gray-200">
+                    <span class="text-2xl font-semibold block">0</span>
+                    <p class="text-sm mt-1 text-orange-600">On Hold</p>
+                </div>
+                <div class="w-1/2 md:w-1/3 mb-3 lg:w-[20%] px-3 md:pl-0 xl:pl-3 md:border-r border-gray-200">
+                    <span class="text-2xl font-semibold block">0</span>
+                    <p class="text-sm mt-1 text-gray-600">Cancelled</p>
+                </div>
+                <div class="w-1/2 md:w-1/3 mb-3 lg:w-[20%] px-3 pl-0 md:pl-3">
+                    <span class="text-2xl font-semibold block">0</span>
+                    <p class="text-sm mt-1 text-green-600">Finished</p>
+                </div>
+            </div>
+        </div>
+        <!-- menu fillter  -->
+        <div class="p-5 w-full block border-b border-gray-300">
+            <span class="inline-block text-lg md:text-xl font-semibold">Filter</span>
+            <div class="flex items-center flex-wrap pt-5">
+                <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-1/3 sm:pr-5">
+                    <mat-label class="text-sm">
+                        <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                        Billing Plan
+                    </mat-label>
+                    <mat-select [placeholder]="'Assigned'">
+                        <mat-option value="assigned">Back</mat-option>
+                        <mat-option value="Assigned-2">Assigned 2</mat-option>                                
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-1/3 md:pr-5">
+                    <mat-label class="text-sm">
+                        <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                        Billing Plan
+                    </mat-label>
+                    <mat-select [placeholder]="'Assigned'">
+                        <mat-option value="assigned">Back</mat-option>
+                        <mat-option value="Assigned-2">Assigned 2</mat-option>                                
+                    </mat-select>
+                </mat-form-field>
+                <button class="px-8 bg-gray-300 mt-2" mat-flat-button type="button" matStepperNext>Apply</button>
+            </div>
+        </div>
+        <!-- New Project -->
+        <div class="flex flex-wrap">
+            <div class="w-full md:w-7/12 p-5 md:border-r border-gray-300">
+                <h2 class="text-lg md:text-xl font-semibold py-4">Add new project</h2>
+                <div class="flex flex-wrap border-t border-gray-300 py-4">
+                    <mat-form-field class="fuse-mat-dense w-full">
+                        <mat-label class="text-sm">
+                            <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                            Project Name
+                        </mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full">
+                        <mat-label class="text-sm">
+                            <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                            Customer
+                        </mat-label>
+                        <mat-select [placeholder]="'Assigned'">
+                            <mat-option value="assigned">Back</mat-option>
+                            <mat-option value="Assigned-2">Assigned 2</mat-option>                                
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-checkbox class="mb-4 block w-full" [color]="'primary'">Prevent sending overdue reminders for this invoice</mat-checkbox>
+                    <mat-form-field class="fuse-mat-dense w-full sm:1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
+                        <mat-label class="text-sm">
+                            <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                            Billing Type
+                        </mat-label>
+                        <mat-select [placeholder]="'Assigned'">
+                            <mat-option value="assigned">Back</mat-option>
+                            <mat-option value="Assigned-2">Assigned 2</mat-option>                                
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full sm:1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
+                        <mat-label class="text-sm">Status</mat-label>
+                        <mat-select [placeholder]="'Assigned'">
+                            <mat-option value="assigned">Back</mat-option>
+                            <mat-option value="Assigned-2">Assigned 2</mat-option>                                
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full">
+                        <mat-label class="text-sm">Rate Per Hour</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full sm:1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
+                        <mat-label class="text-sm">Estimated Hours</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full sm:1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
+                        <mat-label class="text-sm">Members</mat-label>
+                        <mat-select [placeholder]="'Assigned'">
+                            <mat-option value="assigned">Back</mat-option>
+                            <mat-option value="Assigned-2">Assigned 2</mat-option>                                
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
+                        <mat-label class="flex items-center text-sm">
+                            <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                            Estimate Date
+                        </mat-label>
+                        <input matInput [matDatepicker]="picker1">
+                        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                        <mat-datepicker #picker1></mat-datepicker>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pr-0 lg:pl-2">
+                        <mat-label class="flex items-center text-sm">
+                            <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                            Estimate Date
+                        </mat-label>
+                        <input matInput [matDatepicker]="picker1">
+                        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                        <mat-datepicker #picker1></mat-datepicker>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full">
+                        <mat-label class="text-sm"><mat-icon class="icon-size-3 mr-1" svgIcon="heroicons_solid:tag"></mat-icon>Tag</mat-label>
+                        <mat-chip-list #chipList02>
+                            <mat-chip
+                                [removable]="true"
+                                [selectable]="true">
+                                Lemon
+                                <mat-icon
+                                    class="icon-size-5"
+                                    matChipRemove
+                                    [svgIcon]="'heroicons_solid:minus-circle'"></mat-icon>
+                            </mat-chip>
+                            <mat-chip
+                                [removable]="true"
+                                [selectable]="true">
+                                Lime
+                                <mat-icon
+                                    class="icon-size-5"
+                                    matChipRemove
+                                    [svgIcon]="'heroicons_solid:minus-circle'"></mat-icon>
+                            </mat-chip>
+                            <mat-chip
+                                [removable]="true"
+                                [selectable]="true">
+                                Apple
+                                <mat-icon
+                                    class="icon-size-5"
+                                    matChipRemove
+                                    [svgIcon]="'heroicons_solid:minus-circle'"></mat-icon>
+                            </mat-chip>
+                            <input [placeholder]="'New fruit...'" [matChipInputFor]="chipList02">
+                        </mat-chip-list>
+                    </mat-form-field>
+                    <div class="w-full mt-2 pt-4 border-t border-gray-300">
+                        <mat-checkbox [color]="'primary'">Send project created email</mat-checkbox>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-5/12 p-5">
+                <h2 class="text-lg md:text-xl font-semibold p-6 py-4 pr-4">Project settings</h2>
+                <div class="w-full border-t border-gray-300 p-6 py-4">
+                    <mat-form-field class="fuse-mat-dense w-full">
+                        <mat-label class="text-sm">Send contacts notifications</mat-label>
+                        <mat-select [placeholder]="'assigned'">
+                            <mat-option value="assigned">Back</mat-option>
+                            <mat-option value="Assigned2">Assigned 2</mat-option>                                
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full">
+                        <mat-label class="text-sm">Visible Tabs</mat-label>
+                        <mat-select [placeholder]="'Assigned'">
+                            <mat-option value="assigned">Back</mat-option>
+                            <mat-option value="Assigned-2">Assigned 2</mat-option>                                
+                        </mat-select>
+                    </mat-form-field>
+                    <ul class="pt-4 border-t border-gray-300">
+                        <li class="py-2 border-b border-gray-300">
+                            <mat-checkbox [color]="'primary'">Allow customer to view tasks</mat-checkbox>
+                        </li>
+                        <li class="py-2 border-b border-gray-300">
+                            <mat-checkbox [color]="'primary'">Allow customer to create tasks</mat-checkbox>
+                        </li>
+                        <li class="py-2 border-b border-gray-300">
+                            <mat-checkbox [color]="'primary'">Allow customer to edit tasks (only tasks created from contact)</mat-checkbox>
+                        </li>
+                        <li class="py-2 border-b border-gray-300">
+                            <mat-checkbox [color]="'primary'">Allow customer to comment on project tasks</mat-checkbox>
+                        </li>
+                        <li class="py-2 border-b border-gray-300">
+                            <mat-checkbox [color]="'primary'">Allow customer to view task comments</mat-checkbox>
+                        </li>
+                        <li class="py-2 border-b border-gray-300">
+                            <mat-checkbox [color]="'primary'">Allow customer to view task attachments</mat-checkbox>
+                        </li>
+                        <li class="py-2 border-b border-gray-300">
+                            <mat-checkbox [color]="'primary'">Allow customer to view task checklist items</mat-checkbox>
+                        </li>
+                        <li class="py-2 border-b border-gray-300">
+                            <mat-checkbox [color]="'primary'">Allow customer to upload attachments on tasks</mat-checkbox>
+                        </li>
+                        <li class="py-2 border-b border-gray-300">
+                            <mat-checkbox [color]="'primary'">Allow customer to view task total logged time</mat-checkbox>
+                        </li>
+                        <li class="py-2 border-b border-gray-300">
+                            <mat-checkbox [color]="'primary'">Allow customer to view finance overview</mat-checkbox>
+                        </li>
+                        <li class="py-2 border-b border-gray-300">
+                            <mat-checkbox [color]="'primary'">Allow customer to upload files</mat-checkbox>
+                        </li>
+                        <li class="py-2 border-b border-gray-300">
+                            <mat-checkbox [color]="'primary'">Allow customer to open discussions</mat-checkbox>
+                        </li>
+                        <li class="py-2 border-b border-gray-300">
+                            <mat-checkbox [color]="'primary'">Allow customer to view milestones</mat-checkbox>
+                        </li>
+                        <li class="py-2 border-b border-gray-300">
+                            <mat-checkbox [color]="'primary'">Allow customer to view Gantt</mat-checkbox>
+                        </li>
+                        <li class="py-2 border-b border-gray-300">
+                            <mat-checkbox [color]="'primary'">Allow customer to view timesheets</mat-checkbox>
+                        </li>
+                        <li class="py-2 border-b border-gray-300">
+                            <mat-checkbox [color]="'primary'">Allow customer to view activity log</mat-checkbox>
+                        </li>
+                        <li class="py-2 border-b border-gray-300">
+                            <mat-checkbox [color]="'primary'">Allow customer to view team members</mat-checkbox>
+                        </li>
+                        <li class="py-2 border-b border-gray-300">
+                            <mat-checkbox [color]="'primary'">Hide project tasks on main tasks table (admin area)</mat-checkbox>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- PROJECTS END -->
+
+    <!-- TASK START  -->
+    <div class="bg-card w-full" *ngIf="false">
+        <!-- head -->
+        <div class="w-full flex-col sm:flex-row flex items-center justify-between p-5 border-b border-gray-200">
+            <div class="w-full flex flex-wrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
+                <button (click)="addTaskPop()" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">New Task</button>
+                <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-black bg-gray-200 rounded uppercase hover:opacity-90">Switch to kan ban</button>
+            </div>
+            <div class="w-full mt-3 sm:mt-0 flex justify-end space-x-2">
+                <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-green-600 rounded uppercase hover:opacity-90">Task Overview</button>
+                <button class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                    <mat-icon class="scale-75" svgIcon="heroicons_solid:filter"></mat-icon>
+                </button>
+            </div>
+        </div>
+        <!-- summary details  -->
+        <div class="p-5 w-full block border-b border-gray-200">
+            <span class="inline-block text-lg md:text-xl font-semibold">Tasks Summary</span>
+            <div class="flex flex-wrap pt-3">
+                <div class="w-1/2 md:w-1/3 mb-3 lg:w-[20%] px-3 pl-0 border-r border-gray-200">
+                    <span class="text-2xl font-semibold block">0</span>
+                    <p class="text-base mt-1 text-gray-600">Not Started</p>
+                    <span class="block text-sm text-gray-400">Tasks assigned to me: 0</span>
+                </div>
+                <div class="w-1/2 md:w-1/3 mb-3 lg:w-[20%] px-3 md:border-r border-gray-200">
+                    <span class="text-2xl font-semibold block">0</span>
+                    <p class="text-base mt-1 text-blue-600">In Progress</p>
+                    <span class="block text-sm text-gray-400">Tasks assigned to me: 0</span>
+                </div>
+                <div class="w-1/2 md:w-1/3 mb-3 lg:w-[20%] px-3 pl-0 md:pl-3 border-r md:border-r-0 xl:border-r border-gray-200">
+                    <span class="text-2xl font-semibold block">0</span>
+                    <p class="text-base mt-1 text-gray-600">Testing</p>
+                    <span class="block text-sm text-gray-400">Tasks assigned to me: 0</span>
+                </div>
+                <div class="w-1/2 md:w-1/3 mb-3 lg:w-[20%] px-3 md:pl-0 xl:pl-3 md:border-r border-gray-200">
+                    <span class="text-2xl font-semibold block">0</span>
+                    <p class="text-base mt-1 text-green-600">Awaiting Feedback</p>
+                    <span class="block text-sm text-gray-400">Tasks assigned to me: 0</span>
+                </div>
+                <div class="w-1/2 md:w-1/3 mb-3 lg:w-[20%] px-3 pl-0 md:pl-3">
+                    <span class="text-2xl font-semibold block">0</span>
+                    <p class="text-base mt-1 text-green-600">Complete</p>
+                    <span class="block text-sm text-gray-400">Tasks assigned to me: 1</span>
+                </div>
+            </div>
+        </div>
+        <!-- Task Overview  -->
+        <div class="w-full px-5">
+            <div class="py-5 border-b border-gray-200">
+                <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-black bg-gray-200 rounded uppercase hover:opacity-90">Back to task list</button>
+            </div>
+            <div class="flex items-center flex-wrap py-5 -mx-4">
+                <div class="w-full sm:w-1/2 md:w-1/3 lg:w-[20%] xl:w-1/6 px-4 sm:border-r border-gray-300">
+                    <mat-form-field class="fuse-mat-dense w-full md:-mb-5">
+                        <mat-select [placeholder]="'assigned'">
+                            <mat-option value="assigned">All Staff Members</mat-option>
+                            <mat-option value="Assigned-2">Assigned 2</mat-option>                                
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="w-full sm:w-1/2 md:w-1/3 lg:w-[20%] xl:w-1/6 px-4 sm:border-r border-gray-300">
+                    <mat-form-field class="fuse-mat-dense w-full md:-mb-5">
+                        <mat-select [placeholder]="'month'">
+                            <mat-option value="month">Jun</mat-option>
+                            <mat-option value="july">July</mat-option>                                
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="w-full sm:w-1/2 md:w-1/3 lg:w-[20%] xl:w-1/6 px-4 sm:border-r border-gray-300">
+                    <mat-form-field class="fuse-mat-dense w-full md:-mb-5">
+                        <mat-select [placeholder]="'all'">
+                            <mat-option value="all">All</mat-option>
+                            <mat-option value="kbk">kbk</mat-option>                                
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="w-full sm:w-1/2 md:w-1/3 lg:w-[20%] xl:w-1/6 px-4 sm:border-r border-gray-300">
+                    <mat-form-field class="fuse-mat-dense w-full md:-mb-5">
+                        <mat-select [placeholder]="'yare'">
+                            <mat-option value="yare">2023</mat-option>
+                            <mat-option value="nextyare">2024</mat-option>                                
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="w-full sm:w-1/2 md:w-1/3 lg:w-[20%] xl:w-1/6 px-4">
+                    <button class="w-full inline-block p-3 py-2.5 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90 md:-mt-1">Filter</button>
+                </div>
+            </div>
+        </div>
+        <!-- Switch to kan ban -->
+        <div class="p-5 w-full block bg-card">
+            <!-- Switch to list  -->
+           <div class="w-full flex flex-col sm:flex-row items-center justify-between py-5 border-b border-gray-200 bg-card">
+               <div class="flex flex-wrap sm:flex-nowrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
+                   <button (click)="addTaskPop()" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase whitespace-nowrap hover:opacity-90">New Proposal</button>
+                   <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-black bg-gray-200 rounded uppercase whitespace-nowrap hover:opacity-90">Switch to List</button>
+               </div>
+               <div class="sm:ml-4 w-full max-w-lg pt-2 sm:p-0">
+                   <mat-form-field class="fuse-mat-dense w-full -mb-4">
+                       <input matInput type="text">
+                   </mat-form-field>
+               </div>
+           </div>
+           <!-- Switch to list details -->
+            <div class="w-full overflow-x-auto overflow-hidden mt-6">
+                <div class="space-x-2 inline-flex pb-3">
+                    <div class="w-64 h-100 md:w-80 md:h-[calc(100vh-400px)] bg-gray-200 rounded-md border border-gray-200 overflow-hidden">
+                        <div class="sticky z-20 top-0 w-full p-2.5 bg-gray-300 overflow-hidden">
+                            <span class="block w-11/12 text-sm dark:text-black">Not Started - 0 Tasks</span>
+                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 top-0 rotate-45 bg-slate-800"></span>
+                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 bottom-0 -rotate-45 bg-slate-800"></span>
+                        </div>
+                        <div class="h-[calc(100%-38px)] overflow-y-auto space-y-2 p-3">
+                            <div class="w-full p-5 rounded-md bg-sky-100 border border-sky-300">
+                                <div class="flex items-center">
+                                    <mat-icon class="icon-size-5 mr-1" svgIcon="mat_outline:blur_on"></mat-icon>
+                                    <span class="block text-sm text-blue-600">Task Name</span>
+                                </div>
+                                <div class="flex justify-between mt-3">
+                                    <div class="w-6 h-6 rounded-full bg-slate-100 text-center">
+                                        <mat-icon class="icon-size-4 mt-0.5" svgIcon="heroicons_outline:user"></mat-icon>
+                                    </div>
+                                    <div class="flex space-x-1">
+                                        <span class="flex items-center text-sm"><mat-icon class="mr-0.5 icon-size-3" svgIcon="feather:message-circle"></mat-icon>0</span>
+                                        <span class="flex items-center text-sm"><mat-icon class="mr-0.5 icon-size-3" svgIcon="feather:link"></mat-icon>0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- load more details  -->
+                            <button class="w-full rounded bg-gray-300 uppercase text-slate-500 p-2">Load More</button>
+                        </div>
+                    </div>
+                    <div class="w-64 h-100 md:w-80 md:h-[calc(100vh-400px)] bg-gray-200 rounded-md border border-gray-200 overflow-hidden">
+                        <div class="sticky z-20 top-0 w-full p-2.5 bg-blue-600 overflow-hidden">
+                            <span class="block w-11/12 text-sm text-white">In Progress - 0 Tasks</span>
+                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 top-0 rotate-45 bg-slate-800"></span>
+                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 bottom-0 -rotate-45 bg-slate-800"></span>
+                        </div>
+                        <div class="h-[calc(100%-38px)] overflow-y-auto space-y-2 p-3">
+    
+                        </div>
+                    </div>
+                    <div class="w-64 h-100 md:w-80 md:h-[calc(100vh-400px)] bg-gray-200 rounded-md border border-gray-200 overflow-hidden">
+                        <div class="sticky z-20 top-0 w-full p-2.5 bg-black overflow-hidden">
+                            <span class="block w-11/12 text-sm text-white">Testing - 0 Tasks</span>
+                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 top-0 rotate-45 bg-slate-800"></span>
+                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 bottom-0 -rotate-45 bg-slate-800"></span>
+                        </div>
+                        <div class="h-[calc(100%-38px)] overflow-y-auto space-y-2 p-3">
+    
+                        </div>
+                    </div>
+                    <div class="w-64 h-100 md:w-80 md:h-[calc(100vh-400px)] bg-gray-200 rounded-md border border-gray-200 overflow-hidden">
+                        <div class="sticky z-20 top-0 w-full p-2.5 bg-green-400 overflow-hidden">
+                            <span class="block w-11/12 text-sm text-white">Awaiting Feedback - 0 Tasks</span>
+                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 top-0 rotate-45 bg-slate-800"></span>
+                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 bottom-0 -rotate-45 bg-slate-800"></span>
+                        </div>
+                        <div class="h-[calc(100%-38px)] overflow-y-auto space-y-2 p-3">
+    
+                        </div>
+                    </div>
+                    <div class="w-64 h-100 md:w-80 md:h-[calc(100vh-400px)] bg-gray-200 rounded-md border border-gray-200 overflow-hidden">
+                        <div class="sticky z-20 top-0 w-full p-2.5 bg-green-600 overflow-hidden">
+                            <span class="block w-11/12 text-sm text-white">Complete - 2 Tasks</span>
+                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 top-0 rotate-45 bg-slate-800"></span>
+                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 bottom-0 -rotate-45 bg-slate-800"></span>
+                        </div>
+                        <div class="h-[calc(100%-38px)] overflow-y-auto space-y-2 p-3">
+                            <div class="w-full p-5 rounded-md bg-sky-100 border border-sky-300">
+                                <div class="flex items-center">
+                                    <mat-icon class="icon-size-5 mr-1" svgIcon="mat_outline:blur_on"></mat-icon>
+                                    <span class="block text-sm text-blue-600">Task Name</span>
+                                </div>
+                                <div class="flex justify-between mt-3">
+                                    <div class="w-6 h-6 rounded-full bg-slate-100 text-center">
+                                        <mat-icon class="icon-size-4 mt-0.5" svgIcon="heroicons_outline:user"></mat-icon>
+                                    </div>
+                                    <div class="flex space-x-1">
+                                        <span class="flex items-center text-sm"><mat-icon class="mr-0.5 icon-size-3" svgIcon="feather:message-circle"></mat-icon>0</span>
+                                        <span class="flex items-center text-sm"><mat-icon class="mr-0.5 icon-size-3" svgIcon="feather:link"></mat-icon>0</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="flex items-center text-sm justify-end"><mat-icon class="icon-size-3 mr-1" svgIcon="calendar_today"></mat-icon> 20/03/1999</span>
+                                </div>
+                            </div>
+                            <!-- load more details  -->
+                            <button class="w-full rounded bg-gray-300 uppercase text-slate-500 p-2">Load More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <!-- TASK END  -->
+    
+    <!-- SUPPORT START  -->
+    <!-- Ticket body add text editor  -->
+    <div class="bg-card w-full" *ngIf="false">
+        <!-- head -->
+        <div class="w-full flex items-center justify-between p-5 border-b border-gray-200">
+            <div class="flex flex-wrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
+                <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">New Ticket</button>
+                <button class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                    <mat-icon class="icon-size-5" svgIcon="insert_chart_outlined"></mat-icon>
+                </button>
+            </div>
+            <div class="ml-4">
+                <button class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                    <mat-icon class="scale-75" svgIcon="heroicons_solid:filter"></mat-icon>
+                </button>
+            </div>
+        </div>
+        <!-- summary details  -->
+        <div class="p-5 w-full block border-b border-gray-200">
+           <span class="inline-block text-lg md:text-xl font-semibold">Tickets Summary</span>
+           <div class="flex flex-wrap pt-3">
+               <div class="w-1/2 md:w-1/3 mb-3 lg:w-[20%] px-3 pl-0 border-r border-gray-200">
+                   <span class="text-2xl font-semibold block">0</span>
+                   <p class="text-base mt-1 text-red-600">Open</p>
+               </div>
+               <div class="w-1/2 md:w-1/3 mb-3 lg:w-[20%] px-3 md:border-r border-gray-200">
+                   <span class="text-2xl font-semibold block">0</span>
+                   <p class="text-base mt-1 text-green-600">In Progress</p>
+               </div>
+               <div class="w-1/2 md:w-1/3 mb-3 lg:w-[20%] px-3 pl-0 md:pl-3 border-r md:border-r-0 xl:border-r border-gray-200">
+                   <span class="text-2xl font-semibold block">0</span>
+                   <p class="text-base mt-1 text-blue-600">Answered</p>
+               </div>
+               <div class="w-1/2 md:w-1/3 mb-3 lg:w-[20%] px-3 md:pl-0 xl:pl-3 md:border-r border-gray-200">
+                   <span class="text-2xl font-semibold block">0</span>
+                   <p class="text-base mt-1 text-gray-600">On Hold</p>
+               </div>
+               <div class="w-1/2 md:w-1/3 mb-3 lg:w-[20%] px-3 pl-0 md:pl-3">
+                   <span class="text-2xl font-semibold block">0</span>
+                   <p class="text-base mt-1 text-blue-400">Closed</p>
+               </div>
+           </div>
+        </div>
+        <!-- New Ticket  -->
+        <div class="p-5 w-full block">
+            <div class="flex items-start flex-wrap py-6 bg-card">
+                <div class="md:pr-5 w-full flex items-baseline flex-wrap md:w-1/2 md:border-r border-gray-300">
+                    <div class="w-full mb-3">
+                        <span class="flex items-center w-max text-sm rounded p-1 px-2 bg-gray-300">
+                            <mat-icon class="icon-size-4 mr-1" svgIcon="email"></mat-icon>
+                            Ticket without contact
+                        </span>
+                    </div>
+                    <mat-form-field class="fuse-mat-dense w-full">
+                        <mat-label class="text-sm">Subject</mat-label>
+                        <input matInput>
+                    </mat-form-field> 
+                    <mat-form-field class="fuse-mat-dense w-full">
+                        <mat-label class="text-sm">Contact</mat-label>
+                        <mat-select [placeholder]="'assigned'">
+                            <mat-option value="assigned">Nothing Select</mat-option>
+                            <mat-option value="assigned">Nothing Select</mat-option>                                
+                        </mat-select>
+                    </mat-form-field> 
+                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
+                        <mat-label class="text-sm">Name</mat-label>
+                        <input matInput class="cursor-not-allowed" type="text" disabled="">
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
+                        <mat-label class="text-sm">Email address</mat-label>
+                        <input matInput class="cursor-not-allowed" type="text" disabled="">
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
+                        <mat-label class="text-sm">Department</mat-label>
+                        <mat-select [placeholder]="'assigned'">
+                            <mat-option value="assigned">Nothing Select</mat-option>
+                            <mat-option value="assigned">Nothing Select</mat-option>                                
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
+                        <mat-label class="text-sm">CC</mat-label>
+                        <input matInput type="text">
+                    </mat-form-field>
+                </div>
+                <div class="pt-4 md:pt-0 md:pl-5 w-full flex items-baseline flex-wrap md:w-1/2">
+                    <mat-form-field class="fuse-mat-dense w-full">
+                        <mat-label class="text-sm">Tag</mat-label>
+                        <mat-chip-list #chipList02>
+                            <mat-chip
+                                [removable]="true"
+                                [selectable]="true">
+                                Lemon
+                                <mat-icon
+                                    class="icon-size-5"
+                                    matChipRemove
+                                    [svgIcon]="'heroicons_solid:minus-circle'"></mat-icon>
+                            </mat-chip>
+                            <mat-chip
+                                [removable]="true"
+                                [selectable]="true">
+                                Lime
+                                <mat-icon
+                                    class="icon-size-5"
+                                    matChipRemove
+                                    [svgIcon]="'heroicons_solid:minus-circle'"></mat-icon>
+                            </mat-chip>
+                            <mat-chip
+                                [removable]="true"
+                                [selectable]="true">
+                                Apple
+                                <mat-icon
+                                    class="icon-size-5"
+                                    matChipRemove
+                                    [svgIcon]="'heroicons_solid:minus-circle'"></mat-icon>
+                            </mat-chip>
+                            <input [placeholder]="'New fruit...'" [matChipInputFor]="chipList02">
+                        </mat-chip-list>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full">
+                        <mat-label class="text-sm">Assign ticket (default is current user)</mat-label>
+                        <mat-select [placeholder]="'select'">
+                            <mat-option value="select">Super Admin</mat-option>
+                            <mat-option value="customer">Customer</mat-option>                                
+                        </mat-select>
+                    </mat-form-field>                  
+                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pr-2 md:pr-0 lg:pr-2">
+                        <mat-label class="text-sm">Priority</mat-label>
+                        <mat-select [placeholder]="'Sale1'">
+                            <mat-option value="Sale1">Sale</mat-option>
+                            <mat-option value="Sale2">Sale2</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <div class="flex items-center w-full sm:w-1/2 md:w-full lg:w-1/2 sm:pl-2 md:pl-0 lg:pl-2">
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <mat-label class="text-sm">Tax 2 (Stripe)</mat-label>
+                            <mat-select [placeholder]="'no-dis'">
+                                <mat-option value="no-dis">NO Discount</mat-option>
+                                <mat-option value="dis1">Discount 50%</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <span (click)="newservicePop()" class="cursor-pointer mt-2 ml-2 w-10 h-10 border border-gray-200 rounded-md flex items-center justify-center">
+                            <mat-icon class="icon-size-6" svgIcon="heroicons_outline:plus-sm"></mat-icon>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Ticket body  -->
+        <div class="w-full">
+            <span class="text-base block p-4 border-b border-gray-300 bg-gray-200 dark:bg-white/10">Ticket Body</span>
+            <div class="p-5 flex flex-wrap">
+                <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 sm:pr-2">
+                    <mat-select [placeholder]="'select'">
+                        <mat-option value="select">Insert predefined reply</mat-option>
+                        <mat-option value="customer">Customer</mat-option>                                
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 sm:pl-2">
+                    <mat-select [placeholder]="'select'">
+                        <mat-option value="select">Insert knowledge base link</mat-option>
+                        <mat-option value="customer">Customer</mat-option>                                
+                    </mat-select>
+                </mat-form-field>
+                <!-- text-editor add  -->
+            </div>
+        </div>
+        <!-- File Attachments -->
+        <div class="w-full p-5 flex">
+            <div class="w-full max-w-xl mx-auto">
+                <label class="pb-1 block">Choose CSV File</label>
+                <div class="flex space-x-2">
+                    <div class="w-full border border-gray-300 rounded-md">
+                        <input id="avatar-file-input" class="absolute w-0 h-0 opacity-0 invisible pointer-events-none"
+                        type="file" [multiple]="false" [accept]="'image/jpeg, image/png'"
+                        #avatarFileInput>
+                        <div class="flex items-center">
+                            <label class="flex items-center justify-center w-10 h-10 rounded-full cursor-pointer hover:bg-hover" for="avatar-file-input" matRipple>
+                                <mat-icon class="text-gray-400" [svgIcon]="'heroicons_outline:camera'"></mat-icon>
+                            </label>
+                            <span class="inline-block text-base text-black/80 dark:text-white">Upload File</span>
+                        </div>
+                    </div>
+                    <span class="text-3xl leading-10 px-3 bg-green-600 text-white font-semibold rounded-md">+</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SUPPORT END  -->
+
+    <!-- LEADS START -->
+    <div class="bg-card w-full" *ngIf="false">
+        <!-- head -->
+        <div class="w-full p-5 flex flex-wrap items-center space-y-2 sm:space-y-0 sm:space-x-2 border-b border-gray-300">
+            <button (click)="aadNewLeadPop()" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">New Lead</button>
+            <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-black bg-gray-200 rounded uppercase hover:opacity-90">Import Leads</button>
+            <div class="w-full sm:w-auto mt-3 sm:mt-0 flex space-x-2">
+                <button class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                    <mat-icon class="icon-size-5" svgIcon="insert_chart_outlined"></mat-icon>
+                </button>
+                <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-black bg-gray-200 rounded uppercase hover:opacity-90">Switch to kan ban</button>
+            </div>
+        </div>     
+            <!-- summary details  -->
+        <div class="p-5 w-full block border-b border-gray-200">
+            <span class="inline-block text-lg md:text-xl font-semibold">Leads Summary</span>
+            <div class="flex flex-wrap pt-3">
+                <div class="w-1/2 md:w-1/3 mb-3 lg:w-[20%] px-3 pl-0 border-r border-gray-200">
+                    <span class="text-2xl font-semibold block">1</span>
+                    <p class="text-base mt-1 text-blue-600">Lead</p>
+                </div>
+                <div class="w-1/2 md:w-1/3 mb-3 lg:w-[20%] px-3 md:border-r border-gray-200">
+                    <span class="text-2xl font-semibold block">0</span>
+                    <p class="text-base mt-1 text-green-600">Customer</p>
+                </div>
+                <div class="w-1/2 md:w-1/3 mb-3 lg:w-[20%] px-3 pl-0 md:pl-3">
+                    <span class="text-2xl font-semibold block">0.00%</span>
+                    <p class="text-base mt-1 text-red-600">Lost Leads</p>
+                </div>
+            </div>
+        </div>
+        <!-- fillters  -->
+        <div class="p-5 border-b border-gray-300">
+            <span class="inline-block text-lg md:text-xl font-semibold">Filter by</span>
+            <div class="flex flex-wrap -mx-3 mt-3">
+                <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-1/4 px-3">
+                    <mat-select [placeholder]="'Assigned'">
+                        <mat-option value="Assigned">Assigned</mat-option>
+                        <mat-option value="Assigned2">Assigned2</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-1/4 px-3">
+                    <mat-select [placeholder]="'Lead'">
+                        <mat-option value="lead">Lead</mat-option>
+                        <mat-option value="lead2">lead2</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-1/4 px-3">
+                    <mat-select [placeholder]="'Source'">
+                        <mat-option value="Source">Source</mat-option>
+                        <mat-option value="Source2">Source2</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 md:w-1/4 px-3">
+                    <mat-select [placeholder]="'Additional Filters'">
+                        <mat-option value="Additional">Additional Filters</mat-option>
+                        <mat-option value="Additional2">Additional Filters2</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+        <!-- Switch to kan ban -->
+        <div class="p-5 w-full block bg-card">
+            <!-- Switch to list head -->
+            <div class="w-full flex flex-col md:flex-row md:items-center md:justify-between py-5 border-b border-gray-200">
+                <div class="w-full flex flex-wrap md:flex-nowrap items-center space-y-2 sm:space-y-0 sm:space-x-2 whitespace-nowrap">
+                    <button (click)="addTaskPop()" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">New Lead</button>
+                    <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-black bg-gray-200 rounded uppercase hover:opacity-90">Import Leads</button>
+                    <div class="w-full sm:w-auto mt-3 sm:mt-0 flex space-x-2">
+                        <button class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                            <mat-icon class="icon-size-5" svgIcon="insert_chart_outlined"></mat-icon>
+                        </button>
+                        <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-black bg-gray-200 rounded uppercase hover:opacity-90">Switch to kan ban</button>
+                    </div>
+                </div>
+                <div class="md:ml-4 w-full max-w-lg pt-2 lg:p-0">
+                    <mat-form-field class="fuse-mat-dense w-full -mb-4">
+                        <input matInput type="text" [placeholder]="'Search Leads'">
+                    </mat-form-field>
+                </div>
+            </div>
+            <!-- Switch to list details -->
+            <div class="w-full overflow-x-auto overflow-hidden mt-3">
+                <div class="flex items-center flex-wrap">
+                    <span class="inline-block p-2 font-bold text-black/80 dark:text-white">Sort By:</span>
+                    <a href="#" class="flex items-center px-2 text-xs sm:text-sm text-blue-600 hover:opacity-80 border-r-2 border-gray-300">
+                        <mat-icon class="icon-size-4 mr-1 text-blue-600" svgIcon="heroicons_solid:sort-descending"></mat-icon>
+                        Date Created
+                    </a>
+                    <a href="#" class="flex items-center px-2 text-xs sm:text-sm text-blue-600 hover:opacity-80 border-r-2 border-gray-300">
+                        <mat-icon class="icon-size-4 mr-1 text-blue-600" svgIcon="heroicons_solid:sort-descending"></mat-icon>
+                        Kan Ban Order
+                    </a>
+                    <a href="#" class="flex items-center px-2 text-xs sm:text-sm text-blue-600 hover:opacity-80 border-r-2 border-gray-300">
+                        <mat-icon class="icon-size-4 mr-1 text-blue-600" svgIcon="heroicons_solid:sort-descending"></mat-icon>
+                        Last Contact
+                    </a>
+                </div>
+                <div class="space-x-2 inline-flex py-3">
+                    <div class="h-100 w-72 md:w-80 md:h-[calc(100vh-400px)] bg-gray-200 rounded-md border border-gray-200 overflow-hidden">
+                        <div class="sticky z-20 top-0 w-full p-2.5 bg-gray-300 overflow-hidden">
+                            <span class="block w-11/12 text-sm dark:text-black">Lead-Not $0.00 - 1 Leads</span>
+                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 top-0 rotate-45 bg-slate-800"></span>
+                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 bottom-0 -rotate-45 bg-slate-800"></span>
+                        </div>
+                        <div class="h-[calc(100%-38px)] overflow-y-auto space-y-2 p-3">
+                            <div class="w-full p-3 md:p-5 rounded-md bg-sky-100 border border-sky-300">
+                                <div class="flex items-center space-x-1">
+                                    <mat-icon class="icon-size-5" svgIcon="mat_outline:blur_on"></mat-icon>
+                                    <div class="w-6 h-6 rounded-full bg-slate-100 text-center">
+                                        <mat-icon class="icon-size-4 mt-0.5" svgIcon="heroicons_outline:user"></mat-icon>
+                                    </div>
+                                    <span class="block text-sm text-blue-600">Task Name</span>
+                                </div>
+                                <div class="flex justify-between mt-3">
+                                    <div class="flex space-x-1">
+                                        <span class="inline-block text-[9px] whitespace-nowrap">Source: Google</span>
+                                        <span class="inline-block text-[9px] whitespace-nowrap">Lead Value:</span>
+                                    </div>
+                                    <div class="flex flex-col items-end space-y-1">
+                                        <div class="flex items-baseline text-[9px]">
+                                            <span class="inline-block">Last Contact </span>
+                                            <span class="inline-block border-b border-dashed border-gray-200">3 days ago</span>
+                                        </div>
+                                        <div class="flex items-baseline text-[9px]">
+                                            <span class="inline-block">Created: </span>
+                                            <span class="inline-block border-b border-dashed border-gray-200">3 days ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex justify-end space-x-1 mt-2">
+                                    <span class="flex items-center text-[9px]"><mat-icon class="mr-0.5 icon-size-3" svgIcon="feather:message-circle"></mat-icon>0</span>
+                                    <span class="flex items-center text-[9px]"><mat-icon class="mr-0.5 icon-size-3" svgIcon="feather:link"></mat-icon>0</span>
+                                </div>
+                            </div>
+                            <!-- load more details  -->
+                            <button class="w-full rounded bg-gray-300 uppercase text-slate-500 p-2">Load More</button>
+                        </div>
+                    </div>
+                    <div class="h-100 w-72 md:w-80 md:h-[calc(100vh-400px)] bg-gray-200 rounded-md border border-gray-200 overflow-hidden">
+                        <div class="sticky z-20 top-0 w-full p-2.5 bg-blue-600 overflow-hidden">
+                            <span class="block w-11/12 text-sm text-white">Customer-Not $0.00 - 1 Leads</span>
+                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 top-0 rotate-45 bg-slate-800"></span>
+                            <span class="absolute w-10 h-15 right-0 translate-x-1/2 bottom-0 -rotate-45 bg-slate-800"></span>
+                        </div>
+                        <div class="h-[calc(100%-38px)] overflow-y-auto space-y-2 p-3">
+    
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <!-- LEADS END -->
+
+    <!-- KNOWLEDGE-BASE START-->
+    <div class="bg-card w-full">
+         <!-- head -->
+        <div class="w-full flex items-center justify-between p-5 border-b border-gray-200 space-x-2">
+            <div class="flex items-center space-x-2 whitespace-nowrap">
+                <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">New Article</button>
+                <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">Group</button>
+            </div>
+            <div class="w-full flex justify-between">
+                <button class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                    <mat-icon class="icon-size-5" svgIcon="format_list_bulleted"></mat-icon>
+                </button>
+                <button class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                    <mat-icon class="scale-75" svgIcon="heroicons_solid:filter"></mat-icon>
+                </button>
+            </div>
+        </div>
+        <div class="bg-card w-full">
+            <div class="w-full border-b border-gray-300 p-3">
+                <span class="inline-block text-lg md:text-xl font-semibold">Leads Summary</span>
+            </div>
+            <div class="w-full p-3">
+                
+            </div>
+        </div>
+    </div>
+    <!-- KNOWLEDGE-BASE END-->
 </div>
+
+
+
+
+
+<!-- date -->
+  <!-- <mat-form-field class="fuse-mat-dense w-full md:w-1/2 sm:pr-2">
+        <mat-label class="flex items-center text-sm"> 
+            <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+            Start Date
+        </mat-label>
+        <input matInput [matDatepicker]="picker2">
+        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+        <mat-datepicker #picker2></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field class="fuse-mat-dense w-full md:w-1/2 sm:pl-2">
+        <mat-label class="text-sm">Due Date</mat-label>
+        <input matInput [matDatepicker]="picker2">
+        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+        <mat-datepicker #picker2></mat-datepicker>
+    </mat-form-field> -->
+<!-- date end-->
+
+<!-- <mat-form-field class="fuse-mat-dense w-full md:w-1/2 sm:pl-2">
+    <mat-label class="flex items-center text-sm">Default Language</mat-label>
+    <mat-select [placeholder]="'System Default'">
+        <mat-option value="medium">Medium</mat-option>
+        <mat-option value="high">high</mat-option>
+    </mat-select>
+</mat-form-field> -->
+
+<!-- <mat-form-field class="fuse-mat-dense w-full md:w-1/2 sm:pr-2">
+    <mat-label class="flex items-center text-sm">Phone</mat-label>
+    <input matInput>
+</mat-form-field> -->
+
+<!-- <mat-form-field class="fuse-mat-textarea w-full">
+    <mat-label class="text-sm">Description</mat-label>
+    <textarea matInput [rows]="3" matTextareaAutosize></textarea>
+</mat-form-field> -->
+
+<!-- <div class="w-full sm:w-1/2 md:w-1/3 px-2">
+    <div class="flex items-center">
+        <mat-form-field class="fuse-mat-dense w-full pr-2">
+            <mat-label class="text-sm">
+                <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                Source
+            </mat-label>
+            <mat-select class="overflow-hidden" matNativeControl [placeholder]="'Nothing-Select'">
+                <mat-option value="Draft-1">Draft</mat-option>
+                <mat-option value="Draft-2">Draft 2</mat-option>
+                <mat-option value="Draft-2">Draft 3</mat-option>
+                <mat-option value="Draft-3">Draft 4</mat-option>
+                <mat-option value="Draft-3">Draft 5</mat-option>
+                <mat-option value="Draft-3">Draft 6</mat-option>
+                <mat-option value="Draft-3">Draft 7</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <span class="cursor-pointer mt-2 w-10 h-10 border border-gray-200 rounded-md flex items-center justify-center">
+            <mat-icon class="icon-size-6" svgIcon="heroicons_outline:plus-sm"></mat-icon>
+        </span>
+    </div>
+</div> -->
+
+<!-- <mat-form-field class="fuse-mat-dense w-full">
+    <mat-label class="text-sm">Tag</mat-label>
+    <mat-chip-list #chipList02>
+        <mat-chip
+            [removable]="true"
+            [selectable]="true">
+            Lemon
+            <mat-icon
+                class="icon-size-5"
+                matChipRemove
+                [svgIcon]="'heroicons_solid:minus-circle'"></mat-icon>
+        </mat-chip>
+        <mat-chip
+            [removable]="true"
+            [selectable]="true">
+            Lime
+            <mat-icon
+                class="icon-size-5"
+                matChipRemove
+                [svgIcon]="'heroicons_solid:minus-circle'"></mat-icon>
+        </mat-chip>
+        <mat-chip
+            [removable]="true"
+            [selectable]="true">
+            Apple
+            <mat-icon
+                class="icon-size-5"
+                matChipRemove
+                [svgIcon]="'heroicons_solid:minus-circle'"></mat-icon>
+        </mat-chip>
+        <input [placeholder]="'New fruit...'" [matChipInputFor]="chipList02">
+    </mat-chip-list>
+</mat-form-field> -->
