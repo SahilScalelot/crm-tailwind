@@ -1,6 +1,6 @@
 <div class="w-full p-5 md:p-8 space-y-5">
     <!-- Dashboard -->
-    <div class="flex flex-wrap -mx-3">
+    <div class="flex flex-wrap -mx-3" *ngIf="false">
         <div class="w-full sm:w-1/2 lg:w-1/4 p-3">
             <div class="flex flex-col flex-auto p-6 bg-card shadow rounded-2xl overflow-hidden">
                 <div class="flex items-start justify-between">
@@ -1109,444 +1109,444 @@
         </div>
     </div>
 
-    <!-- Customer -->
-    <div class="bg-card w-full" *ngIf="false">
-        <div class="w-full flex items-center p-5 border-b border-gray-200">
-            <div class="flex flex-wrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
-                <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">New Customer</button>
-                <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">Import Customer</button>
-                <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">Contacts</button>
-            </div>
-            <div class="sm:ml-auto ml-4">
-                <a href="#" class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
-                    <mat-icon class="scale-75" svgIcon="heroicons_solid:filter"></mat-icon>
-                </a>
-            </div>
-        </div>
-        <div class="p-5 w-full block border-b border-gray-200">
-            <span class="inline-block text-lg md:text-xl">Customers Summary</span>
-            <div class="flex flex-wrap pt-3">
-                <div class="w-1/2 md:w-1/3 mb-3 xl:w-1/6 px-3 pl-0 border-r border-gray-200">
-                    <span class="text-2xl font-semibold block">11</span>
-                    <p class="text-sm mt-1">Total Customers</p>
+    <!-- Customer  start-->
+    <div class="w-full">
+        <div class="bg-card w-full" >
+            <div class="w-full flex items-center p-5 border-b border-gray-200">
+                <div class="flex flex-wrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
+                    <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">New Customer</button>
+                    <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">Import Customer</button>
+                    <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">Contacts</button>
                 </div>
-                <div class="w-1/2 md:w-1/3 mb-3 xl:w-1/6 px-3 md:border-r border-gray-200">
-                    <span class="text-2xl font-semibold block">11</span>
-                    <p class="text-sm mt-1 text-green-600">Active Customers</p>
-                </div>
-                <div class="w-1/2 md:w-1/3 mb-3 xl:w-1/6 px-3 pl-0 md:pl-3 border-r md:border-r-0 xl:border-r border-gray-200">
-                    <span class="text-2xl font-semibold block">0</span>
-                    <p class="text-sm mt-1 text-red-600">Inactive Customers</p>
-                </div>
-                <div class="w-1/2 md:w-1/3 mb-3 xl:w-1/6 px-3 md:pl-0 xl:pl-3 md:border-r border-gray-200">
-                    <span class="text-2xl font-semibold block">2</span>
-                    <p class="text-sm mt-1 text-blue-600">Active Contacts</p>
-                </div>
-                <div class="w-1/2 md:w-1/3 mb-3 xl:w-1/6 px-3 pl-0 md:pl-3 border-r border-gray-200">
-                    <span class="text-2xl font-semibold block">0</span>
-                    <p class="text-sm mt-1 text-red-600">Inactive Contacts</p>
-                </div>
-                <div class="w-1/2 md:w-1/3 mb-3 xl:w-1/6 px-3">
-                    <span class="text-2xl font-semibold block">1</span>
-                    <p class="text-sm mt-1 inline-block border-b border-dashed pb-1 border-gray-400">Contacts Logged In Today</p>
-                </div>
-            </div>
-        </div>
-        <div class="p-5 w-full block">
-
-        </div>
-    </div>
-    <!-- Customer 2.1-->
-
-    <!-- Leads Overview -->
-    <div class="bg-card shadow overflow-hidden" *ngIf="false">
-        <div class="p-4 py-3 border-b border-black/400">
-            <p class="text-lg md:text-xl">Profile</p>
-        </div>
-        <div class="w-full">
-            <ul class="flex border-b border-black/400 w-full">
-                <li class="p-4 py-3 hover:text-blue-600 border-b border-b-transparent hover:border-blue-600 translate-y-[1px]">
-                    <a href="#">
-                        Customer Details
+                <div class="sm:ml-auto ml-4">
+                    <a href="#" class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                        <mat-icon class="scale-75" svgIcon="heroicons_solid:filter"></mat-icon>
                     </a>
-                </li>
-                <li class="p-4 py-3 hover:text-blue-600 border-b border-b-transparent hover:border-blue-600 translate-y-[1px]">
-                    <a href="#">
-                        Billing & Shipping
-                    </a>
-                </li>
+                </div>
+            </div>
+            <div class="p-5 w-full block border-b border-gray-200">
+                <span class="inline-block text-lg md:text-xl">Customers Summary</span>
+                <div class="flex flex-wrap pt-3">
+                    <div class="w-1/2 md:w-1/3 mb-3 xl:w-1/6 px-3 pl-0 border-r border-gray-200">
+                        <span class="text-2xl font-semibold block">11</span>
+                        <p class="text-sm mt-1">Total Customers</p>
+                    </div>
+                    <div class="w-1/2 md:w-1/3 mb-3 xl:w-1/6 px-3 md:border-r border-gray-200">
+                        <span class="text-2xl font-semibold block">11</span>
+                        <p class="text-sm mt-1 text-green-600">Active Customers</p>
+                    </div>
+                    <div class="w-1/2 md:w-1/3 mb-3 xl:w-1/6 px-3 pl-0 md:pl-3 border-r md:border-r-0 xl:border-r border-gray-200">
+                        <span class="text-2xl font-semibold block">0</span>
+                        <p class="text-sm mt-1 text-red-600">Inactive Customers</p>
+                    </div>
+                    <div class="w-1/2 md:w-1/3 mb-3 xl:w-1/6 px-3 md:pl-0 xl:pl-3 md:border-r border-gray-200">
+                        <span class="text-2xl font-semibold block">2</span>
+                        <p class="text-sm mt-1 text-blue-600">Active Contacts</p>
+                    </div>
+                    <div class="w-1/2 md:w-1/3 mb-3 xl:w-1/6 px-3 pl-0 md:pl-3 border-r border-gray-200">
+                        <span class="text-2xl font-semibold block">0</span>
+                        <p class="text-sm mt-1 text-red-600">Inactive Contacts</p>
+                    </div>
+                    <div class="w-1/2 md:w-1/3 mb-3 xl:w-1/6 px-3">
+                        <span class="text-2xl font-semibold block">1</span>
+                        <p class="text-sm mt-1 inline-block border-b border-dashed pb-1 border-gray-400">Contacts Logged In Today</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-5 w-full block">
+    
+            </div>
+        </div>    
+        <!-- Leads Overview -->
+        <div class="bg-card shadow overflow-hidden">
+            <div class="p-4 py-3 border-b border-black/400">
+                <p class="text-lg md:text-xl">Profile</p>
+            </div>
+            <div class="w-full">
+                <ul class="flex border-b border-black/400 w-full">
+                    <li class="p-4 py-3 hover:text-blue-600 border-b border-b-transparent hover:border-blue-600 translate-y-[1px]">
+                        <a href="#">
+                            Customer Details
+                        </a>
+                    </li>
+                    <li class="p-4 py-3 hover:text-blue-600 border-b border-b-transparent hover:border-blue-600 translate-y-[1px]">
+                        <a href="#">
+                            Billing & Shipping
+                        </a>
+                    </li>
+                </ul>
+                <div class="p-6">
+                    <!-- Customer Details -->
+                    <div class="customer-details flex flex-wrap -mx-4">
+                        <!-- laft-details -->
+                        <div class="w-full sm:w-1/2 px-4">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="flex items-center text-sm">
+                                    <span class="text-red-600 inline-block mr-0.5">*</span>
+                                    Company
+                                </mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">VAT Number</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">Phone</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">Website</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">Groups</mat-label>
+                                <mat-select multiple>
+                                    <mat-option [value]="1">topping</mat-option>
+                                    <mat-option [value]="1">topping</mat-option>
+                                    <mat-option [value]="1">topping</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="flex items-center text-sm">
+                                    <mat-icon class="icon-size-4 mr-1" [svgIcon]="'heroicons_solid:question-mark-circle'"></mat-icon>
+                                    Currency
+                                </mat-label>
+                                <mat-select multiple>
+                                    <mat-option [value]="1">topping</mat-option>
+                                    <mat-option [value]="1">topping</mat-option>
+                                    <mat-option [value]="1">topping</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">Default Language</mat-label>
+                                <mat-select [placeholder]="'Language'">
+                                    <mat-option value="language-1">System default</mat-option>
+                                    <mat-option value="language-2">Language 2</mat-option>
+                                    <mat-option value="language-2">Language 3</mat-option>
+                                    <mat-option value="language-3">Language 4</mat-option>
+                                    <mat-option value="language-3">Language 5</mat-option>
+                                    <mat-option value="language-3">Language 6</mat-option>
+                                    <mat-option value="language-3">Language 7</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                        <!-- right-details -->
+                        <div class="w-full sm:w-1/2 px-4">
+                            <mat-form-field class="fuse-mat-textarea w-full">
+                                <mat-label class="text-sm">Address</mat-label>
+                                <textarea matInput [rows]="3" matTextareaAutosize></textarea>
+                            </mat-form-field>
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">City</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">State</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">Zip Code</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">Country</mat-label>
+                                <mat-select [placeholder]="'Country'">
+                                    <mat-option value="Country-1">System default</mat-option>
+                                    <mat-option value="Country-2">Country 2</mat-option>
+                                    <mat-option value="Country-2">Country 3</mat-option>
+                                    <mat-option value="Country-3">Country 4</mat-option>
+                                    <mat-option value="Country-3">Country 5</mat-option>
+                                    <mat-option value="Country-3">Country 6</mat-option>
+                                    <mat-option value="Country-3">Country 7</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <!-- Billing & Shipping -->
+                    <div class="bs-details flex flex-wrap -mx-4">
+                        <!-- Billing site details -->
+                        <div class="w-full sm:w-1/2 p-4">
+                            <div class="w-full flex items-center border-b border-gray-300 mb-5">
+                                <p class="py-3 text-lg md:text-xl pr-3">Billing Address</p>
+                                <a href="#" class="inline-block text-sm text-black/80 dark:text-white/80 ml-auto">Same as Customer Info</a>
+                            </div>
+                            <mat-form-field class="fuse-mat-textarea w-full">
+                                <mat-label class="text-sm">Street</mat-label>
+                                <textarea matInput [rows]="3" matTextareaAutosize></textarea>
+                            </mat-form-field>
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">City</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">State</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">Zip Code</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">Country</mat-label>
+                                <mat-select [placeholder]="'Country'">
+                                    <mat-option value="Country-1">System default</mat-option>
+                                    <mat-option value="Country-2">Country 2</mat-option>
+                                    <mat-option value="Country-2">Country 3</mat-option>
+                                    <mat-option value="Country-3">Country 4</mat-option>
+                                    <mat-option value="Country-3">Country 5</mat-option>
+                                    <mat-option value="Country-3">Country 6</mat-option>
+                                    <mat-option value="Country-3">Country 7</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                         <!-- Shipping site details -->
+                         <div class="w-full sm:w-1/2 p-4">
+                            <div class="w-full flex items-center border-b border-gray-300 mb-5">
+                                <p class="py-3 text-lg md:text-xl pr-3">Shipping Address</p>
+                                <a href="#" class="inline-block text-sm text-black/80 dark:text-white/80 ml-auto">Same as Customer Info</a>
+                            </div>
+                            <mat-form-field class="fuse-mat-textarea w-full">
+                                <mat-label class="text-sm">Street</mat-label>
+                                <textarea matInput [rows]="3" matTextareaAutosize></textarea>
+                            </mat-form-field>
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">City</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">State</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">Zip Code</mat-label>
+                                <input matInput>
+                            </mat-form-field>
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">Country</mat-label>
+                                <mat-select [placeholder]="'Country'">
+                                    <mat-option value="Country-1">System default</mat-option>
+                                    <mat-option value="Country-2">Country 2</mat-option>
+                                    <mat-option value="Country-2">Country 3</mat-option>
+                                    <mat-option value="Country-3">Country 4</mat-option>
+                                    <mat-option value="Country-3">Country 5</mat-option>
+                                    <mat-option value="Country-3">Country 6</mat-option>
+                                    <mat-option value="Country-3">Country 7</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <!-- Import Customer -->
+        <div class="bg-card p-6">
+            <div class="pb-6">
+                <a href="#" class="p-3 py-2.5 bg-green-500 text-white rounded">Download Sample</a>
+            </div>
+            <ul class="py-6 text-sm border-t border-gray-300">
+                <ol>4.Your CSV data should be in the format below. The first line of your CSV file should be the column headers as in the table example. Also make sure that your file is UTF-8 to avoid unnecessary <b>encoding problems.</b></ol>
+                <ol>2.If the column <b>you are trying to import is date make sure that is formatted in format Y-m-d (2023-05-28).</b></ol>
+                <ol>3.Make sure you configure the default contact permission in <a href="" class="text-blue-600">Setup->Settings->Customers</a> to get the best results like auto assigning contact permissions and email notification settings based on the permission.</ol>
+                <ol class="text-red-500">4. Duplicate email rows won't be imported.</ol>
             </ul>
-            <div class="p-6">
-                <!-- Customer Details -->
-                <div class="customer-details flex flex-wrap -mx-4">
-                    <!-- laft-details -->
-                    <div class="w-full sm:w-1/2 px-4">
-                        <mat-form-field class="fuse-mat-dense w-full">
-                            <mat-label class="flex items-center text-sm">
-                                <span class="text-red-600 inline-block mr-0.5">*</span>
-                                Company
-                            </mat-label>
-                            <input matInput>
-                        </mat-form-field>
-                        <mat-form-field class="fuse-mat-dense w-full">
-                            <mat-label class="text-sm">VAT Number</mat-label>
-                            <input matInput>
-                        </mat-form-field>
-                        <mat-form-field class="fuse-mat-dense w-full">
-                            <mat-label class="text-sm">Phone</mat-label>
-                            <input matInput>
-                        </mat-form-field>
-                        <mat-form-field class="fuse-mat-dense w-full">
-                            <mat-label class="text-sm">Website</mat-label>
-                            <input matInput>
-                        </mat-form-field>
-                        <mat-form-field class="fuse-mat-dense w-full">
-                            <mat-label class="text-sm">Groups</mat-label>
-                            <mat-select multiple>
-                                <mat-option [value]="1">topping</mat-option>
-                                <mat-option [value]="1">topping</mat-option>
-                                <mat-option [value]="1">topping</mat-option>
-                            </mat-select>
-                        </mat-form-field>
-                        <mat-form-field class="fuse-mat-dense w-full">
-                            <mat-label class="flex items-center text-sm">
-                                <mat-icon class="icon-size-4 mr-1" [svgIcon]="'heroicons_solid:question-mark-circle'"></mat-icon>
-                                Currency
-                            </mat-label>
-                            <mat-select multiple>
-                                <mat-option [value]="1">topping</mat-option>
-                                <mat-option [value]="1">topping</mat-option>
-                                <mat-option [value]="1">topping</mat-option>
-                            </mat-select>
-                        </mat-form-field>
-                        <mat-form-field class="fuse-mat-dense w-full">
-                            <mat-label class="text-sm">Default Language</mat-label>
-                            <mat-select [placeholder]="'Language'">
-                                <mat-option value="language-1">System default</mat-option>
-                                <mat-option value="language-2">Language 2</mat-option>
-                                <mat-option value="language-2">Language 3</mat-option>
-                                <mat-option value="language-3">Language 4</mat-option>
-                                <mat-option value="language-3">Language 5</mat-option>
-                                <mat-option value="language-3">Language 6</mat-option>
-                                <mat-option value="language-3">Language 7</mat-option>
-                            </mat-select>
-                        </mat-form-field>
-                    </div>
-                    <!-- right-details -->
-                    <div class="w-full sm:w-1/2 px-4">
-                        <mat-form-field class="fuse-mat-textarea w-full">
-                            <mat-label class="text-sm">Address</mat-label>
-                            <textarea matInput [rows]="3" matTextareaAutosize></textarea>
-                        </mat-form-field>
-                        <mat-form-field class="fuse-mat-dense w-full">
-                            <mat-label class="text-sm">City</mat-label>
-                            <input matInput>
-                        </mat-form-field>
-                        <mat-form-field class="fuse-mat-dense w-full">
-                            <mat-label class="text-sm">State</mat-label>
-                            <input matInput>
-                        </mat-form-field>
-                        <mat-form-field class="fuse-mat-dense w-full">
-                            <mat-label class="text-sm">Zip Code</mat-label>
-                            <input matInput>
-                        </mat-form-field>
-                        <mat-form-field class="fuse-mat-dense w-full">
-                            <mat-label class="text-sm">Country</mat-label>
-                            <mat-select [placeholder]="'Country'">
-                                <mat-option value="Country-1">System default</mat-option>
-                                <mat-option value="Country-2">Country 2</mat-option>
-                                <mat-option value="Country-2">Country 3</mat-option>
-                                <mat-option value="Country-3">Country 4</mat-option>
-                                <mat-option value="Country-3">Country 5</mat-option>
-                                <mat-option value="Country-3">Country 6</mat-option>
-                                <mat-option value="Country-3">Country 7</mat-option>
-                            </mat-select>
-                        </mat-form-field>
+            <div class="w-full overflow-x-auto pb-2">
+                <table class="w-full">
+                    <tr>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Firstname<a href="#" class="text-blue-600 block"> Contact field</a></span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Lastname<a href="#" class="text-blue-600 block"> Contact field</a></span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Email<a href="#" class="text-blue-600 block"> Contact field</a></span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Contact phonenumber<a href="#" class="text-blue-600 block"> Contact field</a></span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Position<a href="#" class="text-blue-600 block"> Contact field</a></span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Company</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Vat</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Phonenumber</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Country</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">City</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Zip</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">State</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Address</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Website</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Billing street</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Billing city</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Billing state</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Billing zip</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Billing country</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Shipping street</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Shipping city</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Shipping state</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Shipping zip</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Shipping country</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Longitude</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Latitude</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Stripe id</span>                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">64731422d4adb@example.com</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                        <td class="p-2 leading-4 border border-gray-300">
+                            <span class="text-block text-sm">Sample Data</span>                            
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="w-full max-w-2xl pt-7">
+                <div class="w-full pb-3">
+                    <label class="pb-1 block">Choose CSV File</label>
+                    <div class="w-full border border-gray-300 rounded-md">
+                        <input id="avatar-file-input" class="absolute w-0 h-0 opacity-0 invisible pointer-events-none"
+                        type="file" [multiple]="false" [accept]="'image/jpeg, image/png'"
+                        #avatarFileInput>
+                        <div class="flex items-center">
+                            <label class="flex items-center justify-center w-10 h-10 rounded-full cursor-pointer hover:bg-hover" for="avatar-file-input" matRipple>
+                                <mat-icon class="text-gray-400" [svgIcon]="'heroicons_outline:camera'"></mat-icon>
+                            </label>
+                            <span class="inline-block text-base text-black/80">Upload File</span>
+                        </div>
                     </div>
                 </div>
-                <!-- Billing & Shipping -->
-                <div class="bs-details flex flex-wrap -mx-4">
-                    <!-- Billing site details -->
-                    <div class="w-full sm:w-1/2 p-4">
-                        <div class="w-full flex items-center border-b border-gray-300 mb-5">
-                            <p class="py-3 text-lg md:text-xl pr-3">Billing Address</p>
-                            <a href="#" class="inline-block text-sm text-black/80 dark:text-white/80 ml-auto">Same as Customer Info</a>
-                        </div>
-                        <mat-form-field class="fuse-mat-textarea w-full">
-                            <mat-label class="text-sm">Street</mat-label>
-                            <textarea matInput [rows]="3" matTextareaAutosize></textarea>
-                        </mat-form-field>
-                        <mat-form-field class="fuse-mat-dense w-full">
-                            <mat-label class="text-sm">City</mat-label>
-                            <input matInput>
-                        </mat-form-field>
-                        <mat-form-field class="fuse-mat-dense w-full">
-                            <mat-label class="text-sm">State</mat-label>
-                            <input matInput>
-                        </mat-form-field>
-                        <mat-form-field class="fuse-mat-dense w-full">
-                            <mat-label class="text-sm">Zip Code</mat-label>
-                            <input matInput>
-                        </mat-form-field>
-                        <mat-form-field class="fuse-mat-dense w-full">
-                            <mat-label class="text-sm">Country</mat-label>
-                            <mat-select [placeholder]="'Country'">
-                                <mat-option value="Country-1">System default</mat-option>
-                                <mat-option value="Country-2">Country 2</mat-option>
-                                <mat-option value="Country-2">Country 3</mat-option>
-                                <mat-option value="Country-3">Country 4</mat-option>
-                                <mat-option value="Country-3">Country 5</mat-option>
-                                <mat-option value="Country-3">Country 6</mat-option>
-                                <mat-option value="Country-3">Country 7</mat-option>
-                            </mat-select>
-                        </mat-form-field>
-                    </div>
-                     <!-- Shipping site details -->
-                     <div class="w-full sm:w-1/2 p-4">
-                        <div class="w-full flex items-center border-b border-gray-300 mb-5">
-                            <p class="py-3 text-lg md:text-xl pr-3">Shipping Address</p>
-                            <a href="#" class="inline-block text-sm text-black/80 dark:text-white/80 ml-auto">Same as Customer Info</a>
-                        </div>
-                        <mat-form-field class="fuse-mat-textarea w-full">
-                            <mat-label class="text-sm">Street</mat-label>
-                            <textarea matInput [rows]="3" matTextareaAutosize></textarea>
-                        </mat-form-field>
-                        <mat-form-field class="fuse-mat-dense w-full">
-                            <mat-label class="text-sm">City</mat-label>
-                            <input matInput>
-                        </mat-form-field>
-                        <mat-form-field class="fuse-mat-dense w-full">
-                            <mat-label class="text-sm">State</mat-label>
-                            <input matInput>
-                        </mat-form-field>
-                        <mat-form-field class="fuse-mat-dense w-full">
-                            <mat-label class="text-sm">Zip Code</mat-label>
-                            <input matInput>
-                        </mat-form-field>
-                        <mat-form-field class="fuse-mat-dense w-full">
-                            <mat-label class="text-sm">Country</mat-label>
-                            <mat-select [placeholder]="'Country'">
-                                <mat-option value="Country-1">System default</mat-option>
-                                <mat-option value="Country-2">Country 2</mat-option>
-                                <mat-option value="Country-2">Country 3</mat-option>
-                                <mat-option value="Country-3">Country 4</mat-option>
-                                <mat-option value="Country-3">Country 5</mat-option>
-                                <mat-option value="Country-3">Country 6</mat-option>
-                                <mat-option value="Country-3">Country 7</mat-option>
-                            </mat-select>
-                        </mat-form-field>
-                    </div>
-                </div>
+                <mat-form-field class="fuse-mat-dense w-full">
+                    <mat-label class="text-sm">Default password for all contacts</mat-label>
+                    <input matInput>
+                </mat-form-field>
+            </div>
+            <div class="flex flex-wrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
+                <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">IMport</a>
+                <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">Simulate import</a>
             </div>
         </div>
     </div>
-
-    <!-- Import Customer -->
-    <div class="bg-card p-6" *ngIf="false">
-        <div class="pb-6">
-            <a href="#" class="p-3 py-2.5 bg-green-500 text-white rounded">Download Sample</a>
-        </div>
-        <ul class="py-6 text-sm border-t border-gray-300">
-            <ol>4.Your CSV data should be in the format below. The first line of your CSV file should be the column headers as in the table example. Also make sure that your file is UTF-8 to avoid unnecessary <b>encoding problems.</b></ol>
-            <ol>2.If the column <b>you are trying to import is date make sure that is formatted in format Y-m-d (2023-05-28).</b></ol>
-            <ol>3.Make sure you configure the default contact permission in <a href="" class="text-blue-600">Setup->Settings->Customers</a> to get the best results like auto assigning contact permissions and email notification settings based on the permission.</ol>
-            <ol class="text-red-500">4. Duplicate email rows won't be imported.</ol>
-        </ul>
-        <div class="w-full overflow-x-auto pb-2">
-            <table class="w-full">
-                <tr>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Firstname<a href="#" class="text-blue-600 block"> Contact field</a></span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Lastname<a href="#" class="text-blue-600 block"> Contact field</a></span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Email<a href="#" class="text-blue-600 block"> Contact field</a></span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Contact phonenumber<a href="#" class="text-blue-600 block"> Contact field</a></span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Position<a href="#" class="text-blue-600 block"> Contact field</a></span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Company</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Vat</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Phonenumber</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Country</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">City</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Zip</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">State</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Address</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Website</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Billing street</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Billing city</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Billing state</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Billing zip</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Billing country</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Shipping street</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Shipping city</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Shipping state</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Shipping zip</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Shipping country</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Longitude</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Latitude</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Stripe id</span>                            
-                    </td>
-                </tr>
-                <tr>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Sample Data</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Sample Data</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">64731422d4adb@example.com</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Sample Data</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Sample Data</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Sample Data</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Sample Data</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Sample Data</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Sample Data</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Sample Data</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Sample Data</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Sample Data</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Sample Data</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Sample Data</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Sample Data</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Sample Data</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Sample Data</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Sample Data</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Sample Data</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Sample Data</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Sample Data</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Sample Data</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Sample Data</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Sample Data</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Sample Data</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Sample Data</span>                            
-                    </td>
-                    <td class="p-2 leading-4 border border-gray-300">
-                        <span class="text-block text-sm">Sample Data</span>                            
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div class="w-full max-w-2xl pt-7">
-            <div class="w-full pb-3">
-                <label class="pb-1 block">Choose CSV File</label>
-                <div class="w-full border border-gray-300 rounded-md">
-                    <input id="avatar-file-input" class="absolute w-0 h-0 opacity-0 invisible pointer-events-none"
-                    type="file" [multiple]="false" [accept]="'image/jpeg, image/png'"
-                    #avatarFileInput>
-                    <div class="flex items-center">
-                        <label class="flex items-center justify-center w-10 h-10 rounded-full cursor-pointer hover:bg-hover" for="avatar-file-input" matRipple>
-                            <mat-icon class="text-gray-400" [svgIcon]="'heroicons_outline:camera'"></mat-icon>
-                        </label>
-                        <span class="inline-block text-base text-black/80">Upload File</span>
-                    </div>
-                </div>
-            </div>
-            <mat-form-field class="fuse-mat-dense w-full">
-                <mat-label class="text-sm">Default password for all contacts</mat-label>
-                <input matInput>
-            </mat-form-field>
-        </div>
-        <div class="flex flex-wrap items-center space-y-2 sm:space-y-0 sm:space-x-2">
-            <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">IMport</a>
-            <a href="#" class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">Simulate import</a>
-        </div>
-    </div>
+    <!-- Customer end -->
 
     <!-- Sales -->
         <!-- PROPOSAL -->
