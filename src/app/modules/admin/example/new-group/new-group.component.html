@@ -1,0 +1,61 @@
+<div class="flex flex-col max-w-2xl lg:min-w-160 max-h-screen -m-6">
+
+    <!-- Header -->
+    <div class="flex flex-0 items-center justify-between h-16 pr-3 sm:pr-5 pl-6 sm:pl-8 bg-primary text-on-primary">
+        <div class="text-lg font-medium">New Group</div>
+        <button
+            mat-icon-button
+            [tabIndex]="-1"
+            (click)="close()"
+            >
+            <mat-icon
+                class="text-current"
+                [svgIcon]="'heroicons_outline:x'"></mat-icon>
+        </button>
+    </div>
+
+    <!-- Compose form -->
+    <form class="flex flex-col flex-auto p-6 sm:p-8 pt-3 sm:pt-5 overflow-y-auto">
+        <div class="flex flex-wrap pb-5">
+            <mat-form-field class="fuse-mat-dense w-full">
+                <mat-label class="flex items-center text-sm">
+                    <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                    Name
+                </mat-label>
+                <input matInput>
+            </mat-form-field>
+            <mat-form-field class="fuse-mat-textarea w-full">
+                <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Items table heading color</mat-label>
+                <div class="w-full flex">
+                    <input matInput type="text" value="{{colorPickerPDF.value}}" #colorPickerPDFtext class="w-full" [style.color]="colorPickerPDF.value">
+                    <input matInput type="color" class="max-w-5" #colorPickerPDF value="{{colorPickerPDFtext.value}}">
+                </div>
+            </mat-form-field>
+            <mat-form-field class="fuse-mat-textarea w-full">
+                <mat-label class="text-sm">Description</mat-label>
+                <textarea matInput [rows]="3" matTextareaAutosize></textarea>
+            </mat-form-field>  
+            <mat-form-field class="fuse-mat-dense w-full">
+                <mat-label class="flex items-center text-sm">Company</mat-label>
+                <input matInput>
+            </mat-form-field>
+        </div>        
+        <div class="flex items-center justify-end mt-4 sm:mt-0 space-x-4">
+            <!-- Discard -->
+            <button
+                class="ml-auto sm:ml-0"
+                mat-stroked-button 
+                (click)="close()"
+                >
+                Close
+            </button>
+            <!-- Send -->
+            <button
+                class="order-first sm:order-last"
+                mat-flat-button
+                [color]="'primary'">
+                Save
+            </button>
+        </div>
+    </form>
+</div>

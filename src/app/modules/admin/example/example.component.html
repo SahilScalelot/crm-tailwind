@@ -1,6 +1,6 @@
 <div class="w-full p-5 md:p-8 space-y-5">
     <!-- Dashboard -->
-    <div class="flex flex-wrap -mx-3" *ngIf="false">
+    <div class="flex flex-wrap -mx-3">
         <div class="w-full sm:w-1/2 lg:w-1/4 p-3">
             <div class="flex flex-col flex-auto p-6 bg-card shadow rounded-2xl overflow-hidden">
                 <div class="flex items-start justify-between">
@@ -66,37 +66,657 @@
             </div>
         </div>
         <div class="w-full md:w-full lg:w-1/2 p-3">
-            <div class="p-6 bg-card shadow rounded-2xl overflow-hidden h-full">
-                <ul class="w-full overflow-x-auto flex items-center space-x-5">
-                    <li class="flex items-center py-2 space-x-2">
-                        <mat-icon class="icon-size-5" svgIcon="heroicons_outline:menu"></mat-icon>
-                        <span class="inline-block text-sm uppercase whitespace-nowrap">My Task</span>
-                    </li>
-                    <li class="flex items-center py-2 space-x-2">
-                        <mat-icon class="icon-size-5" svgIcon="heroicons_outline:menu"></mat-icon>
-                        <span class="inline-block text-sm uppercase whitespace-nowrap">My Task</span>
-                    </li>
-                    <li class="flex items-center py-2 space-x-2">
-                        <mat-icon class="icon-size-5" svgIcon="heroicons_outline:menu"></mat-icon>
-                        <span class="inline-block text-sm uppercase whitespace-nowrap">My Task</span>
-                    </li>
-                    <li class="flex items-center py-2 space-x-2">
-                        <mat-icon class="icon-size-5" svgIcon="heroicons_outline:menu"></mat-icon>
-                        <span class="inline-block text-sm uppercase whitespace-nowrap">My Task</span>
-                    </li>
-                    <li class="flex items-center py-2 space-x-2">
-                        <mat-icon class="icon-size-5" svgIcon="heroicons_outline:menu"></mat-icon>
-                        <span class="inline-block text-sm uppercase whitespace-nowrap">My Task</span>
-                    </li>
-                    <li class="flex items-center py-2 space-x-2">
-                        <mat-icon class="icon-size-5" svgIcon="heroicons_outline:menu"></mat-icon>
-                        <span class="inline-block text-sm uppercase whitespace-nowrap">My Task</span>
-                    </li>
-                    <li class="flex items-center py-2 space-x-2">
-                        <mat-icon class="icon-size-5" svgIcon="heroicons_outline:menu"></mat-icon>
-                        <span class="inline-block text-sm uppercase whitespace-nowrap">My Task</span>
-                    </li>
-                </ul>
+            <div class="dashboard-tab p-4 bg-card shadow rounded-2xl overflow-hidden h-full">
+                <mat-tab-group animationDuration="0ms">                    
+                    <mat-tab>
+                        <ng-template mat-tab-label class="p-0">
+                            <div class="flex items-center space-x-1">
+                                <mat-icon class="icon-size-5" svgIcon="storage"></mat-icon>
+                                <span class="inline-block text-sm uppercase whitespace-nowrap">My Task</span>
+                            </div>
+                        </ng-template>
+                        <div class="w-full">
+                            <a href="#" class="text-sm text-blue-600 inline-block">View All</a>
+                            <div class="w-full mt-3">
+                                <div class="flex items-center">
+                                    <select name="page" id="page" class="bg-card border border-gray-300 text-sm p-1 rounded">
+                                        <option value="">25</option>
+                                        <option value="">50</option>
+                                        <option value="">75</option>
+                                        <option value="">100</option>
+                                    </select>
+                                    <div class="flex items-stretch mx-1">
+                                        <div class="relative group">
+                                            <button class="border border-gray-300 text-sm p-1 px-2 rounded-tl rounded-bl">Export</button>
+                                            <div class="absolute opacity-0 top-full inset-x-0 w-full p-2 bg-card invisible rounded-md shadow-md translate-y-4 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 anim">
+                                                <a href="#" class="block">Excel</a>
+                                                <a href="#" class="block">CSV</a>
+                                                <a href="#" class="block">PDF</a>
+                                                <a href="#" class="block">Print</a>
+                                            </div>
+                                        </div>
+                                        <button class="border border-gray-300 border-l-0 px-1 rounded-tr rounded-br">
+                                            <mat-icon class="icon-size-4" svgIcon="restart_alt"></mat-icon>
+                                        </button>
+                                    </div>
+                                    <div class="border rounded overflow-hidden flex ml-auto">
+                                        <input type="text" class="px-2 py-[5px] text-sm max-w-16 focus:max-w-32 anim whitespace-nowrap overflow-hidden text-ellipsis" placeholder="Search...">
+                                        <button class="flex items-center justify-center px-2 border-l">
+                                            <mat-icon class="icon-size-4" svgIcon="heroicons_outline:search"></mat-icon>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="overflow-x-auto mt-4">
+                                    <table class="table-auto w-full">
+                                        <thead class="text-sm bg-gray-50 dark:bg-card">
+                                            <tr>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <div class="font-semibold text-left">#</div>
+                                                    <mat-icon class="icon-size-3 absolute top-1/2 -translate-y-1/2 right-2 opacity-50" svgIcon="heroicons_outline:switch-vertical"></mat-icon>
+                                                </th>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <div class="font-semibold text-left">Name</div>
+                                                    <mat-icon class="icon-size-3 absolute top-1/2 -translate-y-1/2 right-2 opacity-50" svgIcon="heroicons_outline:switch-vertical"></mat-icon>
+                                                </th>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <div class="font-semibold text-left">Status</div>
+                                                    <mat-icon class="icon-size-3 absolute top-1/2 -translate-y-1/2 right-2 opacity-50" svgIcon="heroicons_outline:switch-vertical"></mat-icon>
+                                                </th>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <div class="font-semibold text-left">Start Date</div>
+                                                    <mat-icon class="icon-size-3 absolute top-1/2 -translate-y-1/2 right-2 opacity-50" svgIcon="heroicons_outline:switch-vertical"></mat-icon>
+                                                </th>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <div class="font-semibold text-left">Tags</div>
+                                                    <mat-icon class="icon-size-3 absolute top-1/2 -translate-y-1/2 right-2 opacity-50" svgIcon="heroicons_outline:switch-vertical"></mat-icon>
+                                                </th>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <div class="font-semibold text-left">Priority</div>
+                                                    <mat-icon class="icon-size-3 absolute top-1/2 -translate-y-1/2 right-2 opacity-50" svgIcon="heroicons_outline:switch-vertical"></mat-icon>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-sm font-normal align-top text-left">
+                                            <tr>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <div class="font-semibold text-left">1</div>
+                                                </td>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <div class="font-semibold text-left text-blue-600">Web Design</div>
+                                                    <div class="flex mt-1">
+                                                        <a href="#" class="text-[11px] text-green-600 inline-block">Start Time</a>
+                                                        <a href="#" class="text-[11px] text-blue-600 inline-block px-1 mx-1 border-x border-gray-300">Edit</a>
+                                                        <a href="#" class="text-[11px] text-red-600 inline-block">Delete</a>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <select class="text-sm p-0.5 border border-green-600 text-green-600 bg-card font-normal rounded" name="changes-status" id="changes-status">
+                                                        <option value="">Awaiting Feedback</option>
+                                                        <option value="">Mark as Not Started</option>
+                                                        <option value="">Mark as In Progress</option>
+                                                        <option value="">Mark as Testing</option>
+                                                        <option value="">Mark as Complete</option>
+                                                    </select>
+                                                </td>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <p class="text-left">2023-06-02</p>
+                                                </td>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <div class="text-left">Tags</div>
+                                                </td>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <select class="bg-card text-orange-600" name="changes-status" id="changes-status">
+                                                        <option value="">High</option>
+                                                        <option value="">Medium</option>
+                                                        <option value="">Urgent</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-tab>
+                    <mat-tab>
+                        <ng-template mat-tab-label class="p-0">
+                            <div class="flex items-center space-x-1">
+                                <mat-icon class="icon-size-5" svgIcon="heroicons_outline:menu"></mat-icon>
+                                <span class="inline-block text-sm uppercase whitespace-nowrap">My Projects</span>
+                            </div>
+                        </ng-template>
+                        <div class="w-full p-2">
+                            <a href="#" class="text-sm text-blue-600 inline-block">View All</a>
+                            <div class="w-full mt-3">
+                                <div class="flex items-center">
+                                    <select name="page" id="page" class="bg-card border border-gray-300 text-sm p-1 rounded">
+                                        <option value="">25</option>
+                                        <option value="">50</option>
+                                        <option value="">75</option>
+                                        <option value="">100</option>
+                                    </select>
+                                    <div class="flex items-stretch mx-1">
+                                        <div class="relative group">
+                                            <button class="border border-gray-300 text-sm p-1 px-2 rounded-tl rounded-bl">Export</button>
+                                            <div class="absolute opacity-0 top-full inset-x-0 w-full p-2 bg-card invisible rounded-md shadow-md translate-y-4 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 anim">
+                                                <a href="#" class="block">Excel</a>
+                                                <a href="#" class="block">CSV</a>
+                                                <a href="#" class="block">PDF</a>
+                                                <a href="#" class="block">Print</a>
+                                            </div>
+                                        </div>
+                                        <button class="border border-gray-300 border-l-0 px-1 rounded-tr rounded-br">
+                                            <mat-icon class="icon-size-4" svgIcon="restart_alt"></mat-icon>
+                                        </button>
+                                    </div>
+                                    <div class="border rounded overflow-hidden flex ml-auto">
+                                        <input type="text" class="px-2 py-[5px] text-sm max-w-16 focus:max-w-32 anim whitespace-nowrap overflow-hidden text-ellipsis" placeholder="Search...">
+                                        <button class="flex items-center justify-center px-2 border-l">
+                                            <mat-icon class="icon-size-4" svgIcon="heroicons_outline:search"></mat-icon>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="overflow-x-auto mt-4">
+                                    <table class="table-auto w-full">
+                                        <thead class="text-sm bg-gray-50 dark:bg-card">
+                                            <tr>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <div class="font-semibold text-left">Project Name</div>
+                                                    <mat-icon class="icon-size-3 absolute top-1/2 -translate-y-1/2 right-2 opacity-50" svgIcon="heroicons_outline:switch-vertical"></mat-icon>
+                                                </th>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <div class="font-semibold text-left">Start Date</div>
+                                                    <mat-icon class="icon-size-3 absolute top-1/2 -translate-y-1/2 right-2 opacity-50" svgIcon="heroicons_outline:switch-vertical"></mat-icon>
+                                                </th>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <div class="font-semibold text-left">Deadline</div>
+                                                    <mat-icon class="icon-size-3 absolute top-1/2 -translate-y-1/2 right-2 opacity-50" svgIcon="heroicons_outline:switch-vertical"></mat-icon>
+                                                </th>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <div class="font-semibold text-left">Status</div>
+                                                    <mat-icon class="icon-size-3 absolute top-1/2 -translate-y-1/2 right-2 opacity-50" svgIcon="heroicons_outline:switch-vertical"></mat-icon>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-sm font-normal align-top text-left">
+                                            <tr>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <div class="font-semibold text-left text-blue-600">Orbit Exports Limited completes new project</div>
+                                                </td>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <p class="text-left">2023-05-31</p>
+                                                </td>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <p class="text-left">2025-05-24</p>
+                                                    </td>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <p class="text-xs text-center rounded text-green-600 border border-green-600">In Progress</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <div class="font-semibold text-left text-blue-600">Alok Industries will soon launch technical textiles</div>
+                                                </td>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <p class="text-left">2023-05-31</p>
+                                                </td>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <p class="text-left">2025-05-24</p>
+                                                    </td>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <p class="text-xs text-center rounded text-orange-600 border border-orange-600">On Hold</p>
+                                                </td>
+                                            </tr>
+                                             <tr>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <div class="font-semibold text-left text-blue-600">Orbit Exports Limited completes new project</div>
+                                                </td>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <p class="text-left">2023-05-31</p>
+                                                </td>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <p class="text-left">2025-05-24</p>
+                                                    </td>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <p class="text-xs text-center rounded text-green-600 border border-green-600">In Progress</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-tab>
+                    <mat-tab>
+                        <ng-template mat-tab-label class="p-0">
+                            <div class="flex items-center space-x-1">
+                                <mat-icon class="icon-size-5" svgIcon="heroicons_outline:clock"></mat-icon>
+                                <span class="inline-block text-sm uppercase whitespace-nowrap">My Reminders</span>
+                            </div>
+                        </ng-template>
+                        <div class="w-full p-2">
+                            <a href="#" class="text-sm text-blue-600 inline-block">View All</a>
+                            <div class="w-full mt-3">
+                                <div class="flex items-center">
+                                    <select name="page" id="page" class="bg-card border border-gray-300 text-sm p-1 rounded">
+                                        <option value="">25</option>
+                                        <option value="">50</option>
+                                        <option value="">75</option>
+                                        <option value="">100</option>
+                                    </select>
+                                    <div class="flex items-stretch mx-1">
+                                        <div class="relative group">
+                                            <button class="border border-gray-300 text-sm p-1 px-2 rounded-tl rounded-bl">Export</button>
+                                            <div class="absolute opacity-0 top-full inset-x-0 w-full p-2 bg-card invisible rounded-md shadow-md translate-y-4 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 anim">
+                                                <a href="#" class="block">Excel</a>
+                                                <a href="#" class="block">CSV</a>
+                                                <a href="#" class="block">PDF</a>
+                                                <a href="#" class="block">Print</a>
+                                            </div>
+                                        </div>
+                                        <button class="border border-gray-300 border-l-0 px-1 rounded-tr rounded-br">
+                                            <mat-icon class="icon-size-4" svgIcon="restart_alt"></mat-icon>
+                                        </button>
+                                    </div>
+                                    <div class="border rounded overflow-hidden flex ml-auto">
+                                        <input type="text" class="px-2 py-[5px] text-sm max-w-16 focus:max-w-32 anim whitespace-nowrap overflow-hidden text-ellipsis" placeholder="Search...">
+                                        <button class="flex items-center justify-center px-2 border-l">
+                                            <mat-icon class="icon-size-4" svgIcon="heroicons_outline:search"></mat-icon>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="overflow-x-auto mt-4">
+                                    <table class="table-auto w-full">
+                                        <thead class="text-sm bg-gray-50 dark:bg-card">
+                                            <tr>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <p class="text-left">Related to</p>
+                                                    <mat-icon class="icon-size-3 absolute top-1/2 -translate-y-1/2 right-2 opacity-50" svgIcon="heroicons_outline:switch-vertical"></mat-icon>
+                                                </th>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <p class="text-left">Description</p>
+                                                    <mat-icon class="icon-size-3 absolute top-1/2 -translate-y-1/2 right-2 opacity-50" svgIcon="heroicons_outline:switch-vertical"></mat-icon>
+                                                </th>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <p class="text-left">Date</p>
+                                                    <mat-icon class="icon-size-3 absolute top-1/2 -translate-y-1/2 right-2 opacity-50" svgIcon="heroicons_outline:switch-vertical"></mat-icon>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-sm font-normal align-top text-left">
+                                            <tr>
+                                                <td class="p-2 whitespace-nowrap group">
+                                                    <p class="block text-left text-blue-600">Diamond manufactures</p>
+                                                    <span class="text-red-600 opacity-0 invisible group-hover:visible group-hover:opacity-100 anim">Delete</span>
+                                                </td>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <p class="text-left">Web Design</p>
+                                                </td>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <p class="text-left">2023-05-27 17:10:00</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-tab>
+                    <mat-tab>
+                        <ng-template mat-tab-label class="p-0">
+                            <div class="flex items-center space-x-1">
+                                <mat-icon class="icon-size-5" svgIcon="heroicons_outline:ticket"></mat-icon>
+                                <span class="inline-block text-sm uppercase whitespace-nowrap">Tickets</span>
+                            </div>
+                        </ng-template>
+                        <div class="w-full p-2">
+                            <a href="#" class="text-sm text-blue-600 inline-block">View All</a>
+                            <div class="w-full mt-3">
+                                <div class="flex items-center">
+                                    <select name="page" id="page" class="bg-card border border-gray-300 text-sm p-1 rounded">
+                                        <option value="">25</option>
+                                        <option value="">50</option>
+                                        <option value="">75</option>
+                                        <option value="">100</option>
+                                    </select>
+                                    <div class="flex items-stretch mx-1">
+                                        <div class="relative group">
+                                            <button class="border border-gray-300 text-sm p-1 px-2 rounded-tl rounded-bl">Export</button>
+                                            <div class="absolute opacity-0 top-full inset-x-0 w-full p-2 bg-card invisible rounded-md shadow-md translate-y-4 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 anim">
+                                                <a href="#" class="block">Excel</a>
+                                                <a href="#" class="block">CSV</a>
+                                                <a href="#" class="block">PDF</a>
+                                                <a href="#" class="block">Print</a>
+                                            </div>
+                                        </div>
+                                        <button class="border border-gray-300 border-l-0 px-1 rounded-tr rounded-br">
+                                            <mat-icon class="icon-size-4" svgIcon="restart_alt"></mat-icon>
+                                        </button>
+                                    </div>
+                                    <div class="border rounded overflow-hidden flex ml-auto">
+                                        <input type="text" class="px-2 py-[5px] text-sm max-w-16 focus:max-w-32 anim whitespace-nowrap overflow-hidden text-ellipsis" placeholder="Search...">
+                                        <button class="flex items-center justify-center px-2 border-l">
+                                            <mat-icon class="icon-size-4" svgIcon="heroicons_outline:search"></mat-icon>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="overflow-x-auto mt-4">
+                                    <table class="table-auto w-full">
+                                        <thead class="text-sm bg-gray-50 dark:bg-card">
+                                            <tr>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <div class="font-semibold text-left">#</div>
+                                                    <mat-icon class="icon-size-3 absolute top-1/2 -translate-y-1/2 right-2 opacity-50" svgIcon="heroicons_outline:switch-vertical"></mat-icon>
+                                                </th>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <div class="font-semibold text-left">Subject</div>
+                                                    <mat-icon class="icon-size-3 absolute top-1/2 -translate-y-1/2 right-2 opacity-50" svgIcon="heroicons_outline:switch-vertical"></mat-icon>
+                                                </th>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <div class="font-semibold text-left">Tags</div>
+                                                    <mat-icon class="icon-size-3 absolute top-1/2 -translate-y-1/2 right-2 opacity-50" svgIcon="heroicons_outline:switch-vertical"></mat-icon>
+                                                </th>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <div class="font-semibold text-left">Status</div>
+                                                    <mat-icon class="icon-size-3 absolute top-1/2 -translate-y-1/2 right-2 opacity-50" svgIcon="heroicons_outline:switch-vertical"></mat-icon>
+                                                </th>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <div class="font-semibold text-left">Priority</div>
+                                                    <mat-icon class="icon-size-3 absolute top-1/2 -translate-y-1/2 right-2 opacity-50" svgIcon="heroicons_outline:switch-vertical"></mat-icon>
+                                                </th>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <div class="font-semibold text-left">Last Reply</div>
+                                                    <mat-icon class="icon-size-3 absolute top-1/2 -translate-y-1/2 right-2 opacity-50" svgIcon="heroicons_outline:switch-vertical"></mat-icon>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-sm font-normal align-top text-left">
+                                            <tr>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <div class="font-semibold text-left">1</div>
+                                                </td>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <div class="font-semibold text-left text-blue-600">Web Design</div>
+                                                    <div class="flex mt-1">
+                                                        <a href="#" class="text-[11px] text-green-600 inline-block">Start Time</a>
+                                                        <a href="#" class="text-[11px] text-blue-600 inline-block px-1 mx-1 border-x border-gray-300">Edit</a>
+                                                        <a href="#" class="text-[11px] text-red-600 inline-block">Delete</a>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <select class="text-sm p-0.5 border border-green-600 text-green-600 bg-card font-normal rounded" name="changes-status" id="changes-status">
+                                                        <option value="">Awaiting Feedback</option>
+                                                        <option value="">Mark as Not Started</option>
+                                                        <option value="">Mark as In Progress</option>
+                                                        <option value="">Mark as Testing</option>
+                                                        <option value="">Mark as Complete</option>
+                                                    </select>
+                                                </td>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <p class="text-left">2023-06-02</p>
+                                                </td>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <div class="text-left">Tags</div>
+                                                </td>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <select class="bg-card text-orange-600" name="changes-status" id="changes-status">
+                                                        <option value="">High</option>
+                                                        <option value="">Medium</option>
+                                                        <option value="">Urgent</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-tab>
+                    <mat-tab>
+                        <ng-template mat-tab-label class="p-0">
+                            <div class="flex items-center space-x-1">
+                                <mat-icon class="icon-size-5" svgIcon="heroicons_outline:speakerphone"></mat-icon>
+                                <span class="inline-block text-sm uppercase whitespace-nowrap">Announcements</span>
+                            </div>
+                        </ng-template>
+                        <div class="w-full p-2">
+                            <a href="#" class="text-sm text-blue-600 inline-block">View All</a>
+                            <div class="w-full mt-3">
+                                <div class="flex items-center">
+                                    <select name="page" id="page" class="bg-card border border-gray-300 text-sm p-1 rounded">
+                                        <option value="">25</option>
+                                        <option value="">50</option>
+                                        <option value="">75</option>
+                                        <option value="">100</option>
+                                    </select>
+                                    <div class="flex items-stretch mx-1">
+                                        <div class="relative group">
+                                            <button class="border border-gray-300 text-sm p-1 px-2 rounded-tl rounded-bl">Export</button>
+                                            <div class="absolute opacity-0 top-full inset-x-0 w-full p-2 bg-card invisible rounded-md shadow-md translate-y-4 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 anim">
+                                                <a href="#" class="block">Excel</a>
+                                                <a href="#" class="block">CSV</a>
+                                                <a href="#" class="block">PDF</a>
+                                                <a href="#" class="block">Print</a>
+                                            </div>
+                                        </div>
+                                        <button class="border border-gray-300 border-l-0 px-1 rounded-tr rounded-br">
+                                            <mat-icon class="icon-size-4" svgIcon="restart_alt"></mat-icon>
+                                        </button>
+                                    </div>
+                                    <div class="border rounded overflow-hidden flex ml-auto">
+                                        <input type="text" class="px-2 py-[5px] text-sm max-w-16 focus:max-w-32 anim whitespace-nowrap overflow-hidden text-ellipsis" placeholder="Search...">
+                                        <button class="flex items-center justify-center px-2 border-l">
+                                            <mat-icon class="icon-size-4" svgIcon="heroicons_outline:search"></mat-icon>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="overflow-x-auto mt-4">
+                                    <table class="table-auto w-full">
+                                        <thead class="text-sm bg-gray-50 dark:bg-card">
+                                            <tr>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <div class="font-semibold text-left">#</div>
+                                                    <mat-icon class="icon-size-3 absolute top-1/2 -translate-y-1/2 right-2 opacity-50" svgIcon="heroicons_outline:switch-vertical"></mat-icon>
+                                                </th>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <div class="font-semibold text-left">Name</div>
+                                                    <mat-icon class="icon-size-3 absolute top-1/2 -translate-y-1/2 right-2 opacity-50" svgIcon="heroicons_outline:switch-vertical"></mat-icon>
+                                                </th>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <div class="font-semibold text-left">Status</div>
+                                                    <mat-icon class="icon-size-3 absolute top-1/2 -translate-y-1/2 right-2 opacity-50" svgIcon="heroicons_outline:switch-vertical"></mat-icon>
+                                                </th>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <div class="font-semibold text-left">Start Date</div>
+                                                    <mat-icon class="icon-size-3 absolute top-1/2 -translate-y-1/2 right-2 opacity-50" svgIcon="heroicons_outline:switch-vertical"></mat-icon>
+                                                </th>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <div class="font-semibold text-left">Tags</div>
+                                                    <mat-icon class="icon-size-3 absolute top-1/2 -translate-y-1/2 right-2 opacity-50" svgIcon="heroicons_outline:switch-vertical"></mat-icon>
+                                                </th>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <div class="font-semibold text-left">Priority</div>
+                                                    <mat-icon class="icon-size-3 absolute top-1/2 -translate-y-1/2 right-2 opacity-50" svgIcon="heroicons_outline:switch-vertical"></mat-icon>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-sm font-normal align-top text-left">
+                                            <tr>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <div class="font-semibold text-left">1</div>
+                                                </td>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <div class="font-semibold text-left text-blue-600">Web Design</div>
+                                                    <div class="flex mt-1">
+                                                        <a href="#" class="text-[11px] text-green-600 inline-block">Start Time</a>
+                                                        <a href="#" class="text-[11px] text-blue-600 inline-block px-1 mx-1 border-x border-gray-300">Edit</a>
+                                                        <a href="#" class="text-[11px] text-red-600 inline-block">Delete</a>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <select class="text-sm p-0.5 border border-green-600 text-green-600 bg-card font-normal rounded" name="changes-status" id="changes-status">
+                                                        <option value="">Awaiting Feedback</option>
+                                                        <option value="">Mark as Not Started</option>
+                                                        <option value="">Mark as In Progress</option>
+                                                        <option value="">Mark as Testing</option>
+                                                        <option value="">Mark as Complete</option>
+                                                    </select>
+                                                </td>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <p class="text-left">2023-06-02</p>
+                                                </td>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <div class="text-left">Tags</div>
+                                                </td>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <select class="bg-card text-orange-600" name="changes-status" id="changes-status">
+                                                        <option value="">High</option>
+                                                        <option value="">Medium</option>
+                                                        <option value="">Urgent</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-tab>
+                    <mat-tab>
+                        <ng-template mat-tab-label class="p-0">
+                            <div class="flex items-center space-x-1">
+                                <mat-icon class="icon-size-5" svgIcon="heroicons_outline:calendar"></mat-icon>
+                                <span class="inline-block text-sm uppercase whitespace-nowrap">Latest Activity</span>
+                            </div>
+                        </ng-template>
+                        <div class="w-full p-2">
+                            <a href="#" class="text-sm text-blue-600 inline-block">View All</a>
+                            <div class="w-full mt-3">
+                                <div class="flex items-center">
+                                    <select name="page" id="page" class="bg-card border border-gray-300 text-sm p-1 rounded">
+                                        <option value="">25</option>
+                                        <option value="">50</option>
+                                        <option value="">75</option>
+                                        <option value="">100</option>
+                                    </select>
+                                    <div class="flex items-stretch mx-1">
+                                        <div class="relative group">
+                                            <button class="border border-gray-300 text-sm p-1 px-2 rounded-tl rounded-bl">Export</button>
+                                            <div class="absolute opacity-0 top-full inset-x-0 w-full p-2 bg-card invisible rounded-md shadow-md translate-y-4 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 anim">
+                                                <a href="#" class="block">Excel</a>
+                                                <a href="#" class="block">CSV</a>
+                                                <a href="#" class="block">PDF</a>
+                                                <a href="#" class="block">Print</a>
+                                            </div>
+                                        </div>
+                                        <button class="border border-gray-300 border-l-0 px-1 rounded-tr rounded-br">
+                                            <mat-icon class="icon-size-4" svgIcon="restart_alt"></mat-icon>
+                                        </button>
+                                    </div>
+                                    <div class="border rounded overflow-hidden flex ml-auto">
+                                        <input type="text" class="px-2 py-[5px] text-sm max-w-16 focus:max-w-32 anim whitespace-nowrap overflow-hidden text-ellipsis" placeholder="Search...">
+                                        <button class="flex items-center justify-center px-2 border-l">
+                                            <mat-icon class="icon-size-4" svgIcon="heroicons_outline:search"></mat-icon>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="overflow-x-auto mt-4">
+                                    <table class="table-auto w-full">
+                                        <thead class="text-sm bg-gray-50 dark:bg-card">
+                                            <tr>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <div class="font-semibold text-left">#</div>
+                                                    <mat-icon class="icon-size-3 absolute top-1/2 -translate-y-1/2 right-2 opacity-50" svgIcon="heroicons_outline:switch-vertical"></mat-icon>
+                                                </th>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <div class="font-semibold text-left">Name</div>
+                                                    <mat-icon class="icon-size-3 absolute top-1/2 -translate-y-1/2 right-2 opacity-50" svgIcon="heroicons_outline:switch-vertical"></mat-icon>
+                                                </th>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <div class="font-semibold text-left">Status</div>
+                                                    <mat-icon class="icon-size-3 absolute top-1/2 -translate-y-1/2 right-2 opacity-50" svgIcon="heroicons_outline:switch-vertical"></mat-icon>
+                                                </th>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <div class="font-semibold text-left">Start Date</div>
+                                                    <mat-icon class="icon-size-3 absolute top-1/2 -translate-y-1/2 right-2 opacity-50" svgIcon="heroicons_outline:switch-vertical"></mat-icon>
+                                                </th>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <div class="font-semibold text-left">Tags</div>
+                                                    <mat-icon class="icon-size-3 absolute top-1/2 -translate-y-1/2 right-2 opacity-50" svgIcon="heroicons_outline:switch-vertical"></mat-icon>
+                                                </th>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <div class="font-semibold text-left">Priority</div>
+                                                    <mat-icon class="icon-size-3 absolute top-1/2 -translate-y-1/2 right-2 opacity-50" svgIcon="heroicons_outline:switch-vertical"></mat-icon>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-sm font-normal align-top text-left">
+                                            <tr>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <div class="font-semibold text-left">1</div>
+                                                </td>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <div class="font-semibold text-left text-blue-600">Web Design</div>
+                                                    <div class="flex mt-1">
+                                                        <a href="#" class="text-[11px] text-green-600 inline-block">Start Time</a>
+                                                        <a href="#" class="text-[11px] text-blue-600 inline-block px-1 mx-1 border-x border-gray-300">Edit</a>
+                                                        <a href="#" class="text-[11px] text-red-600 inline-block">Delete</a>
+                                                    </div>
+                                                </td>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <select class="text-sm p-0.5 border border-green-600 text-green-600 bg-card font-normal rounded" name="changes-status" id="changes-status">
+                                                        <option value="">Awaiting Feedback</option>
+                                                        <option value="">Mark as Not Started</option>
+                                                        <option value="">Mark as In Progress</option>
+                                                        <option value="">Mark as Testing</option>
+                                                        <option value="">Mark as Complete</option>
+                                                    </select>
+                                                </td>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <p class="text-left">2023-06-02</p>
+                                                </td>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <div class="text-left">Tags</div>
+                                                </td>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <select class="bg-card text-orange-600" name="changes-status" id="changes-status">
+                                                        <option value="">High</option>
+                                                        <option value="">Medium</option>
+                                                        <option value="">Urgent</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-tab>
+                </mat-tab-group>
+                <div class="flex items-center flex-wrap mt-3">
+                    <div class="w-full sm:w-1/2 sm:pr-2">
+                        <span class="text-sm">Showing 1 to 1 of 1 entries</span>
+                    </div>
+                    <div class="w-full sm:w-1/2 sm:pl-2">    
+                        <ul class="flex justify-end items-stretch bg-card text-sm">
+                            <li>
+                                <a href="#" class="inline-block h-full px-3 py-2 ml-0 leading-tight bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">Previous</a>
+                            </li>
+                            <li>
+                                <a href="#" class="inline-block h-full px-3 py-2 leading-tight bg-white border border-gray-300 hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">1</a>
+                            </li>
+                            <li>
+                                <a href="#" aria-current="page" class="inline-block h-full px-3 py-2 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">2</a>
+                            </li>
+                            <li>
+                                <a href="#" class="inline-block h-full px-3 py-2 leading-tight bg-white border border-gray-300 hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">3</a>
+                            </li>
+                            <li>
+                                <a href="#" class="inline-block h-full px-3 py-2 leading-tight bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400">Next</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="w-full md:w-full lg:w-1/2 p-3">
@@ -111,7 +731,7 @@
                                 <li>
                                     <div class="flex items-start justify-between">
                                         <a href="" class="inline-block text-xs"><span class="_total bold">1</span> Not Sent </a>
-                                        <span class="inline-block text-xs text-black">20.00%</span>
+                                        <span class="inline-block text-xs">20.00%</span>
                                     </div>
                                     <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700 mt-1">
                                         <div class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style="width: 45%"></div>
@@ -120,7 +740,7 @@
                                 <li>
                                     <div class="flex items-start justify-between">
                                         <a href="" class="inline-block text-xs"><span class="_total bold">1</span> Not Sent </a>
-                                        <span class="inline-block text-xs text-black">20.00%</span>
+                                        <span class="inline-block text-xs">20.00%</span>
                                     </div>
                                     <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700 mt-1">
                                         <div class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style="width: 45%"></div>
@@ -129,7 +749,7 @@
                                 <li>
                                     <div class="flex items-start justify-between">
                                         <a href="" class="inline-block text-xs"><span class="_total bold">1</span> Not Sent </a>
-                                        <span class="inline-block text-xs text-black">20.00%</span>
+                                        <span class="inline-block text-xs">20.00%</span>
                                     </div>
                                     <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700 mt-1">
                                         <div class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style="width: 45%"></div>
@@ -138,7 +758,7 @@
                                 <li>
                                     <div class="flex items-start justify-between">
                                         <a href="" class="inline-block text-xs"><span class="_total bold">1</span> Not Sent </a>
-                                        <span class="inline-block text-xs text-black">20.00%</span>
+                                        <span class="inline-block text-xs">20.00%</span>
                                     </div>
                                     <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700 mt-1">
                                         <div class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style="width: 45%"></div>
@@ -147,7 +767,7 @@
                                 <li>
                                     <div class="flex items-start justify-between">
                                         <a href="" class="inline-block text-xs"><span class="_total bold">1</span> Not Sent </a>
-                                        <span class="inline-block text-xs text-black">20.00%</span>
+                                        <span class="inline-block text-xs">20.00%</span>
                                     </div>
                                     <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700 mt-1">
                                         <div class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style="width: 45%"></div>
@@ -156,7 +776,7 @@
                                 <li>
                                     <div class="flex items-start justify-between">
                                         <a href="" class="inline-block text-xs"><span class="_total bold">1</span> Not Sent </a>
-                                        <span class="inline-block text-xs text-black">20.00%</span>
+                                        <span class="inline-block text-xs">20.00%</span>
                                     </div>
                                     <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700 mt-1">
                                         <div class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style="width: 45%"></div>
@@ -165,7 +785,7 @@
                                 <li>
                                     <div class="flex items-start justify-between">
                                         <a href="" class="inline-block text-xs"><span class="_total bold">1</span> Not Sent </a>
-                                        <span class="inline-block text-xs text-black">20.00%</span>
+                                        <span class="inline-block text-xs">20.00%</span>
                                     </div>
                                     <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700 mt-1">
                                         <div class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style="width: 45%"></div>
@@ -183,7 +803,7 @@
                                 <li>
                                     <div class="flex items-start justify-between">
                                         <a href="" class="inline-block text-xs"><span class="_total bold">1</span> Not Sent </a>
-                                        <span class="inline-block text-xs text-black">20.00%</span>
+                                        <span class="inline-block text-xs">20.00%</span>
                                     </div>
                                     <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700 mt-1">
                                         <div class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style="width: 45%"></div>
@@ -192,7 +812,7 @@
                                 <li>
                                     <div class="flex items-start justify-between">
                                         <a href="" class="inline-block text-xs"><span class="_total bold">1</span> Not Sent </a>
-                                        <span class="inline-block text-xs text-black">20.00%</span>
+                                        <span class="inline-block text-xs">20.00%</span>
                                     </div>
                                     <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700 mt-1">
                                         <div class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style="width: 45%"></div>
@@ -201,7 +821,7 @@
                                 <li>
                                     <div class="flex items-start justify-between">
                                         <a href="" class="inline-block text-xs"><span class="_total bold">1</span> Not Sent </a>
-                                        <span class="inline-block text-xs text-black">20.00%</span>
+                                        <span class="inline-block text-xs">20.00%</span>
                                     </div>
                                     <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700 mt-1">
                                         <div class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style="width: 45%"></div>
@@ -210,7 +830,7 @@
                                 <li>
                                     <div class="flex items-start justify-between">
                                         <a href="" class="inline-block text-xs"><span class="_total bold">1</span> Not Sent </a>
-                                        <span class="inline-block text-xs text-black">20.00%</span>
+                                        <span class="inline-block text-xs">20.00%</span>
                                     </div>
                                     <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700 mt-1">
                                         <div class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style="width: 45%"></div>
@@ -219,7 +839,7 @@
                                 <li>
                                     <div class="flex items-start justify-between">
                                         <a href="" class="inline-block text-xs"><span class="_total bold">1</span> Not Sent </a>
-                                        <span class="inline-block text-xs text-black">20.00%</span>
+                                        <span class="inline-block text-xs">20.00%</span>
                                     </div>
                                     <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700 mt-1">
                                         <div class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style="width: 45%"></div>
@@ -228,7 +848,7 @@
                                 <li>
                                     <div class="flex items-start justify-between">
                                         <a href="" class="inline-block text-xs"><span class="_total bold">1</span> Not Sent </a>
-                                        <span class="inline-block text-xs text-black">20.00%</span>
+                                        <span class="inline-block text-xs">20.00%</span>
                                     </div>
                                     <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700 mt-1">
                                         <div class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style="width: 45%"></div>
@@ -237,7 +857,7 @@
                                 <li>
                                     <div class="flex items-start justify-between">
                                         <a href="" class="inline-block text-xs"><span class="_total bold">1</span> Not Sent </a>
-                                        <span class="inline-block text-xs text-black">20.00%</span>
+                                        <span class="inline-block text-xs">20.00%</span>
                                     </div>
                                     <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700 mt-1">
                                         <div class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style="width: 45%"></div>
@@ -255,7 +875,7 @@
                                 <li>
                                     <div class="flex items-start justify-between">
                                         <a href="" class="inline-block text-xs"><span class="_total bold">1</span> Not Sent </a>
-                                        <span class="inline-block text-xs text-black">20.00%</span>
+                                        <span class="inline-block text-xs">20.00%</span>
                                     </div>
                                     <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700 mt-1">
                                         <div class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style="width: 45%"></div>
@@ -264,7 +884,7 @@
                                 <li>
                                     <div class="flex items-start justify-between">
                                         <a href="" class="inline-block text-xs"><span class="_total bold">1</span> Not Sent </a>
-                                        <span class="inline-block text-xs text-black">20.00%</span>
+                                        <span class="inline-block text-xs">20.00%</span>
                                     </div>
                                     <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700 mt-1">
                                         <div class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style="width: 45%"></div>
@@ -273,7 +893,7 @@
                                 <li>
                                     <div class="flex items-start justify-between">
                                         <a href="" class="inline-block text-xs"><span class="_total bold">1</span> Not Sent </a>
-                                        <span class="inline-block text-xs text-black">20.00%</span>
+                                        <span class="inline-block text-xs">20.00%</span>
                                     </div>
                                     <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700 mt-1">
                                         <div class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style="width: 45%"></div>
@@ -282,7 +902,7 @@
                                 <li>
                                     <div class="flex items-start justify-between">
                                         <a href="" class="inline-block text-xs"><span class="_total bold">1</span> Not Sent </a>
-                                        <span class="inline-block text-xs text-black">20.00%</span>
+                                        <span class="inline-block text-xs">20.00%</span>
                                     </div>
                                     <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700 mt-1">
                                         <div class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style="width: 45%"></div>
@@ -291,7 +911,7 @@
                                 <li>
                                     <div class="flex items-start justify-between">
                                         <a href="" class="inline-block text-xs"><span class="_total bold">1</span> Not Sent </a>
-                                        <span class="inline-block text-xs text-black">20.00%</span>
+                                        <span class="inline-block text-xs">20.00%</span>
                                     </div>
                                     <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700 mt-1">
                                         <div class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style="width: 45%"></div>
@@ -300,7 +920,7 @@
                                 <li>
                                     <div class="flex items-start justify-between">
                                         <a href="" class="inline-block text-xs"><span class="_total bold">1</span> Not Sent </a>
-                                        <span class="inline-block text-xs text-black">20.00%</span>
+                                        <span class="inline-block text-xs">20.00%</span>
                                     </div>
                                     <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700 mt-1">
                                         <div class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style="width: 45%"></div>
@@ -309,7 +929,7 @@
                                 <li>
                                     <div class="flex items-start justify-between">
                                         <a href="" class="inline-block text-xs"><span class="_total bold">1</span> Not Sent </a>
-                                        <span class="inline-block text-xs text-black">20.00%</span>
+                                        <span class="inline-block text-xs">20.00%</span>
                                     </div>
                                     <div class="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700 mt-1">
                                         <div class="bg-blue-600 h-1.5 rounded-full dark:bg-blue-500" style="width: 45%"></div>
@@ -3683,7 +4303,7 @@
     </div>
     <!-- CONTRACTS END -->
 
-    <!-- dicription and text editor baki che desifn karvana -->
+    <!-- dicription and text editor baki che design karvanu -->
     <!-- PROJECTS START-->
     <div class="bg-card w-full" *ngIf="false">
          <!-- head -->
@@ -4485,7 +5105,8 @@
     <!-- LEADS END -->
 
     <!-- KNOWLEDGE-BASE START-->
-    <div class="bg-card w-full">
+    <!-- text-editor design karvanu baki che -->
+    <div class="bg-card w-full" *ngIf="false">
          <!-- head -->
         <div class="w-full flex items-center justify-between p-5 border-b border-gray-200 space-x-2">
             <div class="flex items-center space-x-2 whitespace-nowrap">
@@ -4501,16 +5122,622 @@
                 </button>
             </div>
         </div>
-        <div class="bg-card w-full">
-            <div class="w-full border-b border-gray-300 p-3">
+        <div class="bg-card w-full space-y-4">
+            <div class="px-5 pt-5">
                 <span class="inline-block text-lg md:text-xl font-semibold">Leads Summary</span>
             </div>
-            <div class="w-full p-3">
-                
+            <div class="w-full flex flex-wrap p-5 pt-0">
+                <mat-form-field class="fuse-mat-dense w-full md:w-1/3 sm:pr-2">
+                    <mat-label class="flex items-center text-sm"> 
+                        <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                        Subject
+                    </mat-label>
+                    <input matInput>
+                </mat-form-field>
+                <div class="w-full md:w-1/3 sm:pl-2">
+                    <div class="flex items-center">
+                        <mat-form-field class="fuse-mat-dense w-full pr-2">
+                            <mat-label class="text-sm">
+                                <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                                Group
+                            </mat-label>
+                            <mat-select class="overflow-hidden" matNativeControl [placeholder]="'Nothing-Select'">
+                                <mat-option value="Draft-1">Draft</mat-option>
+                                <mat-option value="Draft-2">Draft 2</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <span (click)="newGroupPop()" class="cursor-pointer mt-2 w-10 h-10 border border-gray-200 rounded-md flex items-center justify-center">
+                            <mat-icon class="icon-size-6" svgIcon="heroicons_outline:plus-sm"></mat-icon>
+                        </span>
+                    </div>
+                </div>
+                <div class="w-full space-x-5">
+                    <mat-checkbox [color]="'primary'" class="example-margin">Internal Article</mat-checkbox>
+                    <mat-checkbox [color]="'primary'" class="example-margin">Disabled</mat-checkbox>
+                </div>
             </div>
         </div>
     </div>
     <!-- KNOWLEDGE-BASE END-->
+
+    <!-- Utilities Start -->
+
+        <!-- Media start-->
+        <!-- Media End-->
+        
+        <!-- Bulk PDF Export Start-->
+        <div class="bg-card w-full" *ngIf="false">
+            <div class="max-w-2xl mx-auto">
+                <div class="p-5 pb-3">
+                    <span class="inline-block text-lg md:text-xl font-semibold">Bulk PDF Export</span>
+                </div>
+                <div class="w-full flex flex-wrap p-5 pt-0">
+                    <mat-form-field class="fuse-mat-dense w-full">
+                        <mat-label class="text-sm">
+                            <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                            Select Type
+                        </mat-label>
+                        <mat-select matNativeControl [placeholder]="'Invoice'">
+                            <mat-option value="Draft-1">Invoice</mat-option>
+                            <mat-option value="Draft-2">Estimates</mat-option>
+                            <mat-option value="Draft-2">Payments</mat-option>
+                            <mat-option value="Draft-2">Credit Notes</mat-option>
+                            <mat-option value="Draft-2">Proposals</mat-option>
+                            <mat-option value="Draft-2">Expenses</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full">
+                        <mat-label class="flex items-center text-sm">From Date:</mat-label>
+                        <input matInput [matDatepicker]="picker2">
+                        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                        <mat-datepicker #picker2></mat-datepicker>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full">
+                        <mat-label class="flex items-center text-sm">To Date:</mat-label>
+                        <input matInput [matDatepicker]="picker2">
+                        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                        <mat-datepicker #picker2></mat-datepicker>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full">
+                        <mat-label class="text-sm">Include Tag</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                    <div class="w-full pb-4">
+                        <span class="text-base block">Status</span>
+                        <!-- Invoice status start -->
+                        <div class="w-full">
+                            <ul class="space-y-2 py-3 border-b border-gray-200">
+                                <li><mat-radio-button [color]="'primary'">All</mat-radio-button></li>
+                                <li><mat-radio-button [color]="'primary'">Unpaid</mat-radio-button></li>
+                                <li><mat-radio-button [color]="'primary'">Paid</mat-radio-button></li>
+                                <li><mat-radio-button [color]="'primary'">Partially Paid</mat-radio-button></li>
+                                <li><mat-radio-button [color]="'primary'">Overdue</mat-radio-button></li>
+                                <li><mat-radio-button [color]="'primary'">Cancelled</mat-radio-button></li>
+                                <li><mat-radio-button [color]="'primary'">Draft</mat-radio-button></li>
+                            </ul>
+                            <ul class="py-3">
+                                <li><mat-radio-button [color]="'primary'">Not Sent</mat-radio-button></li>
+                            </ul>
+                        </div>
+                        <!-- Invoice status End -->
+                        <!-- Estimates status start -->
+                        <div class="w-full">
+                            <ul class="space-y-2 py-3 border-b border-gray-200">
+                                <li><mat-radio-button [color]="'primary'">All</mat-radio-button></li>
+                                <li><mat-radio-button [color]="'primary'">Draft</mat-radio-button></li>
+                                <li><mat-radio-button [color]="'primary'">Sent</mat-radio-button></li>
+                                <li><mat-radio-button [color]="'primary'">Expired</mat-radio-button></li>
+                                <li><mat-radio-button [color]="'primary'">Declined</mat-radio-button></li>
+                                <li><mat-radio-button [color]="'primary'">Accepted</mat-radio-button></li>
+                            </ul>
+                        </div>
+                        <!-- Estimates status End -->
+                        <!-- Payments status start -->
+                        <div class="w-full">
+                            <mat-form-field class="fuse-mat-dense w-full py-3">
+                                <mat-label class="text-sm">Payment Modes</mat-label>
+                                <mat-select matNativeControl [placeholder]="'All'">
+                                    <mat-option value="Draft-1">All</mat-option>
+                                    <mat-option value="Draft-2">Bank</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                        <!-- Payments status End -->
+                        <!-- Credit Notes status start -->
+                        <div class="w-full">
+                            <ul class="space-y-2 py-3 border-b border-gray-200">
+                                <li><mat-radio-button [color]="'primary'">All</mat-radio-button></li>
+                                <li><mat-radio-button [color]="'primary'">Open</mat-radio-button></li>
+                                <li><mat-radio-button [color]="'primary'">Closed</mat-radio-button></li>
+                                <li><mat-radio-button [color]="'primary'">Void</mat-radio-button></li>
+                            </ul>
+                        </div>
+                        <!-- Credit Notes status End -->
+                        <!-- Proposals status start -->
+                        <div class="w-full">
+                            <ul class="space-y-2 py-3 border-b border-gray-200">
+                                <li><mat-radio-button [color]="'primary'">All</mat-radio-button></li>
+                                <li><mat-radio-button [color]="'primary'">Draft</mat-radio-button></li>
+                                <li><mat-radio-button [color]="'primary'">Sent</mat-radio-button></li>
+                                <li><mat-radio-button [color]="'primary'">Open</mat-radio-button></li>
+                                <li><mat-radio-button [color]="'primary'">Revised</mat-radio-button></li>
+                                <li><mat-radio-button [color]="'primary'">Declined</mat-radio-button></li>
+                                <li><mat-radio-button [color]="'primary'">Accepted</mat-radio-button></li>
+                            </ul>
+                        </div>
+                        <!-- Proposals status End -->
+                        <!-- Expenses status start -->
+                        <div class="w-full">
+                            <mat-form-field class="fuse-mat-dense w-full py-3">
+                                <mat-label class="text-sm">Payment Modes</mat-label>
+                                <mat-select matNativeControl [placeholder]="'All'">
+                                    <mat-option value="Draft-1">All</mat-option>
+                                    <mat-option value="Draft-2">Bank</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                        <!-- Expenses status End -->
+                    </div>
+                    <div class="flex items-center">
+                        <button class="order-first sm:order-last" mat-flat-button [color]="'primary'">Export</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bulk PDF Export End -->
+
+        <!-- Calendar start -->
+        <!-- Calendar End -->
+
+        <!-- Announcements Start  -->
+        <div class="w-full" *ngIf="false">
+            <div class="bg-card w-full">
+                <div class="w-full p-5 border-b border-gray-200">
+                    <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">New Announcements</button>
+                </div>
+            </div>
+            <!-- New Announcements -->
+            <!-- text-editor design karvanu baki che -->
+            <div class="bg-card max-w-4xl mx-auto">
+                <div class="p-5 pb-3">
+                    <span class="inline-block text-lg md:text-xl font-semibold">Bulk PDF Export</span>
+                </div>
+                <div class="w-full p-5 pt-0">
+                    <mat-form-field class="fuse-mat-dense w-full">
+                        <mat-label class="text-sm">
+                            <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                            Subject
+                        </mat-label>
+                        <input matInput type="text">
+                    </mat-form-field>
+                    <div class="space-y-2 sm:space-y-0 sm:space-x-3 flex flex-col sm:flex-row">
+                        <mat-checkbox [color]="'primary'" class="example-margin">Show to staff</mat-checkbox>
+                        <mat-checkbox [color]="'primary'" class="example-margin">Show to clients</mat-checkbox>
+                        <mat-checkbox [color]="'primary'" class="example-margin">Show my name</mat-checkbox>
+                    </div>
+                <!-- add A text-editor -->
+                    <div class="flex items-center mt-5">
+                        <button class="order-first sm:order-last" mat-flat-button [color]="'primary'">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Announcements End  -->
+
+        <!-- activity_log Start -->
+        <div class="bg-card w-full" *ngIf="false">
+            <div class="w-full flex items-center justify-between flex-col sm:flex-row p-5 border-b border-gray-200 sm:space-x-2">
+                <mat-form-field class="fuse-mat-dense w-full max-w-md">
+                    <mat-label class="text-sm">Due Date</mat-label>
+                    <input matInput [matDatepicker]="picker2">
+                    <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                    <mat-datepicker #picker2></mat-datepicker>
+                </mat-form-field>
+                <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-red-600 rounded uppercase hover:opacity-90">Clear Log</button>
+            </div>
+        </div>
+        <!-- activity_log End -->
+
+        <!-- surveys start  -->
+        <!-- New Mail List ma text-editor design karvanu baki che -->
+        <div class="w-full" *ngIf="false">
+            <!-- head -->
+            <div class="w-full bg-card flex items-center flex-col sm:flex-row p-5 border-b border-gray-200 space-y-2 sm:space-y-0 sm:space-x-2">
+                <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">New Survey</button>
+                <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">Mail Lists</button>
+            </div>
+            <!-- head2 -->
+            <div class="w-full bg-card flex items-center flex-col sm:flex-row p-5 border-b border-gray-200 space-y-2 sm:space-y-0 sm:space-x-2">
+                <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">New Mail List</button>
+            </div>
+            <!-- New Mail List -->
+            <div class="w-full bg-card max-w-4xl mx-auto">
+                <div class="p-5 pb-3">
+                    <span class="inline-block text-lg md:text-xl font-semibold">Add new mail list</span>
+                </div>
+                <div class="w-full p-5 pt-0">
+                    <mat-form-field class="fuse-mat-dense w-full">
+                        <mat-label class="text-sm">
+                            <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                            Mail List Name
+                        </mat-label>
+                        <input matInput type="text">
+                    </mat-form-field>
+                    <button class="w-full sm:w-auto flex items-center p-3 py-2 text-sm bg-gray-200 rounded uppercase hover:opacity-90">
+                        <mat-icon class="icon-size-5 mr-1" svgIcon="heroicons_outline:plus"></mat-icon>
+                        Add custom field
+                    </button>
+                    <div class="flex space-x-2 mt-4">
+                        <mat-form-field class="fuse-mat-dense w-full">
+                            <input matInput type="text">
+                        </mat-form-field>
+                        <button class="w-10 h-10 p-1 flex items-center justify-center rounded-md border border-gray-300">
+                            <mat-icon class="icon-size-6" svgIcon="heroicons_outline:x"></mat-icon>
+                        </button>
+                    </div>
+                <!-- add A text-editor -->
+                    <div class="flex items-center mt-4">
+                        <button class="order-first sm:order-last" mat-flat-button [color]="'primary'">Save</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add New Survey -->
+            <div class="flex flex-wrap -mx-5">
+                <div class="w-full sm:w-1/2 p-5">
+                    <div class="w-full bg-card">
+                        <div class="w-full p-5 border-b border-gray-300">
+                            <span class="text-2xl font-semibold">Advanced Options</span>
+                        </div>
+                        <div class="w-full p-5">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">
+                                    <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                                    Survey subject
+                                </mat-label>
+                                <input matInput type="text">
+                            </mat-form-field>
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">From (displayed in email)</mat-label>
+                                <input matInput type="text">
+                            </mat-form-field>
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <mat-label class="text-sm">Survey redirect URL</mat-label>
+                                <input matInput type="text">
+                            </mat-form-field>
+                            <mat-checkbox class="example-margin block text-sm">Disabled</mat-checkbox>
+                            <mat-checkbox class="example-margin block text-sm mt-2">Only for logged in participants (staff,customers)</mat-checkbox>
+                            <div class="flex items-center mt-4">
+                                <button class="order-first sm:order-last" mat-flat-button [color]="'primary'">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full sm:w-1/2 p-5">
+                    <div class="w-full p-5 bg-card">
+                        <p class="text-sm">You need to create the survey first then you will be able to insert the questions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- surveys enb -->
+
+        <!-- Ticket Pipe Log start -->
+        <div class="bg-card w-full" *ngIf="false">
+            <div class="w-full flex items-center justify-between flex-col sm:flex-row p-5 border-b border-gray-200 sm:space-x-2">
+                <mat-form-field class="fuse-mat-dense w-full max-w-md">
+                    <mat-label class="text-sm">Filter by date</mat-label>
+                    <input matInput [matDatepicker]="picker2">
+                    <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                    <mat-datepicker #picker2></mat-datepicker>
+                </mat-form-field>
+                <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-red-600 rounded uppercase hover:opacity-90">Clear Log</button>
+            </div>
+        </div>
+        <!-- Ticket Pipe Log end -->
+
+    <!-- Utilities End -->
+
+    
+    <!-- Reports Start -->
+        <!-- Sals start -->
+        <div class="bg-card w-full" *ngIf="false">
+            <div class="flex flex-wrap lg:-mx-4">
+                <div class="w-full lg:w-1/3 p-4">
+                    <div class="w-full lg:pl-4">
+                        <div class="w-full py-4 border-b border-gray-300">
+                            <span class="text-lg font-semibold flex items-center"><mat-icon class="mr-2 icon-size-5" svgIcon="heroicons_solid:scale"></mat-icon>Sales Report</span>
+                        </div>
+                        <div class="w-full">
+                            <ul class="mt-3 lg:mt-5">
+                                <li>
+                                    <a href="#" class="flex items-center py-4 border-b border-gray-300 text-blue-600">
+                                        <mat-icon class="mr-1 icon-size-5" [color]="'primary'" svgIcon="mat_solid:arrow_drop_down"></mat-icon>
+                                        Invoices Report
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center py-4 border-b border-gray-300 text-blue-600">
+                                        <mat-icon class="mr-1 icon-size-5" [color]="'primary'" svgIcon="mat_solid:arrow_drop_down"></mat-icon>
+                                        Items Report
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center py-4 border-b border-gray-300 text-blue-600">
+                                        <mat-icon class="mr-1 icon-size-5" [color]="'primary'" svgIcon="mat_solid:arrow_drop_down"></mat-icon>
+                                        Payments Received
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center py-4 border-b border-gray-300 text-blue-600">
+                                        <mat-icon class="mr-1 icon-size-5" [color]="'primary'" svgIcon="mat_solid:arrow_drop_down"></mat-icon>
+                                        Credit Notes Report
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center py-4 border-b border-gray-300 text-blue-600">
+                                        <mat-icon class="mr-1 icon-size-5" [color]="'primary'" svgIcon="mat_solid:arrow_drop_down"></mat-icon>
+                                        Proposals Report
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center py-4 border-b border-gray-300 text-blue-600">
+                                        <mat-icon class="mr-1 icon-size-5" [color]="'primary'" svgIcon="mat_solid:arrow_drop_down"></mat-icon>
+                                        Estimates Report
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex items-center py-4 text-blue-600">
+                                        <mat-icon class="mr-1 icon-size-5" [color]="'primary'" svgIcon="mat_solid:arrow_drop_down"></mat-icon>
+                                        Customers Report
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/3 p-4 border-y lg:border-y-0 lg:border-x border-gray-300">
+                    <div class="w-full py-4 border-b border-gray-300">
+                        <span class="text-lg font-semibold flex items-center"><mat-icon class="mr-2 icon-size-5" svgIcon="mat_outline:area_chart"></mat-icon>Charts Based Report</span>
+                    </div>
+                    <div class="w-full">
+                        <ul class="mt-3 lg:mt-5">
+                            <li>
+                                <a href="#" class="flex items-center py-4 border-b border-gray-300 text-blue-600">
+                                    <mat-icon class="mr-1 icon-size-5" [color]="'primary'" svgIcon="mat_solid:arrow_drop_down"></mat-icon>
+                                    Total Income
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center py-4 border-b border-gray-300 text-blue-600">
+                                    <mat-icon class="mr-1 icon-size-5" [color]="'primary'" svgIcon="mat_solid:arrow_drop_down"></mat-icon>
+                                    Payment Modes (Transactions)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="flex items-center py-4 text-blue-600">
+                                    <mat-icon class="mr-1 icon-size-5" [color]="'primary'" svgIcon="mat_solid:arrow_drop_down"></mat-icon>
+                                    Total Value By Customer Groups
+                                </a>
+                            </li>                          
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/3 p-4">
+                    <div class="w-full lg:pr-4">
+                        <div class="w-full p-5 bg-gray-200 rounded-md">
+                            <mat-form-field class="fuse-mat-dense w-full -mb-4">
+                                <mat-label class="flex items-center text-sm">Period</mat-label>
+                                <mat-select [placeholder]="'This Month'">
+                                    <mat-option value="month1">One Month</mat-option>
+                                    <mat-option value="month2">Tow Month</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                        <div class="w-full p-5 bg-gray-200 rounded-md">
+                            <mat-form-field class="fuse-mat-dense w-full -mb-4">
+                                <mat-label class="flex items-center text-sm">Year</mat-label>
+                                <mat-select [placeholder]="'Nothing Select'">
+                                    <mat-option value="year1">Nothing Select</mat-option>
+                                    <mat-option value="year2">2021</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <div class="p-5 border-y border-gray-300 mt-3">
+                <h2 class="font-bold text-2xl">Generated Report</h2>
+            </div>
+            <div class="w-full p-5">
+                <!-- Invoices Report start -->
+                <div class="flex flex-wrap" *ngIf="false">
+                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 lg:w-1/3 sm:pr-2">
+                        <mat-label class="flex items-center text-sm">Status</mat-label>
+                        <mat-select [placeholder]="'All'">
+                            <mat-option value="medium">All</mat-option>
+                            <mat-option value="high">All-2</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 lg:w-1/3 sm:pl-2">
+                        <mat-label class="flex items-center text-sm">Sale Agent</mat-label>
+                        <mat-select [placeholder]="'All'">
+                            <mat-option value="medium">All</mat-option>
+                            <mat-option value="high">All-2</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <!-- Invoices Report End -->
+                <!-- Items Report start -->
+                <div class="flex flex-wrap" *ngIf="false">
+                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 lg:w-1/3">
+                        <mat-label class="flex items-center text-sm">Sale Agent</mat-label>
+                        <mat-select [placeholder]="'All'">
+                            <mat-option value="medium">All</mat-option>
+                            <mat-option value="high">All-2</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <!-- Items Report end -->
+                <!-- Credit Notes Report start -->
+                <div class="flex flex-wrap" *ngIf="false">
+                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 lg:w-1/3 sm:pr-2">
+                        <mat-label class="flex items-center text-sm">Status</mat-label>
+                        <mat-select [placeholder]="'All'">
+                            <mat-option value="medium">All</mat-option>
+                            <mat-option value="high">All-2</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <!-- Credit Notes Report End -->
+                <!--  Proposals Report start -->
+                <div class="flex flex-wrap" *ngIf="false">
+                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 lg:w-1/3 sm:pr-2">
+                        <mat-label class="flex items-center text-sm">Status</mat-label>
+                        <mat-select [placeholder]="'All'">
+                            <mat-option value="medium">All</mat-option>
+                            <mat-option value="high">All-2</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 lg:w-1/3 sm:pl-2">
+                        <mat-label class="flex items-center text-sm">Sale Agent (Assigned)</mat-label>
+                        <mat-select [placeholder]="'All'">
+                            <mat-option value="medium">All</mat-option>
+                            <mat-option value="high">All-2</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <!--  Proposals Report End -->
+                <!-- Estimates Report start -->
+                <div class="flex flex-wrap" *ngIf="false">
+                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 lg:w-1/3 sm:pr-2">
+                        <mat-label class="flex items-center text-sm">Status</mat-label>
+                        <mat-select [placeholder]="'All'">
+                            <mat-option value="medium">All</mat-option>
+                            <mat-option value="high">All-2</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field class="fuse-mat-dense w-full sm:w-1/2 lg:w-1/3 sm:pl-2">
+                        <mat-label class="flex items-center text-sm">Sale Agent</mat-label>
+                        <mat-select [placeholder]="'All'">
+                            <mat-option value="medium">All</mat-option>
+                            <mat-option value="high">All-2</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <!-- Estimates Report End -->
+            </div>
+        </div>
+        <!-- Sals End -->
+
+        <!-- expenses Start-->
+        <div class="bg-card w-full" *ngIf="false">
+            <!-- head -->
+            <div class="w-full flex items-center p-5 border-b border-gray-200 space-x-2">
+                <div class="flex justify-between space-x-3">
+                    <button class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                        <mat-icon class="icon-size-5" svgIcon="feather:file-text"></mat-icon>
+                    </button>
+                    <button class="flex items-center justify-center w-8 h-8 rounded bg-slate-100 border border-gray-200">
+                        <mat-icon class="icon-size-5" svgIcon="feather:file-text"></mat-icon>
+                    </button>
+                </div>
+                <div class="flex items-center space-x-2 whitespace-nowrap">
+                    <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-green-600 rounded uppercase hover:opacity-90">Detailed Report</button>
+                </div>
+            </div>
+            <!-- head -->
+            <div class="w-full flex items-center justify-between p-5 border-b border-gray-200 space-x-2">
+                <div class="flex justify-between space-x-3">
+                    <button class="w-full sm:w-auto inline-block p-3 py-2 bg-gray-300 rounded uppercase hover:opacity-90">Go Back</button>
+                </div>
+                <div class="flex items-center space-x-2 whitespace-nowrap">
+                    <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-green-600 rounded uppercase hover:opacity-90">Detailed Report</button>
+                </div>
+            </div>
+            <!-- Detailed Report  -->
+            <div class="bg-card w-full p-5">
+                <div class="block">
+                    <mat-checkbox class="example-margin text-sm">Exclude Billable Expenses</mat-checkbox>
+                </div>
+            </div>
+            <!-- Detailed Report  -->
+            <div class="bg-card w-full p-5">
+                <div class="flex flex-wrap">
+                    <mat-form-field class="fuse-mat-dense w-full md:w-1/2 sm:pr-3">
+                        <mat-label class="flex items-center text-sm">From Date</mat-label>
+                        <input matInput [matDatepicker]="picker2">
+                        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                        <mat-datepicker #picker2></mat-datepicker>
+                    </mat-form-field>                
+                    <mat-form-field class="fuse-mat-dense w-full md:w-1/2 sm:pl-3">
+                        <mat-label class="text-sm">To Date</mat-label>
+                        <input matInput [matDatepicker]="picker2">
+                        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                        <mat-datepicker #picker2></mat-datepicker>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+        <!-- expenses End-->
+
+        <!-- Leads Start -->
+        <div class="bg-card w-full" *ngIf="false">
+            <!-- head -->
+            <div class="w-full p-5 border-b border-gray-200 space-x-2">
+                <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-green-600 rounded uppercase hover:opacity-90">Switch to staff report</button>
+            </div>
+        </div>    
+        <!-- Leads End -->
+
+        <!-- Timesheets overview Start -->
+        <div class="bg-card w-full p-5" *ngIf="false">
+            <div class="flex flex-wrap -mx-3">
+                <mat-form-field class="fuse-mat-dense w-full md:w-1/2 lg:w-1/5 px-3 -mb-4">
+                    <mat-select [placeholder]="'Today'">
+                        <mat-option value="medium">Medium</mat-option>
+                        <mat-option value="high">high</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field class="fuse-mat-dense w-full md:w-1/2 lg:w-1/5 px-3 -mb-4">
+                    <mat-select [placeholder]="'All Staff Members'">
+                        <mat-option value="medium">Medium</mat-option>
+                        <mat-option value="high">high</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field class="fuse-mat-dense w-full md:w-1/2 lg:w-1/5 px-3 -mb-4">
+                    <mat-select [placeholder]="'Customer'">
+                        <mat-option value="medium">Medium</mat-option>
+                        <mat-option value="high">high</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field class="fuse-mat-dense w-full md:w-1/2 lg:w-1/5 px-3 -mb-4">
+                    <mat-select [placeholder]="'Project'">
+                        <mat-option value="medium">Medium</mat-option>
+                        <mat-option value="high">high</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <div class="w-full md:w-1/2 lg:w-1/5 px-3">
+                    <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">Apply</button>
+                </div>
+            </div>
+        </div>
+        <!-- Timesheets overview End -->
+
+        <!-- KB-Articles Start -->
+        <div class="bg-card w-full" *ngIf="false">
+            <div class="p-3 text-sm bg-gray-200 font-bold border-b border-gray-300">Choose Group</div>
+            <div class="p-5">
+                <mat-form-field class="fuse-mat-dense w-full md:w-1/2 lg:w-1/4 -mb-4">
+                    <mat-select [placeholder]="'Nothing-Select'">
+                        <mat-option value="medium">Medium</mat-option>
+                        <mat-option value="high">high</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+        <!-- KB-Articles End -->
+
+    <!-- Reports End -->
 </div>
 
 

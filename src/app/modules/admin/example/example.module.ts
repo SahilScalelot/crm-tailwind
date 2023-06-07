@@ -26,6 +26,7 @@ import { ItemGroupComponent } from './item-group/item-group.component';
 import { AddNewTaskComponent } from './add-new-task/add-new-task.component';
 import { NewServiceComponent } from './new-service/new-service.component';
 import { AddNewLeadComponent } from './add-new-lead/add-new-lead.component';
+import { NewGroupComponent } from './new-group/new-group.component';
 import { FuseScrollbarModule } from '@fuse/directives/scrollbar';
 import { FuseScrollResetModule } from '@fuse/directives/scroll-reset';
 import { MatDialogModule } from '@angular/material/dialog';
@@ -49,8 +50,7 @@ const exampleRoutes: Route[] = [
         AddNewTaskComponent,
         NewServiceComponent,
         AddNewLeadComponent,
-                   
-        // BillAddComponent,
+        NewGroupComponent,        
     ],
     imports: [
         RouterModule.forChild(exampleRoutes),

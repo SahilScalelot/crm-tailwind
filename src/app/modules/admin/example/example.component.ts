@@ -9,6 +9,7 @@ import { NewcontractComponent } from './new-contract/new-contract.component';
 import { AddNewTaskComponent } from './add-new-task/add-new-task.component';
 import { NewServiceComponent } from './new-service/new-service.component';
 import { AddNewLeadComponent } from './add-new-lead/add-new-lead.component';
+import { NewGroupComponent } from './new-group/new-group.component';
 
 @Component({
     selector     : 'example',
@@ -102,4 +103,13 @@ export class ExampleComponent implements OnInit{
             console.log('Compose dialog was closed!');
         });
     }
+
+    newGroupPop(): void {
+        const dialogRef = this._matDialog.open(NewGroupComponent);
+
+        dialogRef.afterClosed().subscribe((result) => {
+            console.log('Compose dialog was closed!');
+        });
+    }
+
 }

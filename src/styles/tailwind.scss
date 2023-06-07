@@ -1,4 +1,20 @@
 /* ----------------------------------------------------------------------------------------------------- */
 /*  @ Main Tailwind file for injecting utilities.
 /* ----------------------------------------------------------------------------------------------------- */
+@tailwind base;
+@tailwind components;
+
+html{scroll-behavior: smooth;}
+
+/* ANim */
+.anim {@apply transition-all duration-300;}
+
+.dashboard-tab .mat-tab-group .mat-tab-body-content{@apply p-0;}
+.dashboard-tab .mat-tab-group .mat-tab-header .mat-tab-label-container .mat-tab-list .mat-tab-labels .mat-tab-label {
+  padding: 0px 5px !important;
+  background: transparent !important;
+}
+.dashboard-tab .mat-tab-group .mat-tab-header .mat-tab-label-container{
+  padding: 0px !important;
+}
 @tailwind utilities;
