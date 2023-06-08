@@ -1,9 +1,10 @@
 <div class="flex flex-col w-full sm:absolute sm:inset-0 sm:overflow-hidden">
 
-    <div class="flex w-full sm:h-full">
+    <!-- setting -->
+    <div class="flex w-full sm:h-full" *ngIf="false">
 
         <!-- Drawer -->
-        <div class="w-1/4 dark:bg-gray-900 overflow-auto" #drawer>
+        <div class="hidden lg:block w-1/4 dark:bg-gray-900 overflow-auto" #drawer>
             <!-- Header -->
             <div class="flex items-center justify-between m-8 mr-6 sm:my-10">
                 <!-- Title -->
@@ -12,152 +13,122 @@
                 <button><mat-icon svgIcon="heroicons_outline:x"></mat-icon></button>
             </div>
             <!-- Panel links -->
-            <div class="flex flex-col divide-y border-t border-b overflow-y-auto">
+            <div class=" flex flex-col divide-y border-t border-b overflow-y-auto">
                 <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
-                    <div class="ml-3">
-                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
-                            General
-                        </div>
+                    <div class="font-medium leading-6 text-primary dark:text-primary-500 ml-3">
+                        General
                     </div>
                 </div>
                 <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
-                    <div class="ml-3">
-                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
-                            Company Information
-                        </div>
+                    <div class="font-medium leading-6 text-primary dark:text-primary-500 ml-3">
+                        Company In
                     </div>
                 </div>
                 <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
-                    <div class="ml-3">
-                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
-                            Localization
-                        </div>
+                    <div class="font-medium leading-6 text-primary dark:text-primary-500 ml-3">
+                        Localizati
                     </div>
                 </div>
                 <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
-                    <div class="ml-3">
-                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
-                            Email
-                        </div>
+                    <div class="font-medium leading-6 text-primary dark:text-primary-500 ml-3">
+                        Email
                     </div>
                 </div>
                 <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
-                    <div class="ml-3">
-                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
-                            Finance
-                        </div>
+                    <div class="font-medium leading-6 text-primary dark:text-primary-500 ml-3">
+                        Finance
                     </div>
                 </div>
                 <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
-                    <div class="ml-3">
-                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
-                            Subscription
-                        </div>
+                    <div class="font-medium leading-6 text-primary dark:text-primary-500 ml-3">
+                        Subscripti
                     </div>
                 </div>
                 <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
-                    <div class="ml-3">
-                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
-                            Payment Gateways
-                        </div>
+                    <div class="font-medium leading-6 text-primary dark:text-primary-500 ml-3">
+                        Payment Ga
                     </div>
                 </div>
                 <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
-                    <div class="ml-3">
-                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
-                            Customers
-                        </div>
+                    <div class="font-medium leading-6 text-primary dark:text-primary-500 ml-3">
+                        Customers
                     </div>
                 </div>
                 <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
-                    <div class="ml-3">
-                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
-                            Task
-                        </div>
+                    <div class="font-medium leading-6 text-primary dark:text-primary-500 ml-3">
+                        Task
                     </div>
                 </div>
                 <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
-                    <div class="ml-3">
-                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
-                            Support
-                        </div>
+                    <div class="font-medium leading-6 text-primary dark:text-primary-500 ml-3">
+                        Support
                     </div>
                 </div>
                 <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
-                    <div class="ml-3">
-                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
-                            Leads
-                        </div>
+                    <div class="font-medium leading-6 text-primary dark:text-primary-500 ml-3">
+                        Leads
                     </div>
                 </div>
                 <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
-                    <div class="ml-3">
-                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
-                            Calender
-                        </div>
+                    <div class="font-medium leading-6 text-primary dark:text-primary-500 ml-3">
+                        Calender
                     </div>
                 </div>
                 <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
-                    <div class="ml-3">
-                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
-                            SMS
-                        </div>
+                    <div class="font-medium leading-6 text-primary dark:text-primary-500 ml-3">
+                        SMS
                     </div>
                 </div>
                 <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
-                    <div class="ml-3">
-                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
-                            PDF
-                        </div>
+                    <div class="font-medium leading-6 text-primary dark:text-primary-500 ml-3">
+                        PDF
                     </div>
                 </div>
                 <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
-                    <div class="ml-3">
-                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
-                            E-Sign
-                        </div>
+                    <div class="font-medium leading-6 text-primary dark:text-primary-500 ml-3">
+                        E-Sign
                     </div>
                 </div>
                 <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
-                    <div class="ml-3">
-                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
-                            Cron Job
-                        </div>
+                    <div class="font-medium leading-6 text-primary dark:text-primary-500 ml-3">
+                        Cron Job
                     </div>
                 </div>
                 <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
-                    <div class="ml-3">
-                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
-                            Tags
-                        </div>
+                    <div class="font-medium leading-6 text-primary dark:text-primary-500 ml-3">
+                        Tags
                     </div>
                 </div>
                 <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
-                    <div class="ml-3">
-                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
-                            Pusher.com
-                        </div>
+                    <div class="font-medium leading-6 text-primary dark:text-primary-500 ml-3">
+                        Pusher.com
                     </div>
                 </div>
                 <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
-                    <div class="ml-3">
-                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
-                            Google
-                        </div>
+                    <div class="font-medium leading-6 text-primary dark:text-primary-500 ml-3">
+                        Google
                     </div>
                 </div>
                 <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
-                    <div class="ml-3">
-                        <div class="font-medium leading-6 text-primary dark:text-primary-500">
-                            Misc
-                        </div>
+                    <div class="font-medium leading-6 text-primary dark:text-primary-500 ml-3">
+                        Misc
+                    </div>
+                </div>
+                <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
+                    <div class="font-medium leading-6 text-primary dark:text-primary-500 ml-3">
+                        System Upadate
+                    </div>
+                </div>
+                <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
+                    <div class="font-medium leading-6 text-primary dark:text-primary-500 ml-3">
+                        System/Server Info
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Drawer content -->
-        <div class="w-3/4 flex flex-col">
+        <div class="w-full lg:w-3/4 flex flex-col">
 
           <!-- Main -->
             <!-- General -->
@@ -166,7 +137,7 @@
                 <div class="general pt-5">
                     <div class="w-full bg-card rounded-xl p-6">
                         <!-- Form -->
-                        <form class="flex flex-col space-y-4">
+                        <form class="flex flex-col space-y-4 overflow-y-clip">
                             <!-- Section -->
                             <div class="w-full">
                                 <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Company Logo</mat-label>
@@ -192,27 +163,31 @@
                                     <input matInput>
                                 </mat-form-field>
                             </div>
-                            <div class="flex flex-col">
-                                <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">RTL Admin Area (Right to Left)</mat-label>
-                                <mat-radio-group class="flex space-x-3" [color]="'primary'">
-                                    <mat-radio-button [value]="'Yes'">
-                                        Yes
-                                    </mat-radio-button>
-                                    <mat-radio-button [value]="'No'">
-                                        No
-                                    </mat-radio-button>
-                                </mat-radio-group>
+                            <div class="w-full">
+                                <div class="flex flex-col">
+                                    <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">RTL Admin Area (Right to Left)</mat-label>
+                                    <mat-radio-group class="flex space-x-3" [color]="'primary'">
+                                        <mat-radio-button [value]="'Yes'">
+                                            Yes
+                                        </mat-radio-button>
+                                        <mat-radio-button [value]="'No'">
+                                            No
+                                        </mat-radio-button>
+                                    </mat-radio-group>
+                                </div>
                             </div>
-                            <div class="flex flex-col">
-                                <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">RTL Customers Area (Right to Left)</mat-label>
-                                <mat-radio-group class="flex space-x-3" [color]="'primary'">
-                                    <mat-radio-button [value]="'Yes'">
-                                        Yes
-                                    </mat-radio-button>
-                                    <mat-radio-button [value]="'No'">
-                                        No
-                                    </mat-radio-button>
-                                </mat-radio-group>
+                            <div class="w-full">
+                                <div class="flex flex-col">
+                                    <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">RTL Customers Area (Right to Left)</mat-label>
+                                    <mat-radio-group class="flex space-x-3" [color]="'primary'">
+                                        <mat-radio-button [value]="'Yes'">
+                                            Yes
+                                        </mat-radio-button>
+                                        <mat-radio-button [value]="'No'">
+                                            No
+                                        </mat-radio-button>
+                                    </mat-radio-group>
+                                </div>
                             </div>
                             <div class="w-full">
                                 <mat-form-field class="w-full">
@@ -232,7 +207,7 @@
                         <p class="w-full text-sm">These information will be displayed on invoices/estimates/payments and other PDF documents where company info is required</p>
                         <!-- Form -->
                         <div class="w-full bg-card rounded-xl p-6">
-                            <form class="flex flex-col space-y-4">
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
                                 <!-- Section -->
                                 <div class="w-full">
                                     <mat-form-field class="w-full">
@@ -244,7 +219,7 @@
                                     <div class="flex">
                                         <mat-form-field class="fuse-mat-textarea flex-auto">
                                             <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Address</mat-label>
-                                            <textarea matInput></textarea>
+                                            <textarea matInput class="resize-none"></textarea>
                                         </mat-form-field>
                                     </div>
                                 </div>
@@ -322,7 +297,7 @@
                                     <div class="flex">
                                         <mat-form-field class="fuse-mat-textarea flex-auto">
                                             <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Company Information</mat-label>
-                                            <textarea matInput></textarea>
+                                            <textarea matInput class="resize-none"></textarea>
                                         </mat-form-field>
                                     </div>
                                 </div>
@@ -337,7 +312,7 @@
                 <div class="localization">
                     <div class="w-full bg-card rounded-xl p-6 mt-5">
                         <!-- Form -->
-                        <form class="flex flex-col space-y-4">
+                        <form class="flex flex-col space-y-4 overflow-y-clip">
                             <div class="w-full">
                                 <mat-form-field class="w-full">
                                     <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Date Formate</mat-label>
@@ -424,7 +399,7 @@
                         <mat-tab-group animationDuration="0ms">
                             <mat-tab label="SMTP Settings">
                                 <p class="text-xl pb-5">SMTP Settings <span class="text-sm">Setup main email</span></p>
-                                <form class="flex flex-col space-y-4">
+                                <form class="flex flex-col space-y-4 overflow-y-clip">
                                     <div class="w-full">
                                         <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Mail Engine</mat-label>
                                         <mat-radio-group class="flex space-x-3 " [color]="'primary'">
@@ -451,7 +426,47 @@
                                         </mat-radio-group>
                                     </div>
                                     <div class="w-full">
-                                        <span class="block pb-1">Email</span>
+                                        <mat-form-field class="w-full">
+                                            <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Email Encryption</mat-label>
+                                            <mat-select>
+                                                <mat-option value="none">none</mat-option>
+                                                <mat-option value="ssl">SSL</mat-option>
+                                                <mat-option value="tsl">TSL</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="w-full">
+                                        <span class="block w-full font-semibold dark:text-white/70 pb-1">SMTP Host</span>
+                                        <div class="flex">
+                                            <mat-form-field class="w-full">
+                                                <input matInput type="text">
+                                            </mat-form-field>
+                                        </div>
+                                    </div>
+                                    <div class="w-full">
+                                        <span class="block w-full font-semibold dark:text-white/70 pb-1">SMTP Port</span>
+                                        <div class="flex">
+                                            <mat-form-field class="w-full">
+                                                <input matInput type="text">
+                                            </mat-form-field>
+                                        </div>
+                                    </div>
+                                    <div class="w-full">
+                                        <div class="w-full flex items-start sm:items-center">
+                                            <div class="relative group pt-1">
+                                                <mat-icon svgIcon="heroicons_solid:question-mark-circle" class="icon-size-4 h-full"></mat-icon>
+                                                <span class="absolute bottom-full left-0 min-w-60 w-full bg-gray-900 text-white dark:bg-white dark:text-gray-900 text-sm rounded-md hidden group-hover:block p-2">Fill only if your email client use username for SMTP login.</span>
+                                            </div>
+                                            <span class="font-semibold dark:text-white/70">SMTP Username</span>
+                                        </div>
+                                        <div class="flex">
+                                            <mat-form-field class="w-full">
+                                                <input matInput type="text" value="admin@gmail.com">
+                                            </mat-form-field>
+                                        </div>
+                                    </div>
+                                    <div class="w-full">
+                                        <span class="block w-full font-semibold dark:text-white/70 pb-1">Email</span>
                                         <div class="flex">
                                             <mat-form-field class="flex-auto">
                                                 <input
@@ -465,7 +480,7 @@
                                         </div>
                                     </div>
                                     <div class="w-full">
-                                        <span class="block pb-1">Email Charset</span>
+                                        <span class="block w-full font-semibold dark:text-white/70 pb-1">Email Charset</span>
                                         <div class="flex">
                                             <mat-form-field class="flex-auto">
                                                 <input
@@ -475,35 +490,34 @@
                                         </div>
                                     </div>
                                     <div class="w-full">
-                                        <span class="block pb-1">BCC All Emails To</span>
+                                        <span class="block w-full font-semibold dark:text-white/70 pb-1">BCC All Emails To</span>
                                         <mat-form-field class="w-full">
                                             <input matInput>
                                         </mat-form-field>
                                     </div>
                                     <div class="w-full">
-                                        <span class="block pb-1">Email Signature</span>
+                                        <span class="block w-full font-semibold dark:text-white/70 pb-1">Email Signature</span>
                                         <div class="flex">
                                             <mat-form-field class="fuse-mat-textarea flex-auto">
-                                                <textarea matInput></textarea>
+                                                <textarea matInput class="resize-none"></textarea>
                                             </mat-form-field>
                                         </div>
                                     </div>
                                     <div class="w-full">
                                         <mat-form-field class="fuse-mat-no-subscript fuse-mat-textarea w-full">
                                             <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Predefined Header</mat-label>
-                                            <textarea matInput rows="10">
-                                            </textarea>
+                                            <textarea matInput rows="10" class="resize-none"></textarea>
                                         </mat-form-field>
                                     </div>
                                     <div class="w-full">
                                         <mat-form-field class="fuse-mat-no-subscript fuse-mat-textarea w-full">
                                             <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Predefined Footer</mat-label>
-                                            <textarea matInput rows="10"></textarea>
+                                            <textarea matInput rows="10" class="resize-none"></textarea>
                                         </mat-form-field>
                                     </div>
                                     <div class="w-full">
                                         <span class="block text-xl font-medium">Send Test Email</span>
-                                        <p class="block pb-1">Send test email to make sure that your SMTP settings is set correctly.</p>
+                                        <p class="block w-full font-semibold dark:text-white/70 pb-1">Send test email to make sure that your SMTP settings is set correctly.</p>
                                         <div class="flex">
                                             <mat-form-field class="flex-auto fuse-mat-emphasized-affix">
                                                 <input
@@ -517,7 +531,7 @@
                             </mat-tab>
                             <mat-tab label="Email Queue">
                                 <span class="block text-primary font-medium bg-[#EEF2FF] p-5">This feature requires a properly configured cron job. Before activating the feature, make sure that the cron job is configured as explanation in the documentation.</span>
-                                <form class="flex flex-col space-y-4">
+                                <form class="flex flex-col space-y-4 overflow-y-clip">
                                     <div class="flex flex-col mt-5">
                                         <div class="flex items-start sm:items-center pb-1">
                                             <div class="relative group pt-1">
@@ -590,7 +604,7 @@
                         <div class="bg-card rounded-xl p-6">
                             <h2 class="text-2xl font-semibold">General</h2>
                             <span>General Settings</span>
-                            <form class="flex flex-col space-y-4">
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
                                 <div class="flex flex-col sm:flex-row sm:space-x-4 mt-5">
                                     <mat-form-field class="flex-auto">
                                         <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Decimal Separator</mat-label>
@@ -725,7 +739,7 @@
                         <div class="bg-card rounded-xl p-6">
                             <h2 class="text-2xl font-semibold">Invoices</h2>
                             <span class="block pb-4">Invoices Settings</span>
-                            <form class="flex flex-col space-y-4">
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
                                 <div class="w-full">
                                     <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Invoice Number Prefix</mat-label>
                                     <mat-form-field class="w-full">
@@ -914,7 +928,7 @@
                         <div class="bg-card rounded-xl p-6">
                             <h2 class="text-2xl font-semibold">Credit</h2>
                             <span class="block pb-4">Credit Settings</span>
-                            <form class="flex flex-col space-y-4">
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
                                 <div class="w-full">
                                     <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Credit Note Number Prefix</mat-label>
                                     <mat-form-field class="w-full">
@@ -981,14 +995,14 @@
                                 <div class="w-full">
                                     <mat-form-field class="fuse-mat-no-subscript fuse-mat-textarea w-full">
                                         <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Predefined Client Note</mat-label>
-                                        <textarea matInput rows="5">
+                                        <textarea matInp class="resize-none"ut rows="5">
                                         </textarea>
                                     </mat-form-field>
                                 </div>
                                 <div class="w-full">
                                     <mat-form-field class="fuse-mat-no-subscript fuse-mat-textarea w-full">
                                         <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Predefined Terms & Conditions</mat-label>
-                                        <textarea matInput rows="5">
+                                        <textarea matInp class="resize-none"ut rows="5">
                                         </textarea>
                                     </mat-form-field>
                                 </div>
@@ -1000,7 +1014,7 @@
                         <div class="bg-card rounded-xl p-6">
                             <h2 class="text-2xl font-semibold">Estimates</h2>
                             <span class="block pb-4">Estimates Setting</span>
-                            <form class="flex flex-col space-y-4">
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
                                 <div class="w-full">
                                     <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Estimate Number Prefix</mat-label>
                                     <mat-form-field class="w-full">
@@ -1174,14 +1188,14 @@
                                 <div class="w-full">
                                     <mat-form-field class="fuse-mat-no-subscript fuse-mat-textarea w-full">
                                         <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Predefined Client Note</mat-label>
-                                        <textarea matInput rows="5">
+                                        <textarea matInp class="resize-none"ut rows="5">
                                         </textarea>
                                     </mat-form-field>
                                 </div>
                                 <div class="w-full">
                                     <mat-form-field class="fuse-mat-no-subscript fuse-mat-textarea w-full">
                                         <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Predefined Terms & Conditions</mat-label>
-                                        <textarea matInput rows="5">
+                                        <textarea matInp class="resize-none"ut rows="5">
                                         </textarea>
                                     </mat-form-field>
                                 </div>
@@ -1193,7 +1207,7 @@
                         <div class="bg-card rounded-xl p-6">
                             <h2 class="text-2xl font-semibold">Estimates</h2>
                             <span class="block pb-4">Estimates Setting</span>
-                            <form class="flex flex-col space-y-4">
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
                                 <div class="w-full">
                                     <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Estimate Number Prefix</mat-label>
                                     <mat-form-field class="w-full">
@@ -1277,7 +1291,7 @@
                                 <div class="w-full">
                                     <mat-form-field class="fuse-mat-no-subscript fuse-mat-textarea w-full">
                                         <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Proposal Info Format (PDF and HTML)</mat-label>
-                                        <textarea matInput rows="10">
+                                        <textarea matInpu class="resize-none"t rows="10">
                                         </textarea>
                                     </mat-form-field>
                                     <div class="flex">
@@ -1301,7 +1315,7 @@
                 <div class="subscription">
                     <div class="w-full bg-card rounded-xl p-6 mt-5">
                         <!-- Form -->
-                        <form class="flex flex-col space-y-4">
+                        <form class="flex flex-col space-y-4 overflow-y-clip">
                             <div class="w-full">
                                 <div class="flex flex-col">
                                     <div class="w-full flex items-start sm:items-center">
@@ -1355,7 +1369,7 @@
                         <!-- PaymentGateways-General -->
                         <div class="bg-card rounded-xl p-6">
                             <h2>General</h2>
-                            <form class="flex flex-col space-y-4">
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
                                 <div class="w-full">
                                     <div class="flex flex-col">
                                         <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Show TAX per item</mat-label>
@@ -1395,7 +1409,7 @@
                         <!-- PaymentGateways-Authorize.net Accept.js -->
                         <div class="bg-card rounded-xl p-6">
                             <h2>Authorize.net Accept.js</h2>
-                            <form class="flex flex-col space-y-4">
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
                                 <p class="w-full text-orange-600 font-semibold dark:text-orange-200">SSL is required if you're using the Authorize.Net AIM payment API. Authorize.net only supports 1 currency per account. Make sure you add only 1 currency associated with your Authorize account in the currencies field.</p>
                                 <p class="w-full">If you are enabling test mode, make sure to set test credentials from <a href="https://sandbox.authorize.net" class="underline text-primary" target="_blank">https://sandbox.authorize.net</a></p>
                                 <p class="w-full"><strong>Currently supported currencies:</strong>&nbsp;<span>USD, CAD, CHF, DKK, EUR, GBP, NOK, PLN, SEK, AUD, NZD</span></p>
@@ -1475,7 +1489,7 @@
                         <!-- PaymentGateways-Instamojo -->
                         <div class="bg-card rounded-xl p-6">
                             <h2>Instamojo</h2>
-                            <form class="flex flex-col space-y-4">
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
                                 <div class="w-full">
                                     <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Active</mat-label>
                                     <mat-radio-group class="w-full flex space-x-3" [color]="'primary'">
@@ -1546,7 +1560,7 @@
                         <!-- PaymentGateways-Mollie -->
                         <div class="bg-card rounded-xl p-6">
                             <h2>Mollie</h2>
-                            <form class="flex flex-col space-y-4">
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
                                 <div class="w-full">
                                     <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Active</mat-label>
                                     <mat-radio-group class="w-full flex space-x-3" [color]="'primary'">
@@ -1611,7 +1625,7 @@
                         <!-- PaymentGateways-Braintree -->
                         <div class="bg-card rounded-xl p-6">
                             <h2>Braintree</h2>
-                            <form class="flex flex-col space-y-4">
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
                                 <div class="w-full">
                                     <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Active</mat-label>
                                     <mat-radio-group class="w-full flex space-x-3" [color]="'primary'">
@@ -1693,7 +1707,7 @@
                         <!-- PaymentGateways-Paypal Smart Checkout -->
                         <div class="bg-card rounded-xl p-6">
                             <h2>Paypal Smart Checkout</h2>
-                            <form class="flex flex-col space-y-4">
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
                                 <div class="w-full">
                                     <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Active</mat-label>
                                     <mat-radio-group class="w-full flex space-x-3" [color]="'primary'">
@@ -1764,7 +1778,7 @@
                         <!-- PaymentGateways-Paypal -->
                         <div class="bg-card rounded-xl p-6">
                             <h2>Paypal</h2>
-                            <form class="flex flex-col space-y-4">
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
                                 <div class="w-full">
                                     <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Active</mat-label>
                                     <mat-radio-group class="w-full flex space-x-3" [color]="'primary'">
@@ -1841,7 +1855,7 @@
                         <!-- PaymentGateways-PayU Money -->
                         <div class="bg-card rounded-xl p-6">
                             <h2>PayU Money</h2>
-                            <form class="flex flex-col space-y-4">
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
                                 <div class="w-full">
                                     <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Active</mat-label>
                                     <mat-radio-group class="w-full flex space-x-3" [color]="'primary'">
@@ -1912,7 +1926,7 @@
                         <!-- PaymentGateways-Stripe Checkout -->
                         <div class="bg-card rounded-xl p-6">
                             <h2>Stripe Checkout</h2>
-                            <form class="flex flex-col space-y-4">
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
                                 <div class="w-full">
                                     <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Active</mat-label>
                                     <mat-radio-group class="w-full flex space-x-3" [color]="'primary'">
@@ -1983,7 +1997,7 @@
                         <!-- PaymentGateways-Stripe iDEAL -->
                         <div class="bg-card rounded-xl p-6">
                             <h2>Stripe iDEAL</h2>
-                            <form class="flex flex-col space-y-4">
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
                                 <div class="w-full">
                                     <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Active</mat-label>
                                     <mat-radio-group class="w-full flex space-x-3" [color]="'primary'">
@@ -2050,7 +2064,7 @@
                         <!-- PaymentGateways-2Checkout -->
                         <div class="bg-card rounded-xl p-6">
                             <h2>2Checkout</h2>
-                            <form class="flex flex-col space-y-4">
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
                                 <p class="w-full text-primary font-semibold bg-primary-50 rounded-md px-3 py-2 mt-3">The IPN Endpoint for 2Checkout is ( https://leadcrm.aiosoft.in/gateways/two_checkout/webhook )</p>
                                 <div class="w-full">
                                     <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Active</mat-label>
@@ -2124,7 +2138,7 @@
             <div class="flex-auto px-6 pt-9 pb-12 md:p-8 md:pb-12 lg:p-10 overflow-y-auto" *ngIf="false">
                 <div class="w-full bg-card rounded-xl p-6 mt-5">
                     <!-- Form -->
-                    <form class="flex flex-col space-y-4">
+                    <form class="flex flex-col space-y-4 overflow-y-clip">
                         <div class="w-full">
                             <mat-form-field class="w-full">
                                 <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Default customers theme</mat-label>
@@ -2336,7 +2350,7 @@
                                 <span class="font-semibold dark:text-white/70">Customer Information Format (PDF and HTML)</span>
                             </div>
                             <mat-form-field class="fuse-mat-no-subscript fuse-mat-textarea w-full">
-                                <textarea matInput rows="10">
+                                <textarea matInpu class="resize-none"t rows="10">
                                 </textarea>
                             </mat-form-field>
                             <div class="flex flex-wrap">
@@ -2360,7 +2374,7 @@
             <div class="flex-auto px-6 pt-9 pb-12 md:p-8 md:pb-12 lg:p-10 overflow-y-auto" *ngIf="false">
                 <div class="w-full bg-card rounded-xl p-6">
                     <!-- form -->
-                    <form class="flex flex-col space-y-4">
+                    <form class="flex flex-col space-y-4 overflow-y-clip">
                         <div class="w-full">
                             <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Limit tasks kan ban rows per status</mat-label>
                             <mat-form-field class="w-full">
@@ -2526,7 +2540,7 @@
                         <div class="bg-card rounded-xl p-6">
                             <h2>General</h2>
                             <!-- Supports-General-Details-->
-                            <form class="flex flex-col space-y-4">
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
                                 <div class="w-full">
                                     <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Use services</mat-label>
                                     <mat-radio-group class="flex space-x-3 " [color]="'primary'">
@@ -2741,7 +2755,7 @@
                         <!-- Supports-Email piping -->
                         <div class="bg-card rounded-xl p-6">
                             <h2>Email piping</h2>
-                            <form class="flex flex-col space-y-4">
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
                                 <div class="w-full">
                                     <p class="block w-full font-semibold dark:text-white/70 pb-1">cPanel forwarder path: <span class="inline-block text-[13px] font-normal text-blue-900 bg-blue-50 px-1">/home3/dveetcom/public_html/leadcrm/pipe.php</span></p>
                                 </div>
@@ -2811,7 +2825,7 @@
                                     <div class="flex">
                                         <mat-form-field class="fuse-mat-textarea flex-auto">
                                             <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Copy & Paste the code anywhere in your site to show the form, additionally you can adjust the width and height px to fit for your website.</mat-label>
-                                            <textarea matInput rows="2"></textarea>
+                                            <textarea matInput rows="2" class="resize-none"></textarea>
                                         </mat-form-field>
                                     </div>
                                 </div>
@@ -2859,7 +2873,7 @@
             <div class="flex-auto px-6 pt-9 pb-12 md:p-8 md:pb-12 lg:p-10 overflow-y-auto" *ngIf="false">
                 <div class="w-full bg-card rounded-xl p-6">
                     <!-- Leads-Form -->
-                    <form class="flex flex-col space-y-4">
+                    <form class="flex flex-col space-y-4 overflow-y-clip">
                         <div class="w-full">
                             <mat-form-field class="w-full">
                                 <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Limit leads kan ban rows per status</mat-label>
@@ -2970,13 +2984,13 @@
                 </div>
             </div>
             <!-- Calender -->
-            <div class="flex-auto px-6 pt-9 pb-12 md:p-8 md:pb-12 lg:p-10 overflow-y-auto">
+            <div class="flex-auto px-6 pt-9 pb-12 md:p-8 md:pb-12 lg:p-10 overflow-y-auto" *ngIf="false">
                 <mat-tab-group animationDuration="0ms">
                     <!-- Calender-General -->
                     <mat-tab label="General">
                         <div class="w-full bg-card rounded-xl p-6">
                             <!-- Calender-General-form -->
-                            <form class="flex flex-col space-y-4">
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
                                 <div class="w-full">
                                     <mat-form-field class="w-full">
                                         <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Calendar Events Limit (Month and Week View)</mat-label>
@@ -3208,7 +3222,7 @@
                     <mat-tab label="Styling">
                         <div class="w-full bg-card rounded-xl p-6 Styling">
                             <!-- Calender-styling-form -->
-                            <form class="flex flex-col space-y-4">
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
                                 <div class="w-full">
                                     <mat-form-field class="w-full">
                                         <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Invoice Color</mat-label>
@@ -3267,6 +3281,1996 @@
                         </div>
                     </mat-tab>
                 </mat-tab-group>
+            </div>
+            <!-- SMS -->
+            <div class="flex-auto px-6 pt-9 pb-12 md:p-8 md:pb-12 lg:p-10 overflow-y-auto" *ngIf="false">
+                <div class="w-full bg-card rounded-xl p-6 Styling">
+                    <!-- SMS-mat-accordion-form -->
+                    <form class="flex flex-col space-y-4 overflow-y-clip">
+                        <!-- mat-accordion -->
+                        <span class="block w-full bg-gray-100 dark:text-gray-900 rounded-md py-2.5 px-3">Only 1 active SMS gateway is allowed</span>
+                        <mat-accordion class="example-headers-align" multi>
+                            <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+                                <mat-expansion-panel-header class="cursor-pointer dark:hover:bg-hover bg-primary-50 dark:bg-hover rounded-none">
+                                <mat-panel-title class="text-lg font-semibold dark:text-primary-500">
+                                    Clickatell
+                                </mat-panel-title>
+                                </mat-expansion-panel-header>
+                                
+                                <div class="flex flex-col space-y-3">
+                                    <p class="w-full mt-3">Clickatell SMS integration is one way messaging, means that your customers won't be able to reply to the SMS.</p>
+                                    <div class="w-full">
+                                        <mat-form-field class="w-full">
+                                            <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">API Key</mat-label>
+                                            <input matInput type="text">
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="w-full">
+                                        <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Active</mat-label>
+                                        <mat-radio-group class="flex space-x-3 " [color]="'primary'">
+                                            <mat-radio-button [value]="'yes'">
+                                                Yes
+                                            </mat-radio-button>
+                                            <mat-radio-button [value]="'no'">
+                                                No
+                                            </mat-radio-button>
+                                        </mat-radio-group>
+                                    </div>
+                                </div>
+                            </mat-expansion-panel>
+                            <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+                                <mat-expansion-panel-header class="cursor-pointer dark:hover:bg-hover bg-primary-50 dark:bg-hover rounded-none">
+                                <mat-panel-title class="text-lg font-semibold dark:text-primary-500">
+                                    MSG91
+                                </mat-panel-title>
+                                </mat-expansion-panel-header>
+                                
+                                <div class="flex flex-col space-y-3">
+                                    <p class="w-full mt-3">MSG91 SMS integration is one way messaging, means that your customers won't be able to reply to the SMS.</p>
+                                    <div class="w-full">
+                                        <mat-form-field class="w-full">
+                                            <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Sender ID</mat-label>
+                                            <input matInput type="text">
+                                        </mat-form-field>
+                                        <a href="javascript.void()" class="block text-blue-700 overflow-hidden text-ellipsis">https://help.msg91.com/article/40-what-is-a-sender-id-how-to-select-a-sender-id</a>
+                                    </div>
+                                    <div class="w-full">
+                                        <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Api Type</mat-label>
+                                        <mat-radio-group class="flex space-x-3 " [color]="'primary'">
+                                            <mat-radio-button [value]="'world'">
+                                                World
+                                            </mat-radio-button>
+                                            <mat-radio-button [value]="'api'">
+                                                Api
+                                            </mat-radio-button>
+                                        </mat-radio-group>
+                                    </div>
+                                    <div class="w-full">
+                                        <mat-form-field class="w-full">
+                                            <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Auth Key</mat-label>
+                                            <input matInput type="text">
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="w-full">
+                                        <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Active</mat-label>
+                                        <mat-radio-group class="flex space-x-3 " [color]="'primary'">
+                                            <mat-radio-button [value]="'yes'">
+                                                Yes
+                                            </mat-radio-button>
+                                            <mat-radio-button [value]="'no'">
+                                                No
+                                            </mat-radio-button>
+                                        </mat-radio-group>
+                                    </div>
+                                </div>
+                            </mat-expansion-panel>
+                            <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
+                                <mat-expansion-panel-header class="cursor-pointer dark:hover:bg-hover bg-primary-50 dark:bg-hover rounded-none">
+                                <mat-panel-title class="text-lg font-semibold dark:text-primary-500">
+                                    Twilio
+                                </mat-panel-title>
+                                </mat-expansion-panel-header>
+                                
+                                <div class="flex flex-col space-y-3">
+                                    <p class="w-full mt-3">Twilio SMS integration is one way messaging, means that your customers won't be able to reply to the SMS. Phone numbers must be in format <a href="javascript.void()" class="text-blue-500">E.164</a>. Click <a href="javascript.void()" class="text-blue-500">here</a> to read more how phone numbers should be formatted.</p>
+                                    <div class="w-full">
+                                        <mat-form-field class="w-full">
+                                            <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Account SID</mat-label>
+                                            <input matInput type="text">
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="w-full">
+                                        <mat-form-field class="w-full">
+                                            <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Auth Token</mat-label>
+                                            <input matInput type="text">
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="w-full">
+                                        <mat-form-field class="w-full">
+                                            <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Twilio Phone Number</mat-label>
+                                            <input matInput type="text">
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="w-full">
+                                        <mat-form-field class="w-full">
+                                            <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Alphanumeric Sender ID</mat-label>
+                                            <input matInput type="text">
+                                        </mat-form-field>
+                                        <a href="javascript.void()" class="block text-blue-700 overflow-hidden text-ellipsis">https://www.twilio.com/blog/personalize-sms-alphanumeric-sender-id</a>
+                                    </div>
+                                    <div class="w-full">
+                                        <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Active</mat-label>
+                                        <mat-radio-group class="flex space-x-3 " [color]="'primary'">
+                                            <mat-radio-button [value]="'yes'">
+                                                Yes
+                                            </mat-radio-button>
+                                            <mat-radio-button [value]="'no'">
+                                                No
+                                            </mat-radio-button>
+                                        </mat-radio-group>
+                                    </div>
+                                </div>
+                            </mat-expansion-panel>
+                        </mat-accordion>
+                        <div class="w-full">
+                            <mat-form-field class="w-full">
+                                <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Bitly Access Token</mat-label>
+                                <input matInput type="text">
+                            </mat-form-field>
+                        </div>
+                        <div class="w-full flex items-start ">
+                            <div class="relative group pt-1">
+                                <mat-icon svgIcon="heroicons_solid:question-mark-circle" class="icon-size-5 h-full"></mat-icon>
+                                <span class="absolute bottom-full left-0 min-w-60 w-full bg-gray-900 text-white dark:bg-white dark:text-gray-900 text-sm rounded-md hidden group-hover:block p-2">Leave contents blank to disable specific trigger.</span>
+                            </div>
+                            <h3 class="font-semibold dark:text-white/70 m-0">Triggers</h3>
+                        </div>
+                        <div class="w-full">
+                            <div class="flex flex-col">
+                                <div class="w-full flex items-start justify-between pb-1">
+                                    <div>
+                                        <span class="block font-semibold dark:text-white/70">Invoice Overdue Notice</span>
+                                        <span class="block dark:text-white/70">Trigger when invoice overdue notice is sent to customer contacts.</span>
+                                    </div>
+                                    <a href="javascript.void()" class="text-xs font-semibold text-blue-500 whitespace-nowrap">Available merge fields</a>
+                                </div>
+                                <mat-form-field class="fuse-mat-textarea flex-auto">
+                                    <textarea matInput rows="4" class="resize-none" class="resize-none"></textarea>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <div class="flex flex-col">
+                                <div class="w-full flex items-start justify-between pb-1">
+                                    <div>
+                                        <span class="block font-semibold dark:text-white/70">Invoice Due Notice</span>
+                                        <span class="block dark:text-white/70">Trigger when invoice due notice is sent to customer contacts.</span>
+                                    </div>
+                                    <a href="javascript.void()" class="text-xs font-semibold text-blue-500 whitespace-nowrap">Available merge fields</a>
+                                </div>
+                                <mat-form-field class="fuse-mat-textarea flex-auto">
+                                    <textarea matInput rows="4" class="resize-none"></textarea>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <div class="flex flex-col">
+                                <div class="w-full flex items-start justify-between pb-1">
+                                    <div>
+                                        <span class="block font-semibold dark:text-white/70">Invoice Payment Recorded</span>
+                                        <span class="block dark:text-white/70">Trigger when invoice payment is recorded.</span>
+                                    </div>
+                                    <a href="javascript.void()" class="text-xs font-semibold text-blue-500 whitespace-nowrap">Available merge fields</a>
+                                </div>
+                                <mat-form-field class="fuse-mat-textarea flex-auto">
+                                    <textarea matInput rows="4" class="resize-none"></textarea>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <div class="flex flex-col">
+                                <div class="w-full flex items-start justify-between pb-1">
+                                    <div>
+                                        <span class="block font-semibold dark:text-white/70">Estimate Expiration Reminder</span>
+                                        <span class="block dark:text-white/70">Trigger when expiration reminder should be send to customer contacts.</span>
+                                    </div>
+                                    <a href="javascript.void()" class="text-xs font-semibold text-blue-500 whitespace-nowrap">Available merge fields</a>
+                                </div>
+                                <mat-form-field class="fuse-mat-textarea flex-auto">
+                                    <textarea matInput rows="4" class="resize-none"></textarea>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <div class="flex flex-col">
+                                <div class="w-full flex items-start justify-between pb-1">
+                                    <div>
+                                        <span class="block font-semibold dark:text-white/70">Proposal Expiration Reminder</span>
+                                        <span class="block dark:text-white/70">Trigger when expiration reminder should be send to proposal.</span>
+                                    </div>
+                                    <a href="javascript.void()" class="text-xs font-semibold text-blue-500 whitespace-nowrap">Available merge fields</a>
+                                </div>
+                                <mat-form-field class="fuse-mat-textarea flex-auto">
+                                    <textarea matInput rows="4" class="resize-none"></textarea>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <div class="flex flex-col">
+                                <div class="w-full flex items-start justify-between pb-1">
+                                    <div>
+                                        <span class="block font-semibold dark:text-white/70">New Comment on Proposal (to customer)</span>
+                                        <span class="block dark:text-white/70">Trigger when staff member comments on proposal, SMS will be sent to proposal number (customer/lead).</span>
+                                    </div>
+                                    <a href="javascript.void()" class="text-xs font-semibold text-blue-500 whitespace-nowrap">Available merge fields</a>
+                                </div>
+                                <mat-form-field class="fuse-mat-textarea flex-auto">
+                                    <textarea matInput rows="4" class="resize-none"></textarea>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <div class="flex flex-col">
+                                <div class="w-full flex items-start justify-between pb-1">
+                                    <div>
+                                        <span class="block font-semibold dark:text-white/70">New Comment on Proposal (to staff)</span>
+                                        <span class="block dark:text-white/70">Trigger when customer/lead comments on proposal, SMS will be sent to proposal creator and assigned staff member.</span>
+                                    </div>
+                                    <a href="javascript.void()" class="text-xs font-semibold text-blue-500 whitespace-nowrap">Available merge fields</a>
+                                </div>
+                                <mat-form-field class="fuse-mat-textarea flex-auto">
+                                    <textarea matInput rows="4" class="resize-none"></textarea>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <div class="flex flex-col">
+                                <div class="w-full flex items-start justify-between pb-1">
+                                    <div>
+                                        <span class="block font-semibold dark:text-white/70">New Comment on Contract (to staff)</span>
+                                        <span class="block dark:text-white/70">Trigger when customer add comment to contract, SMS will be sent to contract creator.</span>
+                                    </div>
+                                    <a href="javascript.void()" class="text-xs font-semibold text-blue-500 whitespace-nowrap">Available merge fields</a>
+                                </div>
+                                <mat-form-field class="fuse-mat-textarea flex-auto">
+                                    <textarea matInput rows="4" class="resize-none"></textarea>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <div class="flex flex-col">
+                                <div class="w-full flex items-start justify-between pb-1">
+                                    <div>
+                                        <span class="block font-semibold dark:text-white/70">Contract Expiration Reminder</span>
+                                        <span class="block dark:text-white/70">Trigger when expiration reminder should be send via Cron Job to customer contacts.</span>
+                                    </div>
+                                    <a href="javascript.void()" class="text-xs font-semibold text-blue-500 whitespace-nowrap">Available merge fields</a>
+                                </div>
+                                <mat-form-field class="fuse-mat-textarea flex-auto">
+                                    <textarea matInput rows="4" class="resize-none"></textarea>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <div class="flex flex-col">
+                                <div class="w-full flex items-start justify-between pb-1">
+                                    <div>
+                                        <span class="block font-semibold dark:text-white/70">Staff Reminder</span>
+                                        <span class="block dark:text-white/70">Trigger when staff is notified for a specific custom reminder.</span>
+                                    </div>
+                                    <a href="javascript.void()" class="text-xs font-semibold text-blue-500 whitespace-nowrap">Available merge fields</a>
+                                </div>
+                                <mat-form-field class="fuse-mat-textarea flex-auto">
+                                    <textarea matInput rows="4" class="resize-none"></textarea>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- PDF -->
+            <div class="flex-auto px-6 pt-9 pb-12 md:p-8 md:pb-12 lg:p-10 overflow-y-auto" *ngIf="false">
+                <mat-tab-group animationDuration="0ms">
+                    <!-- PDF-General -->
+                    <mat-tab label="General">
+                        <div class="bg-card rounded-xl p-6">
+                            <h2>General</h2>
+                            <!-- Supports-General-Details-->
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
+                                <div class="w-full">
+                                    <mat-form-field class="w-full">
+                                        <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">PDF Font</mat-label>
+                                        <mat-select>
+                                            <mat-option value="freesans">freesans</mat-option>
+                                            <mat-option value="aealarabiya">aealarabiya</mat-option>
+                                            <mat-option value="khmeroscontent">khmeroscontent</mat-option>
+                                            <mat-option value="freesansb">freesansb</mat-option>
+                                            <mat-option value="angsanaupc">angsanaupc</mat-option>
+                                            <mat-option value="pdfahelvetica">pdfahelvetica</mat-option>
+                                            <mat-option value="pdfazapfdingbats">pdfazapfdingbats</mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
+                                <div class="w-full">
+                                    <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Swap Company/Customer Details (company details to right side, customer details to left side)</mat-label>
+                                    <mat-radio-group class="flex space-x-3 " [color]="'primary'">
+                                        <mat-radio-button [value]="'yes'">
+                                            Yes
+                                        </mat-radio-button>
+                                        <mat-radio-button [value]="'no'">
+                                            No
+                                        </mat-radio-button>
+                                    </mat-radio-group>
+                                </div>
+                                <div class="w-full">
+                                    <mat-form-field class="w-full">
+                                        <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Default font size</mat-label>
+                                        <input matInput type="number">
+                                    </mat-form-field>
+                                </div>
+                                <div class="w-full">
+                                    <mat-form-field class="w-full">
+                                        <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Items table heading color</mat-label>
+                                        <div class="w-full flex">
+                                            <input matInput type="text" value="{{colorPickerPDF.value}}" #colorPickerPDFtext class="w-full" [style.color]="colorPickerPDF.value">
+                                            <input matInput type="color" class="max-w-5" #colorPickerPDF value="{{colorPickerPDFtext.value}}">
+                                        </div>
+                                    </mat-form-field>
+                                </div>
+                                <div class="w-full">
+                                    <mat-form-field class="w-full">
+                                        <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Items table heading text color</mat-label>
+                                        <div class="w-full flex">
+                                            <input matInput type="text" value="{{colorPickerPDFone.value}}" #colorPickerPDFonetext class="w-full" [style.color]="colorPickerPDFone.value">
+                                            <input matInput type="color" class="max-w-5" #colorPickerPDFone value="{{colorPickerPDFonetext.value}}">
+                                        </div>
+                                    </mat-form-field>
+                                </div>
+                                <div class="w-full">
+                                    <mat-form-field class="w-full">
+                                        <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Custom PDF Company Logo URL</mat-label>
+                                        <input matInput type="text">
+                                    </mat-form-field>
+                                </div>
+                                <div class="w-full">
+                                    <mat-form-field class="w-full">
+                                        <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Logo Width (PX)</mat-label>
+                                        <input matInput type="number">
+                                    </mat-form-field>
+                                </div>
+                                <div class="w-full">
+                                    <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Show Invoice/Estimate/Credit Note status on PDF documents</mat-label>
+                                    <mat-radio-group class="flex space-x-3 " [color]="'primary'">
+                                        <mat-radio-button [value]="'yes'">
+                                            Yes
+                                        </mat-radio-button>
+                                        <mat-radio-button [value]="'no'">
+                                            No
+                                        </mat-radio-button>
+                                    </mat-radio-group>
+                                </div>
+                                <div class="w-full">
+                                    <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Show Pay Invoice link to PDF (Not applied if invoice status is Cancelled)</mat-label>
+                                    <mat-radio-group class="flex space-x-3 " [color]="'primary'">
+                                        <mat-radio-button [value]="'yes'">
+                                            Yes
+                                        </mat-radio-button>
+                                        <mat-radio-button [value]="'no'">
+                                            No
+                                        </mat-radio-button>
+                                    </mat-radio-group>
+                                </div>
+                                <div class="w-full">
+                                    <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Show invoice payments (transactions) on PDF</mat-label>
+                                    <mat-radio-group class="flex space-x-3 " [color]="'primary'">
+                                        <mat-radio-button [value]="'yes'">
+                                            Yes
+                                        </mat-radio-button>
+                                        <mat-radio-button [value]="'no'">
+                                            No
+                                        </mat-radio-button>
+                                    </mat-radio-group>
+                                </div>
+                                <div class="w-full">
+                                    <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Show page number on PDF</mat-label>
+                                    <mat-radio-group class="flex space-x-3 " [color]="'primary'">
+                                        <mat-radio-button [value]="'yes'">
+                                            Yes
+                                        </mat-radio-button>
+                                        <mat-radio-button [value]="'no'">
+                                            No
+                                        </mat-radio-button>
+                                    </mat-radio-group>
+                                </div>
+                            </form>
+                        </div>
+                    </mat-tab>
+                    <!-- PDF-Signature -->
+                    <mat-tab label="Signature">
+                        <div class="bg-card rounded-xl p-6">
+                            <h2>Signature</h2>
+                            <!-- Supports-Signature-Details-->
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
+                                <div class="w-full">
+                                    <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Show PDF Signature on Invoice</mat-label>
+                                    <mat-radio-group class="flex space-x-3 " [color]="'primary'">
+                                        <mat-radio-button [value]="'yes'">
+                                            Yes
+                                        </mat-radio-button>
+                                        <mat-radio-button [value]="'no'">
+                                            No
+                                        </mat-radio-button>
+                                    </mat-radio-group>
+                                </div>
+                                <div class="w-full">
+                                    <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Show PDF Signature on Estimate</mat-label>
+                                    <mat-radio-group class="flex space-x-3 " [color]="'primary'">
+                                        <mat-radio-button [value]="'yes'">
+                                            Yes
+                                        </mat-radio-button>
+                                        <mat-radio-button [value]="'no'">
+                                            No
+                                        </mat-radio-button>
+                                    </mat-radio-group>
+                                </div>
+                                <div class="w-full">
+                                    <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Show PDF Signature on Credit Note</mat-label>
+                                    <mat-radio-group class="flex space-x-3 " [color]="'primary'">
+                                        <mat-radio-button [value]="'yes'">
+                                            Yes
+                                        </mat-radio-button>
+                                        <mat-radio-button [value]="'no'">
+                                            No
+                                        </mat-radio-button>
+                                    </mat-radio-group>
+                                </div>
+                                <div class="w-full">
+                                    <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Show PDF Signature on Contract</mat-label>
+                                    <mat-radio-group class="flex space-x-3 " [color]="'primary'">
+                                        <mat-radio-button [value]="'yes'">
+                                            Yes
+                                        </mat-radio-button>
+                                        <mat-radio-button [value]="'no'">
+                                            No
+                                        </mat-radio-button>
+                                    </mat-radio-group>
+                                </div>
+                                <div class="w-full">
+                                    <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Show PDF Signature on Proposal</mat-label>
+                                    <mat-radio-group class="flex space-x-3 " [color]="'primary'">
+                                        <mat-radio-button [value]="'yes'">
+                                            Yes
+                                        </mat-radio-button>
+                                        <mat-radio-button [value]="'no'">
+                                            No
+                                        </mat-radio-button>
+                                    </mat-radio-group>
+                                </div>
+                                <div class="w-full">
+                                    <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Signature Image</mat-label>
+                                    <input type="file" name="company_logo" id="company_logo" class="block w-full border border-[#CBD5E1] rounded-md px-3 py-2">
+                                </div>
+                            </form>
+                        </div>
+                    </mat-tab>
+                    <!-- PDF-Document formats -->
+                    <mat-tab label="Document formats">
+                        <div class="bg-card rounded-xl p-6">
+                            <h2>Document formats</h2>
+                            <!-- Supports-Document formats-Details-->
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
+                                <div class="w-full">
+                                    <mat-form-field class="w-full">
+                                        <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Invoice</mat-label>
+                                        <mat-select>
+                                            <mat-option value="a4-portrait">A4 Portrait</mat-option>
+                                            <mat-option value="a4-landscape">A4 Landscape</mat-option>
+                                            <mat-option value="letter-portrait">Letter Portrait</mat-option>
+                                            <mat-option value="letter-landscape">Letter Landscape</mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
+                                <div class="w-full">
+                                    <mat-form-field class="w-full">
+                                        <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Invoice</mat-label>
+                                        <mat-select>
+                                            <mat-option value="a4-portrait">A4 Portrait</mat-option>
+                                            <mat-option value="a4-landscape">A4 Landscape</mat-option>
+                                            <mat-option value="letter-portrait">Letter Portrait</mat-option>
+                                            <mat-option value="letter-landscape">Letter Landscape</mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
+                                <div class="w-full">
+                                    <mat-form-field class="w-full">
+                                        <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Proposal</mat-label>
+                                        <mat-select>
+                                            <mat-option value="a4-portrait">A4 Portrait</mat-option>
+                                            <mat-option value="a4-landscape">A4 Landscape</mat-option>
+                                            <mat-option value="letter-portrait">Letter Portrait</mat-option>
+                                            <mat-option value="letter-landscape">Letter Landscape</mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
+                                <div class="w-full">
+                                    <mat-form-field class="w-full">
+                                        <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Payment</mat-label>
+                                        <mat-select>
+                                            <mat-option value="a4-portrait">A4 Portrait</mat-option>
+                                            <mat-option value="a4-landscape">A4 Landscape</mat-option>
+                                            <mat-option value="letter-portrait">Letter Portrait</mat-option>
+                                            <mat-option value="letter-landscape">Letter Landscape</mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
+                                <div class="w-full">
+                                    <mat-form-field class="w-full">
+                                        <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Credit Note</mat-label>
+                                        <mat-select>
+                                            <mat-option value="a4-portrait">A4 Portrait</mat-option>
+                                            <mat-option value="a4-landscape">A4 Landscape</mat-option>
+                                            <mat-option value="letter-portrait">Letter Portrait</mat-option>
+                                            <mat-option value="letter-landscape">Letter Landscape</mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
+                                <div class="w-full">
+                                    <mat-form-field class="w-full">
+                                        <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Contract</mat-label>
+                                        <mat-select>
+                                            <mat-option value="a4-portrait">A4 Portrait</mat-option>
+                                            <mat-option value="a4-landscape">A4 Landscape</mat-option>
+                                            <mat-option value="letter-portrait">Letter Portrait</mat-option>
+                                            <mat-option value="letter-landscape">Letter Landscape</mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
+                                <div class="w-full">
+                                    <mat-form-field class="w-full">
+                                        <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Statement</mat-label>
+                                        <mat-select>
+                                            <mat-option value="a4-portrait">A4 Portrait</mat-option>
+                                            <mat-option value="a4-landscape">A4 Landscape</mat-option>
+                                            <mat-option value="letter-portrait">Letter Portrait</mat-option>
+                                            <mat-option value="letter-landscape">Letter Landscape</mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
+                            </form>
+                        </div>
+                    </mat-tab>
+                </mat-tab-group>
+            </div>
+            <!-- E-Sign -->
+            <div class="flex-auto px-6 pt-9 pb-12 md:p-8 md:pb-12 lg:p-10 overflow-y-auto" *ngIf="false">
+                <div class="w-full bg-card rounded-xl p-6 Styling">
+                    <!-- SMS-mat-accordion-form -->
+                    <form class="flex flex-col space-y-4 overflow-y-clip">
+                        <div class="w-full">
+                            <h3 class="mb-1">Proposal</h3>
+                            <div class="w-full">
+                                <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Require digital signature and identity confirmation on accept</mat-label>
+                                <mat-radio-group class="flex space-x-3 " [color]="'primary'">
+                                    <mat-radio-button [value]="'yes'">
+                                        Yes
+                                    </mat-radio-button>
+                                    <mat-radio-button [value]="'no'">
+                                        No
+                                    </mat-radio-button>
+                                </mat-radio-group>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <h3 class="mb-1">Estimate</h3>
+                            <div class="w-full">
+                                <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Require digital signature and identity confirmation on accept</mat-label>
+                                <mat-radio-group class="flex space-x-3 " [color]="'primary'">
+                                    <mat-radio-button [value]="'yes'">
+                                        Yes
+                                    </mat-radio-button>
+                                    <mat-radio-button [value]="'no'">
+                                        No
+                                    </mat-radio-button>
+                                </mat-radio-group>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <span class="block w-full font-semibold dark:text-white/70 pb-1">Legal Bound Text</span>
+                            <div class="flex">
+                                <mat-form-field class="fuse-mat-textarea flex-auto">
+                                    <textarea matInput class="resize-none" placeholder="By clicking on 'Sign', I consent to be legally bound by this electronic representation of my signature."></textarea>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Corn Job -->
+            <div class="flex-auto px-6 pt-9 pb-12 md:p-8 md:pb-12 lg:p-10 overflow-y-auto" *ngIf="false">
+                <div class="w-full bg-card rounded-xl p-6">
+                    <div class="w-full bg-primary-50 rounded-md p-4 mb-5">
+                         <strong class="block w-full text-primary">CRON COMMAND: wget -q -O- https://leadcrm.aiosoft.in/cron/index</strong>
+                         <span class="block w-full text-primary">Run Cron Manually</span>
+                    </div>
+                    <mat-tab-group animationDuration="0ms">
+                        <!-- Corn Job-Invoice -->
+                        <mat-tab label="Invoice">
+                            <!-- Corn Job-Invoice-form -->
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
+                                <div class="w-full">
+                                    <div class="w-full flex items-start sm:items-center">
+                                        <div class="relative group pt-1">
+                                            <mat-icon svgIcon="heroicons_solid:question-mark-circle" class="icon-size-4 h-full"></mat-icon>
+                                            <span class="absolute top-full left-0 min-w-60 w-full bg-gray-900 text-white dark:bg-white dark:text-gray-900 text-sm rounded-md hidden group-hover:block z-50 p-2">Used for recurring invoices, overdue notices etc..</span>
+                                        </div>
+                                        <span class="font-semibold dark:text-white/70">Hour of day to perform automatic operations</span>
+                                    </div>
+                                    <div class="flex">
+                                        <mat-form-field class="w-full">
+                                            <input matInput type="number">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <p class="text-xl font-semibold">Overdue Notices</p>
+                                    <span class="block mb-2">Overdue notices are sent when the invoice becomes overdue.</span>
+                                    <div class="w-full flex flex-wrap sm:flex-nowrap justify-between space-y-2 sm:space-y-0 sm:space-x-3">
+                                        <div class="w-full sm:w-1/2">
+                                            <mat-form-field class="w-full">
+                                                <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Auto send reminder after (days)</mat-label>
+                                                <input matInput type="number">
+                                            </mat-form-field>
+                                        </div>
+                                        <div class="w-full sm:w-1/2">
+                                            <mat-form-field class="w-full">
+                                                <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Auto re-send reminder after (days)</mat-label>
+                                                <input matInput type="number">
+                                            </mat-form-field>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <p class="text-xl font-semibold">Due Reminders</p>
+                                    <span class="block mb-2">Due reminders are sent to unpaid and partially paid invoices as reminder to the customer to pay the invoice before is due.</span>
+                                    <div class="w-full flex flex-wrap sm:flex-nowrap justify-between space-y-2 sm:space-y-0 sm:space-x-3">
+                                        <div class="w-full sm:w-1/2">
+                                            <mat-form-field class="w-full">
+                                                <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Send due reminder X days before due date</mat-label>
+                                                <input matInput type="number">
+                                            </mat-form-field>
+                                        </div>
+                                        <div class="w-full sm:w-1/2">
+                                            <mat-form-field class="w-full">
+                                                <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Auto re-send reminder after (days)</mat-label>
+                                                <input matInput type="number">
+                                            </mat-form-field>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Recurring Invoices</mat-label>
+                                    <mat-radio-group class="flex flex-col space-y-1 " [color]="'primary'">
+                                        <mat-radio-button [value]="'Generate and autosend the renewed invoice to the customer'">
+                                            Generate and autosend the renewed invoice to the customer
+                                        </mat-radio-button>
+                                        <mat-radio-button [value]="'Generate a Unpaid Invoice'">
+                                            Generate a Unpaid Invoice
+                                        </mat-radio-button>
+                                        <mat-radio-button [value]="'Generate a Draft Invoice'">
+                                            Generate a Draft Invoice
+                                        </mat-radio-button>
+                                    </mat-radio-group>
+                                </div>
+                                <div class="w-full">
+                                    <div class="flex flex-col">
+                                        <div class="w-full flex items-start sm:items-center">
+                                            <div class="relative group pt-1">
+                                                <mat-icon svgIcon="heroicons_solid:question-mark-circle" class="icon-size-4 h-full"></mat-icon>
+                                                <span class="absolute bottom-full left-0 min-w-60 w-full bg-gray-900 text-white dark:bg-white dark:text-gray-900 text-sm rounded-md hidden group-hover:block p-2">If this field is set to YES and the recurring invoices is not with status PAID, the new invoice will NOT be created.</span>
+                                            </div>
+                                            <span class="font-semibold dark:text-white/70">Create new invoice from recurring invoice only if the invoice is with status paid?</span>
+                                        </div>
+                                        <mat-radio-group class="w-full flex space-x-3" [color]="'primary'">
+                                            <mat-radio-button [value]="'Yes'">
+                                                Yes
+                                            </mat-radio-button>
+                                            <mat-radio-button [value]="'No'">
+                                                No
+                                            </mat-radio-button>
+                                        </mat-radio-group>
+                                    </div>
+                                </div>
+                            </form>
+                        </mat-tab>
+                        <!-- Corn Job-Estimates -->
+                        <mat-tab label="Estimates">
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
+                                <div class="w-full">
+                                    <div class="w-full flex items-start sm:items-center">
+                                        <div class="relative group pt-1">
+                                            <mat-icon svgIcon="heroicons_solid:question-mark-circle" class="icon-size-4 h-full"></mat-icon>
+                                            <span class="absolute top-full left-0 min-w-60 w-full bg-gray-900 text-white dark:bg-white dark:text-gray-900 text-sm rounded-md hidden group-hover:block z-50 p-2">24 hours format eq. 9 for 9am or 15 for 3pm.</span>
+                                        </div>
+                                        <span class="font-semibold dark:text-white/70">Hour of day to perform automatic operations</span>
+                                    </div>
+                                    <div class="flex">
+                                        <mat-form-field class="w-full">
+                                            <input matInput type="number">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <mat-form-field class="w-full">
+                                        <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Send expiration reminder before (DAYS)</mat-label>
+                                        <input matInput type="number">
+                                    </mat-form-field>
+                                </div>
+                            </form>
+                        </mat-tab>
+                        <!-- Corn Job-Proposals -->
+                        <mat-tab label="Proposals">
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
+                                <div class="w-full">
+                                    <div class="w-full flex items-start sm:items-center">
+                                        <div class="relative group pt-1">
+                                            <mat-icon svgIcon="heroicons_solid:question-mark-circle" class="icon-size-4 h-full"></mat-icon>
+                                            <span class="absolute top-full left-0 min-w-60 w-full bg-gray-900 text-white dark:bg-white dark:text-gray-900 text-sm rounded-md hidden group-hover:block z-50 p-2">24 hours format eq. 9 for 9am or 15 for 3pm.</span>
+                                        </div>
+                                        <span class="font-semibold dark:text-white/70">Hour of day to perform automatic operations</span>
+                                    </div>
+                                    <div class="flex">
+                                        <mat-form-field class="w-full">
+                                            <input matInput type="number">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <mat-form-field class="w-full">
+                                        <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Send expiration reminder before (DAYS)</mat-label>
+                                        <input matInput type="number">
+                                    </mat-form-field>
+                                </div>
+                            </form>
+                        </mat-tab>
+                        <!-- Corn Job-Expenses -->
+                        <mat-tab label="Expenses">
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
+                                <div class="w-full">
+                                    <div class="w-full flex items-start sm:items-center">
+                                        <div class="relative group pt-1">
+                                            <mat-icon svgIcon="heroicons_solid:question-mark-circle" class="icon-size-4 h-full"></mat-icon>
+                                            <span class="absolute top-full left-0 min-w-60 w-full bg-gray-900 text-white dark:bg-white dark:text-gray-900 text-sm rounded-md hidden group-hover:block z-50 p-2">24 hours format eq. 9 for 9am or 15 for 3pm.</span>
+                                        </div>
+                                        <span class="font-semibold dark:text-white/70">Hour of day to perform automatic operations</span>
+                                    </div>
+                                    <div class="flex">
+                                        <mat-form-field class="w-full">
+                                            <input matInput type="number">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                            </form>
+                        </mat-tab>
+                        <!-- Corn Job-Contracts -->
+                        <mat-tab label="Contracts">
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
+                                <div class="w-full">
+                                    <div class="w-full flex items-start sm:items-center">
+                                        <div class="relative group pt-1">
+                                            <mat-icon svgIcon="heroicons_solid:question-mark-circle" class="icon-size-4 h-full"></mat-icon>
+                                            <span class="absolute top-full left-0 min-w-60 w-full bg-gray-900 text-white dark:bg-white dark:text-gray-900 text-sm rounded-md hidden group-hover:block z-50 p-2">24 hours format eq. 9 for 9am or 15 for 3pm.</span>
+                                        </div>
+                                        <span class="font-semibold dark:text-white/70">Hour of day to perform automatic operations</span>
+                                    </div>
+                                    <div class="flex">
+                                        <mat-form-field class="w-full">
+                                            <input matInput type="number">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <div class="w-full flex items-start sm:items-center">
+                                        <div class="relative group pt-1">
+                                            <mat-icon svgIcon="heroicons_solid:question-mark-circle" class="icon-size-4 h-full"></mat-icon>
+                                            <span class="absolute top-full left-0 min-w-60 w-full bg-gray-900 text-white dark:bg-white dark:text-gray-900 text-sm rounded-md hidden group-hover:block z-50 p-2">Expiration reminder notification in days</span>
+                                        </div>
+                                        <span class="font-semibold dark:text-white/70">Send expiration reminder before (DAYS)</span>
+                                    </div>
+                                    <div class="flex">
+                                        <mat-form-field class="w-full">
+                                            <input matInput type="number">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                            </form>
+                        </mat-tab>
+                        <!-- Corn Job-Tasks -->
+                        <mat-tab label="Tasks">
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
+                                <div class="w-full">
+                                    <div class="w-full flex items-start sm:items-center">
+                                        <div class="relative group pt-1">
+                                            <mat-icon svgIcon="heroicons_solid:question-mark-circle" class="icon-size-4 h-full"></mat-icon>
+                                            <span class="absolute top-full left-0 min-w-60 w-full bg-gray-900 text-white dark:bg-white dark:text-gray-900 text-sm rounded-md hidden group-hover:block z-50 p-2">24 hours format eq. 9 for 9am or 15 for 3pm. It is used for recurring Task, Task reminders etc.</span>
+                                        </div>
+                                        <span class="font-semibold dark:text-white/70">Hour of day to perform automatic operations</span>
+                                    </div>
+                                    <div class="flex">
+                                        <mat-form-field class="w-full">
+                                            <input matInput type="number">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <div class="w-full flex items-start sm:items-center">
+                                        <div class="relative group pt-1">
+                                            <mat-icon svgIcon="heroicons_solid:question-mark-circle" class="icon-size-4 h-full"></mat-icon>
+                                            <span class="absolute top-full left-0 min-w-60 w-full bg-gray-900 text-white dark:bg-white dark:text-gray-900 text-sm rounded-md hidden group-hover:block z-50 p-2">Notify task assignees about deadline before X days. The notification/email is sent only to the assignees. If the difference between task start date and task due date is smaller then the reminders day no notification will be sent.</span>
+                                        </div>
+                                        <span class="font-semibold dark:text-white/70">Task deadline reminder before (Days)</span>
+                                    </div>
+                                    <div class="flex">
+                                        <mat-form-field class="w-full">
+                                            <input matInput type="number">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <mat-form-field class="w-full">
+                                        <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Automaticaly stop task timers after (hours)</mat-label>
+                                        <input matInput type="number">
+                                    </mat-form-field>
+                                </div>
+                                <div class="w-full">
+                                    <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Send an email reminder of billable tasks completed but not billed</mat-label>
+                                    <mat-radio-group class="flex space-x-3 " [color]="'primary'">
+                                        <mat-radio-button [value]="'yes'">
+                                            Yes
+                                        </mat-radio-button>
+                                        <mat-radio-button [value]="'no'">
+                                            No
+                                        </mat-radio-button>
+                                    </mat-radio-group>
+                                </div>
+                            </form>
+                        </mat-tab>
+                        <!-- Corn Job-Tickets -->
+                        <mat-tab label="Tickets">
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
+                                <div class="w-full">
+                                    <div class="w-full flex items-start sm:items-center">
+                                        <div class="relative group pt-1">
+                                            <mat-icon svgIcon="heroicons_solid:question-mark-circle" class="icon-size-4 h-full"></mat-icon>
+                                            <span class="absolute top-full left-0 min-w-60 w-full bg-gray-900 text-white dark:bg-white dark:text-gray-900 text-sm rounded-md hidden group-hover:block z-50 p-2">Set 0 to disable</span>
+                                        </div>
+                                        <span class="font-semibold dark:text-white/70">Auto close ticket after (Hours)</span>
+                                    </div>
+                                    <div class="flex">
+                                        <mat-form-field class="w-full">
+                                            <input matInput type="number">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                            </form>
+                        </mat-tab>
+                        <!-- Corn Job-Surveys -->
+                        <mat-tab label="Surveys">
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
+                                <div class="w-full">
+                                    <div class="w-full flex items-start sm:items-center">
+                                        <div class="relative group pt-1">
+                                            <mat-icon svgIcon="heroicons_solid:question-mark-circle" class="icon-size-4 h-full"></mat-icon>
+                                            <span class="absolute top-full left-0 min-w-60 w-full bg-gray-900 text-white dark:bg-white dark:text-gray-900 text-sm rounded-md hidden group-hover:block z-50 p-2">This option is used when sending Surveys. The Survey cron will sent X emails per hour. Some hosting providers have limit for sending emails per hour.</span>
+                                        </div>
+                                        <span class="font-semibold dark:text-white/70">How much emails to sent per hour</span>
+                                    </div>
+                                    <div class="flex">
+                                        <mat-form-field class="w-full">
+                                            <input matInput type="number">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                            </form>
+                        </mat-tab>
+                    </mat-tab-group>
+                </div>
+            </div>
+            <!-- vimal -->
+            <!-- Tags -->
+            <div class="flex-auto px-6 pt-9 pb-12 md:p-8 md:pb-12 lg:p-10 overflow-y-auto" *ngIf="false">
+                <div class="w-full bg-card rounded-xl p-6">
+                    <div class="border border-gray-300 rounded-md">
+                        <div class="flex items-center space-x-2 px-4 py-2.5 border-b">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <input matInput [placeholder]="'Crêpe'">
+                                <span matPrefix class="flex items-center h-full pr-3 border-r border-gray-300">2</span>
+                            </mat-form-field>
+                            <div class="p-2.5 bg-gray-50 border border-gray-300 rounded-md">
+                                <button class="w-6 h-6 flex justify-center items-center bg-red-600 rounded-md overflow-hidden">
+                                    <mat-icon class="icon-size-4 text-white" svgIcon="heroicons_outline:x"></mat-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2 px-4 py-2.5 border-b">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <input matInput [placeholder]="'Denim'">
+                                <span matPrefix class="flex items-center h-full pr-3 border-r border-gray-300">2</span>
+                            </mat-form-field>
+                            <div class="p-2.5 bg-gray-50 border border-gray-300 rounded-md">
+                                <button class="w-6 h-6 flex justify-center items-center bg-red-600 rounded-md overflow-hidden">
+                                    <mat-icon class="icon-size-4 text-white" svgIcon="heroicons_outline:x"></mat-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2 px-4 py-2.5 border-b">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <input matInput [placeholder]="'Earthenware'">
+                                <span matPrefix class="flex items-center h-full pr-3 border-r border-gray-300">2</span>
+                            </mat-form-field>
+                            <div class="p-2.5 bg-gray-50 border border-gray-300 rounded-md">
+                                <button class="w-6 h-6 flex justify-center items-center bg-red-600 rounded-md overflow-hidden">
+                                    <mat-icon class="icon-size-4 text-white" svgIcon="heroicons_outline:x"></mat-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2 px-4 py-2.5 border-b">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <input matInput [placeholder]="'Exporters'">
+                                <span matPrefix class="flex items-center h-full pr-3 border-r border-gray-300">1</span>
+                            </mat-form-field>
+                            <div class="p-2.5 bg-gray-50 border border-gray-300 rounded-md">
+                                <button class="w-6 h-6 flex justify-center items-center bg-red-600 rounded-md overflow-hidden">
+                                    <mat-icon class="icon-size-4 text-white" svgIcon="heroicons_outline:x"></mat-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2 px-4 py-2.5 border-b">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <input matInput [placeholder]="'Georgette'">
+                                <span matPrefix class="flex items-center h-full pr-3 border-r border-gray-300">2</span>
+                            </mat-form-field>
+                            <div class="p-2.5 bg-gray-50 border border-gray-300 rounded-md">
+                                <button class="w-6 h-6 flex justify-center items-center bg-red-600 rounded-md overflow-hidden">
+                                    <mat-icon class="icon-size-4 text-white" svgIcon="heroicons_outline:x"></mat-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2 px-4 py-2.5 border-b">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <input matInput [placeholder]="'Hoodies'">
+                                <span matPrefix class="flex items-center h-full pr-3 border-r border-gray-300">1</span>
+                            </mat-form-field>
+                            <div class="p-2.5 bg-gray-50 border border-gray-300 rounded-md">
+                                <button class="w-6 h-6 flex justify-center items-center bg-red-600 rounded-md overflow-hidden">
+                                    <mat-icon class="icon-size-4 text-white" svgIcon="heroicons_outline:x"></mat-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2 px-4 py-2.5 border-b">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <input matInput [placeholder]="'Importers'">
+                                <span matPrefix class="flex items-center h-full pr-3 border-r border-gray-300">1</span>
+                            </mat-form-field>
+                            <div class="p-2.5 bg-gray-50 border border-gray-300 rounded-md">
+                                <button class="w-6 h-6 flex justify-center items-center bg-red-600 rounded-md overflow-hidden">
+                                    <mat-icon class="icon-size-4 text-white" svgIcon="heroicons_outline:x"></mat-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2 px-4 py-2.5 border-b">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <input matInput [placeholder]="'jeans'">
+                                <span matPrefix class="flex items-center h-full pr-3 border-r border-gray-300">2</span>
+                            </mat-form-field>
+                            <div class="p-2.5 bg-gray-50 border border-gray-300 rounded-md">
+                                <button class="w-6 h-6 flex justify-center items-center bg-red-600 rounded-md overflow-hidden">
+                                    <mat-icon class="icon-size-4 text-white" svgIcon="heroicons_outline:x"></mat-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2 px-4 py-2.5 border-b">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <input matInput [placeholder]="'Leggings'">
+                                <span matPrefix class="flex items-center h-full pr-3 border-r border-gray-300">1</span>
+                            </mat-form-field>
+                            <div class="p-2.5 bg-gray-50 border border-gray-300 rounded-md">
+                                <button class="w-6 h-6 flex justify-center items-center bg-red-600 rounded-md overflow-hidden">
+                                    <mat-icon class="icon-size-4 text-white" svgIcon="heroicons_outline:x"></mat-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2 px-4 py-2.5 border-b">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <input matInput [placeholder]="'mangalsutra'">
+                                <span matPrefix class="flex items-center h-full pr-3 border-r border-gray-300">1</span>
+                            </mat-form-field>
+                            <div class="p-2.5 bg-gray-50 border border-gray-300 rounded-md">
+                                <button class="w-6 h-6 flex justify-center items-center bg-red-600 rounded-md overflow-hidden">
+                                    <mat-icon class="icon-size-4 text-white" svgIcon="heroicons_outline:x"></mat-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2 px-4 py-2.5 border-b">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <input matInput [placeholder]="'Necklace'">
+                                <span matPrefix class="flex items-center h-full pr-3 border-r border-gray-300">1</span>
+                            </mat-form-field>
+                            <div class="p-2.5 bg-gray-50 border border-gray-300 rounded-md">
+                                <button class="w-6 h-6 flex justify-center items-center bg-red-600 rounded-md overflow-hidden">
+                                    <mat-icon class="icon-size-4 text-white" svgIcon="heroicons_outline:x"></mat-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2 px-4 py-2.5 border-b">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <input matInput [placeholder]="'Raw Material'">
+                                <span matPrefix class="flex items-center h-full pr-3 border-r border-gray-300">2</span>
+                            </mat-form-field>
+                            <div class="p-2.5 bg-gray-50 border border-gray-300 rounded-md">
+                                <button class="w-6 h-6 flex justify-center items-center bg-red-600 rounded-md overflow-hidden">
+                                    <mat-icon class="icon-size-4 text-white" svgIcon="heroicons_outline:x"></mat-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2 px-4 py-2.5 border-b">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <input matInput [placeholder]="'Rings'">
+                                <span matPrefix class="flex items-center h-full pr-3 border-r border-gray-300">2</span>
+                            </mat-form-field>
+                            <div class="p-2.5 bg-gray-50 border border-gray-300 rounded-md">
+                                <button class="w-6 h-6 flex justify-center items-center bg-red-600 rounded-md overflow-hidden">
+                                    <mat-icon class="icon-size-4 text-white" svgIcon="heroicons_outline:x"></mat-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2 px-4 py-2.5 border-b">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <input matInput [placeholder]="'Ruby'">
+                                <span matPrefix class="flex items-center h-full pr-3 border-r border-gray-300">1</span>
+                            </mat-form-field>
+                            <div class="p-2.5 bg-gray-50 border border-gray-300 rounded-md">
+                                <button class="w-6 h-6 flex justify-center items-center bg-red-600 rounded-md overflow-hidden">
+                                    <mat-icon class="icon-size-4 text-white" svgIcon="heroicons_outline:x"></mat-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2 px-4 py-2.5 border-b">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <input matInput [placeholder]="'Salwar'">
+                                <span matPrefix class="flex items-center h-full pr-3 border-r border-gray-300">1</span>
+                            </mat-form-field>
+                            <div class="p-2.5 bg-gray-50 border border-gray-300 rounded-md">
+                                <button class="w-6 h-6 flex justify-center items-center bg-red-600 rounded-md overflow-hidden">
+                                    <mat-icon class="icon-size-4 text-white" svgIcon="heroicons_outline:x"></mat-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2 px-4 py-2.5 border-b">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <input matInput [placeholder]="'Saree'">
+                                <span matPrefix class="flex items-center h-full pr-3 border-r border-gray-300">2</span>
+                            </mat-form-field>
+                            <div class="p-2.5 bg-gray-50 border border-gray-300 rounded-md">
+                                <button class="w-6 h-6 flex justify-center items-center bg-red-600 rounded-md overflow-hidden">
+                                    <mat-icon class="icon-size-4 text-white" svgIcon="heroicons_outline:x"></mat-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2 px-4 py-2.5 border-b">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <input matInput [placeholder]="'Shiny'">
+                                <span matPrefix class="flex items-center h-full pr-3 border-r border-gray-300">2</span>
+                            </mat-form-field>
+                            <div class="p-2.5 bg-gray-50 border border-gray-300 rounded-md">
+                                <button class="w-6 h-6 flex justify-center items-center bg-red-600 rounded-md overflow-hidden">
+                                    <mat-icon class="icon-size-4 text-white" svgIcon="heroicons_outline:x"></mat-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2 px-4 py-2.5 border-b">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <input matInput [placeholder]="'Shirt'">
+                                <span matPrefix class="flex items-center h-full pr-3 border-r border-gray-300">2</span>
+                            </mat-form-field>
+                            <div class="p-2.5 bg-gray-50 border border-gray-300 rounded-md">
+                                <button class="w-6 h-6 flex justify-center items-center bg-red-600 rounded-md overflow-hidden">
+                                    <mat-icon class="icon-size-4 text-white" svgIcon="heroicons_outline:x"></mat-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2 px-4 py-2.5 border-b">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <input matInput [placeholder]="'Shorts'">
+                                <span matPrefix class="flex items-center h-full pr-3 border-r border-gray-300">1</span>
+                            </mat-form-field>
+                            <div class="p-2.5 bg-gray-50 border border-gray-300 rounded-md">
+                                <button class="w-6 h-6 flex justify-center items-center bg-red-600 rounded-md overflow-hidden">
+                                    <mat-icon class="icon-size-4 text-white" svgIcon="heroicons_outline:x"></mat-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2 px-4 py-2.5 border-b">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <input matInput [placeholder]="'Silk'">
+                                <span matPrefix class="flex items-center h-full pr-3 border-r border-gray-300">3</span>
+                            </mat-form-field>
+                            <div class="p-2.5 bg-gray-50 border border-gray-300 rounded-md">
+                                <button class="w-6 h-6 flex justify-center items-center bg-red-600 rounded-md overflow-hidden">
+                                    <mat-icon class="icon-size-4 text-white" svgIcon="heroicons_outline:x"></mat-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2 px-4 py-2.5 border-b">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <input matInput [placeholder]="'Thread'">
+                                <span matPrefix class="flex items-center h-full pr-3 border-r border-gray-300">1</span>
+                            </mat-form-field>
+                            <div class="p-2.5 bg-gray-50 border border-gray-300 rounded-md">
+                                <button class="w-6 h-6 flex justify-center items-center bg-red-600 rounded-md overflow-hidden">
+                                    <mat-icon class="icon-size-4 text-white" svgIcon="heroicons_outline:x"></mat-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2 px-4 py-2.5">
+                            <mat-form-field class="fuse-mat-dense w-full">
+                                <input matInput [placeholder]="'Viscose'">
+                                <span matPrefix class="flex items-center h-full pr-3 border-r border-gray-300">1</span>
+                            </mat-form-field>
+                            <div class="p-2.5 bg-gray-50 border border-gray-300 rounded-md">
+                                <button class="w-6 h-6 flex justify-center items-center bg-red-600 rounded-md overflow-hidden">
+                                    <mat-icon class="icon-size-4 text-white" svgIcon="heroicons_outline:x"></mat-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- pusher.com -->
+            <div class="flex-auto px-6 pt-9 pb-12 md:p-8 md:pb-12 lg:p-10 overflow-y-auto" *ngIf="false">
+                <div class="w-full bg-card rounded-xl p-6">
+                    <form class="flex flex-col space-y-4 overflow-y-clip">
+                        <div class="w-full">
+                            <div class="mb-1.5">
+                                <span class="block font-semibold dark:text-white/70">APP ID</span>
+                            </div>
+                            <div class="flex">
+                                <mat-form-field class="w-full fuse-mat-dense">
+                                    <input matInput type="text">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <div class="mb-1.5">
+                                <span class="block font-semibold dark:text-white/70">APP Key</span>
+                            </div>
+                            <div class="flex">
+                                <mat-form-field class="w-full fuse-mat-dense">
+                                    <input matInput type="text">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <div class="mb-1.5">
+                                <span class="block font-semibold dark:text-white/70">APP Secret</span>
+                            </div>
+                            <div class="flex">
+                                <mat-form-field class="w-full fuse-mat-dense">
+                                    <input matInput type="text">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="w-full border-b pb-4">
+                            <div class="w-full flex items-center sm:items-center space-x-1 mb-1.5">
+                                <div class="relative group pt-1">
+                                    <mat-icon svgIcon="heroicons_solid:question-mark-circle" class="icon-size-4 h-full"></mat-icon>
+                                    <span class="absolute bottom-full left-0 min-w-60 w-full bg-gray-900 text-white dark:bg-white dark:text-gray-900 text-sm rounded-md hidden group-hover:block p-2">If this field is set to YES and the recurring invoices is not with status PAID, the new invoice will NOT be created.</span>
+                                </div>
+                                <span class="block font-semibold dark:text-white/70">Cluster </span>
+                                <a href="" class="text-xs text-blue-600 hover:text-gray-700 hover:dark:text-white/70">https://pusher.com/docs/clusters</a>
+                            </div>
+                            <div class="flex">
+                                <mat-form-field class="w-full fuse-mat-dense">
+                                    <input matInput type="text">
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div class="w-full border-b pb-4">
+                            <div class="flex flex-col">
+                                <div class="mb-1">
+                                    <span class="block font-semibold dark:text-white/70">Enable Real Time Notifications</span>
+                                </div>
+                                <mat-radio-group class="w-full flex space-x-3" [color]="'primary'">
+                                    <mat-radio-button [value]="'Yes'">
+                                        Yes
+                                    </mat-radio-button>
+                                    <mat-radio-button [value]="'No'">
+                                        No
+                                    </mat-radio-button>
+                                </mat-radio-group>
+                            </div>
+                        </div>
+                        <div class="w-full border-b pb-4">
+                            <div class="flex flex-col">
+                                <div class="w-full flex items-center sm:items-center space-x-1 mb-1.5">
+                                    <div class="relative group pt-1">
+                                        <mat-icon svgIcon="heroicons_solid:question-mark-circle" class="icon-size-4 h-full"></mat-icon>
+                                        <span class="absolute bottom-full left-0 min-w-60 w-full bg-gray-900 text-white dark:bg-white dark:text-gray-900 text-sm rounded-md hidden group-hover:block p-2">If this field is set to YES and the recurring invoices is not with status PAID, the new invoice will NOT be created.</span>
+                                    </div>
+                                    <span class="block font-semibold dark:text-white/70">Enable Desktop Notifications </span>
+                                </div>
+                                <mat-radio-group class="w-full flex space-x-3" [color]="'primary'">
+                                    <mat-radio-button [value]="'Yes'">
+                                        Yes
+                                    </mat-radio-button>
+                                    <mat-radio-button [value]="'No'">
+                                        No
+                                    </mat-radio-button>
+                                </mat-radio-group>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <div class="flex flex-col">
+                                <div class="w-full flex items-center sm:items-center space-x-1 mb-1.5">
+                                    <div class="relative group pt-1">
+                                        <mat-icon svgIcon="heroicons_solid:question-mark-circle" class="icon-size-4 h-full"></mat-icon>
+                                        <span class="absolute bottom-full left-0 min-w-60 w-full bg-gray-900 text-white dark:bg-white dark:text-gray-900 text-sm rounded-md hidden group-hover:block p-2">If this field is set to YES and the recurring invoices is not with status PAID, the new invoice will NOT be created.</span>
+                                    </div>
+                                    <span class="block font-semibold dark:text-white/70">Auto Dismiss Desktop Notifications After X Seconds (0 to disable) </span>
+                                </div>
+                                <div class="flex">
+                                    <mat-form-field class="w-full fuse-mat-dense">
+                                        <input matInput type="number">
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Google -->
+            <div class="flex-auto px-6 pt-9 pb-12 md:p-8 md:pb-12 lg:p-10 overflow-y-auto" *ngIf="false">
+                <div class="w-full bg-card rounded-xl p-6">
+                    <form class="flex flex-col space-y-4 overflow-y-clip">
+                        <div class="border-b pb-4 space-y-4">
+                            <div class="w-full">
+                                <div class="mb-1.5">
+                                    <span class="block font-semibold dark:text-white/70">Google API Key</span>
+                                </div>
+                                <div class="flex">
+                                    <mat-form-field class="w-full fuse-mat-dense">
+                                        <input matInput type="text">
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <div class="mb-1.5">
+                                    <span class="block font-semibold dark:text-white/70">Google API Client ID</span>
+                                </div>
+                                <div class="flex">
+                                    <mat-form-field class="w-full fuse-mat-dense">
+                                        <input matInput type="text">
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-b pb-4 space-y-4">
+                            <div class="w-full">
+                                <div>
+                                    <h3 class="block text-xl dark:text-white/70">reCAPTCHA</h3>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <div class="mb-1.5">
+                                    <span class="block font-semibold dark:text-white/70">Site key</span>
+                                </div>
+                                <div class="flex">
+                                    <mat-form-field class="w-full fuse-mat-dense">
+                                        <input matInput type="text">
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <div class="mb-1.5">
+                                    <span class="block font-semibold dark:text-white/70">Secret key</span>
+                                </div>
+                                <div class="flex">
+                                    <mat-form-field class="w-full fuse-mat-dense">
+                                        <input matInput type="text">
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <div class="flex flex-col">
+                                    <div class="mb-1.5">
+                                        <span class="block font-semibold dark:text-white/70">Enable reCAPTCHA on customers area (Login/Register)</span>
+                                    </div>
+                                    <mat-radio-group class="w-full flex space-x-3" [color]="'primary'">
+                                        <mat-radio-button [value]="'Yes'">
+                                            Yes
+                                        </mat-radio-button>
+                                        <mat-radio-button [value]="'No'">
+                                            No
+                                        </mat-radio-button>
+                                    </mat-radio-group>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <div class="flex mb-5">
+                                    <mat-form-field class="fuse-mat-textarea flex-auto">
+                                        <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Ignored IP Addresses</mat-label>
+                                        <textarea matInput class="resize-none"></textarea>
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="w-full mb-1.5">
+                                <span class="block font-semibold dark:text-white/70">Enter coma separated IP addresses that you want the reCaptcha to skip validation.</span>
+                            </div>
+                        </div>
+                        <div class="border-b pb-4 space-y-4">
+                            <div class="w-full">
+                                <div>
+                                    <h3 class="block text-xl dark:text-white/70">Calendar</h3>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <div class="mb-1.5">
+                                    <span class="block font-semibold dark:text-white/70">Google Calendar ID</span>
+                                </div>
+                                <div class="flex">
+                                    <mat-form-field class="w-full fuse-mat-dense">
+                                        <input matInput type="text">
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="w-full">
+                                <div>
+                                    <h3 class="block text-xl dark:text-white/70">Google Picker</h3>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <div class="flex flex-col">
+                                    <div class="mb-1.5">
+                                        <span class="block font-semibold dark:text-white/70">Enable Google Picker</span>
+                                    </div>
+                                    <mat-radio-group class="w-full flex space-x-3" [color]="'primary'">
+                                        <mat-radio-button [value]="'Yes'">
+                                            Yes
+                                        </mat-radio-button>
+                                        <mat-radio-button [value]="'No'">
+                                            No
+                                        </mat-radio-button>
+                                    </mat-radio-group>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Misc -->
+            <div class="flex-auto px-6 pt-9 pb-12 md:p-8 md:pb-12 lg:p-10 overflow-y-auto" *ngIf="false">
+                <div class="w-full bg-card rounded-xl p-6">
+                    <mat-tab-group animationDuration="0ms">
+                        <!-- Misc -->
+                        <mat-tab>
+                            <ng-template mat-tab-label>
+                                <mat-icon svgIcon="settings" class="icon-size-4"></mat-icon><span class="inline-block pl-1">Misc</span>
+                            </ng-template>
+                            <!-- Misc form -->
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
+                                <div class="w-full  border-b pb-4">
+                                    <div class="flex flex-col">
+                                        <div class="mb-1.5">
+                                            <span class="font-semibold dark:text-white/70">Require client to be logged in to view contract</span>
+                                        </div>
+                                        <mat-radio-group class="w-full flex space-x-3" [color]="'primary'">
+                                            <mat-radio-button [value]="'Yes'">
+                                                Yes
+                                            </mat-radio-button>
+                                            <mat-radio-button [value]="'No'">
+                                                No
+                                            </mat-radio-button>
+                                        </mat-radio-group>
+                                    </div>
+                                </div>
+                                <div class="w-full border-b pb-4">
+                                    <div class="mb-1.5">
+                                        <span class="font-semibold dark:text-white/70">Dropbox APP Key</span>
+                                    </div>
+                                    <div class="flex">
+                                        <mat-form-field class="w-full fuse-mat-dense">
+                                            <input matInput type="text">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                                <div class="w-full border-b pb-4">
+                                    <div class="pb-1.5">
+                                        <span class="font-semibold dark:text-white/70">Max file size upload in Media (MB)</span>
+                                    </div>
+                                    <div class="flex">
+                                        <mat-form-field class="w-full fuse-mat-dense">
+                                            <input matInput type="text">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                                <div class="w-full border-b pb-4">
+                                    <div class="w-full flex items-start sm:items-center">
+                                        <div class="relative group pt-1">
+                                            <mat-icon svgIcon="heroicons_solid:question-mark-circle" class="icon-size-4 h-full"></mat-icon>
+                                            <span class="absolute top-full left-0 min-w-60 w-full bg-gray-900 text-white dark:bg-white dark:text-gray-900 text-sm rounded-md hidden group-hover:block z-50 p-2">Used for recurring invoices, overdue notices etc..</span>
+                                        </div>
+                                        <span class="font-semibold dark:text-white/70">Maximum files upload on post</span>
+                                    </div>
+                                    <div class="flex">
+                                        <mat-form-field class="w-full fuse-mat-dense">
+                                            <input matInput type="text">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                                <div class="w-full border-b pb-4">
+                                    <div class="pb-1.5">
+                                        <span class="font-semibold dark:text-white/70">Limit Top Search Bar Results to</span>
+                                    </div>
+                                    <div class="flex">
+                                        <mat-form-field class="w-full fuse-mat-dense">
+                                            <input matInput type="text">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                                <div class="w-full border-b pb-4">
+                                    <div class="pb-1.5">
+                                        <span class="font-semibold dark:text-white/70">Default Staff Role</span>
+                                    </div>
+                                    <div class="flex">
+                                        <mat-form-field class="w-full fuse-mat-dense">
+                                            <input matInput type="text">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                                <div class="w-full border-b pb-4">
+                                    <div class="pb-1.5">
+                                        <span class="font-semibold dark:text-white/70">Delete system activity log older then X months</span>
+                                    </div>
+                                    <div class="flex">
+                                        <mat-form-field class="w-full fuse-mat-dense">
+                                            <input matInput type="text">
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                                <div class="w-full border-b pb-4">
+                                    <div class="flex flex-col">
+                                        <div class="pb-1.5">
+                                            <span class="font-semibold dark:text-white/70">Show setup menu item only when hover with mouse on main sidebar area</span>
+                                        </div>
+                                        <mat-radio-group class="w-full flex space-x-3" [color]="'primary'">
+                                            <mat-radio-button [value]="'Yes'">
+                                                Yes
+                                            </mat-radio-button>
+                                            <mat-radio-button [value]="'No'">
+                                                No
+                                            </mat-radio-button>
+                                        </mat-radio-group>
+                                    </div>
+                                </div>
+                                <div class="w-full border-b pb-4">
+                                    <div class="flex flex-col">
+                                        <div class="pb-1.5">
+                                            <span class="font-semibold dark:text-white/70">Show help menu item on setup menu</span>
+                                        </div>
+                                        <mat-radio-group class="w-full flex space-x-3" [color]="'primary'">
+                                            <mat-radio-button [value]="'Yes'">
+                                                Yes
+                                            </mat-radio-button>
+                                            <mat-radio-button [value]="'No'">
+                                                No
+                                            </mat-radio-button>
+                                        </mat-radio-group>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <div class="flex flex-col">
+                                        <div class="pb-1.5">
+                                            <span class="font-semibold dark:text-white/70">Use minified files version for css and js (only system files)</span>
+                                        </div>
+                                        <mat-radio-group class="w-full flex space-x-3" [color]="'primary'">
+                                            <mat-radio-button [value]="'Yes'">
+                                                Yes
+                                            </mat-radio-button>
+                                            <mat-radio-button [value]="'No'">
+                                                No
+                                            </mat-radio-button>
+                                        </mat-radio-group>
+                                    </div>
+                                </div>
+                            </form>
+                        </mat-tab>
+                        <!-- Misc - Tables -->
+                        <mat-tab>
+                            <ng-template mat-tab-label>
+                                <mat-icon svgIcon="table_chart" class="icon-size-4"></mat-icon><span class="inline-block pl-1">Tables</span>
+                            </ng-template>
+                            <!-- Misc - Tables-form -->
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
+                                <div class="w-full">
+                                    <div class="flex flex-col">
+                                        <div class="w-full flex items-start sm:items-center">
+                                            <div class="relative group pt-1">
+                                                <mat-icon svgIcon="heroicons_solid:question-mark-circle" class="icon-size-4 h-full"></mat-icon>
+                                                <span class="absolute top-full left-0 min-w-60 w-full bg-gray-900 text-white dark:bg-white dark:text-gray-900 text-sm rounded-md hidden group-hover:block p-2 z-10">Currently supported tables: Customers, Leads, Tickets, Tasks, Projects, Payments, Subscriptions, Expenses, Proposals, Knowledge Base, Contracts <br /><br /> Note: Changing this option will delete all saved table orders!</span>
+                                            </div>
+                                            <span class="font-semibold dark:text-white/70">Save last order for tables</span>
+                                        </div>
+                                        <mat-radio-group class="w-full flex space-x-3" [color]="'primary'">
+                                            <mat-radio-button [value]="'Yes'">
+                                                Yes
+                                            </mat-radio-button>
+                                            <mat-radio-button [value]="'No'">
+                                                No
+                                            </mat-radio-button>
+                                        </mat-radio-group>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Change task status to In Progress on timer started (valid only if task status is Not Started)</mat-label>
+                                    <mat-radio-group class="flex flex-col space-y-2 " [color]="'primary'">
+                                        <mat-radio-button [value]="'To all staff members'">
+                                            To all staff members
+                                        </mat-radio-button>
+                                        <mat-radio-button [value]="'Only to administrators'">
+                                            Only to administrators
+                                        </mat-radio-button>
+                                        <mat-radio-button [value]="'Hide export button for all staff members'">
+                                            Hide export button for all staff members
+                                        </mat-radio-button>
+                                    </mat-radio-group>
+                                </div>
+                                <div class="w-full mt-4">
+                                    <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Tables Pagination Limit</mat-label>
+                                    <mat-form-field class="w-full">
+                                        <input matInput type="number">
+                                    </mat-form-field>
+                                </div>
+                            </form>
+                        </mat-tab>
+                        <!-- Misc - Inline Create -->
+                        <mat-tab>
+                            <ng-template mat-tab-label>
+                                <mat-icon svgIcon="add" class="icon-size-4"></mat-icon><span class="inline-block pl-1">Inline Create</span>
+                            </ng-template>
+                            <!-- Misc - Inline Create-form -->
+                            <form class="flex flex-col space-y-4 overflow-y-clip">
+                                <div class="w-full">
+                                    <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Allow non-admin staff members to create Lead Status in Lead create/edit area?</mat-label>
+                                    <mat-radio-group class="flex space-x-3 " [color]="'primary'">
+                                        <mat-radio-button [value]="'yes'">
+                                            Yes
+                                        </mat-radio-button>
+                                        <mat-radio-button [value]="'no'">
+                                            No
+                                        </mat-radio-button>
+                                    </mat-radio-group>
+                                </div>
+                                <div class="w-full">
+                                    <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Allow non-admin staff members to create Lead Source in Lead create/edit area?</mat-label>
+                                    <mat-radio-group class="flex space-x-3 " [color]="'primary'">
+                                        <mat-radio-button [value]="'yes'">
+                                            Yes
+                                        </mat-radio-button>
+                                        <mat-radio-button [value]="'no'">
+                                            No
+                                        </mat-radio-button>
+                                    </mat-radio-group>
+                                </div>
+                                <div class="w-full">
+                                    <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Allow non-admin staff members to create Customer Group in Customer create/edit area?</mat-label>
+                                    <mat-radio-group class="flex space-x-3 " [color]="'primary'">
+                                        <mat-radio-button [value]="'yes'">
+                                            Yes
+                                        </mat-radio-button>
+                                        <mat-radio-button [value]="'no'">
+                                            No
+                                        </mat-radio-button>
+                                    </mat-radio-group>
+                                </div>
+                                <div class="w-full">
+                                    <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Allow non-admin staff members to create Service in Ticket create/edit area?</mat-label>
+                                    <mat-radio-group class="flex space-x-3 " [color]="'primary'">
+                                        <mat-radio-button [value]="'yes'">
+                                            Yes
+                                        </mat-radio-button>
+                                        <mat-radio-button [value]="'no'">
+                                            No
+                                        </mat-radio-button>
+                                    </mat-radio-group>
+                                </div>
+                                <div class="w-full">
+                                    <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Allow non-admin staff members to save predefined replies from ticket message</mat-label>
+                                    <mat-radio-group class="flex space-x-3 " [color]="'primary'">
+                                        <mat-radio-button [value]="'yes'">
+                                            Yes
+                                        </mat-radio-button>
+                                        <mat-radio-button [value]="'no'">
+                                            No
+                                        </mat-radio-button>
+                                    </mat-radio-group>
+                                </div>
+                                <div class="w-full">
+                                    <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Allow non-admin staff members to create Contract type in Contract create/edit area?</mat-label>
+                                    <mat-radio-group class="flex space-x-3 " [color]="'primary'">
+                                        <mat-radio-button [value]="'yes'">
+                                            Yes
+                                        </mat-radio-button>
+                                        <mat-radio-button [value]="'no'">
+                                            No
+                                        </mat-radio-button>
+                                    </mat-radio-group>
+                                </div>
+                                <div class="w-full">
+                                    <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Allow non-admin staff members to create Expense Category in Expense create/edit area?</mat-label>
+                                    <mat-radio-group class="flex space-x-3 " [color]="'primary'">
+                                        <mat-radio-button [value]="'yes'">
+                                            Yes
+                                        </mat-radio-button>
+                                        <mat-radio-button [value]="'no'">
+                                            No
+                                        </mat-radio-button>
+                                    </mat-radio-group>
+                                </div>
+                            </form>
+                        </mat-tab>
+                    </mat-tab-group>
+                </div>
+            </div>
+            <!-- system Update -->
+            <div class="flex-auto px-6 pt-9 pb-12 md:p-8 md:pb-12 lg:p-10 overflow-y-auto" *ngIf="false">
+                <div class="w-full bg-card rounded-xl p-6">
+                    <form class="flex flex-col space-y-4 overflow-y-clip">
+                        <div class="w-full mt-4">
+                            <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Purchase Key</mat-label>
+                            <mat-form-field class="w-full">
+                                <input matInput type="number">
+                            </mat-form-field>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-between space-y-2 sm:space-y-0 -mx-2">
+                            <div class="w-full sm:w-1/2 px-2">
+                                <div class="w-full bg-orange-50 text-orange-900 text-center p-2">
+                                    <h3 class="mb-0">Your Version</h3>
+                                    <p>2.9.4</p>
+                                </div>
+                            </div>
+                            <div class="w-full sm:w-1/2 px-2">
+                                <div class="w-full bg-primary-50 text-primary text-center p-2">
+                                    <h3 class="mb-0">Your Version</h3>
+                                    <p>2.9.4</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full bg-gray-50 text-gray-900 text-center p-2">
+                            <p class="text-sm">Before performing an update, it is strongly recommended to create a full backup of your current installation <strong>(files and database)</strong> and review the changelog.</p>
+                        </div>
+                        <div class="w-full">
+                            <div class="flex flex-col">
+                                <div class="w-full flex items-start sm:items-center justify-center">
+                                    <mat-icon svgIcon="feather:alert-circle" class="icon-size-7 dark:text-white/70 h-full"></mat-icon>
+                                    <span class="text-[28px] font-semibold dark:text-white/70">An update is available</span>
+                                </div>
+                                <mat-radio-group class="w-full text-center" [color]="'primary'">
+                                    <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Upgrade Function</mat-label>
+                                    <mat-radio-button [value]="'New (from v2.3.2)'">
+                                        New (from v2.3.2)
+                                    </mat-radio-button>
+                                    <mat-radio-button [value]="'Old (prior to v2.3.2)'" class="pl-3">
+                                        Old (prior to v2.3.2)
+                                    </mat-radio-button>
+                                </mat-radio-group>
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <button mat-raised-button color="primary" class="block w-fit rounded mx-auto">Download Files</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- System/Server Ingormation -->
+            <div class="flex-auto px-6 pt-9 pb-12 md:p-8 md:pb-12 lg:p-10 overflow-y-auto" *ngIf="false">
+                <div class="w-full bg-card rounded-xl p-6">
+                    <table class="w-full">
+                        <tbody>
+                            <tr>
+                                <td class="w-1/2 border p-2">Variable Name</td>
+                                <td class="w-1/2 border p-2">Value</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">OS</td>
+                                <td class="w-1/2 border p-2">Linux</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">Webserver</td>
+                                <td class="w-1/2 border p-2">Apache</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">Webserver User</td>
+                                <td class="w-1/2 border p-2">dveetcom</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">Server Protocol</td>
+                                <td class="w-1/2 border p-2">HTTP/2.0</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">Installation Date</td>
+                                <td class="w-1/2 border p-2">2023-04-05 12:45:36</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">PHP Version</td>
+                                <td class="w-1/2 border p-2">8.2.6</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">PHP Extension "curl"</td>
+                                <td class="w-1/2 border p-2"><span class="text-primary">Enabled (Version: 8.1.2)</span></td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">PHP Extension "openssl"</td>
+                                <td class="w-1/2 border p-2"><span class="text-primary">Enabled (Version: 269488479)</span></td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">PHP Extension "mbstring"</td>
+                                <td class="w-1/2 border p-2"><span class="text-primary">Enabled</span></td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">PHP Extension "iconv"</td>
+                                <td class="w-1/2 border p-2"><span class="text-primary">Enabled</span></td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">PHP Extension "IMAP"</td>
+                                <td class="w-1/2 border p-2"><span class="text-primary">Enabled</span></td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">PHP Extension "GD"</td>
+                                <td class="w-1/2 border p-2"><span class="text-primary">Enabled</span></td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">PHP Extension "zip"</td>
+                                <td class="w-1/2 border p-2"><span class="text-primary">Enabled</span></td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">MySQL Version</td>
+                                <td class="w-1/2 border p-2">5.7.23-23</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">MySQL Max Allowed Connections</td>
+                                <td class="w-1/2 border p-2">150</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">Maximum Packet Size</td>
+                                <td class="w-1/2 border p-2">256 MB</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">sql_mode</td>
+                                <td class="w-1/2 border p-2">NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">bcmath</td>
+                                <td class="w-1/2 border p-2">Yes</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">max_input_vars</td>
+                                <td class="w-1/2 border p-2">1000</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">upload_max_filesize</td>
+                                <td class="w-1/2 border p-2">512M</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">max_execution_time</td>
+                                <td class="w-1/2 border p-2">60</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">memory_limit</td>
+                                <td class="w-1/2 border p-2">512M</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">allow_url_fopen</td>
+                                <td class="w-1/2 border p-2"><span class="text-primary">Enabled</span></td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">Suhosin</td>
+                                <td class="w-1/2 border p-2">Not using</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">Environment</td>
+                                <td class="w-1/2 border p-2">production</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">Cloudflare</td>
+                                <td class="w-1/2 border p-2">No</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">pipe.php permissions</td>
+                                <td class="w-1/2 border p-2">644</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">Customers Theme</td>
+                                <td class="w-1/2 border p-2">perfex</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">Available customers themes</td>
+                                <td class="w-1/2 border p-2">perfex</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">Cron has run from CLI</td>
+                                <td class="w-1/2 border p-2">No</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">CSRF Enabled</td>
+                                <td class="w-1/2 border p-2">Yes</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">Bad User Agent Block Enabled</td>
+                                <td class="w-1/2 border p-2">No</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">Using my_functions_helper.php</td>
+                                <td class="w-1/2 border p-2">No</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">Using custom.css</td>
+                                <td class="w-1/2 border p-2">No</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">Last cron run</td>
+                                <td class="w-1/2 border p-2">N/A</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">Total moduales</td>
+                                <td class="w-1/2 border p-2">6</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">Total active moduales</td>
+                                <td class="w-1/2 border p-2">3</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">Total moduales require databse upgrade</td>
+                                <td class="w-1/2 border p-2">0</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">Installation PATH</td>
+                                <td class="w-1/2 border p-2">/home3/dveetcom/public_html/leadcrm/</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">Temp DIR (get_temp_dir())</td>
+                                <td class="w-1/2 border p-2">/tmp/</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">Base URL</td>
+                                <td class="w-1/2 border p-2">https://leadcrm.aiosoft.in/</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">my_ Prefixed View Files</td>
+                                <td class="w-1/2 border p-2">Not using any</td>
+                            </tr>
+                            <tr>
+                                <td class="w-1/2 border p-2">Files Permissions</td>
+                                <td class="w-1/2 border p-2">No files permission issues found</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Theme Style -->
+    <div class="flex w-full sm:h-full">
+
+        <!-- Drawer -->
+        <div class="hidden lg:block w-1/4 dark:bg-gray-900 overflow-auto" #drawer>
+            <!-- Header -->
+            <div class="flex items-center justify-between m-8 mr-6 sm:my-10">
+                <!-- Title -->
+                <div class="text-4xl font-extrabold tracking-tight leading-none">Theme Style</div>
+                <!-- Close button -->
+                <button><mat-icon svgIcon="heroicons_outline:x"></mat-icon></button>
+                <!-- pannel links -->
+            </div>
+            <div class="flex flex-col divide-y border-t border-b overflow-y-auto">
+                <div class="flex px-8 py-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-hover bg-primary-50 dark:bg-hover">
+                    <div class="font-medium leading-6 text-primary dark:text-primary-500 ml-3">
+                        Admin Area
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- drawer content -->
+        <div class="w-full lg:w-3/4 flex flex-col">
+            <div class="flex-auto px-6 pt-9 pb-12 md:p-8 md:pb-12 lg:p-10 overflow-y-auto" *ngIf="false">
+                <div class="w-full bg-card rounded-xl p-6">
+                    <form class="flex flex-col space-y-4">
+                        <div class="w-full">
+                            <mat-form-field class="w-full">
+                                <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Sidebar Menu/Setup Menu Background Color</mat-label>
+                                <input matInput type="text" value="{{themestyle_color_one.value}}" #themeStyleColor_one class="w-full" [style.color]="themestyle_color_one.value">
+                                <input matInput type="color" class="pl-4 border-solid border-0 border-l border-[rgb(203 213 225 )] max-w-5" #themestyle_color_one value="{{themeStyleColor_one.value}}">
+                            </mat-form-field>
+                        </div>
+                        <div class="w-full">
+                            <mat-form-field class="w-full">
+                                <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Sidebar Menu/Setup Menu Submenu Open Background Color</mat-label>
+                                <input matInput type="text" value="{{themestyle_color_two.value}}" #themeStyleColor_two class="w-full" [style.color]="themestyle_color_two.value">
+                                <input matInput type="color" class="pl-4 border-solid border-0 border-l border-[rgb(203 213 225 )] max-w-5" #themestyle_color_two value="{{themeStyleColor_two.value}}">
+                            </mat-form-field>
+                        </div>
+                        <div class="w-full">
+                            <mat-form-field class="w-full">
+                                <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Sidebar Menu/Setup Menu Links Color</mat-label>
+                                <input matInput type="text" value="{{themestyle_color_three.value}}" #themeStyleColor_three class="w-full" [style.color]="themestyle_color_three.value">
+                                <input matInput type="color" class="pl-4 border-solid border-0 border-l border-[rgb(203 213 225 )] max-w-5" #themestyle_color_three value="{{themeStyleColor_three.value}}">
+                            </mat-form-field>
+                        </div>
+                        <div class="w-full">
+                            <mat-form-field class="w-full">
+                                <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Sidebar Menu User Welcome Text Color</mat-label>
+                                <input matInput type="text" value="{{themestyle_color_four.value}}" #themeStyleColor_four class="w-full" [style.color]="themestyle_color_four.value">
+                                <input matInput type="color" class="pl-4 border-solid border-0 border-l border-[rgb(203 213 225 )] max-w-5" #themestyle_color_four value="{{themeStyleColor_four.value}}">
+                            </mat-form-field>
+                        </div>
+                        <div class="w-full">
+                            <mat-form-field class="w-full">
+                                <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Sidebar Menu/Setup Active Item Background Color</mat-label>
+                                <input matInput type="text" value="{{themestyle_color_five.value}}" #themeStyleColor_five class="w-full" [style.color]="themestyle_color_five.value">
+                                <input matInput type="color" class="pl-4 border-solid border-0 border-l border-[rgb(203 213 225 )] max-w-5" #themestyle_color_five value="{{themeStyleColor_five.value}}">
+                            </mat-form-field>
+                        </div>
+                        <div class="w-full">
+                            <mat-form-field class="w-full">
+                                <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Sidebar Menu/Setup Active Item Color</mat-label>
+                                <input matInput type="text" value="{{themestyle_color_six.value}}" #themeStyleColor_six class="w-full" [style.color]="themestyle_color_six.value">
+                                <input matInput type="color" class="pl-4 border-solid border-0 border-l border-[rgb(203 213 225 )] max-w-5" #themestyle_color_six value="{{themeStyleColor_six.value}}">
+                            </mat-form-field>
+                        </div>
+                        <div class="w-full">
+                            <mat-form-field class="w-full">
+                                <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Sidebar Menu/Setup Active Subitem Background Color</mat-label>
+                                <input matInput type="text" value="{{themestyle_color_seven.value}}" #themeStyleColor_seven class="w-full" [style.color]="themestyle_color_seven.value">
+                                <input matInput type="color" class="pl-4 border-solid border-0 border-l border-[rgb(203 213 225 )] max-w-5" #themestyle_color_seven value="{{themeStyleColor_seven.value}}">
+                            </mat-form-field>
+                        </div>
+                        <div class="w-full">
+                            <mat-form-field class="w-full">
+                                <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Sidebar Menu/Setup Submenu Links Color</mat-label>
+                                <input matInput type="text" value="{{themestyle_color_eight.value}}" #themeStyleColor_eight class="w-full" [style.color]="themestyle_color_eight.value">
+                                <input matInput type="color" class="pl-4 border-solid border-0 border-l border-[rgb(203 213 225 )] max-w-5" #themestyle_color_eight value="{{themeStyleColor_eight.value}}">
+                            </mat-form-field>
+                        </div>
+                        <div class="w-full">
+                            <mat-form-field class="w-full">
+                                <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Top Header Background Color</mat-label>
+                                <input matInput type="text" value="{{themestyle_color_nine.value}}" #themeStyleColor_nine class="w-full" [style.color]="themestyle_color_nine.value">
+                                <input matInput type="color" class="pl-4 border-solid border-0 border-l border-[rgb(203 213 225 )] max-w-5" #themestyle_color_nine value="{{themeStyleColor_nine.value}}">
+                            </mat-form-field>
+                        </div>
+                        <div class="w-full">
+                            <mat-form-field class="w-full">
+                                <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Top Header Links Color</mat-label>
+                                <input matInput type="text" value="{{themestyle_color_ten.value}}" #themeStyleColor_ten class="w-full" [style.color]="themestyle_color_ten.value">
+                                <input matInput type="color" class="pl-4 border-solid border-0 border-l border-[rgb(203 213 225 )] max-w-5" #themestyle_color_ten value="{{themeStyleColor_ten.value}}">
+                            </mat-form-field>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="flex-auto px-6 pt-9 pb-12 md:p-8 md:pb-12 lg:p-10 overflow-y-auto">
+                <div class="w-full bg-card rounded-xl p-6">
+                    <form  class="flex flex-col sspace-y-4">
+                        <div class="w-full">
+                            <mat-form-field class="w-full">
+                                <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Navigation Background Color</mat-label>
+                                <input type="text" value="{{themestyle_customeArea_color_one.value}}" #themestyle_customeArea_one class="w-full" [style.color]="themestyle_customeArea_color_one.value">
+                                <input type="color" class="pl-4 border-solid border-0 border-l border-[rgb(203 213 225 )] max-w-5" #themestyle_customeArea_color_one value="{{themestyle_customeArea_one.value}}">
+                            </mat-form-field>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

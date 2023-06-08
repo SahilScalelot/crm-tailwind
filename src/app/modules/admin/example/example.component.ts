@@ -7,7 +7,13 @@ import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 })
 export class ExampleComponent implements OnInit{
     
-    constructor(){}
-
     ngOnInit(): void {}
+    panelOpenState = false;
+
+    step = 0;
+
+    setStep(index: number) {
+        this.step = index;
+    }
+    
 }
