@@ -1,0 +1,257 @@
+<div class="flex flex-col max-w-5xl md:min-w-160 max-h-screen -m-6">
+
+  <!-- Header -->
+  <div class="flex flex-0 items-center justify-between h-16 pr-3 sm:pr-5 pl-6 sm:pl-8 bg-primary text-on-primary">
+      <div class="text-lg font-medium">New consent purpose</div>
+      <button
+          mat-icon-button
+          [tabIndex]="-1"
+          (click)="close()"
+          >
+          <mat-icon
+              class="text-current"
+              [svgIcon]="'heroicons_outline:x'"></mat-icon>
+      </button>
+  </div>
+
+  <!-- Compose form -->
+  <form class="flex flex-wrap justify-end overflow-y-auto p-6 sm:p-8 -mx-3">
+    <div class="w-1/2 flex flex-col space-y-4 px-3">
+        <div class="w-full">
+            <mat-form-field class="fuse-mat-dense w-full">
+                <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">
+                    <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                    Form Name
+                </mat-label>
+                <input matInput>
+            </mat-form-field>
+        </div>
+        <div class="w-full">
+            <div class="w-full flex items-start sm:items-center">
+                <div class="relative group pt-1">
+                    <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                    <mat-icon svgIcon="heroicons_solid:question-mark-circle" class="icon-size-4 h-full"></mat-icon>
+                    <span class="absolute bottom-full left-0 min-w-60 w-full bg-gray-900 text-white dark:bg-white dark:text-gray-900 text-sm rounded-md hidden group-hover:block p-2">For validation messages</span>
+                </div>
+                <span class="font-semibold dark:text-white/70">Language</span>
+            </div>
+            <mat-form-field class="flex flex-col">
+                <mat-select>
+                    <mat-option value="NewWebLeadForm_hindi">Hindi</mat-option>
+                    <mat-option value="NewWebLeadForm_greek">Greek</mat-option>
+                    <mat-option value="NewWebLeadForm_romanian">Romanian</mat-option>
+                    <mat-option value="NewWebLeadForm_Dutch">Dutch</mat-option>
+                    <mat-option value="NewWebLeadForm_czech">Czech</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="w-full">
+            <mat-form-field class="fuse-mat-textarea w-full">
+                <mat-label class="text-sm">Submit button text</mat-label>
+                <input matInput>
+            </mat-form-field>
+        </div>
+        <div class="flex items-center -mx-2">
+            <div class="w-1/2 px-2">
+                <mat-form-field class="w-full">
+                    <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Submit button background color</mat-label>
+                    <div class="w-full flex">
+                        <input matInput type="text" value="{{NewWebLead_bgColor.value}}" #NewWebLead_bgColor_text class="w-full" [style.color]="NewWebLead_bgColor.value">
+                        <input matInput type="color" class="max-w-5" #NewWebLead_bgColor value="{{NewWebLead_bgColor_text.value}}">
+                    </div>
+                </mat-form-field>
+            </div>
+            <div class="w-1/2 px-2">
+                <mat-form-field class="w-full">
+                    <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Submit button background text</mat-label>
+                    <div class="w-full flex">
+                        <input matInput type="text" value="{{NewWebLead_Color.value}}" #NewWebLead_Color_text class="w-full" [style.color]="NewWebLead_Color.value">
+                        <input matInput type="color" class="max-w-5" #NewWebLead_Color value="{{NewWebLead_Color_text.value}}">
+                    </div>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="w-full">
+            <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">What should happen after a visitor submits this form?</mat-label>
+            <mat-radio-group class="flex flex-col space-y-2 " [color]="'primary'">
+                <mat-radio-button [value]="'yes'">
+                    Display thank you message
+                </mat-radio-button>
+                <mat-radio-button [value]="'no'">
+                    Redirect to another website
+                </mat-radio-button>
+            </mat-radio-group>
+        </div>
+        <div class="w-full">
+            <mat-form-field class="fuse-mat-textarea w-full">
+                <mat-label class="text-sm">
+                    <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                    Message to show after form is succcesfully submitted
+                </mat-label>
+                <textarea matInput [rows]="3" matTextareaAutosize placeholder="Briefly describe the purpose of this consent. Eq. for what the data will be used."></textarea>
+            </mat-form-field>
+        </div>
+        <div class="w-full">
+          <div class="flex flex-col">
+            <mat-checkbox class="mb-2" [color]="'primary'">Auto mark as public</mat-checkbox>
+            <mat-checkbox class="mb-2" [color]="'primary'">Allow duplicate lead to be inserted into database?</mat-checkbox>
+          </div>
+        </div>
+        <div class="w-full flex flex-col border-t space-y-4 pt-5">
+            <div class="flex flex-wrap items-center justify-between -mx-3">
+                <div class="w-1/2 px-3">
+                    <mat-form-field class="flex flex-col">
+                        <mat-label class="text-sm">Prevent duplicate on field</mat-label>
+                        <mat-select>
+                            <mat-option value="NewWebLeadForm_prevent_name">Name</mat-option>
+                            <mat-option value="NewWebLeadForm_prevent_position">Position</mat-option>
+                            <mat-option value="NewWebLeadForm_prevent_emailAddress">Email Address</mat-option>
+                            <mat-option value="NewWebLeadForm_prevent_phone">Phone</mat-option>
+                            <mat-option value="NewWebLeadForm_prevent_leadValue">Lead Value</mat-option>
+                            <mat-option value="NewWebLeadForm_prevent_company">Company</mat-option>
+                            <mat-option value="NewWebLeadForm_prevent_address">Address</mat-option>
+                            <mat-option value="NewWebLeadForm_prevent_city">City</mat-option>
+                            <mat-option value="NewWebLeadForm_prevent_state">State</mat-option>
+                            <mat-option value="NewWebLeadForm_prevent_country">Country</mat-option>
+                            <mat-option value="NewWebLeadForm_prevent_zipCode">Zip Code</mat-option>
+                            <mat-option value="NewWebLeadForm_prevent_description">Description</mat-option>
+                            <mat-option value="NewWebLeadForm_prevent_website">Website</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="w-1/2 px-3">
+                    <mat-form-field class="flex flex-col">
+                        <mat-label class="text-sm">+ field (leave blank to track duplicates only by 1 field)</mat-label>
+                        <mat-select>
+                            <mat-option value="NewWebLeadForm_field_name">Name</mat-option>
+                            <mat-option value="NewWebLeadForm_field_position">Position</mat-option>
+                            <mat-option value="NewWebLeadForm_field_emailAddress">Email Address</mat-option>
+                            <mat-option value="NewWebLeadForm_field_phone">Phone</mat-option>
+                            <mat-option value="NewWebLeadForm_field_leadValue">Lead Value</mat-option>
+                            <mat-option value="NewWebLeadForm_field_company">Company</mat-option>
+                            <mat-option value="NewWebLeadForm_field_address">Address</mat-option>
+                            <mat-option value="NewWebLeadForm_field_city">City</mat-option>
+                            <mat-option value="NewWebLeadForm_field_state">State</mat-option>
+                            <mat-option value="NewWebLeadForm_field_country">Country</mat-option>
+                            <mat-option value="NewWebLeadForm_field_zipCode">Zip Code</mat-option>
+                            <mat-option value="NewWebLeadForm_field_description">Description</mat-option>
+                            <mat-option value="NewWebLeadForm_field_website">Website</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="w-full">
+                <mat-checkbox class="mb-2" [color]="'primary'">
+                    <div class="w-full flex items-start sm:items-center">
+                        <div class="relative group pt-1">
+                            <mat-icon svgIcon="heroicons_solid:question-mark-circle" class="icon-size-4 h-full"></mat-icon>
+                            <span class="absolute bottom-full left-0 min-w-60 w-full bg-gray-900 text-white dark:bg-white dark:text-gray-900 text-sm rounded-md hidden group-hover:block p-2">Used for further review on the submission and take the necessary action</span>
+                        </div>
+                        <span class="font-semibold dark:text-white/70">Create duplicate lead data as task and assign to responsible staff member</span>
+                    </div>
+                </mat-checkbox>
+            </div>
+        </div>
+    </div>
+    <div class="w-1/2 flex flex-col space-y-4 px-3">
+        <div class="w-full">
+            <mat-form-field class="fuse-mat-dense w-full">
+                <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">
+                    Lead title prefix
+                </mat-label>
+                <input matInput>
+            </mat-form-field>
+            <span class="block">
+                For each newly created lead via the form, the lead name will be prefixed with the text added in the field for easier recognition.
+            </span>
+        </div>
+        <div class="w-full">
+            <mat-form-field class="flex flex-col">
+                <mat-label class="text-sm">
+                    <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                    Source
+                </mat-label>
+                <mat-select>
+                    <mat-option value="NewWebLeadForm_source_facebook">Facebook</mat-option>
+                    <mat-option value="NewWebLeadForm_source_google">Google</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="w-full">
+            <mat-form-field class="flex flex-col">
+                <mat-label class="text-sm">
+                    <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                    Status
+                </mat-label>
+                <mat-select>
+                    <mat-option value="NewWebLeadForm_source_lead">Lead</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="w-full">
+            <mat-form-field class="flex flex-col">
+                <mat-label class="text-sm">
+                    <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                    Responsible (Assignee)
+                </mat-label>
+                <mat-select>
+                    <mat-option value="NewWebLeadForm_responsible_superAdmin">Super Admin</mat-option>
+                    <mat-option value="NewWebLeadForm_responsible_mananSonani">Manan Sonani</mat-option>
+                    <mat-option value="NewWebLeadForm_responsible_mananSonani">Manan Sonani</mat-option>
+                    <mat-option value="NewWebLeadForm_responsible_kahan">Kahan S</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="w-full">
+            <div class="flex flex-col">
+                <span class="block w-full font-semibold dark:text-white/70 pb-1">Notification settings</span>
+                <mat-checkbox class="mb-2" [color]="'primary'">Notify when lead imported</mat-checkbox>
+            </div>
+        </div>    
+        <div class="w-full flex flex-col border-t space-y-4 pt-5">
+            <div class="w-full">
+                <mat-radio-group class="flex flex-wrap space-x-3 " [color]="'primary'">
+                    <mat-radio-button [value]="'Specific Staff Members'">
+                        Specific Staff Members 
+                    </mat-radio-button>
+                    <mat-radio-button [value]="'Staff members with roles'">
+                        Staff members with roles
+                    </mat-radio-button>
+                    <mat-radio-button [value]="'Responsible person'">
+                        Responsible person
+                    </mat-radio-button>
+                </mat-radio-group>
+            </div>
+            <div class="w-full">
+                <mat-form-field class="flex flex-col">
+                    <mat-label class="text-sm">Staff Members to Notify</mat-label>
+                    <mat-select>
+                        <mat-option value="NewWebLeadForm_memberToNotoify_superAdmin">Super Admin</mat-option>
+                        <mat-option value="NewWebLeadForm_memberToNotoify_mananSonani">Manan Sonani</mat-option>
+                        <mat-option value="NewWebLeadForm_memberToNotoify_mananSonani">Manan Sonani</mat-option>
+                        <mat-option value="NewWebLeadForm_memberToNotoify_kahan">Kahan S</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+    </div>
+      
+    <div class="flex items-center justify-end mt-4 space-x-4">
+        <!-- Discard -->
+        <button
+            class="ml-auto sm:ml-0 rounded-md"
+            mat-stroked-button 
+            (click)="close()"
+            >
+            Close
+        </button>
+        <!-- Send -->
+        <button
+            class="order-first sm:order-last rounded-md"
+            mat-flat-button
+            [color]="'primary'">
+            Save
+        </button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,135 @@
+<div class="flex flex-col max-w-xl md:min-w-160 max-h-screen -m-6">
+
+  <!-- Header -->
+  <div class="flex flex-0 items-center justify-between h-16 pr-3 sm:pr-5 pl-6 sm:pl-8 bg-primary text-on-primary">
+      <div class="text-lg font-medium">Add new custom field</div>
+      <button
+          mat-icon-button
+          [tabIndex]="-1"
+          (click)="close()"
+          >
+          <mat-icon
+              class="text-current"
+              [svgIcon]="'heroicons_outline:x'"></mat-icon>
+      </button>
+  </div>
+
+  <!-- Compose form -->
+  <form class="flex flex-col flex-auto p-6 sm:p-8 overflow-y-auto space-y-4">
+      <div class="w-full">
+          <mat-form-field class="fuse-mat-dense w-full">
+              <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">
+                  <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                  Field Belongs to
+              </mat-label>
+              <mat-select>
+                <mat-option value="addNewCustomeFields_company">Company</mat-option>
+                <mat-option value="addNewCustomeFields_leads">Leads</mat-option>
+                <mat-option value="addNewCustomeFields_customers">Customers</mat-option>
+                <mat-option value="addNewCustomeFields_contacts">Contacts</mat-option>
+                <mat-option value="addNewCustomeFields_staff">Staff</mat-option>
+                <mat-option value="addNewCustomeFields_contracts">Contracts</mat-option>
+                <mat-option value="addNewCustomeFields_tasks">Tasks</mat-option>
+                <mat-option value="addNewCustomeFields_expenses">Expenses</mat-option>
+                <mat-option value="addNewCustomeFields_invoice">Invoice</mat-option>
+                <mat-option value="addNewCustomeFields_items">Items</mat-option>
+                <mat-option value="addNewCustomeFields_creadit_notes">Credit Notes</mat-option>
+                <mat-option value="addNewCustomeFields_estimate">Estimate</mat-option>
+                <mat-option value="addNewCustomeFields_proposal">Proposal</mat-option>
+                <mat-option value="addNewCustomeFields_projects">Projects</mat-option>
+                <mat-option value="addNewCustomeFields_tickets">Tickets</mat-option>
+            </mat-select>
+          </mat-form-field>
+      </div>
+      <div class="w-full">
+          <mat-form-field class="fuse-mat-textarea w-full">
+              <mat-label class="text-sm">
+                <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                Field Name
+              </mat-label>
+              <input matInput>
+          </mat-form-field>
+      </div>
+      <div class="w-full">
+        <mat-form-field class="fuse-mat-dense w-full">
+            <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">
+                <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                Type
+            </mat-label>
+            <mat-select>
+              <mat-option value="addNewCustomeFields_type_input">Input</mat-option>
+              <mat-option value="addNewCustomeFields_type_number">Number</mat-option>
+              <mat-option value="addNewCustomeFields_type_textarea">Textarea</mat-option>
+              <mat-option value="addNewCustomeFields_type_select">Select</mat-option>
+              <mat-option value="addNewCustomeFields_type_multiSelect">Multi Select</mat-option>
+              <mat-option value="addNewCustomeFields_type_checkbox">Checkbox</mat-option>
+              <mat-option value="addNewCustomeFields_type_datePicker">Date Picker</mat-option>
+              <mat-option value="addNewCustomeFields_type_datetimePicker">Datetime Picker</mat-option>
+              <mat-option value="addNewCustomeFields_type_colorPicker">Color Picker</mat-option>
+              <mat-option value="addNewCustomeFields_type_hyperlink">Hyperlink</mat-option>
+          </mat-select>
+        </mat-form-field>
+    </div>
+    <div class="w-full">
+        <mat-form-field class="fuse-mat-textarea w-full">
+            <mat-label class="text-sm">Default Value</mat-label>
+            <textarea matInput [rows]="2" matTextareaAutosize placeholder="Default Value"></textarea>
+        </mat-form-field>
+    </div>
+    <div class="w-full">
+        <mat-form-field class="fuse-mat-textarea w-full">
+            <mat-label class="text-sm">Default Value</mat-label>
+            <input matInput>
+        </mat-form-field>
+    </div>
+    <div class="w-full">
+        <mat-form-field class="fuse-mat-textarea w-full">
+            <mat-label class="text-sm">order</mat-label>
+            <input matInput type="number">
+        </mat-form-field>
+    </div>
+    <div class="w-full">
+      <mat-form-field class="fuse-mat-textarea w-full">
+          <mat-label class="text-sm">
+            <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+            Grid (Bootstrap Column eq. 12) - Max is 12
+          </mat-label>
+          <input matInput type="number">
+      </mat-form-field>
+    </div>
+    <div class="w-full">
+      <div class="flex flex-col border-b pb-5">
+        <div class="flex flex-col">
+          <mat-checkbox class="mb-2" [color]="'primary'">Disabled</mat-checkbox>
+          <mat-checkbox class="mb-2" [color]="'primary'">Restrict visibility for administrators only</mat-checkbox>
+          <mat-checkbox [color]="'primary'">Required</mat-checkbox>
+        </div>
+      </div>
+    </div>
+    <div class="w-full">
+      <div class="flex flex-col">
+        <div class="flex flex-col">
+          <mat-label class="text-sm">Visibility</mat-label>
+          <mat-checkbox class="mb-2" [color]="'primary'">Show on table</mat-checkbox>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center justify-end mt-4 sm:mt-0 space-x-4">
+        <!-- Discard -->
+        <button
+            class="ml-auto sm:ml-0 rounded-md"
+            mat-stroked-button 
+            (click)="close()"
+            >
+            Close
+        </button>
+        <!-- Send -->
+        <button
+            class="order-first sm:order-last rounded-md"
+            mat-flat-button
+            [color]="'primary'">
+            Save
+        </button>
+    </div>
+  </form>
+</div>

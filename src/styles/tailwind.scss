@@ -2,8 +2,9 @@
 /*  @ Main Tailwind file for injecting utilities.
 /* ----------------------------------------------------------------------------------------------------- */
 @tailwind utilities;
-h2{@apply text-xl sm:text-[20px] md:text-3xl font-semibold mb-3}
-h3{@apply text-lg sm:text-xl md:text-[20px] font-semibold mb-3}
+h2{@apply text-xl sm:text-[20px] md:text-3xl font-semibold mb-3;}
+h3{@apply text-lg sm:text-xl md:text-[20px] font-semibold;}
+h4{@apply sm:text-lg md:text-lg lg:text-xl font-semibold;}
 .mat-form-field.mat-form-field-appearance-fill .mat-form-field-wrapper{
   margin-bottom: 0 !important;
 }
@@ -26,3 +27,13 @@ body.light .mat-elevation-z4, body .light .mat-elevation-z4{
 .mat-expansion-panel-header{@apply h-12;}
 .mat-expansion-panel-spacing{@apply m-0}
 input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button {-webkit-appearance: none;margin: 0;}
+
+.contact_select_panel .mat-select-panel{min-height: 600px;}
+.email_template:not(:first-child){@apply pt-5}
+.email_template_table> *:not(:last-child){@apply border-b;}
+body.light .mat-slide-toggle.mat-checked .mat-slide-toggle-thumb, body .light .mat-slide-toggle.mat-checked .mat-slide-toggle-thumb{@apply bg-blue-600;}
+.mat-slide-toggle.mat-checked .mat-slide-toggle-bar{
+  background-color: rgb(224,231,255) !important;
+}
+.password_input .mat-form-field-infix.ng-tns-c37-19,.password_input .mat-form-field-infix.ng-tns-c37-9{display: block !important;}
+.password_input .mat-form-field-flex.ng-tns-c37-19,.password_input .mat-form-field-flex.ng-tns-c37-9{padding-right:0 !important;}
