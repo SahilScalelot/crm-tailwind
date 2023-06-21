@@ -4,7 +4,7 @@
     <div class="flex w-full sm:h-full">
 
         <!-- Drawer -->
-        <div class="hidden lg:block w-1/4 dark:bg-gray-900 overflow-auto" #drawer>
+        <div class="hidden lg:block w-1/4 dark:bg-gray-900 overflow-auto" #drawer *ngIf="false">
             <!-- Header -->
             <div class="flex items-center justify-between m-8 mr-6 sm:my-10">
                 <!-- Title -->
@@ -206,7 +206,7 @@
         </div>
 
         <!-- Drawer content -->
-        <div class="w-full lg:w-3/4 flex flex-col">
+        <div class="w-full flex flex-col"> <!-- add class=>lg:w-3/4 -->
 
           <!-- Main -->
           <!-- settings-content -->
@@ -5350,7 +5350,7 @@
                 </div>
             </div>
             <!-- Button -->
-            <div class="flex-auto px-6 pt-9 pb-12 md:p-8 md:pb-12 lg:p-10 overflow-y-auto">
+            <div class="flex-auto px-6 pt-9 pb-12 md:p-8 md:pb-12 lg:p-10 overflow-y-auto" *ngIf="false">
                 <div class="w-full bg-card rounded-xl p-6 mb-5">
                     <div class="flex items-center space-x-5">
                         <button mat-raised-button class="rounded-md text-white mt-1" color="primary">Save</button>
@@ -5821,7 +5821,7 @@
                 <div class="w-full bg-card rounded-xl p-6 mb-5">
                     <div class="flex items-center space-x-5">
                         <button mat-raised-button class="rounded-md text-white mt-1" color="primary">Save Menu</button>
-                        <button mat-raised-button class="rounded-md mt-1" color="basic">Reset</button>
+                        <button mat-raised-button class="rounded-md mt-1" color="basic" class="dark:bg-white/70 dark:text-gray-900 rounded-md">Reset</button>
                     </div>
                 </div>
                 <div class="w-full bg-card rounded-xl p-6">
@@ -5834,7 +5834,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Dashboard
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -5855,7 +5855,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Customers
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -5876,7 +5876,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             - + Sales
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -5894,7 +5894,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Proposals
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -5915,7 +5915,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Estimates
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -5936,7 +5936,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Invoices
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -5957,7 +5957,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Payments
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -5978,7 +5978,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Credit Notes
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -5999,7 +5999,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Items
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6020,7 +6020,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Subscriptions
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6041,7 +6041,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Expenses
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6062,7 +6062,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Contracts
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6083,7 +6083,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Projects
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6104,7 +6104,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Tasks
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6125,7 +6125,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Support
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6146,7 +6146,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Leads
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6167,7 +6167,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Estimate request
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6188,7 +6188,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Knowledge Base
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6209,7 +6209,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             - + Utilities
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6230,7 +6230,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Media
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6251,7 +6251,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Bulk PDF Export
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6272,7 +6272,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Calendar
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6293,7 +6293,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Announcements
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6314,7 +6314,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Activity Log
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6335,7 +6335,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Surveys
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6356,7 +6356,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Ticket Pipe Log
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6377,7 +6377,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                            - + Reports
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6398,7 +6398,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Sales
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6419,7 +6419,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Expenses
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6440,7 +6440,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Expenses vs Income
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6461,7 +6461,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Leads
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6482,7 +6482,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Timesheets overview
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6503,7 +6503,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             KB Articles
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6526,7 +6526,7 @@
                 <div class="w-full bg-card rounded-xl p-6 mb-5">
                     <div class="flex items-center space-x-5">
                         <button mat-raised-button class="rounded-md text-white mt-1" color="primary">Save Menu</button>
-                        <button mat-raised-button class="rounded-md mt-1" color="basic">Reset</button>
+                        <button mat-raised-button class="rounded-md mt-1" color="basic" class="dark:bg-white/70 dark:text-gray-900 rounded-md">Reset</button>
                     </div>
                 </div>
                 <div class="w-full bg-card rounded-xl p-6">
@@ -6539,7 +6539,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Staff
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6560,7 +6560,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                            - + Customers
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6581,7 +6581,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Groups
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6599,7 +6599,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             - + Support
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6620,7 +6620,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Departments
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6641,7 +6641,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Predefined Replies
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6662,7 +6662,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Ticket Priority
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6683,7 +6683,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Ticket Statuses
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6704,7 +6704,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Services
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6725,7 +6725,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Spam Filters
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6746,7 +6746,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             - + Leads
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6767,7 +6767,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Sources
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6788,7 +6788,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Statuses
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6809,7 +6809,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Email Integration
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6830,7 +6830,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Web to Lead
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6851,7 +6851,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             - + Finance
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6872,7 +6872,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Tax Rates
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6893,7 +6893,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Currencies
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6914,7 +6914,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Payment Modes
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6935,7 +6935,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Expenses Categories
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6956,7 +6956,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             - + Contracts
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6977,7 +6977,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Contract Types
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -6998,7 +6998,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             - + Estimate request
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -7019,7 +7019,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Modules
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -7040,7 +7040,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Email Templates
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -7061,7 +7061,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Custom Fields
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -7082,7 +7082,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             GDPR
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -7103,7 +7103,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Roles
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -7124,7 +7124,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             - + Menu Setup
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -7145,7 +7145,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Main Menu
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -7166,7 +7166,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Setup Menu
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -7187,7 +7187,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Theme Style
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -7208,7 +7208,7 @@
                                         <mat-panel-title class="text-lg font-semibold dark:text-primary-500 pl-5">
                                             Settings
                                         </mat-panel-title>
-                                        <mat-icon svgIcon="mat_solid:settings"></mat-icon> 
+                                        <mat-icon svgIcon="mat_solid:settings" class="setting_icon"></mat-icon> 
                                     </div>
                                 </mat-expansion-panel-header>
                                 <div class="flex flex-col space-y-3">
@@ -7229,7 +7229,81 @@
             <!-- Roles -->
             <div class="flex-auto px-6 pt-9 pb-12 md:p-8 md:pb-12 lg:p-10 overflow-y-auto" *ngIf="false">
                 <div class="w-full bg-card rounded-xl p-6">
-                    <!-- roles=> add new roles -->
+                    <!-- Role Table -->
+                    <div class="w-full">
+                        <div class="w-full flex items-center pb-5 border-b border-gray-200">
+                            <button class="w-full sm:w-auto inline-block p-3 py-2 text-sm text-white bg-blue-600 rounded uppercase hover:opacity-90">New Role</button>
+                        </div>
+                        <div class="pt-5">
+                            <div class="w-full">
+                                <div class="flex items-center">
+                                    <select name="page" id="page" class="bg-card border border-gray-300 text-sm p-1 rounded">
+                                        <option value="">25</option>
+                                        <option value="">50</option>
+                                        <option value="">75</option>
+                                        <option value="">100</option>
+                                    </select>
+                                    <div class="flex items-stretch mx-1">
+                                        <div class="relative group">
+                                            <button class="border border-gray-300 text-sm p-1 px-2 rounded-tl rounded-bl">Export</button>
+                                            <div class="absolute opacity-0 top-full inset-x-0 w-full p-2 bg-card invisible rounded-md shadow-md translate-y-4 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 anim">
+                                                <a href="#" class="block">Excel</a>
+                                                <a href="#" class="block">CSV</a>
+                                                <a href="#" class="block">PDF</a>
+                                                <a href="#" class="block">Print</a>
+                                            </div>
+                                        </div>
+                                        <button class="border border-gray-300 border-l-0 px-1 rounded-tr rounded-br">
+                                            <mat-icon class="icon-size-4" svgIcon="restart_alt"></mat-icon>
+                                        </button>
+                                    </div>
+                                    <div class="border rounded overflow-hidden flex ml-auto">
+                                        <input type="text" class="px-2 py-[5px] text-sm max-w-16 focus:max-w-32 anim whitespace-nowrap overflow-hidden text-ellipsis" placeholder="Search...">
+                                        <button class="flex items-center justify-center px-2 border-l">
+                                            <mat-icon class="icon-size-4" svgIcon="heroicons_outline:search"></mat-icon>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="overflow-x-auto mt-4">
+                                    <table class="table-auto w-full">
+                                        <thead class="text-sm bg-gray-50 dark:bg-card">
+                                            <tr>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <div class="font-semibold text-left">Role Name</div>
+                                                </th>
+                                                <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
+                                                    <div class="font-semibold text-left">Option</div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-sm font-normal align-top text-left">
+                                            <tr>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <span class="block font-semibold text-primary cursor-pointer">Employee</span>
+                                                    <span class="block font-semibold text-gray-900">Total User:4</span>
+                                                </td>
+                                                <td class="p-2 whitespace-nowrap">
+                                                    <div class="flex items-center space-x-1.5">
+                                                        <button class="flex items-center justifu-between bg-gray-100 rounded-md p-1" (click)="EditPriority()"><mat-icon svgIcon="feather:edit" class="icon-size-4 cursor-pointer"></mat-icon></button>
+                                                        <button class="flex items-center justifu-between bg-red-600 rounded-md p-1" ><mat-icon svgIcon="mat_solid:close" class="icon-size-4 cursor-pointer text-white font-thin"></mat-icon></button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="w-full mt-3">
+                                    <span class="block text-sm font-medium">Showing 1 to 5 of 5 entries</span>
+                                </div>
+                                <div class="flex items-center justify-end mt-3">
+                                    <button mat-stroked-button class="border-r-0 rounded-sm shadow-none px-5 py-2">Previous</button>
+                                    <Span class="min-w-[40px] flex items-center justify-center border-primary w-fit bg-blue-600 text-white py-2.5">1</Span>
+                                    <button mat-stroked-button class="border-l-0 rounded-sm shadow-none px-5 py-2">Next</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- add to this roles=> add roles -->
                     <table class="w-full">
                         <tbody>
                             <tr>
@@ -7541,6 +7615,9 @@
                                     </mat-radio-group>
                                 </div>
                             </div>
+                            <div class="w-full">
+                                <!-- add Text editor -->
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -7844,6 +7921,7 @@
                         <div class="w-full">
                             <p class="w-full font-semibold dark:text-white/70">Terms & Conditions</p>
                             <a href="#" class="block text-blue-500">https://leadcrm.aiosoft.in/terms-and-conditions</a>
+                            <!-- Add text-editor -->
                         </div>
                         <div class="w-full">
                             <div class="flex items-start sm:items-center">
@@ -7854,6 +7932,7 @@
                                 <p class="w-full font-semibold dark:text-white/70">Privacy Policy</p>
                             </div>
                             <a href="#" class="block text-blue-500">https://leadcrm.aiosoft.in/privacy-policy</a>
+                            <!-- Add text-editor -->
                         </div>
                     </form>
                 </div>
@@ -7986,6 +8065,7 @@
                         </div>
                         <div class="w-full">
                             <p class="w-full font-semibold dark:text-white/70">Public page consent information block</p>
+                            <!-- add text-editor -->
                         </div>
                         <div class="w-full">
                             <div class="w-full flex items-center py-5 space-x-2">
@@ -8754,9 +8834,9 @@
                             </div>
                             <div class="overflow-x-auto mt-4">
                                 <table class="table-auto w-full">
-                                    <thead class="text-sm bg-gray-50 dark:bg-card">
+                                    <thead class="text-sm">
                                         <tr>
-                                            <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative bg-primary-50">
+                                            <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative bg-primary-50 dark:text-gray-900">
                                                 <div class="font-semibold text-left">Modue</div>
                                             </th>
                                             <th class="p-2 pr-6 whitespace-nowrap border border-gray-300 relative">
@@ -8797,32 +8877,32 @@
                                         </tr>
                                         <tr class="bg-primary-50">
                                             <td class="p-2 whitespace-nowrap">
-                                                <span class="block text-sm font-medium">Menu Setup</span>
-                                                <span class="block font-semibold text-primary cursor-pointer">Deactivate | Main Menu | Setup Menu</span>
+                                                <span class="block dark:text-gray-900 text-sm font-medium">Menu Setup</span>
+                                                <span class="block dark:text-gray-900 font-semibold text-primary cursor-pointer">Deactivate | Main Menu | Setup Menu</span>
                                             </td>
                                             <td class="p-2 whitespace-nowrap">
-                                                <span class="block text-sm font-medium">Default module to apply changes to the menus</span>
-                                                <span class="block text-sm font-medium">Version 2.3.0</span>
-                                            </td>
-                                        </tr>
-                                        <tr class="bg-primary-50">
-                                            <td class="p-2 whitespace-nowrap">
-                                                <span class="block text-sm font-medium">Surveys</span>
-                                                <span class="block font-semibold text-primary cursor-pointer">Deactivate</span>
-                                            </td>
-                                            <td class="p-2 whitespace-nowrap">
-                                                <span class="block text-sm font-medium">Default module for sending surveys</span>
-                                                <span class="block text-sm font-medium">Version 2.3.0</span>
+                                                <span class="block dark:text-gray-900 text-sm font-medium">Default module to apply changes to the menus</span>
+                                                <span class="block dark:text-gray-900 text-sm font-medium">Version 2.3.0</span>
                                             </td>
                                         </tr>
                                         <tr class="bg-primary-50">
                                             <td class="p-2 whitespace-nowrap">
-                                                <span class="block text-sm font-medium">Theme Style</span>
-                                                <span class="block font-semibold text-primary cursor-pointer">Deactivate | Settings</span>
+                                                <span class="block dark:text-gray-900 text-sm font-medium">Surveys</span>
+                                                <span class="block dark:text-gray-900 font-semibold text-primary cursor-pointer">Deactivate</span>
                                             </td>
                                             <td class="p-2 whitespace-nowrap">
-                                                <span class="block text-sm font-medium">Default module to apply additional CSS styles</span>
-                                                <span class="block text-sm font-medium">Version 2.3.0</span>
+                                                <span class="block dark:text-gray-900 text-sm font-medium">Default module for sending surveys</span>
+                                                <span class="block dark:text-gray-900 text-sm font-medium">Version 2.3.0</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-primary-50">
+                                            <td class="p-2 whitespace-nowrap">
+                                                <span class="block dark:text-gray-900 text-sm font-medium">Theme Style</span>
+                                                <span class="block dark:text-gray-900 font-semibold text-primary cursor-pointer">Deactivate | Settings</span>
+                                            </td>
+                                            <td class="p-2 whitespace-nowrap">
+                                                <span class="block dark:text-gray-900 text-sm font-medium">Default module to apply additional CSS styles</span>
+                                                <span class="block dark:text-gray-900 text-sm font-medium">Version 2.3.0</span>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -8905,6 +8985,157 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <!-- Estimate Request=>Forms=>New Form -->
+            <div class="flex-auto px-6 pt-9 pb-12 md:p-8 md:pb-12 lg:p-10 overflow-y-auto">
+                <div class="w-full bg-card rounded-xl p-6">
+                    <form class="flex flex-wrap -mx-3 space-y-4 md:space-y-0">
+                        <div class="w-full md:w-1/2 px-3">
+                            <div class="flex flex-col space-y-4">
+                                <div class="w-full">
+                                    <mat-form-field class="fuse-mat-dense w-full">
+                                        <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">
+                                        <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                                        Full Name
+                                        </mat-label>
+                                        <input matInput>
+                                    </mat-form-field>
+                                </div>
+                                <div class="w-full">
+                                    <div class="flex flex-col">
+                                        <div class="w-full flex items-start sm:items-center">
+                                            <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                                            <div class="relative group pt-1">
+                                                <mat-icon svgIcon="heroicons_solid:question-mark-circle" class="icon-size-4 h-full"></mat-icon>
+                                                <span class="absolute bottom-full left-0 min-w-60 w-full bg-gray-900 text-white dark:bg-white dark:text-gray-900 text-sm rounded-md hidden group-hover:block p-2">For validation messages</span>
+                                            </div>
+                                            <span class="font-semibold dark:text-white/70">Language</span>
+                                        </div>
+                                        <mat-form-field class="w-full">
+                                            <mat-select>
+                                                <mat-option value="hindi">Hindi</mat-option>
+                                                <mat-option value="english">English</mat-option>
+                                                <mat-option value="spanich">Spanich</mat-option>
+                                                <mat-option value="dutch">Dutch</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <mat-form-field class="fuse-mat-dense w-full">
+                                        <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">
+                                        <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                                        Submit button text
+                                        </mat-label>
+                                        <input matInput>
+                                    </mat-form-field>
+                                </div>
+                                <div class="flex flex-wrap itmes-center -mx-2 space-y-4 md:space-y-0">
+                                    <div class="w-full md:w-1/2 px-2">
+                                         <mat-form-field class="w-full">
+                                            <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Submit button background color</mat-label>
+                                            <div class="w-full flex">
+                                                <input matInput type="text" value="{{EstimateRequestForm_one.value}}" #EstimateRequestFormtext_one class="w-full"
+                                                    [style.color]="EstimateRequestForm_one.value">
+                                                <input matInput type="color" class="max-w-5" #EstimateRequestForm_one value="{{EstimateRequestFormtext_one.value}}">
+                                            </div>
+                                        </mat-form-field>
+                                    </div>
+                                    <div class="w-full md:w-1/2 px-2">
+                                         <mat-form-field class="w-full">
+                                            <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Submit button background text</mat-label>
+                                            <div class="w-full flex">
+                                                <input matInput type="text" value="{{EstimateRequestForm_two.value}}" #EstimateRequestFormtext_two class="w-full"
+                                                    [style.color]="EstimateRequestForm_two.value">
+                                                <input matInput type="color" class="max-w-5" #EstimateRequestForm_two value="{{EstimateRequestFormtext_two.value}}">
+                                            </div>
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">What should happen after a visitor submits this form?</mat-label>
+                                    <mat-radio-group class="flex flex-col space-y-3 " [color]="'primary'">
+                                        <mat-radio-button [value]="'Display thank you message'">
+                                            Display thank you message
+                                        </mat-radio-button>
+                                        <mat-radio-button [value]="'Redirect to another website'">
+                                            Redirect to another website
+                                        </mat-radio-button>
+                                    </mat-radio-group>
+                                </div>
+                                <div class="w-full">
+                                    <mat-form-field class="fuse-mat-no-subscript fuse-mat-textarea w-full">
+                                        <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">
+                                        <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                                        Message to show after form is succcesfully submitted
+                                        </mat-label>
+                                        <textarea matInput rows="3" class="resize-none"></textarea>
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 px-3">
+                            <div class="flex flex-col space-y-4">
+                                <div class="w-full">
+                                    <mat-form-field class="w-full">
+                                        <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">
+                                            <span class="text-red-600 text-sm inline-block mr-0.5">*</span>
+                                            Status
+                                            </mat-label>
+                                        <mat-select>
+                                            <mat-option value="cancelled">Cancelled</mat-option>
+                                            <mat-option value="processing">Processing</mat-option>
+                                            <mat-option value="complate">Complate</mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
+                                <div class="w-full">
+                                    <mat-form-field class="w-full">
+                                        <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Responsible (Assignee)</mat-label>
+                                        <mat-select>
+                                            <mat-option value="super_admin">Super Admin</mat-option>
+                                            <mat-option value="manan_sonani">Manan Sonani</mat-option>
+                                            <mat-option value="manan_sonani">Manan Sonani</mat-option>
+                                            <mat-option value="kahan_s">Kahan S</mat-option>
+                                            <mat-option value="john_wick">John Wick</mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
+                                <div class="w-full">
+                                    <span class="block w-full font-semibold dark:text-white/70 pb-1">Notification settings</span>
+                                    <mat-checkbox class="mb-2" [color]="'primary'">Notify when estimate request submitted</mat-checkbox>
+                                </div>
+                                <div class="flex flex-col space-y-4 border-t py-5">
+                                    <div class="w-full">
+                                        <mat-radio-group class="flex flex-col space-y-3 " [color]="'primary'">
+                                            <mat-radio-button [value]="'Specific Staff Members '">
+                                                Specific Staff Members 
+                                            </mat-radio-button>
+                                            <mat-radio-button [value]="'nStaff members with roles'">
+                                                NStaff members with roles
+                                            </mat-radio-button>
+                                            <mat-radio-button [value]="'Responsible person'">
+                                                Responsible person
+                                            </mat-radio-button>
+                                        </mat-radio-group>
+                                    </div>
+                                    <div class="w-full">
+                                        <mat-form-field class="w-full">
+                                            <mat-label class="block w-full font-semibold dark:text-white/70 pb-1">Staff Members to Notify</mat-label>
+                                            <mat-select>
+                                                <mat-option value="super_admin">Super Admin</mat-option>
+                                                <mat-option value="manan_sonani">Manan Sonani</mat-option>
+                                                <mat-option value="manan_sonani">Manan Sonani</mat-option>
+                                                <mat-option value="kahan_s">Kahan S</mat-option>
+                                                <mat-option value="john_wick">John Wick</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
             <!-- Estimate Request=>Statuses -->
